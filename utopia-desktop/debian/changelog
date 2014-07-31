@@ -1,0 +1,12 @@
+utopia-desktop (0.1.1) utopia; urgency=low
+
+  * Remove alacarte (older versions in repos still list gnome-panel as a dependency, which pulls in an entire gnome desktop!)
+  * Add font packages and shuffle some other things
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 19 Jul 2014 17:34:00 -0700
+
+utopia-desktop (0.1) utopia; urgency=low
+
+  * Initial Release.
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 19 Jul 2014 16:50:00 -0700

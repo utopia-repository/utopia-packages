@@ -1,0 +1,29 @@
+### Commented entries have reasonable defaults.
+### Uncomment to edit them.
+Source: utopia-baseutils
+Section: misc
+Priority: optional
+# Homepage: <enter URL here; no default>
+Standards-Version: 3.9.2
+
+Package: utopia-baseutils
+Version: 0.1.4
+Maintainer: James Lu <glolol@overdrive.pw>
+# Pre-Depends: <comma-separated list of packages>
+Depends: nano, screen | tmux, git, htop, wget, sudo, less
+Recommends: iptables, command-not-found, build-essential, file
+Suggests: mutt, fail2ban, nginx, php5-fpm, weechat | irssi, cmake, elinks | lynx, mediainfo
+# Provides: <comma-separated list of packages>
+# Replaces: <comma-separated list of packages>
+Architecture: all
+# Copyright: <copyright file; defaults to GPL2>
+#Changelog: utopia-baseutils.changes
+# Readme: <README.Debian file; defaults to a generic one>
+# Extra-Files: <comma-separated list of additional files for the doc directory>
+# Files: <pair of space-separated paths; First is file to include, second is destination>
+#  <more pairs, if there's more than one file to include. Notice the starting space>
+Description: Utopia Base Collection (meta-package)
+ A collection of somewhat useful command-line utilities.
+# long description and info
+# .
+# second paragraph
