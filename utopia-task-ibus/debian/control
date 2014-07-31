@@ -7,11 +7,11 @@ Priority: optional
 Standards-Version: 3.9.2
 
 Package: utopia-task-ibus
-Version: 0.1
+Version: 0.1.1
 Maintainer: James Lu <glolol@overdrive.pw>
 # Pre-Depends: <comma-separated list of packages>
-Depends: ibus, ibus-gtk, ibus-gtk3, ibus-qt
-Recommends: ibus-libpinyin, fonts-arphic-ukai, fonts-arphic-uming, fonts-wqy-zenhei, fonts-wqy-microhei
+Depends: ibus
+Recommends: ibus-libpinyin, fonts-arphic-ukai, fonts-arphic-uming, fonts-wqy-zenhei, fonts-wqy-microhei, ibus-gtk, ibus-gtk3, ibus-qt
 Suggests: ibus-clutter, qt4-qtconfig, unifont, utopia-desktop
 # Provides: <comma-separated list of packages>
 # Replaces: <comma-separated list of packages>
