@@ -1,0 +1,6 @@
+utopia-meta-ibus (0.1.1) unstable; urgency=low
+
+  * Add a changelog.
+  * Move components to Recommends for better compatibility across releases.
+
+ -- James Lu <glolol@overdrive.pw>  Thu, 31 Jul 2014 16:15:30 -0700
