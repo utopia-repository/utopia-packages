@@ -7,13 +7,13 @@ Priority: optional
 Standards-Version: 3.9.2
 
 Package: utopia-desktop-kde
-Version: 0.1.0
+Version: 0.1.1
 Maintainer: James Lu <glolol@overdrive.pw>
 Component: utopia
 # Pre-Depends: <comma-separated list of packages>
 Depends: kde-runtime, kde-plasma-desktop | kde-plasma-netbook, konsole
-Recommends: utopia-desktop (>= 0.2.0), libreoffice | calligra, libreoffice-kde | calligra, kdeutils, kdenetwork, kgamma, plasma-desktopthemes-artwork, kate, okular, ark, gwenview, kmix, ksnapshot, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-widget-networkmanagement, ktorrent, gdebi-kde, iceweasel | chromium | rekonq, kmag, gtk2-engines-oxygen, gtk3-engines-oxygen, kde-config-gtk-style
-Suggests: kmail, kdegames, kdeartwork, kdepim, kdegraphics, skanlite, apper, kdeaccessibility, kdewebdev, kdemultimedia
+Recommends: utopia-desktop (>= 0.2.0), libreoffice | calligra, libreoffice-kde | calligra, kdeutils, kget, krdc, kdenetwork-filesharing, kgamma, plasma-desktopthemes-artwork, kate, okular, ark, gwenview, kmix, ksnapshot, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-widget-networkmanagement, ktorrent, gdebi-kde, iceweasel | chromium | rekonq, kmag, kde-config-gtk-style
+Suggests: kmail, kopete, korganizer, amarok, kdegames, kdeartwork, kdepim, kdegraphics, skanlite, apper, kdeaccessibility, kdewebdev, kdemultimedia, kdenetwork, gtk2-engines-oxygen, gtk3-engines-oxygen
 # Provides: <comma-separated list of packages>
 Conflicts: utopia-desktop (<< 0.2.0)
 # Architecture: all
