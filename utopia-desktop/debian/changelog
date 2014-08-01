@@ -1,3 +1,11 @@
+utopia-desktop (0.2.0) utopia; urgency=low
+
+  * Add alternatives for libreoffice, bittorrent client, irc, and more
+  * Add inkscape
+  * Clean up suggests section
+
+ -- James Lu <glolol@overdrive.pw>  Thu, 31 Jul 2014 16:31:03 -0700
+
 utopia-desktop (0.1.1) utopia; urgency=low
 
   * Remove alacarte (older versions in repos still list gnome-panel as a dependency, which pulls in an entire gnome desktop!)

@@ -7,18 +7,19 @@ Priority: optional
 Standards-Version: 3.9.2
 
 Package: utopia-desktop
-Version: 0.1.6
+Version: 0.2.0
 Maintainer: James Lu <glolol@overdrive.pw>
 Component: utopia
 # Pre-Depends: <comma-separated list of packages>
 Depends: desktop-base, lxterminal | x-terminal-emulator, xorg
-Recommends: utopia-baseutils, menu-xdg, lightdm | x-display-manager, geany | kate, vlc, libreoffice, iceweasel | chromium | firefox | google-chrome-stable | www-browser, galculator, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge, hexchat | weechat, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu
-Suggests: xfburn | k3b | brasero, mail-reader, file-roller | ark | engrampa, simple-scan, gnome-games | kdegames, wine, bleachbit, baobab | filelight, evince | okular | atril, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance
+Recommends: utopia-baseutils, menu-xdg, lightdm | x-display-manager, geany | kate, vlc, libreoffice | abiword | calligra, libreoffice | gnumeric | calligra, iceweasel | chromium | firefox | google-chrome-stable | www-browser, galculator, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge | ktorrent, hexchat | irc, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi | gdebi-kde, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, xfburn | k3b | brasero
+Suggests: mail-reader, simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape
+Breaks: utopia-desktop (<< 0.2.0)
 # Provides: <comma-separated list of packages>
 # Replaces: <comma-separated list of packages>
 # Architecture: all
 # Copyright: <copyright file; defaults to GPL2>
-#Changelog: <changelog file; defaults to a generic changelog>
+Changelog: changelog
 # Readme: <README.Debian file; defaults to a generic one>
 # Extra-Files: <comma-separated list of additional files for the doc directory>
 # Files: <pair of space-separated paths; First is file to include, second is destination>
