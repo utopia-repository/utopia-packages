@@ -1,3 +1,9 @@
+utopia-baseutils (0.1.5) unstable; urgency=low
+
+  * Prepare to split things up into utopia-devel.
+
+ -- GLolol <glolol@overdrive.pw>  Fri, 01 Aug 2014 22:45:01 -0700
+
 utopia-baseutils (0.1.3) utopia; urgency=low
 
   * Add mediainfo and file
