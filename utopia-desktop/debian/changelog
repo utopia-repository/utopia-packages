@@ -1,3 +1,11 @@
+utopia-desktop (0.2.1) unstable; urgency=low
+
+  * Use pdf-viewer metapackage
+  * Move mail-reader to recommends
+  * Add desktop environments in Suggests:
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 05 Aug 2014 11:26:56 -0700
+
 utopia-desktop (0.2.0) utopia; urgency=low
 
   * Add alternatives for libreoffice, bittorrent client, irc, and more
