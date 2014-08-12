@@ -5,13 +5,13 @@ Homepage: https://github.com/GLolol/utopia-packages
 Standards-Version: 3.9.2
 
 Package: utopia-desktop
-Version: 0.2.1
+Version: 0.2.1-1
 Maintainer: James Lu <glolol@overdrive.pw>
 Component: utopia
 # Pre-Depends: <comma-separated list of packages>
 Depends: desktop-base, lxterminal | x-terminal-emulator, xorg
 Recommends: utopia-baseutils, menu-xdg, lightdm | x-display-manager, geany | kate, vlc, libreoffice | abiword | calligra, libreoffice | gnumeric | calligra, iceweasel | chromium | firefox | google-chrome-stable | www-browser, galculator, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge | ktorrent, hexchat | irc, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi | gdebi-kde, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, xfburn | k3b | brasero, evince-gtk | pdf-viewer, thunderbird | icedove | mail-reader
-Suggests: mail-reader, simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape, mate-desktop-environment-extras | xfce4, xfce4-goodies | lxde | utopia-desktop-kde | kde-standard | gnome-core
+Suggests: simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape, mate-desktop-environment-extras | task-xfce-desktop | lxde | utopia-desktop-kde | kde-standard | gnome-core
 Breaks: utopia-desktop (<< 0.2.0)
 # Provides: <comma-separated list of packages>
 # Replaces: <comma-separated list of packages>

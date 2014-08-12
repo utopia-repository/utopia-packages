@@ -1,3 +1,9 @@
+utopia-desktop (0.2.1-1) unstable; urgency=low
+
+  * Fixes for desktop environments
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 05 Aug 2014 11:46:08 -0700
+
 utopia-desktop (0.2.1) unstable; urgency=low
 
   * Use pdf-viewer metapackage
