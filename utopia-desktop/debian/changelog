@@ -1,4 +1,17 @@
-utopia-desktop (0.2.1-1) unstable; urgency=low
+utopia-desktop (0.3.0) unstable; urgency=low
+
+  * Fix? some lintian errors
+  * Update standards version to 3.9.4
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 12 Aug 2014 11:49:11 -0700
+
+utopia-desktop (0.2.1+2) unstable; urgency=low
+
+  * Merge everything into one source package
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 12 Aug 2014 11:36:18 -0700
+
+utopia-desktop (0.2.1+1) unstable; urgency=low
 
   * Fixes for desktop environments
 

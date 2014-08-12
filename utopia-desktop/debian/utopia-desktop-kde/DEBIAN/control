@@ -1,27 +1,15 @@
-### Commented entries have reasonable defaults.
-### Uncomment to edit them.
-Source: utopia-desktop-kde
-Section: utopia/x11
-Priority: optional
-# Homepage: <enter URL here; no default>
-Standards-Version: 3.9.2
-
 Package: utopia-desktop-kde
-Version: 0.1.1
+Source: utopia-desktop
+Version: 0.3.0
+Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
-Component: utopia
-# Pre-Depends: <comma-separated list of packages>
+Installed-Size: 26
 Depends: kde-runtime, kde-plasma-desktop | kde-plasma-netbook, konsole
 Recommends: utopia-desktop (>= 0.2.0), libreoffice | calligra, libreoffice-kde | calligra, kdeutils, kget, krdc, kdenetwork-filesharing, kgamma, plasma-desktopthemes-artwork, kate, okular, ark, gwenview, kmix, ksnapshot, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-widget-networkmanagement, ktorrent, gdebi-kde, iceweasel | chromium | rekonq, kmag, kde-config-gtk-style
 Suggests: kmail, kopete, korganizer, amarok, kdegames, kdeartwork, kdepim, kdegraphics, skanlite, apper, kdeaccessibility, kdewebdev, kdemultimedia, kdenetwork, gtk2-engines-oxygen, gtk3-engines-oxygen
-# Provides: <comma-separated list of packages>
 Conflicts: utopia-desktop (<< 0.2.0)
-# Architecture: all
-# Copyright: <copyright file; defaults to GPL2>
-Changelog: changelog
-# Readme: <README.Debian file; defaults to a generic one>
-# Extra-Files: <comma-separated list of additional files for the doc directory>
-# Files: <pair of space-separated paths; First is file to include, second is destination>
-#  <more pairs, if there's more than one file to include. Notice the starting space>
+Section: misc
+Priority: optional
+Homepage: https://github.com/GLolol/utopia-packages
 Description: Utopia Desktop Collection - KDE edition (meta-package)
  Utopia meta-package for pulling in KDE components.

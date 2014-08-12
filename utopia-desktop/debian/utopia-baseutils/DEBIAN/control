@@ -1,0 +1,14 @@
+Package: utopia-baseutils
+Source: utopia-desktop
+Version: 0.3.0
+Architecture: all
+Maintainer: James Lu <glolol@overdrive.pw>
+Installed-Size: 26
+Depends: nano, screen, git, htop, wget | curl, sudo, less, python, bind9-host
+Recommends: iptables, command-not-found, file, wget, curl, screenfetch
+Suggests: mutt, fail2ban, nginx, php5-fpm, weechat, elinks | lynx, utopia-devel
+Section: misc
+Priority: optional
+Homepage: https://github.com/GLolol/utopia-packages
+Description: Utopia Base Collection (meta-package)
+ A collection of somewhat useful command-line utilities.
