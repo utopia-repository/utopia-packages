@@ -1,3 +1,3 @@
-Utopia collection - meta-packages to pull in utilities and desktop applications for my personal use, built using equivs (see `man equivs-control`).
+Utopia collection - meta-packages to pull in utilities and desktop applications (mostly) for my personal use.
 
 Read more at http://packages.overdrive.pw/
