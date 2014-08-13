@@ -1,3 +1,10 @@
+utopia-desktop (0.3.0+1) unstable; urgency=low
+
+  * Fixes for utopia-task-ibus
+  * Add preferred version for ffmpeg
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 12 Aug 2014 12:17:43 -0700
+
 utopia-desktop (0.3.0) unstable; urgency=low
 
   * Fix? some lintian errors

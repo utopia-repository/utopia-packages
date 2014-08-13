@@ -1,12 +1,12 @@
 Package: utopia-devel
 Source: utopia-desktop
-Version: 0.3.0
+Version: 0.3.0+1
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
 Installed-Size: 26
 Depends: build-essential, devscripts, dos2unix, utopia-baseutils (>= 0.1.5), lsb-release
 Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, bison, flex, python-pip, rsync
-Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick, ffmpeg
+Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick, ffmpeg (>= 8:1.0.10-dmo1)
 Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages

@@ -34,7 +34,7 @@ Description: Utopia Base Collection (meta-package)
 Package: utopia-devel
 Depends: ${misc:Depends}, build-essential, devscripts, dos2unix, utopia-baseutils (>= 0.1.5), lsb-release
 Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, bison, flex, python-pip, rsync
-Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick, ffmpeg
+Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick, ffmpeg (>=8:1.0.10-dmo1)
 Architecture: all
 Description: Utopia Developers Collection (meta-package)
  A collection of utilities to assist with system administration, 
@@ -42,7 +42,7 @@ Description: Utopia Developers Collection (meta-package)
 
 Package: utopia-task-ibus
 Depends: ${misc:Depends}, ibus
-Recommends: ibus-libpinyin, fonts-arphic-ukai, fonts-arphic-uming, fonts-wqy-zenhei, fonts-wqy-microhei, ibus-gtk, ibus-gtk3, ibus-qt
+Recommends: ibus-libpinyin, fonts-arphic-ukai, fonts-arphic-uming, fonts-wqy-zenhei | ttf-wqy-zenhei, fonts-wqy-microhei | ttf-wqy-microhei, ibus-gtk, ibus-gtk3, ibus-qt
 Suggests: ibus-clutter, qt4-qtconfig, unifont, utopia-desktop
 Architecture: all
 Description: Utopia meta-package for IBus

@@ -1,11 +1,11 @@
 Package: utopia-task-ibus
 Source: utopia-desktop
-Version: 0.3.0
+Version: 0.3.0+1
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
 Installed-Size: 26
 Depends: ibus
-Recommends: ibus-libpinyin, fonts-arphic-ukai, fonts-arphic-uming, fonts-wqy-zenhei, fonts-wqy-microhei, ibus-gtk, ibus-gtk3, ibus-qt
+Recommends: ibus-libpinyin, fonts-arphic-ukai, fonts-arphic-uming, fonts-wqy-zenhei | ttf-wqy-zenhei, fonts-wqy-microhei | ttf-wqy-microhei, ibus-gtk, ibus-gtk3, ibus-qt
 Suggests: ibus-clutter, qt4-qtconfig, unifont, utopia-desktop
 Section: misc
 Priority: optional
