@@ -1,12 +1,12 @@
 Package: utopia-baseutils
 Source: utopia-desktop
-Version: 0.3.0+1
+Version: 2014.08.18
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
 Installed-Size: 26
 Depends: nano, screen, git, htop, wget | curl, sudo, less, python, bind9-host
-Recommends: iptables, command-not-found, file, wget, curl, screenfetch
-Suggests: mutt, fail2ban, nginx, php5-fpm, weechat, elinks | lynx, utopia-devel
+Recommends: iptables, command-not-found, file, wget, screenfetch
+Suggests: mutt, fail2ban, weechat | irc, elinks | lynx | www-browser, utopia-devel, scrot, ffmpeg (>= 8:1.0.10-dmo1), ffprobe
 Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages

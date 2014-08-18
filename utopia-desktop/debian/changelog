@@ -1,3 +1,26 @@
+utopia-desktop (2014.08.18) unstable; urgency=low
+
+  [ utopia-desktop ]
+  * don't pull in entire libreoffice suite
+  * add browser plugins for firefox/iceweasel/etc
+  
+  [ utopia-nonfree ]
+  * Add utopia-nonfree
+
+ -- James Lu <glolol@overdrive.pw>  Sun, 17 Aug 2014 20:05:36 -0700
+
+utopia-desktop (2014.08.14) unstable; urgency=low
+
+  * New version scheme.
+
+ -- James Lu <glolol@overdrive.pw>  Thu, 14 Aug 2014 14:20:35 -0700
+
+utopia-desktop (0.3.1) unstable; urgency=medium
+
+  * Add packages for MATE, Xfce, and themes
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 12 Aug 2014 22:08:02 -0700
+
 utopia-desktop (0.3.0+1) unstable; urgency=low
 
   * Fixes for utopia-task-ibus

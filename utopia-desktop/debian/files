@@ -1,5 +1,9 @@
-utopia-desktop_0.3.0+1_all.deb misc optional
-utopia-desktop-kde_0.3.0+1_all.deb misc optional
-utopia-baseutils_0.3.0+1_all.deb misc optional
-utopia-devel_0.3.0+1_all.deb misc optional
-utopia-task-ibus_0.3.0+1_all.deb misc optional
+utopia-desktop_2014.08.18_all.deb misc optional
+utopia-desktop-kde_2014.08.18_all.deb misc optional
+utopia-baseutils_2014.08.18_all.deb misc optional
+utopia-devel_2014.08.18_all.deb misc optional
+utopia-task-ibus_2014.08.18_all.deb misc optional
+utopia-desktop-mate_2014.08.18_all.deb misc optional
+utopia-desktop-xfce_2014.08.18_all.deb misc optional
+utopia-themes_2014.08.18_all.deb misc optional
+utopia-nonfree_2014.08.18_all.deb misc optional
