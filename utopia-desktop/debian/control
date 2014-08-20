@@ -8,8 +8,8 @@ Maintainer: James Lu <glolol@overdrive.pw>
 
 Package: utopia-desktop
 Depends: ${misc:Depends}, desktop-base, lxterminal | x-terminal-emulator, xorg
-Recommends: utopia-baseutils, menu-xdg, lightdm | x-display-manager, geany | kate, vlc, libreoffice-writer | abiword, libreoffice-calc | gnumeric, libreoffice-impress, iceweasel | firefox | chromium | www-browser, galculator, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge | transmission | ktorrent, hexchat | irc, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi | gdebi-kde, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, xfburn | k3b | brasero, evince-gtk | pdf-viewer, thunderbird | icedove | mail-reader, xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, browser-plugin-vlc
-Suggests: libreoffice, simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape, utopia-desktop-mate | utopia-desktop-xfce | lxde | utopia-desktop-kde | gnome-core, browser-plugin-libreoffice, cheese, puddletag, audacious | amarok | clementine | rhythmbox | exaile
+Recommends: utopia-baseutils, menu-xdg, lightdm | x-display-manager, geany | kate, vlc, libreoffice-writer | abiword, libreoffice-calc | gnumeric, libreoffice-impress, iceweasel | firefox | chromium | www-browser, galculator, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge | transmission | ktorrent, hexchat | irc, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi | gdebi-kde, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, xfburn | k3b | brasero, evince-gtk | pdf-viewer, thunderbird | icedove | mail-reader, xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, browser-plugin-vlc, xul-ext-https-everywhere
+Suggests: libreoffice, simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape, utopia-desktop-mate | utopia-desktop-xfce | lxde | utopia-desktop-kde | gnome-core, browser-plugin-libreoffice, cheese, puddletag, audacious | amarok | clementine | rhythmbox | exaile, xul-ext-wot
 Architecture: all
 Description: Utopia Desktop Collection (meta-package)
  A collection of mostly desktop-independent GUI applications.
@@ -33,8 +33,8 @@ Description: Utopia Base Collection (meta-package)
 
 Package: utopia-devel
 Depends: ${misc:Depends}, build-essential, devscripts, dos2unix, utopia-baseutils (>= 0.1.5), lsb-release
-Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, bison, flex, python-pip, rsync
-Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick
+Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip, rsync
+Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick, bison, flex, xul-ext-webdeveloper
 Architecture: all
 Description: Utopia Developers Collection (meta-package)
  A collection of utilities to assist with system administration, 

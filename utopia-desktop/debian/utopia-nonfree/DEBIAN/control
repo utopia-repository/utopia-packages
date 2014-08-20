@@ -1,0 +1,13 @@
+Package: utopia-nonfree
+Source: utopia-desktop
+Version: 2014.08.19
+Architecture: all
+Maintainer: James Lu <glolol@overdrive.pw>
+Installed-Size: 26
+Recommends: unrar | unrar-free | unar, rar, ttf-mscorefonts-installer
+Suggests: libdvdcss2, pepperflashplugin-nonfree, flashplugin-nonfree, dropbox
+Section: misc
+Priority: optional
+Homepage: https://github.com/GLolol/utopia-packages
+Description: Utopia Desktop Collection - non-free components (meta-package)
+ Non-free components for the Utopia Collection.
