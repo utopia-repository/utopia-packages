@@ -1,3 +1,9 @@
+utopia-desktop (2014.08.24) unstable; urgency=low
+
+  * Update utopia-desktop, utopia-desktop-kde
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 23 Aug 2014 19:44:56 -0700
+
 utopia-desktop (2014.08.19) unstable; urgency=low
 
   * Update browser extensions
