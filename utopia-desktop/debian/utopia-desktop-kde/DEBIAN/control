@@ -1,12 +1,12 @@
 Package: utopia-desktop-kde
 Source: utopia-desktop
-Version: 2014.08.24
+Version: 2014.08.24+1
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
 Installed-Size: 26
 Depends: kde-runtime, kde-plasma-desktop | kde-plasma-netbook, konsole, kdeutils, kate, okular, ark, gwenview, kmix, ksnapshot
-Recommends: utopia-desktop (>= 0.2.0), libreoffice-kde, kget, krdc, kdenetwork-filesharing, kgamma, plasma-desktopthemes-artwork, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-nm | plasma-widget-networkmanagement, ktorrent | transmission-qt, gdebi-kde, iceweasel | chromium, kmag, kde-config-gtk-style, gtk2-engines-oxygen, gtk3-engines-oxygen, kdeartwork-wallpapers
-Suggests: kmail, kopete, korganizer, amarok, kdegames, kdeartwork, kdepim, kdegraphics, skanlite, apper, kdeaccessibility, kdewebdev, kdemultimedia, kdenetwork
+Recommends: utopia-desktop (>= 0.2.0), amarok, libreoffice-kde, kget, krdc, kdenetwork-filesharing, kgamma, plasma-desktopthemes-artwork, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-nm | plasma-widget-networkmanagement, ktorrent | transmission-qt, gdebi-kde, iceweasel | chromium, kmag, kde-config-gtk-style, gtk2-engines-oxygen, gtk3-engines-oxygen, kdeartwork-wallpapers
+Suggests: kmail, kopete, korganizer, kdegames, kdeartwork, kdepim, kdegraphics, skanlite, apper, kdeaccessibility, kdewebdev, kdemultimedia, kdenetwork
 Conflicts: utopia-desktop (<< 0.2.0)
 Section: misc
 Priority: optional

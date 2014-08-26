@@ -8,7 +8,7 @@ Maintainer: James Lu <glolol@overdrive.pw>
 
 Package: utopia-desktop
 Depends: ${misc:Depends}, desktop-base | ubuntu-wallpapers, lxterminal | x-terminal-emulator, xorg
-Recommends: utopia-baseutils, menu-xdg, lightdm | x-display-manager, geany | kate, vlc, libreoffice-writer | abiword, libreoffice-calc | gnumeric, libreoffice-impress, iceweasel | firefox | chromium | www-browser, galculator, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge | transmission | ktorrent, hexchat | irc, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi | gdebi-kde, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, xfburn | k3b | brasero, evince-gtk | pdf-viewer, thunderbird | icedove | mail-reader, xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, browser-plugin-vlc, xul-ext-https-everywhere
+Recommends: utopia-baseutils, lightdm | x-display-manager, geany | kate, vlc, libreoffice-writer | abiword, libreoffice-calc | gnumeric, libreoffice-impress, iceweasel | firefox | chromium | www-browser, galculator, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge | transmission | ktorrent, hexchat | irc, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi | gdebi-kde, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, xfburn | k3b | brasero, evince-gtk | pdf-viewer, thunderbird | icedove | mail-reader, xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, browser-plugin-vlc, xul-ext-https-everywhere, acpi-support
 Suggests: libreoffice, simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape, utopia-desktop-mate | utopia-desktop-xfce | lxde | utopia-desktop-kde | gnome-core, browser-plugin-libreoffice, cheese, puddletag, audacious | amarok | clementine | rhythmbox | exaile, xul-ext-wot
 Architecture: all
 Description: Utopia Desktop Collection (meta-package)
@@ -16,8 +16,8 @@ Description: Utopia Desktop Collection (meta-package)
 
 Package: utopia-desktop-kde
 Depends: ${misc:Depends}, kde-runtime, kde-plasma-desktop | kde-plasma-netbook, konsole, kdeutils, kate, okular, ark, gwenview, kmix, ksnapshot
-Recommends: utopia-desktop (>= 0.2.0), libreoffice-kde, kget, krdc, kdenetwork-filesharing, kgamma, plasma-desktopthemes-artwork, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-nm | plasma-widget-networkmanagement, ktorrent | transmission-qt, gdebi-kde, iceweasel | chromium, kmag, kde-config-gtk-style, gtk2-engines-oxygen, gtk3-engines-oxygen, kdeartwork-wallpapers
-Suggests: kmail, kopete, korganizer, amarok, kdegames, kdeartwork, kdepim, kdegraphics, skanlite, apper, kdeaccessibility, kdewebdev, kdemultimedia, kdenetwork
+Recommends: utopia-desktop (>= 0.2.0), amarok, libreoffice-kde, kget, krdc, kdenetwork-filesharing, kgamma, plasma-desktopthemes-artwork, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-nm | plasma-widget-networkmanagement, ktorrent | transmission-qt, gdebi-kde, iceweasel | chromium, kmag, kde-config-gtk-style, gtk2-engines-oxygen, gtk3-engines-oxygen, kdeartwork-wallpapers
+Suggests: kmail, kopete, korganizer, kdegames, kdeartwork, kdepim, kdegraphics, skanlite, apper, kdeaccessibility, kdewebdev, kdemultimedia, kdenetwork
 Conflicts: utopia-desktop (<< 0.2.0)
 Architecture: all
 Description: Utopia Desktop Collection - KDE edition (meta-package)
@@ -66,8 +66,8 @@ Description: Utopia Desktop Collection - Xfce (meta-package)
  Utopia meta-package for pulling in an Xfce desktop.
 
 Package: utopia-themes
-Depends: ${misc:Depends}, mint-themes, mint-x-icons, numix-gtk-theme | numix-kde-theme
-Recommends: numix-icon-theme, numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, mint-wallpapers-qiana, numix-wallpaper-aurora
+Depends: ${misc:Depends}, numix-icon-theme, mint-x-icons
+Recommends: numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, mint-wallpapers-qiana, numix-wallpaper-aurora, mint-themes, numix-gtk-theme | numix-kde-theme, ttf-ubuntu-font-family
 Suggests: numix-wallpaper-kitty, numix-wallpaper-lightbulb, numix-wallpaper-mr-numix, numix-wallpaper-mesh, numix-wallpaper-simple-things, numix-wallpaper-winter-chill, lubuntu-icon-theme, lubuntu-artwork | ubuntu-wallpapers, mate-icon-theme-faenza | oxygen-icon-theme
 Architecture: all
 Description: Utopia Themes Collection (meta-package)
