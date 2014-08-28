@@ -51,7 +51,7 @@ Description: Utopia meta-package for IBus
 
 Package: utopia-desktop-mate
 Depends: ${misc:Depends}, mate-desktop-environment, galculator, utopia-desktop (>= 2014.08.14)
-Recommends: mate-desktop-environment-extras, mintmenu (>= 5.5.8~)
+Recommends: mate-desktop-environment-extras, mintmenu (>= 5.5.8~), utopia-mate-defaults
 Suggests: utopia-themes, caja-dropbox (>= 0.7.1~)
 Architecture: all
 Description: Utopia Desktop Collection - MATE (meta-package)
