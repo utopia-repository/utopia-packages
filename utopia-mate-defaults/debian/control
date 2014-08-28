@@ -1,0 +1,14 @@
+Source: utopia-mate-defaults
+Section: x11
+Priority: optional
+Maintainer: James Lu <glolol@overdrive.pw>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/GLolol/utopia-packages
+
+Package: utopia-mate-defaults
+Architecture: all
+Depends: ${misc:Depends}, utopia-themes (>= 2014.08.27)
+Suggests: utopia-desktop-mate
+Description: Utopia Desktop Defaults (MATE Desktop)
+ This package contains customized defaults for the MATE desktop environment.
