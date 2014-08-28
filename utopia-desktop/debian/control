@@ -9,7 +9,7 @@ Maintainer: James Lu <glolol@overdrive.pw>
 Package: utopia-desktop
 Depends: ${misc:Depends}, desktop-base | ubuntu-wallpapers, lxterminal | x-terminal-emulator, xorg
 Recommends: utopia-baseutils, lightdm | x-display-manager, geany | kate, vlc, libreoffice-writer | abiword, libreoffice-calc | gnumeric, libreoffice-impress, iceweasel | firefox | chromium | www-browser, galculator, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge | transmission | ktorrent, hexchat | irc, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi | gdebi-kde, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, xfburn | k3b | brasero, evince-gtk | pdf-viewer, thunderbird | icedove | mail-reader, xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, browser-plugin-vlc, xul-ext-https-everywhere, acpi-support
-Suggests: libreoffice, simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape, utopia-desktop-mate | utopia-desktop-xfce | lxde | utopia-desktop-kde | gnome-core, browser-plugin-libreoffice, cheese, puddletag, audacious | amarok | clementine | rhythmbox | exaile, xul-ext-wot
+Suggests: libreoffice, simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape, utopia-desktop-mate | utopia-desktop-xfce | lxde | utopia-desktop-kde | gnome-core, browser-plugin-libreoffice, cheese, puddletag, audacious | amarok | clementine | rhythmbox | exaile, xul-ext-wot, dconf-editor
 Architecture: all
 Description: Utopia Desktop Collection (meta-package)
  A collection of mostly desktop-independent GUI applications.
@@ -66,8 +66,8 @@ Description: Utopia Desktop Collection - Xfce (meta-package)
  Utopia meta-package for pulling in an Xfce desktop.
 
 Package: utopia-themes
-Depends: ${misc:Depends}, numix-icon-theme, mint-x-icons
-Recommends: numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, mint-wallpapers-qiana, numix-wallpaper-aurora, mint-themes, numix-gtk-theme | numix-kde-theme, ttf-ubuntu-font-family
+Depends: ${misc:Depends}, mint-x-icons, mint-themes, mint-themes-gtk3, ttf-ubuntu-font-family
+Recommends: mint-wallpapers-qiana, numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, numix-wallpaper-aurora, numix-gtk-theme | numix-kde-theme, numix-icon-theme
 Suggests: numix-wallpaper-kitty, numix-wallpaper-lightbulb, numix-wallpaper-mr-numix, numix-wallpaper-mesh, numix-wallpaper-simple-things, numix-wallpaper-winter-chill, lubuntu-icon-theme, lubuntu-artwork | ubuntu-wallpapers, mate-icon-theme-faenza | oxygen-icon-theme
 Architecture: all
 Description: Utopia Themes Collection (meta-package)

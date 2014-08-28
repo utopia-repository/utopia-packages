@@ -1,3 +1,11 @@
+utopia-desktop (2014.08.27) unstable; urgency=medium
+
+  * Update utopia-themes
+  * Bump debian/compat to 9
+  * Add dconf-editor
+
+ -- James Lu <glolol@overdrive.pw>  Wed, 27 Aug 2014 18:41:39 -0700
+
 utopia-desktop (2014.08.24+1) unstable; urgency=medium
 
   * Update utopia-desktop, utopia-desktop-kde, utopia-themes
