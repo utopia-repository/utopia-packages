@@ -1,11 +1,11 @@
 Package: utopia-desktop-xfce
 Source: utopia-desktop
-Version: 2014.08.24+1
+Version: 2014.09.01
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
 Installed-Size: 26
 Depends: xfce4, xfce4-terminal | x-terminal-emulator, utopia-desktop (>= 2014.08.14), mousepad, ristretto
-Recommends: xfce4-goodies, gtk3-engines-xfce, xarchiver | file-roller, galculator, xfburn, xfce4-whiskermenu-plugin
+Recommends: xfce4-goodies, gtk3-engines-xfce, xarchiver | file-roller, galculator, xfburn, xfce4-whiskermenu-plugin, libreoffice-gtk
 Suggests: abiword, gnumeric, gigolo
 Section: misc
 Priority: optional

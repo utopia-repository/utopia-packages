@@ -1,0 +1,14 @@
+Package: utopia-multimedia
+Source: utopia-desktop
+Version: 2014.09.01
+Architecture: all
+Maintainer: James Lu <glolol@overdrive.pw>
+Installed-Size: 26
+Depends: audacity, gimp
+Recommends: vlc-plugin-fluidsynth, vlc, browser-plugin-vlc, isomaster | acetoneiso, optipng | pngcrush, ffmpeg (>= 8:1.0.0), mediainfo, mediainfo-gui, puddletag
+Suggests: inkscape, shutter, cheese, jpegoptim, audacious | amarok | rhythmbox | clementine
+Section: misc
+Priority: optional
+Homepage: https://github.com/GLolol/utopia-packages
+Description: Utopia Multimedia Collection (meta-package)
+ Pulls in some useful packages for working with media files (audio, video, and images).

@@ -1,0 +1,14 @@
+Package: utopia-accessories
+Source: utopia-desktop
+Version: 2014.09.01
+Architecture: all
+Maintainer: James Lu <glolol@overdrive.pw>
+Installed-Size: 26
+Depends: synaptic, gdebi | gdebi-kde, galculator, gparted
+Recommends: geany | kate
+Suggests: ibus, simple-scan, xfburn | k3b | brasero, virtualbox-latest | virtualbox-qt, pdf-viewer
+Section: misc
+Priority: optional
+Homepage: https://github.com/GLolol/utopia-packages
+Description: Utopia Utilities Collection (meta-package)
+ This meta-package pulls in some useful accessories for daily use and administrative tasks.

@@ -1,0 +1,14 @@
+Package: utopia-office
+Source: utopia-desktop
+Version: 2014.09.01
+Architecture: all
+Maintainer: James Lu <glolol@overdrive.pw>
+Installed-Size: 26
+Depends: libreoffice-writer | abiword, libreoffice-calc | gnumeric
+Recommends: hyphen-en-us, hunspell-en-us, mythes-en-us, browser-plugin-libreoffice, libreoffice-impress, evince | pdf-reader
+Suggests: libroeffice, goldendict, mail-reader
+Section: misc
+Priority: optional
+Homepage: https://github.com/GLolol/utopia-packages
+Description: Utopia Office Collection (meta-package)
+ This meta-package will pull in useful office applications, such as a word processor, spreadsheet editor, and presentation program.

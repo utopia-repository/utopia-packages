@@ -1,11 +1,11 @@
 Package: utopia-desktop
-Version: 2014.08.24+1
+Version: 2014.09.01
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
 Installed-Size: 26
 Depends: desktop-base | ubuntu-wallpapers, lxterminal | x-terminal-emulator, xorg
-Recommends: utopia-baseutils, lightdm | x-display-manager, geany | kate, vlc, libreoffice-writer | abiword, libreoffice-calc | gnumeric, libreoffice-impress, iceweasel | firefox | chromium | www-browser, galculator, audacity, alsa-utils, gparted, fonts-dejavu, hyphen-en-us, hunspell-en-us, mythes-en-us, deluge | transmission | ktorrent, hexchat | irc, openssh-client, gimp, fuse, gvfs, ntfs-3g, smbclient, gdebi | gdebi-kde, synaptic, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, xfburn | k3b | brasero, evince-gtk | pdf-viewer, thunderbird | icedove | mail-reader, xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, browser-plugin-vlc, xul-ext-https-everywhere, acpi-support
-Suggests: libreoffice, simple-scan, gnome-games | kdegames, bleachbit, virtualbox-latest | virtualbox-qt, vlc-plugin-fluidsynth, mediainfo-gui, lxappearance, libreoffice-gtk | libreoffice-gtk3 | libreoffice-kde | libreoffice-gnome, inkscape, utopia-desktop-mate | utopia-desktop-xfce | lxde | utopia-desktop-kde | gnome-core, browser-plugin-libreoffice, cheese, puddletag, audacious | amarok | clementine | rhythmbox | exaile, xul-ext-wot
+Recommends: utopia-baseutils, lightdm | x-display-manager, vlc, iceweasel | firefox, google-chrome-stable, alsa-utils, fuse, gvfs, ntfs-3g, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, acpi-support
+Suggests: utopia-desktop-mate | utopia-desktop-cinnamon | utopia-desktop-kde | utopia-desktop-xfce | utopia-desktop-lxde, utopia-accessories, utopia-multimedia, utopia-network, utopia-office
 Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages
