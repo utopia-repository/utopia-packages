@@ -40,8 +40,8 @@ Description: Utopia Utilities Collection (meta-package)
 
 Package: utopia-office
 Depends: ${misc:Depends}, libreoffice-writer | abiword, libreoffice-calc | gnumeric
-Recommends: hyphen-en-us, hunspell-en-us, mythes-en-us, browser-plugin-libreoffice, libreoffice-impress, evince | pdf-reader
-Suggests: libroeffice, goldendict, mail-reader
+Recommends: hyphen-en-us, hunspell-en-us, mythes-en-us, browser-plugin-libreoffice, libreoffice-impress
+Suggests: libroeffice, goldendict, mail-reader, pdf-viewer
 Architecture: all
 Description: Utopia Office Collection (meta-package)
  This meta-package will pull in useful office applications, such as a word processor, spreadsheet editor, and presentation program.

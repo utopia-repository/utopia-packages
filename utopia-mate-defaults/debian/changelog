@@ -1,3 +1,9 @@
+utopia-mate-defaults (2014.09.03) unstable; urgency=medium
+
+  * Add dependency on mintmenu.
+
+ -- James Lu <glolol@overdrive.pw>  Wed, 03 Sep 2014 17:48:21 -0700
+
 utopia-mate-defaults (2014.08.28) unstable; urgency=low
 
   * Initial Release.

@@ -1,3 +1,9 @@
+utopia-desktop (2014.09.04) unstable; urgency=medium
+
+  * utopia-office: add pdf-viewer to suggests instead of recommends
+
+ -- James Lu <glolol@overdrive.pw>  Thu, 04 Sep 2014 15:53:02 -0700
+
 utopia-desktop (2014.09.01) unstable; urgency=medium
 
   * Split utopia-desktop into utopia-accessories, utopia-multimedia, utopia-network, utopia-office
