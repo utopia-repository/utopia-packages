@@ -1,4 +1,4 @@
-Source: utopia-desktop
+Source: utopia-meta
 Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages
@@ -10,6 +10,7 @@ Package: utopia-desktop
 Depends: ${misc:Depends}, desktop-base | ubuntu-wallpapers, lxterminal | x-terminal-emulator, xorg
 Recommends: utopia-baseutils, lightdm | x-display-manager, vlc, iceweasel | firefox, google-chrome-stable, alsa-utils, fuse, gvfs, ntfs-3g, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, acpi-support, galculator
 Suggests: utopia-desktop-mate | utopia-desktop-cinnamon | utopia-desktop-kde | utopia-desktop-xfce | utopia-desktop-lxde, utopia-accessories, utopia-multimedia, utopia-network, utopia-office
+Breaks: xul-ext-ubufox, ubufox
 Architecture: all
 Description: Utopia Desktop Collection (meta-package)
  A collection of mostly desktop-independent GUI applications.
@@ -63,8 +64,8 @@ Description: Utopia Base Collection (meta-package)
  A collection of somewhat useful command-line utilities.
 
 Package: utopia-devel
-Depends: ${misc:Depends}, build-essential, devscripts, dos2unix, utopia-baseutils (>= 0.1.5), lsb-release
-Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip
+Depends: ${misc:Depends}, build-essential, devscripts, dos2unix, utopia-baseutils, lsb-release
+Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip, debhelper
 Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick, bison, flex, xul-ext-webdeveloper
 Architecture: all
 Description: Utopia Developers Collection (meta-package)
@@ -107,6 +108,7 @@ Package: utopia-desktop-cinnamon
 Depends: ${misc:Depends}, utopia-desktop, cinnamon-core, mate-terminal | gnome-terminal | x-terminal-emulator
 Recommends: utopia-themes, cinnamon-themes, nemo-fileroller, pluma | gedit, utopia-cinnamon-defaults, baobab, dconf-editor | gconf-editor, eom, atril, mate-system-monitor | gnome-system-monitor
 Suggests: libreoffice-gnome, pidgin, brasero, mate-themes
+Breaks: nautilus
 Architecture: all
 Description: Utopia Desktop - Cinnamon edition (meta-package)
  This meta-package will pull in the Cinnamon Desktop Environment.

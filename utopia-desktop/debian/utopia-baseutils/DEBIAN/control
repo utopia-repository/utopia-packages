@@ -1,6 +1,6 @@
 Package: utopia-baseutils
-Source: utopia-desktop
-Version: 2014.09.11
+Source: utopia-meta
+Version: 2014.09.18
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
 Installed-Size: 27

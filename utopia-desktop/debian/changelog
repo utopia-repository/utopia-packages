@@ -1,3 +1,12 @@
+utopia-meta (2014.09.18) unstable; urgency=medium
+
+  * utopia-devel: add debhelper, depend on utopia-baseutils (any version)
+  * utopia-desktop-cinnamon: add breaks for nautilus so it doesn't get pulled in with nemo-fileroller
+  * utopia-desktop: add breaks for xul-ext-ubufox, ubufox
+  * rename source package to utopia-meta
+
+ -- James Lu <glolol@overdrive.pw>  Thu, 18 Sep 2014 16:23:09 -0700
+
 utopia-desktop (2014.09.11) unstable; urgency=medium
 
   * add utopia-desktop-lxde and utopia-desktop-cinnamon
