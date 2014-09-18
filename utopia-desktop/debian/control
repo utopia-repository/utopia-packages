@@ -8,7 +8,7 @@ Maintainer: James Lu <glolol@overdrive.pw>
 
 Package: utopia-desktop
 Depends: ${misc:Depends}, desktop-base | ubuntu-wallpapers, lxterminal | x-terminal-emulator, xorg
-Recommends: utopia-baseutils, lightdm | x-display-manager, vlc, iceweasel | firefox, google-chrome-stable, alsa-utils, fuse, gvfs, ntfs-3g, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, acpi-support
+Recommends: utopia-baseutils, lightdm | x-display-manager, vlc, iceweasel | firefox, google-chrome-stable, alsa-utils, fuse, gvfs, ntfs-3g, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, acpi-support, galculator
 Suggests: utopia-desktop-mate | utopia-desktop-cinnamon | utopia-desktop-kde | utopia-desktop-xfce | utopia-desktop-lxde, utopia-accessories, utopia-multimedia, utopia-network, utopia-office
 Architecture: all
 Description: Utopia Desktop Collection (meta-package)
@@ -16,16 +16,16 @@ Description: Utopia Desktop Collection (meta-package)
 
 Package: utopia-multimedia
 Depends: ${misc:Depends}, audacity, gimp
-Recommends: vlc-plugin-fluidsynth, vlc, browser-plugin-vlc, isomaster | acetoneiso, optipng | pngcrush, ffmpeg (>= 8:1.0.0), mediainfo, mediainfo-gui, puddletag
+Recommends: vlc-plugin-fluidsynth, vlc, browser-plugin-vlc, isomaster | acetoneiso, optipng | pngcrush, ffmpeg (>= 8:1.0.0), mediainfo, mediainfo-gui, puddletag, spek
 Suggests: inkscape, shutter, cheese, jpegoptim, audacious | amarok | rhythmbox | clementine
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  Pulls in some useful packages for working with media files (audio, video, and images).
 
 Package: utopia-accessories
-Depends: ${misc:Depends}, synaptic, gdebi | gdebi-kde, galculator, gparted
+Depends: ${misc:Depends}, synaptic, gdebi | gdebi-kde, gparted
 Recommends: geany | kate
-Suggests: ibus, simple-scan, xfburn | k3b | brasero, virtualbox-latest | virtualbox-qt, pdf-viewer
+Suggests: ibus, simple-scan
 Architecture: all
 Description: Utopia Utilities Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and administrative tasks.
@@ -41,31 +41,30 @@ Description: Utopia Utilities Collection (meta-package)
 Package: utopia-office
 Depends: ${misc:Depends}, libreoffice-writer | abiword, libreoffice-calc | gnumeric
 Recommends: hyphen-en-us, hunspell-en-us, mythes-en-us, browser-plugin-libreoffice, libreoffice-impress
-Suggests: libroeffice, goldendict, mail-reader, pdf-viewer
+Suggests: libreoffice, goldendict, mail-reader, pdf-viewer
 Architecture: all
 Description: Utopia Office Collection (meta-package)
  This meta-package will pull in useful office applications, such as a word processor, spreadsheet editor, and presentation program.
 
 Package: utopia-desktop-kde
 Depends: ${misc:Depends}, kde-runtime, kde-plasma-desktop | kde-plasma-netbook, konsole, kdeutils, kate, okular, ark, gwenview, kmix, ksnapshot
-Recommends: utopia-desktop (>= 0.2.0), amarok, libreoffice-kde, kget, krdc, kdenetwork-filesharing, kgamma, plasma-desktopthemes-artwork, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-nm | plasma-widget-networkmanagement, ktorrent | transmission-qt, gdebi-kde, iceweasel | chromium, kmag, kde-config-gtk-style, gtk2-engines-oxygen, gtk3-engines-oxygen, kdeartwork-wallpapers
+Recommends: utopia-desktop, amarok, libreoffice-kde, kget, krdc, kdenetwork-filesharing, kgamma, plasma-desktopthemes-artwork, k3b, ffmpegthumbs | mplayerthumbs, kcolorchooser, plasma-nm | plasma-widget-networkmanagement, ktorrent | transmission-qt, gdebi-kde, iceweasel | chromium, kmag, kde-config-gtk-style, gtk2-engines-oxygen, gtk3-engines-oxygen, kdeartwork-wallpapers
 Suggests: kmail, kopete, korganizer, kdegames, kdeartwork, kdepim, kdegraphics, skanlite, apper, kdeaccessibility, kdewebdev, kdemultimedia, kdenetwork
-Conflicts: utopia-desktop (<< 0.2.0)
 Architecture: all
 Description: Utopia Desktop Collection - KDE edition (meta-package)
  Utopia meta-package for pulling in KDE components.
 
 Package: utopia-baseutils
 Depends: ${misc:Depends}, nano, screen, git, htop, wget | curl, sudo, less, python, bind9-host, openssh-client
-Recommends: iptables, command-not-found, file, wget, screenfetch
-Suggests: mutt, fail2ban, weechat | irc, elinks | lynx | www-browser, utopia-devel, scrot
+Recommends: iptables, command-not-found, file, wget, screenfetch, scrot, rsync
+Suggests: elinks | lynx | www-browser, utopia-devel
 Architecture: all
 Description: Utopia Base Collection (meta-package)
  A collection of somewhat useful command-line utilities.
 
 Package: utopia-devel
 Depends: ${misc:Depends}, build-essential, devscripts, dos2unix, utopia-baseutils (>= 0.1.5), lsb-release
-Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip, rsync
+Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip
 Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick, bison, flex, xul-ext-webdeveloper
 Architecture: all
 Description: Utopia Developers Collection (meta-package)
@@ -73,7 +72,7 @@ Description: Utopia Developers Collection (meta-package)
  compiling software, and more.
 
 Package: utopia-desktop-mate
-Depends: ${misc:Depends}, mate-desktop-environment, galculator, utopia-desktop (>= 2014.08.14)
+Depends: ${misc:Depends}, mate-desktop-environment, galculator, utopia-desktop
 Recommends: mate-desktop-environment-extras, mintmenu (>= 5.5.8~), utopia-mate-defaults, dconf-editor, libreoffice-gtk
 Suggests: utopia-themes, caja-dropbox (>= 0.7.1~)
 Architecture: all
@@ -81,7 +80,7 @@ Description: Utopia Desktop Collection - MATE (meta-package)
  Utopia meta-package for pulling in a MATE desktop.
 
 Package: utopia-desktop-xfce
-Depends: ${misc:Depends}, xfce4, xfce4-terminal | x-terminal-emulator, utopia-desktop (>= 2014.08.14), mousepad, ristretto
+Depends: ${misc:Depends}, xfce4, xfce4-terminal | x-terminal-emulator, utopia-desktop, mousepad, ristretto
 Recommends: xfce4-goodies, gtk3-engines-xfce, xarchiver | file-roller, galculator, xfburn, xfce4-whiskermenu-plugin, libreoffice-gtk
 Suggests: abiword, gnumeric, gigolo
 Architecture: all
@@ -90,8 +89,8 @@ Description: Utopia Desktop Collection - Xfce (meta-package)
 
 Package: utopia-themes
 Depends: ${misc:Depends}, mint-x-icons, mint-themes, mint-themes-gtk3, ttf-ubuntu-font-family
-Recommends: mint-wallpapers-qiana, numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, numix-wallpaper-aurora, numix-gtk-theme | numix-kde-theme, numix-icon-theme
-Suggests: numix-wallpaper-kitty, numix-wallpaper-lightbulb, numix-wallpaper-mr-numix, numix-wallpaper-mesh, numix-wallpaper-simple-things, numix-wallpaper-winter-chill, lubuntu-icon-theme, lubuntu-artwork | ubuntu-wallpapers, mate-icon-theme-faenza | oxygen-icon-theme
+Recommends: mint-backgrounds-qiana, numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, numix-wallpaper-aurora, numix-gtk-theme | numix-kde-theme, numix-icon-theme
+Suggests: lubuntu-icon-theme
 Architecture: all
 Description: Utopia Themes Collection (meta-package)
  A collection of themes available for the Linux desktop.
@@ -103,3 +102,19 @@ Suggests: libdvdcss2, pepperflashplugin-nonfree, flashplugin-nonfree, dropbox
 Architecture: all
 Description: Utopia Desktop Collection - non-free components (meta-package)
  Non-free components for the Utopia Collection.
+
+Package: utopia-desktop-cinnamon
+Depends: ${misc:Depends}, utopia-desktop, cinnamon-core, mate-terminal | gnome-terminal | x-terminal-emulator
+Recommends: utopia-themes, cinnamon-themes, nemo-fileroller, pluma | gedit, utopia-cinnamon-defaults, baobab, dconf-editor | gconf-editor, eom, atril, mate-system-monitor | gnome-system-monitor
+Suggests: libreoffice-gnome, pidgin, brasero, mate-themes
+Architecture: all
+Description: Utopia Desktop - Cinnamon edition (meta-package)
+ This meta-package will pull in the Cinnamon Desktop Environment.
+
+Package: utopia-desktop-lxde
+Depends: ${misc:Depends}, lxde-core
+Recommends: lxde, lubuntu-artwork, utopia-desktop, lxtask
+Suggests: atril | pdf-viewer, xfburn, abiword
+Architecture: all
+Description: Utopia Desktop - LXDE edition (meta-package)
+ This meta-package will pull in an LXDE desktop.

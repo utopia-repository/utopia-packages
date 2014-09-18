@@ -1,9 +1,9 @@
 Package: utopia-network
 Source: utopia-desktop
-Version: 2014.09.04
+Version: 2014.09.11
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
-Installed-Size: 26
+Installed-Size: 27
 Depends: thunderbird | icedove | mail-reader, deluge | transmission-gtk | transmission-qt | transmission | ktorrent
 Recommends: xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, xul-ext-https-everywhere, iceweasel | firefox, google-chrome-stable
 Suggests: xul-ext-wot

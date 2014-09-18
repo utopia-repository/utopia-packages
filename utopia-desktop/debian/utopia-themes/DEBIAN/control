@@ -1,12 +1,12 @@
 Package: utopia-themes
 Source: utopia-desktop
-Version: 2014.09.04
+Version: 2014.09.11
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
-Installed-Size: 26
+Installed-Size: 27
 Depends: mint-x-icons, mint-themes, mint-themes-gtk3, ttf-ubuntu-font-family
-Recommends: mint-wallpapers-qiana, numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, numix-wallpaper-aurora, numix-gtk-theme | numix-kde-theme, numix-icon-theme
-Suggests: numix-wallpaper-kitty, numix-wallpaper-lightbulb, numix-wallpaper-mr-numix, numix-wallpaper-mesh, numix-wallpaper-simple-things, numix-wallpaper-winter-chill, lubuntu-icon-theme, lubuntu-artwork | ubuntu-wallpapers, mate-icon-theme-faenza | oxygen-icon-theme
+Recommends: mint-backgrounds-qiana, numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, numix-wallpaper-aurora, numix-gtk-theme | numix-kde-theme, numix-icon-theme
+Suggests: lubuntu-icon-theme
 Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages

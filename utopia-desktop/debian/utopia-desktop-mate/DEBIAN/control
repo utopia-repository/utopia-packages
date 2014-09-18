@@ -1,10 +1,10 @@
 Package: utopia-desktop-mate
 Source: utopia-desktop
-Version: 2014.09.04
+Version: 2014.09.11
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
-Installed-Size: 26
-Depends: mate-desktop-environment, galculator, utopia-desktop (>= 2014.08.14)
+Installed-Size: 27
+Depends: mate-desktop-environment, galculator, utopia-desktop
 Recommends: mate-desktop-environment-extras, mintmenu (>= 5.5.8~), utopia-mate-defaults, dconf-editor, libreoffice-gtk
 Suggests: utopia-themes, caja-dropbox (>= 0.7.1~)
 Section: misc

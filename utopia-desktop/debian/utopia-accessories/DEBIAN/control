@@ -1,12 +1,12 @@
 Package: utopia-accessories
 Source: utopia-desktop
-Version: 2014.09.04
+Version: 2014.09.11
 Architecture: all
 Maintainer: James Lu <glolol@overdrive.pw>
-Installed-Size: 26
-Depends: synaptic, gdebi | gdebi-kde, galculator, gparted
+Installed-Size: 27
+Depends: synaptic, gdebi | gdebi-kde, gparted
 Recommends: geany | kate
-Suggests: ibus, simple-scan, xfburn | k3b | brasero, virtualbox-latest | virtualbox-qt, pdf-viewer
+Suggests: ibus, simple-scan
 Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages

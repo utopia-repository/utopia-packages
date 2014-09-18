@@ -1,3 +1,16 @@
+utopia-desktop (2014.09.11) unstable; urgency=medium
+
+  * add utopia-desktop-lxde and utopia-desktop-cinnamon
+  * make utopia-desktop-* packages just depend on utopia-desktop (no version)
+  * utopia-office: s/libroeffice/libreoffice/
+  * utopia-multimedia: recommend spek
+  * utopia-baseutils: recommend scrot instead of suggesting it
+  * clean out suggests section for most packages
+  * utopia-themes: s/mint-wallpapers-qiana/mint-backgrounds-qiana/
+  * Be more verbose in changelog
+
+ -- James Lu <glolol@overdrive.pw>  Thu, 11 Sep 2014 21:10:53 -0700
+
 utopia-desktop (2014.09.04) unstable; urgency=medium
 
   * utopia-office: add pdf-viewer to suggests instead of recommends
