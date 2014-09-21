@@ -1,3 +1,4 @@
+# We only want sources, not binaries and build artifacts! ;)
 *.deb
 *.tar.xz
 *.tar.gz
@@ -5,3 +6,7 @@
 *.dsc
 *.debhelper.log
 *.substvars
+*.gz
+**/debian/*/
+**/files
+*~
