@@ -1,3 +1,12 @@
+utopia-meta (2014.09.27) unstable; urgency=medium
+
+  * utopia-multimedia: Fix dependency version for ffmpeg, move puddletag
+    to suggests due to large amount of required dependencies
+  * Add dependency packages thunderbird-icedove-compat and 
+    firefox-iceweasel-compat 
+
+ -- GLolol <gl@nucleus>  Sat, 27 Sep 2014 14:58:58 -0700
+
 utopia-meta (2014.09.18) unstable; urgency=medium
 
   * utopia-devel: add debhelper, depend on utopia-baseutils (any version)
