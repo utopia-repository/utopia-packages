@@ -1,3 +1,12 @@
+utopia-meta (2014.09.30) unstable; urgency=low
+
+  * utopia-devel: add python-tk, python, python3; move wireshark 
+    to utopia-network
+  * revert 'Add dependency packages thunderbird-icedove-compat and 
+    firefox-iceweasel-compat'
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 30 Sep 2014 18:32:04 -0700
+
 utopia-meta (2014.09.27) unstable; urgency=medium
 
   * utopia-multimedia: Fix dependency version for ffmpeg, move puddletag
@@ -5,7 +14,7 @@ utopia-meta (2014.09.27) unstable; urgency=medium
   * Add dependency packages thunderbird-icedove-compat and 
     firefox-iceweasel-compat 
 
- -- GLolol <gl@nucleus>  Sat, 27 Sep 2014 14:58:58 -0700
+ -- James Lu <glolol@overdrive.pw>  Sat, 27 Sep 2014 14:58:58 -0700
 
 utopia-meta (2014.09.18) unstable; urgency=medium
 

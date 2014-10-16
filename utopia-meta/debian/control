@@ -9,7 +9,7 @@ Maintainer: James Lu <glolol@overdrive.pw>
 Package: utopia-desktop
 Depends: ${misc:Depends}, desktop-base, lxterminal | x-terminal-emulator, xorg
 Recommends: utopia-baseutils, lightdm | x-display-manager, vlc, iceweasel | firefox, google-chrome-stable, alsa-utils, fuse, gvfs, ntfs-3g, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, acpi-support, galculator
-Suggests: utopia-desktop-mate | utopia-desktop-cinnamon | utopia-desktop-kde | utopia-desktop-xfce | utopia-desktop-lxde, utopia-accessories, utopia-multimedia, utopia-network, utopia-office
+Suggests: utopia-desktop-mate | utopia-desktop-cinnamon | utopia-desktop-lxde | utopia-desktop-kde | utopia-desktop-xfce, utopia-accessories, utopia-multimedia, utopia-network, utopia-office
 Breaks: xul-ext-ubufox, ubufox
 Architecture: all
 Description: Utopia Desktop Collection (meta-package)
@@ -32,9 +32,9 @@ Description: Utopia Utilities Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and administrative tasks.
 
 Package: utopia-network
-Depends: ${misc:Depends}, thunderbird-icedove-compat | icedove | mail-reader, deluge | transmission-gtk | transmission-qt | transmission | ktorrent
-Recommends: xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, xul-ext-https-everywhere, iceweasel | firefox-iceweasel-compat, google-chrome-stable
-Suggests: xul-ext-wot
+Depends: ${misc:Depends}, thunderbird | icedove | mail-reader, deluge | transmission-gtk | transmission-qt | transmission | ktorrent
+Recommends: xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, xul-ext-https-everywhere, iceweasel | firefox, google-chrome-stable
+Suggests: xul-ext-wot, wireshark
 Architecture: all
 Description: Utopia Utilities Collection (meta-package)
  This meta-package pulls in some utilities related to networking.
@@ -65,8 +65,8 @@ Description: Utopia Base Collection (meta-package)
 
 Package: utopia-devel
 Depends: ${misc:Depends}, build-essential, devscripts, dos2unix, utopia-baseutils, lsb-release
-Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip, debhelper
-Suggests: scons, tcpdump, cowbuilder, wireshark, imagemagick, bison, flex, xul-ext-webdeveloper
+Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip, debhelper, python, python3
+Suggests: scons, tcpdump, cowbuilder, imagemagick, bison, flex, python-tk
 Architecture: all
 Description: Utopia Developers Collection (meta-package)
  A collection of utilities to assist with system administration, 
@@ -120,25 +120,3 @@ Suggests: atril | pdf-viewer, xfburn, abiword
 Architecture: all
 Description: Utopia Desktop - LXDE edition (meta-package)
  This meta-package will pull in an LXDE desktop.
-
-Package: firefox-iceweasel-compat
-Priority: extra
-Depends: firefox, ${misc:Depends}
-Provides: iceweasel
-Conflicts: iceweasel
-Replaces: iceweasel
-Architecture: all
-Description: Iceweasel to Firefox compatibility meta-package
- This meta-package provides a dependency package from Iceweasel to Firefox, 
- for the sake of satisfying dependencies.
- 
-Package: thunderbird-icedove-compat
-Priority: extra
-Depends: thunderbird, ${misc:Depends}
-Provides: icedove
-Conflicts: icedove
-Replaces: icedove
-Architecture: all
-Description: Icedove to Thunderbird compatibility meta-package
- This meta-package provides a dependency package from Icedove to Thunderbird,
- for the sake of satisfying dependencies.
