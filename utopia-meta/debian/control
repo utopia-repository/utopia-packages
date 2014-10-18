@@ -65,7 +65,7 @@ Description: Utopia Base Collection (meta-package)
 
 Package: utopia-devel
 Depends: ${misc:Depends}, build-essential, devscripts, dos2unix, utopia-baseutils, lsb-release
-Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip, debhelper, python, python3
+Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip, debhelper, python, python3, optipng | pngcrush, jpegoptim
 Suggests: scons, tcpdump, cowbuilder, imagemagick, bison, flex, python-tk
 Architecture: all
 Description: Utopia Developers Collection (meta-package)
@@ -95,14 +95,6 @@ Suggests: lubuntu-icon-theme
 Architecture: all
 Description: Utopia Themes Collection (meta-package)
  A collection of themes available for the Linux desktop.
-
-Package: utopia-nonfree
-Depends: ${misc:Depends}
-Recommends: unrar | unrar-free | unar, rar, ttf-mscorefonts-installer
-Suggests: libdvdcss2, pepperflashplugin-nonfree, flashplugin-nonfree, dropbox
-Architecture: all
-Description: Utopia Desktop Collection - non-free components (meta-package)
- Non-free components for the Utopia Collection.
 
 Package: utopia-desktop-cinnamon
 Depends: ${misc:Depends}, utopia-desktop, cinnamon-core, mate-terminal | gnome-terminal | x-terminal-emulator

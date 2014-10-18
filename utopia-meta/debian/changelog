@@ -1,3 +1,10 @@
+utopia-meta (2014.10.18) unstable; urgency=low
+
+  * utopia-devel: add jpegoptim and optipng to recommends
+  * remove utopia-nonfree
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 18 Oct 2014 11:58:24 -0700
+
 utopia-meta (2014.09.30) unstable; urgency=low
 
   * utopia-devel: add python-tk, python, python3; move wireshark 
