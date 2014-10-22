@@ -112,3 +112,21 @@ Suggests: atril | pdf-viewer, xfburn, abiword
 Architecture: all
 Description: Utopia Desktop - LXDE edition (meta-package)
  This meta-package will pull in an LXDE desktop.
+
+Package: utopia-games
+Depends: ${misc:Depends}, figlet, cowsay
+Recommends: lolcat, toilet, fortune-mod, cmatrix, an, fortunes-debian-hints, polygen, polygen-data, bsdgames, fortunes, caca-utils, tint, nsnake, sudoku
+Suggests: games-console, pacman4console, freesweep
+Architecture: all
+Description: Utopia Games/Toys Collection (CLI)
+ This meta-package pulls in some interactive games/toys suitable for a
+ text-only/command line interface.
+ 
+Package: utopia-games-gui
+Depends: ${misc:Depends}, utopia-games
+Recommends: kapman, katomic, granatier, bovo, kbreakout, kdiamond, kfourinline, kgoldrunner, killbots, klickety, klines, knetwalk, kmines, kolf, kollision, konquest, kpat, kreversi, ktron, ksquares, ksudoku, kmahjongg, gweled, frozen-bubble, chromium-bsu, fillets-ng, pipenightdreams, lightsoff, lincity-ng
+Suggests: dosbox, the-powder-toy, kdegames, aisleriot, games-finest | games-finest-light
+Architecture: all
+Description: Utopia Games/Toys Collection (GUI)
+ This meta-package pulls in some interactive games/toys suitable for a
+ graphical user interface.
