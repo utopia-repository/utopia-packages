@@ -8,7 +8,7 @@ Maintainer: James Lu <glolol@overdrive.pw>
 
 Package: utopia-desktop
 Depends: ${misc:Depends}, desktop-base, lxterminal | x-terminal-emulator, xorg
-Recommends: utopia-baseutils, lightdm | x-display-manager, vlc, iceweasel | firefox, google-chrome-stable, alsa-utils, fuse, gvfs, ntfs-3g, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, acpi-support, galculator
+Recommends: utopia-baseutils, lightdm | x-display-manager, vlc, iceweasel | firefox, google-chrome-stable, alsa-utils, fuse, gvfs, ntfs-3g, eject, avahi-daemon, cups, cifs-utils, fonts-droid, fonts-liberation, fonts-dejavu, acpi-support, galculator, python-tk
 Suggests: utopia-desktop-mate | utopia-desktop-cinnamon | utopia-desktop-lxde | utopia-desktop-kde | utopia-desktop-xfce, utopia-accessories, utopia-multimedia, utopia-network, utopia-office
 Breaks: xul-ext-ubufox, ubufox
 Architecture: all
@@ -33,7 +33,7 @@ Description: Utopia Utilities Collection (meta-package)
 
 Package: utopia-network
 Depends: ${misc:Depends}, thunderbird | icedove | mail-reader, deluge | transmission-gtk | transmission-qt | transmission | ktorrent
-Recommends: xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, xul-ext-https-everywhere, iceweasel | firefox, google-chrome-stable
+Recommends: xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, xul-ext-https-everywhere, iceweasel | firefox, google-chrome-stable, hexchat
 Suggests: xul-ext-wot, wireshark
 Architecture: all
 Description: Utopia Utilities Collection (meta-package)
@@ -66,7 +66,7 @@ Description: Utopia Base Collection (meta-package)
 Package: utopia-devel
 Depends: ${misc:Depends}, build-essential, devscripts, dos2unix, utopia-baseutils, lsb-release
 Recommends: bash-completion, iftop, cmake, convmv, pkg-config, hwinfo, finger, traceroute, deborphan, nmap, mtr | mtr-tiny, iotop, automake, python-pip, debhelper, python, python3, optipng | pngcrush, jpegoptim
-Suggests: scons, tcpdump, cowbuilder, imagemagick, bison, flex, python-tk
+Suggests: scons, tcpdump, cowbuilder, imagemagick, bison, flex
 Architecture: all
 Description: Utopia Developers Collection (meta-package)
  A collection of utilities to assist with system administration, 
@@ -75,7 +75,7 @@ Description: Utopia Developers Collection (meta-package)
 Package: utopia-desktop-mate
 Depends: ${misc:Depends}, mate-desktop-environment, galculator, utopia-desktop
 Recommends: mate-desktop-environment-extras, mintmenu (>= 5.5.8~), utopia-mate-defaults, dconf-editor, libreoffice-gtk
-Suggests: utopia-themes, caja-dropbox (>= 0.7.1~)
+Suggests: utopia-themes
 Architecture: all
 Description: Utopia Desktop Collection - MATE (meta-package)
  Utopia meta-package for pulling in a MATE desktop.
@@ -83,7 +83,7 @@ Description: Utopia Desktop Collection - MATE (meta-package)
 Package: utopia-desktop-xfce
 Depends: ${misc:Depends}, xfce4, xfce4-terminal | x-terminal-emulator, utopia-desktop, mousepad, ristretto
 Recommends: xfce4-goodies, gtk3-engines-xfce, xarchiver | file-roller, galculator, xfburn, xfce4-whiskermenu-plugin, libreoffice-gtk
-Suggests: abiword, gnumeric, gigolo
+Suggests: gigolo
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (meta-package)
  Utopia meta-package for pulling in an Xfce desktop.
@@ -99,7 +99,7 @@ Description: Utopia Themes Collection (meta-package)
 Package: utopia-desktop-cinnamon
 Depends: ${misc:Depends}, utopia-desktop, cinnamon-core, mate-terminal | gnome-terminal | x-terminal-emulator
 Recommends: utopia-themes, cinnamon-themes, nemo-fileroller, pluma | gedit, utopia-cinnamon-defaults, baobab, dconf-editor | gconf-editor, eom, atril, mate-system-monitor | gnome-system-monitor
-Suggests: libreoffice-gnome, pidgin, brasero, mate-themes
+Suggests: libreoffice-gnome, brasero, mate-themes
 Breaks: nautilus
 Architecture: all
 Description: Utopia Desktop - Cinnamon edition (meta-package)
@@ -108,7 +108,7 @@ Description: Utopia Desktop - Cinnamon edition (meta-package)
 Package: utopia-desktop-lxde
 Depends: ${misc:Depends}, lxde-core
 Recommends: lxde, lubuntu-artwork, utopia-desktop, lxtask
-Suggests: atril | pdf-viewer, xfburn, abiword
+Suggests: evince-gtk | atril | pdf-viewer, xfburn
 Architecture: all
 Description: Utopia Desktop - LXDE edition (meta-package)
  This meta-package will pull in an LXDE desktop.
@@ -123,10 +123,18 @@ Description: Utopia Games/Toys Collection (CLI)
  text-only/command line interface.
  
 Package: utopia-games-gui
-Depends: ${misc:Depends}, utopia-games
-Recommends: kapman, katomic, granatier, bovo, kbreakout, kdiamond, kfourinline, kgoldrunner, killbots, klickety, klines, knetwalk, kmines, kolf, kollision, konquest, kpat, kreversi, ktron, ksquares, ksudoku, kmahjongg, gweled, frozen-bubble, chromium-bsu, fillets-ng, pipenightdreams, lightsoff, lincity-ng
-Suggests: dosbox, the-powder-toy, kdegames, aisleriot, games-finest | games-finest-light
+Depends: ${misc:Depends}, utopia-games, kpat | aisleriot, chromium-bsu, kmines | gnome-mines, kblocks | quadrapassel
+Recommends: knetwalk, kollision, lightsoff, granatier, bovo, kbreakout, kdiamond, klickety, kreversi, ktron, ksquares, ksudoku | gnome-sudoku, neverball, neverputt, supertux
+Suggests: dosbox, the-powder-toy, kapman, katomic | atomix, lincity-ng, gnome-tetravex, kolf, klines | five-or-more
 Architecture: all
 Description: Utopia Games/Toys Collection (GUI)
  This meta-package pulls in some interactive games/toys suitable for a
  graphical user interface.
+ 
+Package: utopia-games-extras
+Depends: ${misc:Depends}, utopia-games-gui, kdegames | gnome-games
+Recommends: games-finest | games-finest-light
+Architecture: all
+Description: Utopia Games/Toys Collection (extras)
+ This meta-package pulls in even more games for a graphical user
+ interface.

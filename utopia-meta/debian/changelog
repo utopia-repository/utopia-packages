@@ -1,3 +1,10 @@
+utopia-meta (2014.10.24) unstable; urgency=low
+
+  * Split utopia-games-gui into utopia-games-gui and utopia-games-extras
+  * Minor changes to other meta-packages
+
+ -- James Lu <GLolol@overdrive.pw>  Fri, 24 Oct 2014 20:07:23 -0700
+
 utopia-meta (2014.10.21) unstable; urgency=low
 
   * Add utopia-games and utopia-games-gui
