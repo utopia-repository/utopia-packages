@@ -125,7 +125,7 @@ Description: Utopia Games/Toys Collection (CLI)
 Package: utopia-games-gui
 Depends: ${misc:Depends}, utopia-games, kpat | aisleriot, chromium-bsu, kmines | gnome-mines, kblocks | quadrapassel
 Recommends: knetwalk, kollision, lightsoff, granatier, bovo, kbreakout, kdiamond, klickety, kreversi, ktron, ksquares, ksudoku | gnome-sudoku, neverball, neverputt, supertux
-Suggests: dosbox, the-powder-toy, kapman, katomic | atomix, lincity-ng, gnome-tetravex, kolf, klines | five-or-more
+Suggests: the-powder-toy, frozen-bubble, katomic | atomix, lincity-ng, gnome-tetravex, kolf, klines | five-or-more
 Architecture: all
 Description: Utopia Games/Toys Collection (GUI)
  This meta-package pulls in some interactive games/toys suitable for a
