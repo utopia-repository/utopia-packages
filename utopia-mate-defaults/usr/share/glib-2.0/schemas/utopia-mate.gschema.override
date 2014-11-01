@@ -2,9 +2,8 @@
 gtk-key-theme='Default'
 gtk-theme='Mint-X'
 icon-theme='Mint-X'
-menus-have-icons=true
 toolkit-accessibility=false
-font-name="Ubuntu 11"
+font-name="Sans 10"
 monospace-font-name="Monospace 11"
 document-font-name="Sans 10"
 
