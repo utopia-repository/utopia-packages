@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages
 Build-Depends: debhelper (>=9)
-Standards-Version: 3.9.4
+Standards-Version: 3.9.6
 Maintainer: James Lu <glolol@overdrive.pw>
 
 Package: utopia-desktop
@@ -16,8 +16,8 @@ Description: Utopia Desktop Collection (meta-package)
  A collection of mostly desktop-independent GUI applications.
 
 Package: utopia-multimedia
-Depends: ${misc:Depends}, audacity, gimp
-Recommends: vlc-plugin-fluidsynth, vlc, browser-plugin-vlc, isomaster | acetoneiso, optipng | pngcrush, ffmpeg (>= 7:1.0.0), mediainfo, mediainfo-gui, spek
+Depends: ${misc:Depends}
+Recommends: vlc-plugin-fluidsynth, vlc, browser-plugin-vlc, isomaster | acetoneiso, optipng | pngcrush, ffmpeg (>= 7:1.0.0), mediainfo, mediainfo-gui, spek, audacity, gimp
 Suggests: inkscape, shutter, cheese, jpegoptim, audacious | amarok | rhythmbox | clementine, puddletag
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
@@ -32,8 +32,8 @@ Description: Utopia Utilities Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and administrative tasks.
 
 Package: utopia-network
-Depends: ${misc:Depends}, thunderbird | icedove | mail-reader, deluge | transmission-gtk | transmission-qt | transmission | ktorrent
-Recommends: xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, xul-ext-https-everywhere, iceweasel | firefox, google-chrome-stable, hexchat
+Depends: ${misc:Depends}
+Recommends: xul-ext-adblock-plus-element-hiding-helper, xul-ext-adblock-plus, xul-ext-https-everywhere, iceweasel | firefox, google-chrome-stable, hexchat, thunderbird | icedove, deluge | transmission
 Suggests: xul-ext-wot, wireshark
 Architecture: all
 Description: Utopia Utilities Collection (meta-package)
@@ -90,7 +90,7 @@ Description: Utopia Desktop Collection - Xfce (meta-package)
 
 Package: utopia-themes
 Depends: ${misc:Depends}, mint-x-icons, mint-themes, mint-themes-gtk3, ttf-ubuntu-font-family
-Recommends: mint-backgrounds-qiana, numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, numix-wallpaper-aurora, numix-gtk-theme | numix-kde-theme, numix-icon-theme
+Recommends: mint-backgrounds-qiana, numix-icon-theme-bevel, numix-icon-theme-circle, numix-icon-theme-shine, numix-icon-theme-utouch, numix-gtk-theme, numix-icon-theme, faba-colors, faba-mono-icons
 Suggests: lubuntu-icon-theme
 Architecture: all
 Description: Utopia Themes Collection (meta-package)
@@ -115,8 +115,8 @@ Description: Utopia Desktop - LXDE edition (meta-package)
 
 Package: utopia-games
 Depends: ${misc:Depends}, figlet, cowsay
-Recommends: lolcat, toilet, fortune-mod, cmatrix, an, fortunes-debian-hints, polygen, polygen-data, bsdgames, fortunes, caca-utils, tint, nsnake, sudoku
-Suggests: games-console, pacman4console, freesweep
+Recommends: lolcat, toilet, fortune-mod, cmatrix, an, fortunes-debian-hints, polygen, polygen-data, bsdgames, fortunes, caca-utils
+Suggests: pacman4console, freesweep, tint, nsnake, sudoku
 Architecture: all
 Description: Utopia Games/Toys Collection (CLI)
  This meta-package pulls in some interactive games/toys suitable for a
