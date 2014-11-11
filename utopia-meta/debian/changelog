@@ -1,3 +1,11 @@
+utopia-meta (2014.11.11) unstable; urgency=medium
+
+  * Drop unused packages for xfce/kde.
+  * Add utopia-devel-gui
+  * Refresh utopia-desktop-lxde
+
+ -- James Lu <GLolol@overdrive.pw>  Tue, 11 Nov 2014 11:35:20 -0800
+
 utopia-meta (2014.11.05) unstable; urgency=low
 
   * utopia-multimedia/utopia-network: bump down packages in depends to recommends
