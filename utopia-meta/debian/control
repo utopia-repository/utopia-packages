@@ -74,8 +74,8 @@ Description: Utopia Development Collection (GUI)
 
 Package: utopia-desktop-mate
 Depends: ${misc:Depends}, mate-desktop-environment, galculator, utopia-desktop
-Recommends: mate-desktop-environment-extras, mintmenu (>= 5.5.8~), utopia-mate-defaults, dconf-editor, libreoffice-gtk
-Suggests: utopia-themes
+Recommends: mintmenu (>= 5.5.8~), utopia-mate-defaults, dconf-editor | dconf-tools, mozo, caja-open-terminal, caja-gksu, mate-netspeed, caja-share
+Suggests: utopia-themes, mate-desktop-environment-extras
 Architecture: all
 Description: Utopia Desktop Collection - MATE (meta-package)
  Utopia meta-package for pulling in a MATE desktop.
