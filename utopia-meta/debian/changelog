@@ -1,3 +1,11 @@
+utopia-meta (2014.11.18) unstable; urgency=medium
+
+  * utopia-desktop-mate: remove libreoffice-gtk, recommend dconf-editor | dconf-tools
+  * utopia-desktop-mate: recommend mozo, caja-open-terminal, caja-gksu, mate-netspeed, caja-share
+  * utopia-desktop-mate: Suggest mate-desktop-environment-extras
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 18 Nov 2014 18:32:01 -0800
+
 utopia-meta (2014.11.11) unstable; urgency=medium
 
   * Drop unused packages for xfce/kde.
