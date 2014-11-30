@@ -1,7 +1,25 @@
+utopia-meta (2014.11.29) unstable; urgency=medium
+
+  * utopia-desktop-cinnamon: demote nemo-fileroller to suggests
+  * utopia-desktop: depend on utopia-baseutils, recommend utopia-accessories
+  * utopia-desktop-lxde: depend on utopia-desktop
+  * utopia-accessories: add galculator and baobab, removing it from other
+    packages
+  * utopia-multimedia: recommend audacious
+  * clean up utopia-games-gui, utopia-network, and utopia-themes
+  * drop utopia-games-extras
+  * utopia-desktop: get rid of references to non-essential desktop components 
+    (media players, web browsers, etc) since this should be used as 
+    a common package
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 29 Nov 2014 21:39:05 -0800
+
 utopia-meta (2014.11.18) unstable; urgency=medium
 
-  * utopia-desktop-mate: remove libreoffice-gtk, recommend dconf-editor | dconf-tools
-  * utopia-desktop-mate: recommend mozo, caja-open-terminal, caja-gksu, mate-netspeed, caja-share
+  * utopia-desktop-mate: remove libreoffice-gtk, 
+    recommend dconf-editor | dconf-tools
+  * utopia-desktop-mate: recommend mozo, caja-open-terminal, caja-gksu, 
+    mate-netspeed, caja-share
   * utopia-desktop-mate: Suggest mate-desktop-environment-extras
 
  -- James Lu <glolol@overdrive.pw>  Tue, 18 Nov 2014 18:32:01 -0800
@@ -16,7 +34,8 @@ utopia-meta (2014.11.11) unstable; urgency=medium
 
 utopia-meta (2014.11.05) unstable; urgency=low
 
-  * utopia-multimedia/utopia-network: bump down packages in depends to recommends
+  * utopia-multimedia/utopia-network: bump down packages in depends to 
+    recommends
   * utopia-games: move nsnake, sudoku to suggests; remove games-console
   * clean up utopia-themes, recommend faba-colors, faba-mono-icons
   * Update Standards-Version to 3.9.6. 
@@ -70,7 +89,8 @@ utopia-meta (2014.09.27) unstable; urgency=medium
 utopia-meta (2014.09.18) unstable; urgency=medium
 
   * utopia-devel: add debhelper, depend on utopia-baseutils (any version)
-  * utopia-desktop-cinnamon: add breaks for nautilus so it doesn't get pulled in with nemo-fileroller
+  * utopia-desktop-cinnamon: add breaks for nautilus so it doesn't get 
+    pulled in with nemo-fileroller
   * utopia-desktop: add breaks for xul-ext-ubufox, ubufox
   * rename source package to utopia-meta
 
@@ -97,7 +117,8 @@ utopia-desktop (2014.09.04) unstable; urgency=medium
 
 utopia-desktop (2014.09.01) unstable; urgency=medium
 
-  * Split utopia-desktop into utopia-accessories, utopia-multimedia, utopia-network, utopia-office
+  * Split utopia-desktop into utopia-accessories, utopia-multimedia, 
+    utopia-network, utopia-office
   * Remove utopia-task-ibus
 
  -- James Lu <glolol@overdrive.pw>  Mon, 01 Sep 2014 17:55:32 -0700
@@ -196,7 +217,8 @@ utopia-desktop (0.2.0) utopia; urgency=low
 
 utopia-desktop (0.1.1) utopia; urgency=low
 
-  * Remove alacarte (older versions in repos still list gnome-panel as a dependency, which pulls in an entire gnome desktop!)
+  * Remove alacarte (older versions in repos still list gnome-panel as a 
+    dependency, which pulls in an entire gnome desktop!)
   * Add font packages and shuffle some other things
 
  -- James Lu <glolol@overdrive.pw>  Sat, 19 Jul 2014 17:34:00 -0700
