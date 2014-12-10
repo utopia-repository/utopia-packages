@@ -38,9 +38,8 @@ Description: Utopia Desktop Collection (common files)
 
 Package: utopia-multimedia
 Depends: ${misc:Depends}
-Recommends: vlc-plugin-fluidsynth,
- vlc, browser-plugin-vlc,
- isomaster | acetoneiso,
+Recommends: vlc, browser-plugin-vlc,
+ isomaster,
  optipng | pngcrush,
  ffmpeg (>= 7:1.0.0),
  mediainfo,
@@ -48,11 +47,13 @@ Recommends: vlc-plugin-fluidsynth,
  spek,
  audacity,
  gimp,
- audacious
+ audacious,
+ gimp-plugin-registry,
+ jpegoptim
 Suggests: inkscape,
  cheese,
- jpegoptim,
- puddletag
+ puddletag,
+ vlc-plugin-fluidsynth
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  Pulls in some useful packages for working with media files 
@@ -147,7 +148,8 @@ Recommends:
  python,
  python3,
  optipng | pngcrush,
- jpegoptim
+ jpegoptim,
+ graphviz
 Suggests: scons,
  tcpdump,
  cowbuilder,
@@ -165,7 +167,10 @@ Depends: ${misc:Depends},
  utopia-devel,
  gitg | qgit | tig | gitk,
  utopia-accessories
-Recommends: python-tk, python3-tk
+Recommends: python-tk, python3-tk,
+ geany-plugin-markdown,
+ geany-plugin-spellcheck,
+ geany-plugin-lipsum
 Architecture: all
 Description: Utopia Development Collection (GUI)
  A collection of GUI utilities to assist with system administration,

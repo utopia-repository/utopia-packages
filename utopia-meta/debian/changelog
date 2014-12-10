@@ -1,3 +1,14 @@
+utopia-meta (2014.12.09) unstable; urgency=low
+
+  * utopia-devel-gui: add plugins for geany
+  * utopia-devel: graphviz recommend graphviz
+  * utopia-multimedia: add plugins for gimp, 
+    demote vlc-plugin-fluidsynth to suggests (very big
+    download)
+  * utopia-multimedia: remove acetoneiso, recommend jpegoptim
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 09 Dec 2014 17:11:27 -0800
+
 utopia-meta (2014.11.29) unstable; urgency=medium
 
   * utopia-desktop-cinnamon: demote nemo-fileroller to suggests
