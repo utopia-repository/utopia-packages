@@ -1,3 +1,11 @@
+utopia-meta (2014.12.14) unstable; urgency=low
+
+  * utopia-devel: add debootstrap, debtree, libssl-dev, yasm
+  * utopia-devel: promote debhelper, automake to depends
+  * utopia-baseutils: add iftop, traceroute, depend on bind9-host | host
+
+ -- James Lu <glolol@overdrive.pw>  Sun, 14 Dec 2014 11:14:37 -0800
+
 utopia-meta (2014.12.09) unstable; urgency=low
 
   * utopia-devel-gui: add plugins for geany

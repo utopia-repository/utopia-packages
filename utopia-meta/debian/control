@@ -7,9 +7,9 @@ Standards-Version: 3.9.6
 Maintainer: James Lu <glolol@overdrive.pw>
 
 Package: utopia-desktop
-Depends: ${misc:Depends}, 
- desktop-base, 
- lxterminal | x-terminal-emulator, 
+Depends: ${misc:Depends},
+ desktop-base,
+ lxterminal | x-terminal-emulator,
  xorg,
  utopia-baseutils
 Recommends: lightdm | x-display-manager,
@@ -56,7 +56,7 @@ Suggests: inkscape,
  vlc-plugin-fluidsynth
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
- Pulls in some useful packages for working with media files 
+ Pulls in some useful packages for working with media files
  (audio, video, and images).
 
 Package: utopia-accessories
@@ -68,7 +68,7 @@ Recommends: geany | kate, galculator
 Suggests: ibus, simple-scan, baobab
 Architecture: all
 Description: Utopia Utilities Collection (meta-package)
- This meta-package pulls in some useful accessories for daily use and 
+ This meta-package pulls in some useful accessories for daily use and
  administrative tasks.
 
 Package: utopia-network
@@ -94,7 +94,7 @@ Recommends: hyphen-en-us,
 Suggests: libreoffice
 Architecture: all
 Description: Utopia Office Collection (meta-package)
- This meta-package will pull in useful office applications, such as a 
+ This meta-package will pull in useful office applications, such as a
  word processor, spreadsheet editor, and presentation program.
 
 Package: utopia-baseutils
@@ -107,8 +107,9 @@ Depends: ${misc:Depends},
  sudo,
  less,
  python,
- bind9-host,
- openssh-client
+ bind9-host | host,
+ openssh-client,
+ traceroute
 Recommends: iptables,
  command-not-found,
  file,
@@ -116,8 +117,10 @@ Recommends: iptables,
  screenfetch,
  scrot,
  rsync,
- tree
-Suggests: elinks | lynx | www-browser, utopia-devel
+ tree,
+ iftop
+Suggests: elinks | lynx | www-browser,
+ utopia-devel
 Architecture: all
 Description: Utopia Base Collection (meta-package)
  A collection of somewhat useful command-line utilities.
@@ -128,35 +131,38 @@ Depends: ${misc:Depends},
  devscripts,
  dos2unix,
  utopia-baseutils,
- lsb-release
+ lsb-release,
+ automake,
+ debhelper
 Recommends:
  bash-completion,
- iftop,
  cmake,
  convmv,
  pkg-config,
  hwinfo,
  finger,
- traceroute,
  deborphan,
  nmap,
  mtr | mtr-tiny,
  iotop,
- automake,
  python-pip,
- debhelper,
  python,
  python3,
  optipng | pngcrush,
  jpegoptim,
- graphviz
+ graphviz,
+ debootstrap,
+ debtree,
+ apt-rdepends
 Suggests: scons,
  tcpdump,
  cowbuilder,
  imagemagick,
  bison,
  flex,
- debian-security-support
+ debian-security-support,
+ libssl-dev,
+ yasm
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  A collection of utilities to assist with system administration,
@@ -279,10 +285,10 @@ Recommends: lolcat,
  bsdgames,
  fortunes,
  caca-utils
-Suggests: pacman4console, 
- freesweep, 
- tint, 
- nsnake, 
+Suggests: pacman4console,
+ freesweep,
+ tint,
+ nsnake,
  sudoku
 Architecture: all
 Description: Utopia Games/Toys Collection (CLI)
