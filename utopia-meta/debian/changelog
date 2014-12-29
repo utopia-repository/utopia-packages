@@ -1,3 +1,12 @@
+utopia-meta (2014.12.28) unstable; urgency=low
+
+  * utopia-devel: recommend ruby-dev, python-dev, python3-dev, quilt
+  * utopia-devel-gui: suggest libgtk2.0-dev, libgtk-3-dev
+  * utopia-themes: stop recommending wallpaper packages, recommend numix*
+  * utopia-desktop-lxde: demote xfburn to suggests 
+
+ -- James Lu <glolol@overdrive.pw>  Sun, 28 Dec 2014 18:15:09 -0800
+
 utopia-meta (2014.12.14) unstable; urgency=low
 
   * utopia-devel: add debootstrap, debtree, libssl-dev, yasm

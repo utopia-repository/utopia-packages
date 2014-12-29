@@ -146,14 +146,16 @@ Recommends:
  mtr | mtr-tiny,
  iotop,
  python-pip,
- python,
- python3,
  optipng | pngcrush,
  jpegoptim,
  graphviz,
  debootstrap,
  debtree,
- apt-rdepends
+ apt-rdepends,
+ ruby-dev,
+ python-dev,
+ python3-dev,
+ quilt
 Suggests: scons,
  tcpdump,
  cowbuilder,
@@ -177,6 +179,8 @@ Recommends: python-tk, python3-tk,
  geany-plugin-markdown,
  geany-plugin-spellcheck,
  geany-plugin-lipsum
+Suggests: libgtk2.0-dev,
+ libgtk-3-dev
 Architecture: all
 Description: Utopia Development Collection (GUI)
  A collection of GUI utilities to assist with system administration,
@@ -205,7 +209,7 @@ Depends: ${misc:Depends},
  mint-themes,
  mint-themes-gtk3,
  ttf-ubuntu-font-family
-Recommends: mint-backgrounds-qiana,
+Recommends:
  numix-icon-theme-bevel,
  numix-icon-theme-circle,
  numix-gtk-theme,
@@ -256,17 +260,16 @@ Recommends: engrampa,
  xfce4-screenshooter,
  evince-gtk | atril,
  lxtask,
- xfburn,
  wicd | network-manager-gnome,
  lubuntu-artwork,
- utopia-themes,
  libfm-tools | lxshortcut,
  xfwm4
 Suggests:
  utopia-office,
  usermode,
  gnome-disk-utility,
- gnome-system-tools
+ gnome-system-tools,
+ xfburn
 Architecture: all
 Description: Utopia Desktop Collection - LXDE (meta-package)
  This meta-package will pull in an LXDE desktop.
