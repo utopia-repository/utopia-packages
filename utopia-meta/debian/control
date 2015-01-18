@@ -39,7 +39,6 @@ Description: Utopia Desktop Collection (common files)
 Package: utopia-multimedia
 Depends: ${misc:Depends}
 Recommends: vlc, browser-plugin-vlc,
- isomaster,
  optipng | pngcrush,
  ffmpeg (>= 7:1.0.0),
  mediainfo,
@@ -53,7 +52,8 @@ Recommends: vlc, browser-plugin-vlc,
 Suggests: inkscape,
  cheese,
  puddletag,
- vlc-plugin-fluidsynth
+ vlc-plugin-fluidsynth,
+ isomaster,
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  Pulls in some useful packages for working with media files
@@ -65,7 +65,7 @@ Depends: ${misc:Depends},
  gdebi | gdebi-kde,
  gparted
 Recommends: geany | kate, galculator
-Suggests: ibus, simple-scan, baobab
+Suggests: ibus, simple-scan, baobab, vinagre
 Architecture: all
 Description: Utopia Utilities Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
@@ -118,7 +118,8 @@ Recommends: iptables,
  scrot,
  rsync,
  tree,
- iftop
+ iftop,
+ utopia-keyring
 Suggests: elinks | lynx | www-browser,
  utopia-devel
 Architecture: all
@@ -153,8 +154,6 @@ Recommends:
  debtree,
  apt-rdepends,
  ruby-dev,
- python-dev,
- python3-dev,
  quilt
 Suggests: scons,
  tcpdump,
@@ -189,7 +188,7 @@ Description: Utopia Development Collection (GUI)
 Package: utopia-desktop-mate
 Depends: ${misc:Depends},
  mate-desktop-environment,
- utopia-desktop
+ utopia-desktop,
 Recommends: mintmenu (>= 5.5.8~),
  utopia-mate-defaults,
  dconf-editor | dconf-tools,
@@ -197,7 +196,8 @@ Recommends: mintmenu (>= 5.5.8~),
  caja-open-terminal,
  caja-gksu,
  mate-netspeed,
- caja-share
+ caja-share,
+ mate-system-tools
 Suggests: utopia-themes, mate-desktop-environment-extras
 Architecture: all
 Description: Utopia Desktop Collection - MATE (meta-package)
@@ -212,10 +212,7 @@ Depends: ${misc:Depends},
 Recommends:
  numix-icon-theme-bevel,
  numix-icon-theme-circle,
- numix-gtk-theme,
- numix-icon-theme,
- faba-colors,
- faba-mono-icons
+ numix-gtk-theme
 Suggests: lubuntu-icon-theme
 Architecture: all
 Description: Utopia Themes Collection (meta-package)
@@ -225,20 +222,22 @@ Package: utopia-desktop-cinnamon
 Depends: ${misc:Depends},
  utopia-desktop,
  cinnamon-core,
- mate-terminal
+ mate-terminal | gnome-terminal | x-terminal-emulator,
+ eog,
+ evince | evince-gtk
 Recommends: utopia-themes,
  cinnamon-themes,
- pluma | gedit,
  utopia-cinnamon-defaults,
  dconf-editor | gconf-editor,
- eom,
- atril,
- mate-system-monitor | gnome-system-monitor
-Suggests: brasero,
+ gnome-system-monitor | mate-system-monitor,
  nemo-fileroller,
-Breaks: nautilus,
- gnome-terminal (>= 3.7~),
- file-roller (>= 3.12~)
+ gnome-screenshot,
+ gnome-font-viewer,
+ baobab,
+ gnome-system-log
+Suggests: brasero,
+ gedit | pluma
+Breaks: nautilus
 Architecture: all
 Description: Utopia Desktop - Cinnamon edition (meta-package)
  This meta-package will pull in the Cinnamon Desktop Environment.
@@ -249,10 +248,16 @@ Depends: ${misc:Depends},
  gpicview,
  lxappearance,
  lxappearance-obconf,
+ obconf,
  lxterminal,
- utopia-desktop
-Recommends: engrampa,
+ utopia-desktop,
  lxinput,
+ lxsession
+Recommends: engrampa | xarchiver | file-roller,
+# lxsession-edit and lxpolkit are merged into lxsession in jessie+, but
+# I'm keeping them here for compatibility with wheezy
+ lxsession-edit,
+ lxpolkit,
  lxrandr,
  leafpad,
  volumeicon-alsa,
@@ -263,13 +268,13 @@ Recommends: engrampa,
  wicd | network-manager-gnome,
  lubuntu-artwork,
  libfm-tools | lxshortcut,
- xfwm4
 Suggests:
  utopia-office,
  usermode,
  gnome-disk-utility,
  gnome-system-tools,
- xfburn
+ xfburn,
+ xfwm4
 Architecture: all
 Description: Utopia Desktop Collection - LXDE (meta-package)
  This meta-package will pull in an LXDE desktop.

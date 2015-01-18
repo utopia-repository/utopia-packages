@@ -1,3 +1,1 @@
-Utopia collection - meta-packages to pull in utilities and desktop applications (mostly) for my personal use.
-
-Read more at http://packages.overdrive.pw/
+This repository contains Debian meta-packages used to pull in utilities and desktop applications for my personal use. It makes life much easier than selecting 30 packages!
