@@ -1,0 +1,24 @@
+[org.cinnamon.desktop.interface]
+gtk-key-theme='Default'
+gtk-theme='Adwaita'
+icon-theme='Mint-X-Aqua'
+font-name="Ubuntu 11"
+
+[org.cinnamon.desktop.wm.preferences]
+theme='Adwaita'
+num-workspaces=1
+titlebar-font="Ubuntu Medium 11"
+titlebar-uses-system-font=false
+
+[org.cinnamon]
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:2:panel-launchers@cinnamon.org:2', 'panel1:left:3:window-list@cinnamon.org:3', 'panel1:right:9:show-desktop@cinnamon.org:1', 'panel1:right:0:notifications@cinnamon.org:4', 'panel1:right:1:user@cinnamon.org:5', 'panel1:right:2:removable-drives@cinnamon.org:6', 'panel1:right:3:keyboard@cinnamon.org:7', 'panel1:right:4:network@cinnamon.org:9', 'panel1:right:5:sound@cinnamon.org:10', 'panel1:right:6:power@cinnamon.org:11', 'panel1:right:7:calendar@cinnamon.org:13', 'panel1:right:8:windows-quick-list@cinnamon.org:14']
+number-workspaces=1
+panel-bottom-height=32
+panel-resizable=true
+panel-scale-text-icons=true
+
+[org.cinnamon.theme]
+name="Linux Mint"
+
+[org.cinnamon.settings-daemon.peripherals.keyboard]
+numlock-state="on"

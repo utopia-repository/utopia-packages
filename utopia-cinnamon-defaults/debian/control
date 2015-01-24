@@ -1,0 +1,13 @@
+Source: utopia-cinnamon-defaults
+Section: x11
+Priority: optional
+Maintainer: James Lu <glolol@overdrive.pw>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/GLolol/utopia-packages
+
+Package: utopia-cinnamon-defaults
+Architecture: all
+Depends: ${misc:Depends}, utopia-themes, cinnamon-themes
+Description: Utopia Desktop Defaults (Cinnamon Desktop)
+ This package contains customized defaults for the Cinnamon Desktop.
