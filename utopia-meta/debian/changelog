@@ -1,3 +1,19 @@
+utopia-meta (2015.01.24) unstable; urgency=low
+
+  * utopia-desktop-cinnamon:
+      - Recommend gnome-nettool, gnome-disk-utility
+      - Drop gconf-editor, recommend dconf-editor | dconf-tools
+      - Prefer gnome-terminal (patched version with transparency)
+        over mate-terminal
+      - Tighten dependencies on cinnamon >=2.4
+      - Add extensions for nemo
+  * utopia-desktop: move display manager to depends
+  * utopia-desktop-lxde: prefer xarchiver over engrampa/file-roller
+  * utopia-baseutils: depend on wget and curl
+  * utopia-devel-gui: suggest meld, a graphical diff viewer
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 24 Jan 2015 22:30:17 -0800
+
 utopia-meta (2015.01.17+1) unstable; urgency=medium
 
   * utopia-desktop-cinnamon: add gnome-system-log, not gnome-system-tools

@@ -22,3 +22,6 @@ name="Linux Mint"
 
 [org.cinnamon.settings-daemon.peripherals.keyboard]
 numlock-state="on"
+
+[org.cinnamon.desktop.default-applications.terminal]
+exec='x-terminal-emulator'

@@ -1,3 +1,11 @@
+utopia-cinnamon-defaults (2015.01.24) unstable; urgency=low
+
+  * Default org.cinnamon.desktop.default-applications.terminal
+    to 'x-terminal-emulator' (this is specific to Debian-based
+    distros).
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 24 Jan 2015 22:34:55 -0800
+
 utopia-cinnamon-defaults (2015.01.21) unstable; urgency=medium
 
   * Initial release.

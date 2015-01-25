@@ -11,9 +11,9 @@ Depends: ${misc:Depends},
  desktop-base,
  lxterminal | x-terminal-emulator,
  xorg,
- utopia-baseutils
-Recommends: lightdm | x-display-manager,
- alsa-utils,
+ utopia-baseutils,
+ lightdm | x-display-manager,
+Recommends: alsa-utils,
  fuse,
  gvfs-backends,
  ntfs-3g,
@@ -103,7 +103,8 @@ Depends: ${misc:Depends},
  screen,
  git,
  htop,
- wget | curl,
+ wget,
+ curl,
  sudo,
  less,
  python,
@@ -113,7 +114,6 @@ Depends: ${misc:Depends},
 Recommends: iptables,
  command-not-found,
  file,
- wget,
  screenfetch,
  scrot,
  rsync,
@@ -178,8 +178,7 @@ Recommends: python-tk, python3-tk,
  geany-plugin-markdown,
  geany-plugin-spellcheck,
  geany-plugin-lipsum
-Suggests: libgtk2.0-dev,
- libgtk-3-dev
+Suggests: meld
 Architecture: all
 Description: Utopia Development Collection (GUI)
  A collection of GUI utilities to assist with system administration,
@@ -221,22 +220,33 @@ Description: Utopia Themes Collection (meta-package)
 Package: utopia-desktop-cinnamon
 Depends: ${misc:Depends},
  utopia-desktop,
- cinnamon-core,
- mate-terminal | gnome-terminal | x-terminal-emulator,
+ cinnamon (>= 2.4),
+ cinnamon-control-center (>= 2.4),
+ cinnamon-screensaver (>= 2.4),
+ cinnamon-session (>= 2.4),
+ cinnamon-settings-daemon (>= 2.4),
+ muffin (>= 2.4),
+ nemo (>= 2.4),
+ gnome-terminal (>= 3.14.2-0ubuntu1~utopia1) | mate-terminal | x-terminal-emulator,
  eog,
  evince | evince-gtk
 Recommends: utopia-themes,
  cinnamon-themes,
  utopia-cinnamon-defaults,
- dconf-editor | gconf-editor,
+ dconf-editor | dconf-tools,
  gnome-system-monitor | mate-system-monitor,
- nemo-fileroller,
+ nemo-fileroller (>= 2.4),
  gnome-screenshot,
  gnome-font-viewer,
  baobab,
- gnome-system-log
+ gnome-system-log,
+ gnome-nettool,
+ nemo-compare (>= 2.4),
+ nemo-emblems (>= 2.4),
+ nemo-rabbitvcs (>= 2.4)
 Suggests: brasero,
- gedit | pluma
+ gedit | pluma,
+ gnome-disk-utility
 Breaks: nautilus
 Architecture: all
 Description: Utopia Desktop - Cinnamon edition (meta-package)
@@ -253,7 +263,7 @@ Depends: ${misc:Depends},
  utopia-desktop,
  lxinput,
  lxsession
-Recommends: engrampa | xarchiver | file-roller,
+Recommends: xarchiver | engrampa | file-roller,
 # lxsession-edit and lxpolkit are merged into lxsession in jessie+, but
 # I'm keeping them here for compatibility with wheezy
  lxsession-edit,
