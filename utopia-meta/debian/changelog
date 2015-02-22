@@ -1,3 +1,11 @@
+utopia-meta (2015.02.21) unstable; urgency=low
+
+  * utopia-devel: add dh-make, inxi-full
+  * utopia-themes: add gnome-themes-standard
+  * Clean up utopia-games and utopia-themes.
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 21 Feb 2015 18:25:48 -0800
+
 utopia-meta (2015.01.24) unstable; urgency=low
 
   * utopia-desktop-cinnamon:

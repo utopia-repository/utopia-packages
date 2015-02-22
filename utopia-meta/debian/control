@@ -53,7 +53,7 @@ Suggests: inkscape,
  cheese,
  puddletag,
  vlc-plugin-fluidsynth,
- isomaster,
+ isomaster
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  Pulls in some useful packages for working with media files
@@ -154,7 +154,9 @@ Recommends:
  debtree,
  apt-rdepends,
  ruby-dev,
- quilt
+ quilt,
+ dh-make,
+ inxi-full
 Suggests: scons,
  tcpdump,
  cowbuilder,
@@ -211,8 +213,8 @@ Depends: ${misc:Depends},
 Recommends:
  numix-icon-theme-bevel,
  numix-icon-theme-circle,
- numix-gtk-theme
-Suggests: lubuntu-icon-theme
+ numix-gtk-theme,
+ gnome-themes-standard
 Architecture: all
 Description: Utopia Themes Collection (meta-package)
  A collection of themes available for the Linux desktop.
@@ -324,7 +326,6 @@ Recommends: knetwalk,
  kollision,
  lightsoff,
  granatier,
- bovo,
  kbreakout,
  kdiamond,
  klickety,
@@ -334,11 +335,9 @@ Recommends: knetwalk,
  ksudoku | gnome-sudoku,
  neverball,
  neverputt
-Suggests: lincity-ng,
- gnome-tetravex,
+Suggests: gnome-tetravex,
  kolf,
- klines | five-or-more,
- supertux
+ klines | five-or-more
 Architecture: all
 Description: Utopia Games/Toys Collection (GUI)
  This meta-package pulls in some interactive games/toys suitable for a
