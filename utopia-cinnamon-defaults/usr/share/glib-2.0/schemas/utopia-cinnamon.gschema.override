@@ -25,3 +25,8 @@ numlock-state="on"
 
 [org.cinnamon.desktop.default-applications.terminal]
 exec='x-terminal-emulator'
+
+[org.gnome.Terminal.Legacy.Settings]
+confirm-close=false
+dark-theme=true
+menu-accelerator-enabled=false
