@@ -156,7 +156,8 @@ Recommends:
  ruby-dev,
  quilt,
  dh-make,
- inxi-full
+ inxi-full,
+ tig
 Suggests: scons,
  tcpdump,
  cowbuilder,
@@ -174,7 +175,7 @@ Description: Utopia Development Collection (meta-package)
 Package: utopia-devel-gui
 Depends: ${misc:Depends},
  utopia-devel,
- gitg | qgit | tig | gitk,
+ gitg | qgit | gitk,
  utopia-accessories
 Recommends: python-tk, python3-tk,
  geany-plugin-markdown,
