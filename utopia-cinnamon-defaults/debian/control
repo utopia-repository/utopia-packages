@@ -8,6 +8,9 @@ Homepage: https://github.com/GLolol/utopia-packages
 
 Package: utopia-cinnamon-defaults
 Architecture: all
-Depends: ${misc:Depends}, utopia-themes, cinnamon-themes
+Depends: ${misc:Depends},
+ utopia-themes,
+ cinnamon-themes,
+ cinnamon (>> 2.4.6)
 Description: Utopia Desktop Defaults (Cinnamon Desktop)
  This package contains customized defaults for the Cinnamon Desktop.
