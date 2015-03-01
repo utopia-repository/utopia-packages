@@ -1,26 +1,3 @@
-[org.gnome.desktop.interface]
-gtk-key-theme='Default'
-gtk-theme='Mint-X'
-icon-theme='Mint-X'
-toolkit-accessibility=false
-font-name="Sans 10"
-monospace-font-name="Monospace 11"
-document-font-name="Sans 10"
-
-[org.gnome.desktop.background]
-primary-color="#000000"
-secondary-color="#000000"
-color-shading-type="solid"
-picture-options="zoom"
-show-desktop-icons=true
-
-[org.gnome.desktop.wm.preferences]
-theme='Mint-X'
-button-layout='menu:minimize,maximize,close'
-num-workspaces=1
-titlebar-font="Ubuntu Medium 11"
-titlebar-uses-system-font=false
-
 [org.gnome.settings-daemon.plugins.xsettings]
 hinting="slight"
 
