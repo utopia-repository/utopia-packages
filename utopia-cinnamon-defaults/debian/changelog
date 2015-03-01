@@ -1,3 +1,10 @@
+utopia-cinnamon-defaults (2015.02.28) unstable; urgency=medium
+
+  * Update panel configuration for new panel system in Cinnamon master
+  * Set custom favorites list.
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 28 Feb 2015 20:32:30 -0800
+
 utopia-cinnamon-defaults (2015.02.21) unstable; urgency=low
 
   * Add defaults GNOME Terminal (dark-theme, confirm-close,

@@ -1,3 +1,9 @@
+utopia-mate-defaults (2015.02.28) unstable; urgency=low
+
+  * Remove theming defaults for GNOME desktop.
+
+ -- James Lu <glolol@overdrive.pw>  Sat, 28 Feb 2015 20:33:28 -0800
+
 utopia-mate-defaults (2014.10.31) unstable; urgency=medium
 
   * Recommend utopia-desktop-mate instead of suggesting it.
