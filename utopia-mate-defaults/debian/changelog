@@ -1,3 +1,9 @@
+utopia-mate-defaults (2015.03.23) unstable; urgency=medium
+
+  * Default to mate-menu over mintmenu.
+
+ -- James Lu <glolol@overdrive.pw>  Mon, 23 Mar 2015 19:46:50 -0700
+
 utopia-mate-defaults (2015.02.28) unstable; urgency=low
 
   * Remove theming defaults for GNOME desktop.

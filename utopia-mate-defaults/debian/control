@@ -8,7 +8,7 @@ Homepage: https://github.com/GLolol/utopia-packages
 
 Package: utopia-mate-defaults
 Architecture: all
-Depends: ${misc:Depends}, utopia-themes (>= 2014.08.27), mintmenu (>= 5.5.8~)
+Depends: ${misc:Depends}, utopia-themes (>= 2014.08.27), mate-menu
 Recommends: utopia-desktop-mate
 Description: Utopia Desktop Defaults (MATE Desktop)
  This package contains customized defaults for the MATE desktop environment.

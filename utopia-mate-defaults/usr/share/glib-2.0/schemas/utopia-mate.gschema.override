@@ -48,11 +48,11 @@ numlock-state="on"
 [org.mate.panel]
 default-layout='utopia'
 
-[com.linuxmint.mintmenu.plugins.applications]
+[org.mate.mate-menu.plugins.applications]
 swap-generic-name=true
 favicon-size=32
 
-[com.linuxmint.mintmenu.plugins.places]
+[org.mate.mate-menu.plugins.places]
 show-gtk-bookmarks=true
 allow-scrollbar=true
 

@@ -1,3 +1,10 @@
+utopia-cinnamon-defaults (2015.03.23) unstable; urgency=medium
+
+  * Set default font to Noto Sans.
+  * Change default GTK theme to Mint-X.
+
+ -- James Lu <glolol@overdrive.pw>  Mon, 23 Mar 2015 19:41:07 -0700
+
 utopia-cinnamon-defaults (2015.02.28) unstable; urgency=medium
 
   * Update panel configuration for new panel system in Cinnamon master
