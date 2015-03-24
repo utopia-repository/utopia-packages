@@ -1,3 +1,24 @@
+utopia-meta (2015.03.23) unstable; urgency=medium
+
+  * -office: recommend missing libreoffice-gtk, suggest openclipart,
+    tighten dependencies on libreoffice
+  * -mate: change mintmenu dependency to mate-menu
+  * -games-gui: add knights, move dependencies down to recommendations
+
+ -- James Lu <glolol@overdrive.pw>  Mon, 23 Mar 2015 19:54:28 -0700
+
+utopia-meta (2015.03.21) unstable; urgency=low
+
+  * utopia-devel: recommend tcpdump, bump other things to depends
+  * -network: recommend wireshark, zenmap, mtr
+  * -desktop: drop redundant x-terminal-emulator dependencies
+  * -accessories: recommend lightdm-gtk-greeter-settings, mintlocale
+  * -cinnamon: drop nemo-rabbitvcs
+  * -themes: install fonts-noto, numix themes
+  * -mate: recommend network-manager-gnome
+
+ -- James Lu <glolol@overdrive.pw>  Wed, 21 Mar 2015 18:45:35 -0700
+
 utopia-meta (2015.02.28) unstable; urgency=low
 
   * Recommend tig in utopia-devel instead of utopia-devel-gui.

@@ -1,8 +1,15 @@
-utopia-cinnamon-defaults (2015.03.01) unstable; urgency=high
+utopia-cinnamon-defaults (2015.03.24) unstable; urgency=high
 
   * Fix a typo that caused no panels to be initialized by default at all.
 
  -- James Lu <glolol@overdrive.pw>  Sun, 01 Mar 2015 11:12:52 -0800
+
+utopia-cinnamon-defaults (2015.03.23) unstable; urgency=medium
+
+  * Set default font to Noto Sans.
+  * Change default GTK theme to Mint-X.
+
+ -- James Lu <glolol@overdrive.pw>  Mon, 23 Mar 2015 19:41:07 -0700
 
 utopia-cinnamon-defaults (2015.02.28) unstable; urgency=medium
 

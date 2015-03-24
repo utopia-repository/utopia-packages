@@ -1,13 +1,17 @@
 [org.cinnamon.desktop.interface]
 gtk-key-theme='Default'
-gtk-theme='Adwaita'
+gtk-theme='Mint-X-Aqua'
 icon-theme='Mint-X-Aqua'
-font-name="Ubuntu 11"
+font-name="Noto Sans 10"
+
+[org.gnome.desktop.interface]
+font-name="Noto Sans 10"
+document-font-name="Noto Sans 10"
 
 [org.cinnamon.desktop.wm.preferences]
 theme='Adwaita'
 num-workspaces=1
-titlebar-font="Ubuntu Medium 11"
+titlebar-font="Noto Sans Bold 10"
 titlebar-uses-system-font=false
 
 [org.cinnamon]
@@ -32,3 +36,6 @@ exec='x-terminal-emulator'
 confirm-close=false
 dark-theme=true
 menu-accelerator-enabled=false
+
+[org.nemo.desktop]
+font="Noto Sans 10"

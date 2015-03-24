@@ -9,7 +9,6 @@ Maintainer: James Lu <glolol@overdrive.pw>
 Package: utopia-desktop
 Depends: ${misc:Depends},
  desktop-base,
- lxterminal | x-terminal-emulator,
  xorg,
  utopia-baseutils,
  lightdm | x-display-manager,
@@ -63,7 +62,9 @@ Package: utopia-accessories
 Depends: ${misc:Depends},
  synaptic,
  gdebi | gdebi-kde,
- gparted
+ gparted,
+ lightdm-gtk-greeter-settings,
+ mintlocale
 Recommends: geany | kate, galculator
 Suggests: ibus, simple-scan, baobab, vinagre
 Architecture: all
@@ -77,21 +78,27 @@ Recommends: iceweasel | firefox,
  google-chrome-stable,
  hexchat,
  thunderbird | icedove,
- deluge | transmission
+ deluge | transmission,
+ wireshark,
+ zenmap,
+ mtr
+Suggests: utopia-devel
 Architecture: all
 Description: Utopia Utilities Collection (meta-package)
  This meta-package pulls in some utilities related to networking.
 
 Package: utopia-office
 Depends: ${misc:Depends},
- libreoffice-writer | abiword,
- libreoffice-calc | gnumeric
+ libreoffice-writer,
+ libreoffice-calc,
+ libreoffice-impress
 Recommends: hyphen-en-us,
  hunspell-en-us,
  mythes-en-us,
  browser-plugin-libreoffice,
- libreoffice-impress
-Suggests: libreoffice
+ libreoffice-gtk
+Suggests: libreoffice,
+ openclipart
 Architecture: all
 Description: Utopia Office Collection (meta-package)
  This meta-package will pull in useful office applications, such as a
@@ -134,7 +141,12 @@ Depends: ${misc:Depends},
  utopia-baseutils,
  lsb-release,
  automake,
- debhelper
+ debhelper,
+ optipng | pngcrush,
+ jpegoptim,
+ graphviz,
+ tig,
+ tcpdump
 Recommends:
  bash-completion,
  cmake,
@@ -147,17 +159,13 @@ Recommends:
  mtr | mtr-tiny,
  iotop,
  python-pip,
- optipng | pngcrush,
- jpegoptim,
- graphviz,
  debootstrap,
  debtree,
  apt-rdepends,
  ruby-dev,
  quilt,
  dh-make,
- inxi-full,
- tig
+ inxi
 Suggests: scons,
  tcpdump,
  cowbuilder,
@@ -166,7 +174,8 @@ Suggests: scons,
  flex,
  debian-security-support,
  libssl-dev,
- yasm
+ yasm,
+ inxi-full
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  A collection of utilities to assist with system administration,
@@ -191,7 +200,7 @@ Package: utopia-desktop-mate
 Depends: ${misc:Depends},
  mate-desktop-environment,
  utopia-desktop,
-Recommends: mintmenu (>= 5.5.8~),
+Recommends: mate-menu,
  utopia-mate-defaults,
  dconf-editor | dconf-tools,
  mozo,
@@ -199,7 +208,8 @@ Recommends: mintmenu (>= 5.5.8~),
  caja-gksu,
  mate-netspeed,
  caja-share,
- mate-system-tools
+ mate-system-tools,
+ network-manager-gnome
 Suggests: utopia-themes, mate-desktop-environment-extras
 Architecture: all
 Description: Utopia Desktop Collection - MATE (meta-package)
@@ -210,11 +220,13 @@ Depends: ${misc:Depends},
  mint-x-icons,
  mint-themes,
  mint-themes-gtk3,
- ttf-ubuntu-font-family
+ ttf-ubuntu-font-family,
+ numix-gtk-theme,
+ fonts-noto
 Recommends:
  numix-icon-theme-bevel,
+ numix-frost-theme,
  numix-icon-theme-circle,
- numix-gtk-theme,
  gnome-themes-standard
 Architecture: all
 Description: Utopia Themes Collection (meta-package)
@@ -245,8 +257,7 @@ Recommends: utopia-themes,
  gnome-system-log,
  gnome-nettool,
  nemo-compare (>= 2.4),
- nemo-emblems (>= 2.4),
- nemo-rabbitvcs (>= 2.4)
+ nemo-emblems (>= 2.4)
 Suggests: brasero,
  gedit | pluma,
  gnome-disk-utility
@@ -319,10 +330,6 @@ Description: Utopia Games/Toys Collection (CLI)
 Package: utopia-games-gui
 Depends: ${misc:Depends},
  utopia-games,
- kpat | aisleriot,
- chromium-bsu,
- kmines | gnome-mines,
- kblocks | quadrapassel
 Recommends: knetwalk,
  kollision,
  lightsoff,
@@ -335,7 +342,12 @@ Recommends: knetwalk,
  ksquares,
  ksudoku | gnome-sudoku,
  neverball,
- neverputt
+ neverputt,
+ knights,
+ kpat | aisleriot,
+ chromium-bsu,
+ kmines | gnome-mines,
+ kblocks | quadrapassel
 Suggests: gnome-tetravex,
  kolf,
  klines | five-or-more

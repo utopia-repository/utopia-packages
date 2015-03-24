@@ -5,7 +5,7 @@ size=24
 
 [Object menu-bar]
 object-type=applet
-applet-iid=MintMenuAppletFactory::MintMenuApplet
+applet-iid=MateMenuAppletFactory::MateMenuApplet
 toplevel-id=bottom
 position=0
 locked=true
