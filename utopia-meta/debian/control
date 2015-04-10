@@ -25,7 +25,7 @@ Recommends: alsa-utils,
  fonts-dejavu,
  acpi-support,
  utopia-accessories
-Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-lxde,
+Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-lxde,
  utopia-multimedia,
  utopia-network,
  utopia-office,
@@ -62,11 +62,12 @@ Package: utopia-accessories
 Depends: ${misc:Depends},
  synaptic,
  gdebi | gdebi-kde,
- gparted,
+ gparted
+Recommends: geany | kate,
+ galculator,
  lightdm-gtk-greeter-settings,
  mintlocale
-Recommends: geany | kate, galculator
-Suggests: ibus, simple-scan, baobab, vinagre
+Suggests: ibus, simple-scan, baobab, vinagre, xfburn
 Architecture: all
 Description: Utopia Utilities Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
@@ -167,7 +168,6 @@ Recommends:
  dh-make,
  inxi
 Suggests: scons,
- tcpdump,
  cowbuilder,
  imagemagick,
  bison,
@@ -243,8 +243,8 @@ Depends: ${misc:Depends},
  muffin (>= 2.4),
  nemo (>= 2.4),
  gnome-terminal (>= 3.14.2-0ubuntu1~utopia1) | mate-terminal | x-terminal-emulator,
- eog,
- evince | evince-gtk
+ eog | eom,
+ evince | evince-gtk | atril
 Recommends: utopia-themes,
  cinnamon-themes,
  utopia-cinnamon-defaults,
@@ -294,10 +294,9 @@ Recommends: xarchiver | engrampa | file-roller,
  libfm-tools | lxshortcut,
 Suggests:
  utopia-office,
- usermode,
+ mugshot | usermode,
  gnome-disk-utility,
  gnome-system-tools,
- xfburn,
  xfwm4
 Architecture: all
 Description: Utopia Desktop Collection - LXDE (meta-package)
@@ -355,3 +354,30 @@ Architecture: all
 Description: Utopia Games/Toys Collection (GUI)
  This meta-package pulls in some interactive games/toys suitable for a
  graphical user interface.
+
+Package: utopia-desktop-xfce
+Depends: ${misc:Depends},
+ xfce4 (>= 4.12),
+ xfce4-terminal,
+ xfce4-whiskermenu-plugin,
+ xfce4-datetime-plugin,
+ thunar-archive-plugin,
+ utopia-desktop,
+ xfce4-power-manager,
+ xfce4-screenshooter,
+ xfce4-notifyd
+Recommends: gtk3-engines-xfce,
+ xarchiver | engrampa | file-roller,
+ ristretto,
+ xfce4-clipman-plugin,
+ xfce4-taskmanager,
+ xfce4-mount-plugin,
+ xfce4-netload-plugin,
+ xfce4-quicklauncher-plugin,
+ xfce4-volumed,
+ wicd | network-manager-gnome,
+ thunar-media-tags-plugin,
+ xfce4-places-plugin
+Suggests: mousepad
+Architecture: all
+Description: Utopia Desktop Collection - Xfce (meta-package)

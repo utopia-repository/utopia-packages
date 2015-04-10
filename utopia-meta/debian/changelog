@@ -1,3 +1,11 @@
+utopia-meta (2015.04.09) unstable; urgency=medium
+
+  * -cinnamon: bring back alternate depends on eom, atril
+  * Re-add utopia-desktop-xfce, for Xfce 4.12.
+  * Tweak utopia-accessories.
+
+ -- James Lu <glolol@overdrive.pw>  Thu, 09 Apr 2015 20:12:48 -0700
+
 utopia-meta (2015.03.23) unstable; urgency=medium
 
   * -office: recommend missing libreoffice-gtk, suggest openclipart,
