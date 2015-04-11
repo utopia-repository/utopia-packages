@@ -1,3 +1,9 @@
+utopia-meta (2015.04.10) unstable; urgency=medium
+
+  * -xfce: bump xfce4-datetime-plugin to recommends
+
+ -- James Lu <glolol@overdrive.pw>  Fri, 10 Apr 2015 17:49:17 -0700
+
 utopia-meta (2015.04.09) unstable; urgency=medium
 
   * -cinnamon: bring back alternate depends on eom, atril

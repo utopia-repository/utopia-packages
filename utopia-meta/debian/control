@@ -360,7 +360,6 @@ Depends: ${misc:Depends},
  xfce4 (>= 4.12),
  xfce4-terminal,
  xfce4-whiskermenu-plugin,
- xfce4-datetime-plugin,
  thunar-archive-plugin,
  utopia-desktop,
  xfce4-power-manager,
@@ -377,6 +376,7 @@ Recommends: gtk3-engines-xfce,
  xfce4-volumed,
  wicd | network-manager-gnome,
  thunar-media-tags-plugin,
+ xfce4-datetime-plugin,
  xfce4-places-plugin
 Suggests: mousepad
 Architecture: all
