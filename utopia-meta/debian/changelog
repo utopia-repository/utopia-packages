@@ -1,3 +1,16 @@
+utopia-meta (2015.04.14) unstable; urgency=medium
+
+  * -multimedia: drop audacious, gimp-plugin-registry
+  * -desktop: recommend upower, cups-pdf
+  * -xfce/-lxde: recommend evince-gtk | evince | atril, menulibre
+  * -xfce: add xfce4-mixer, mugshot, menulibre
+  * Split utopia-{accessories|network} into
+    utopia-{accessories|network}-{gtk|kde}, each with alternate dependencies
+  * -cinnamon: recommend gucharmap, simple-scan; drop gnome-nettool,
+     gnome-disk-utility
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 14 Apr 2015 21:42:23 -0700
+
 utopia-meta (2015.04.10) unstable; urgency=medium
 
   * -xfce: bump xfce4-datetime-plugin to recommends

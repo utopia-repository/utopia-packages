@@ -24,7 +24,9 @@ Recommends: alsa-utils,
  fonts-liberation,
  fonts-dejavu,
  acpi-support,
- utopia-accessories
+ utopia-accessories,
+ upower,
+ cups-pdf
 Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-lxde,
  utopia-multimedia,
  utopia-network,
@@ -45,8 +47,6 @@ Recommends: vlc, browser-plugin-vlc,
  spek,
  audacity,
  gimp,
- audacious,
- gimp-plugin-registry,
  jpegoptim
 Suggests: inkscape,
  cheese,
@@ -61,32 +61,79 @@ Description: Utopia Multimedia Collection (meta-package)
 Package: utopia-accessories
 Depends: ${misc:Depends},
  synaptic,
- gdebi | gdebi-kde,
- gparted
-Recommends: geany | kate,
+ utopia-accessories-gtk | utopia-accessories-kde
+Recommends: geany,
  galculator,
- lightdm-gtk-greeter-settings,
- mintlocale
-Suggests: ibus, simple-scan, baobab, vinagre, xfburn
+ ibus,
+ system-config-printer
+Suggests: keepassx
 Architecture: all
-Description: Utopia Utilities Collection (meta-package)
+Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
  administrative tasks.
 
+Package: utopia-accessories-gtk
+Depends: ${misc:Depends},
+ gdebi,
+ gparted
+Recommends: lightdm-gtk-greeter-settings,
+ mintlocale,
+ utopia-accessories,
+ ibus-gtk,
+ ibus-gtk3
+Suggests: ibus-clutter,
+ xfburn,
+ simple-scan,
+ gucharmap,
+ baobab | mate-utils
+Architecture: all
+Description: Utopia Accessories Collection (GTK)
+
+Package: utopia-accessories-kde
+Depends: ${misc:Depends},
+ gdebi-kde,
+ partitionmanager
+Recommends: filelight,
+ kmag,
+ kcharselect,
+ utopia-accessories,
+ ibus-qt4
+Suggests: skanlite,
+ k3b
+Architecture: all
+Description: Utopia Accessories Collection (KDE/Qt)
+
 Package: utopia-network
-Depends: ${misc:Depends}
-Recommends: iceweasel | firefox,
- google-chrome-stable,
+Depends: ${misc:Depends},
+ iceweasel | firefox | x-www-browser,
+ utopia-network-gtk | utopia-network-kde
+Recommends:
  hexchat,
  thunderbird | icedove,
- deluge | transmission,
- wireshark,
+ deluge,
  zenmap,
  mtr
-Suggests: utopia-devel
 Architecture: all
-Description: Utopia Utilities Collection (meta-package)
+Description: Utopia Network Collection (meta-package)
  This meta-package pulls in some utilities related to networking.
+
+Package: utopia-network-gtk
+Depends: ${misc:Depends}
+Recommends: vinagre,
+ wireshark,
+ uget,
+ utopia-network
+Architecture: all
+Description: Utopia Network Collection (GTK)
+
+Package: utopia-network-kde
+Depends: ${misc:Depends}
+Recommends: krdc,
+ wireshark-qt,
+ kget,
+ utopia-network
+Architecture: all
+Description: Utopia Network Collection (KDE/Qt)
 
 Package: utopia-office
 Depends: ${misc:Depends},
@@ -255,12 +302,12 @@ Recommends: utopia-themes,
  gnome-font-viewer,
  baobab,
  gnome-system-log,
- gnome-nettool,
  nemo-compare (>= 2.4),
- nemo-emblems (>= 2.4)
+ nemo-emblems (>= 2.4),
+ gucharmap,
+ simple-scan
 Suggests: brasero,
  gedit | pluma,
- gnome-disk-utility
 Breaks: nautilus
 Architecture: all
 Description: Utopia Desktop - Cinnamon edition (meta-package)
@@ -287,17 +334,19 @@ Recommends: xarchiver | engrampa | file-roller,
  volumeicon-alsa,
  xfce4-mixer,
  xfce4-screenshooter,
- evince-gtk | atril,
+ evince-gtk | atril | evince,
  lxtask,
  wicd | network-manager-gnome,
  lubuntu-artwork,
  libfm-tools | lxshortcut,
+ menulibre,
+ mugshot | usermode
 Suggests:
  utopia-office,
- mugshot | usermode,
  gnome-disk-utility,
  gnome-system-tools,
- xfwm4
+ xfwm4,
+ leafpad
 Architecture: all
 Description: Utopia Desktop Collection - LXDE (meta-package)
  This meta-package will pull in an LXDE desktop.
@@ -377,7 +426,11 @@ Recommends: gtk3-engines-xfce,
  wicd | network-manager-gnome,
  thunar-media-tags-plugin,
  xfce4-datetime-plugin,
- xfce4-places-plugin
+ xfce4-places-plugin,
+ menulibre,
+ evince-gtk | evince | atril,
+ xfce4-mixer,
+ mugshot
 Suggests: mousepad
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (meta-package)
