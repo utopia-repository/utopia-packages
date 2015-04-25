@@ -1,0 +1,19 @@
+[submodule "roblox-linux-wrapper"]
+	path = roblox-linux-wrapper
+	url = https://github.com/GLolol/roblox-linux-wrapper
+[submodule "gnome-exe-thumbnailer"]
+	path = gnome-exe-thumbnailer
+	url = https://github.com/GLolol/gnome-exe-thumbnailer
+[submodule "mintmenu"]
+	path = mate-menu
+	url = https://github.com/GLolol/mintmenu/
+	branch = testing
+[submodule "numix-gtk-theme"]
+	path = numix-gtk-theme
+	url = https://github.com/GLolol/numix-gtk-theme
+[submodule "screenfetch"]
+	path = screenfetch
+	url = https://github.com/GLolol/screenFetch
+[submodule "mint-cinnamon-themes"]
+	path = mint-cinnamon-themes
+	url = https://github.com/GLolol/mint-cinnamon-themes
