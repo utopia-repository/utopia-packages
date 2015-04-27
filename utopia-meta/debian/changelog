@@ -1,3 +1,13 @@
+utopia-meta (2015.04.26) unstable; urgency=medium
+
+  * Update my email.
+  * Add new packages -desktop-lxde and utopia-printing.
+  * Clean up various suggests sections of packages.
+  * Move gucharmap, menulibre, and mugshot/usermode to -acceessories-gtk.
+  * Add some lintian overrides.
+
+ -- James Lu <glolol1@hotmail.com>  Sun, 26 Apr 2015 21:57:45 -0700
+
 utopia-meta (2015.04.14) unstable; urgency=medium
 
   * -multimedia: drop audacious, gimp-plugin-registry

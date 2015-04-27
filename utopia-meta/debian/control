@@ -2,9 +2,9 @@ Source: utopia-meta
 Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages
-Build-Depends: debhelper (>=9)
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
-Maintainer: James Lu <glolol@overdrive.pw>
+Maintainer: James Lu <glolol1@hotmail.com>
 
 Package: utopia-desktop
 Depends: ${misc:Depends},
@@ -18,7 +18,6 @@ Recommends: alsa-utils,
  ntfs-3g,
  eject,
  avahi-daemon,
- cups,
  cifs-utils,
  fonts-droid,
  fonts-liberation,
@@ -26,12 +25,12 @@ Recommends: alsa-utils,
  acpi-support,
  utopia-accessories,
  upower,
- cups-pdf
 Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-lxde,
  utopia-multimedia,
  utopia-network,
  utopia-office,
- utopia-devel-gui
+ utopia-devel-gui,
+ utopia-printing
 Breaks: xul-ext-ubufox, ubufox
 Architecture: all
 Description: Utopia Desktop Collection (common files)
@@ -65,7 +64,6 @@ Depends: ${misc:Depends},
 Recommends: geany,
  galculator,
  ibus,
- system-config-printer
 Suggests: keepassx
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
@@ -80,12 +78,14 @@ Recommends: lightdm-gtk-greeter-settings,
  mintlocale,
  utopia-accessories,
  ibus-gtk,
- ibus-gtk3
+ ibus-gtk3,
+ gucharmap
 Suggests: ibus-clutter,
  xfburn,
  simple-scan,
- gucharmap,
- baobab | mate-utils
+ baobab | mate-utils,
+ mugshot | usermode,
+ menulibre
 Architecture: all
 Description: Utopia Accessories Collection (GTK)
 
@@ -304,7 +304,6 @@ Recommends: utopia-themes,
  gnome-system-log,
  nemo-compare (>= 2.4),
  nemo-emblems (>= 2.4),
- gucharmap,
  simple-scan
 Suggests: brasero,
  gedit | pluma,
@@ -325,12 +324,7 @@ Depends: ${misc:Depends},
  lxinput,
  lxsession
 Recommends: xarchiver | engrampa | file-roller,
-# lxsession-edit and lxpolkit are merged into lxsession in jessie+, but
-# I'm keeping them here for compatibility with wheezy
- lxsession-edit,
- lxpolkit,
  lxrandr,
- leafpad,
  volumeicon-alsa,
  xfce4-mixer,
  xfce4-screenshooter,
@@ -338,14 +332,9 @@ Recommends: xarchiver | engrampa | file-roller,
  lxtask,
  wicd | network-manager-gnome,
  lubuntu-artwork,
- libfm-tools | lxshortcut,
- menulibre,
- mugshot | usermode
+ libfm-tools | lxshortcut
 Suggests:
  utopia-office,
- gnome-disk-utility,
- gnome-system-tools,
- xfwm4,
  leafpad
 Architecture: all
 Description: Utopia Desktop Collection - LXDE (meta-package)
@@ -434,3 +423,37 @@ Recommends: gtk3-engines-xfce,
 Suggests: mousepad
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (meta-package)
+
+Package: utopia-desktop-openbox
+Depends: ${misc:Depends},
+ openbox,
+ obmenu,
+ obconf,
+ utopia-desktop,
+ lxappearance,
+ lxappearance-obconf,
+Recommends: nitrogen,
+ evince-gtk | atril | evince,
+ xarchiver | engrampa | file-roller,
+ wicd | network-manager-gnome,
+ tint2,
+ lxterminal | xfce4-terminal,
+ volumeicon-alsa,
+ xfce4-mixer,
+ xfce4-screenshooter,
+ thunar | pcmanfm,
+ gpicview | ristretto | eog | eom,
+ gmrun
+Suggests: lxtask
+Architecture: all
+Description: Utopia Desktop Collection - Openbox (meta-package)
+
+Package: utopia-printing
+Depends: ${misc:Depends},
+ cups,
+ utopia-desktop
+Recommends:
+ cups-pdf,
+ system-config-printer
+Architecture: all
+Description: Utopia Desktop Collection - Printing Support (meta-package)
