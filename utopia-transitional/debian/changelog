@@ -1,3 +1,12 @@
+utopia-transitional (2015.05.07) unstable; urgency=medium
+
+  * Set priority from optional to extra.
+  * Update my email in Maintainer field.
+  * Add dummy package wine-dummy (satisfies roblox-linux-wrapper).
+  * Add lintian override for tag 'empty-binary-package'.
+
+ -- James Lu <glolol1@hotmail.com>  Thu, 07 May 2015 19:18:58 -0700
+
 utopia-transitional (2014.12.28) unstable; urgency=low
 
   * Initial release.
