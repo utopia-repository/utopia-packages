@@ -1,3 +1,17 @@
+utopia-meta (2015.05.23) unstable; urgency=medium
+
+  * -devel: recommend shellcheck, python3-pip
+  * -devel: depend on pkg-config, bump graphviz to recommends
+  * -devel: drop recommends on inxi, finger, hwinfo, bash-completion
+  * -openbox: add compton | xcompmgr, bunsen-utilities
+  * -games: depend on toilet
+  * -baseutils: depend on file, rsync, tree, id-utils | libuser
+  * -accessories-gtk: bump gparted to recommends
+  * -desktop: drop upower
+  * -multimedia: move ffmpeg to suggests
+
+ -- James Lu <glolol1@hotmail.com>  Sat, 23 May 2015 16:36:10 -0700
+
 utopia-meta (2015.04.26) unstable; urgency=medium
 
   * Update my email.

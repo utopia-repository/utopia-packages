@@ -24,7 +24,6 @@ Recommends: alsa-utils,
  fonts-dejavu,
  acpi-support,
  utopia-accessories,
- upower,
 Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-lxde,
  utopia-multimedia,
  utopia-network,
@@ -40,7 +39,6 @@ Package: utopia-multimedia
 Depends: ${misc:Depends}
 Recommends: vlc, browser-plugin-vlc,
  optipng | pngcrush,
- ffmpeg (>= 7:1.0.0),
  mediainfo,
  mediainfo-gui,
  spek,
@@ -51,7 +49,8 @@ Suggests: inkscape,
  cheese,
  puddletag,
  vlc-plugin-fluidsynth,
- isomaster
+ isomaster,
+ ffmpeg (>= 7:2.0.0) | libav-tools,
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  Pulls in some useful packages for working with media files
@@ -73,13 +72,13 @@ Description: Utopia Accessories Collection (meta-package)
 Package: utopia-accessories-gtk
 Depends: ${misc:Depends},
  gdebi,
- gparted
 Recommends: lightdm-gtk-greeter-settings,
  mintlocale,
  utopia-accessories,
  ibus-gtk,
  ibus-gtk3,
- gucharmap
+ gucharmap,
+ gparted
 Suggests: ibus-clutter,
  xfburn,
  simple-scan,
@@ -146,7 +145,7 @@ Recommends: hyphen-en-us,
  browser-plugin-libreoffice,
  libreoffice-gtk
 Suggests: libreoffice,
- openclipart
+ openclipart-libreoffice
 Architecture: all
 Description: Utopia Office Collection (meta-package)
  This meta-package will pull in useful office applications, such as a
@@ -165,13 +164,14 @@ Depends: ${misc:Depends},
  python,
  bind9-host | host,
  openssh-client,
- traceroute
+ traceroute,
+ file,
+ rsync,
+ screenfetch,
+ id-utils | libuser
 Recommends: iptables,
  command-not-found,
- file,
- screenfetch,
  scrot,
- rsync,
  tree,
  iftop,
  utopia-keyring
@@ -192,28 +192,26 @@ Depends: ${misc:Depends},
  debhelper,
  optipng | pngcrush,
  jpegoptim,
- graphviz,
  tig,
- tcpdump
+ tcpdump,
+ pkg-config,
 Recommends:
- bash-completion,
  cmake,
  convmv,
- pkg-config,
- hwinfo,
- finger,
  deborphan,
  nmap,
  mtr | mtr-tiny,
  iotop,
  python-pip,
+ python3-pip,
  debootstrap,
  debtree,
  apt-rdepends,
  ruby-dev,
  quilt,
  dh-make,
- inxi
+ graphviz,
+ shellcheck
 Suggests: scons,
  cowbuilder,
  imagemagick,
@@ -221,8 +219,7 @@ Suggests: scons,
  flex,
  debian-security-support,
  libssl-dev,
- yasm,
- inxi-full
+ yasm
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  A collection of utilities to assist with system administration,
@@ -343,9 +340,9 @@ Description: Utopia Desktop Collection - LXDE (meta-package)
 Package: utopia-games
 Depends: ${misc:Depends},
  figlet,
- cowsay
+ cowsay,
+ toilet
 Recommends: lolcat,
- toilet,
  fortune-mod,
  cmatrix,
  an,
@@ -443,8 +440,9 @@ Recommends: nitrogen,
  xfce4-screenshooter,
  thunar | pcmanfm,
  gpicview | ristretto | eog | eom,
- gmrun
-Suggests: lxtask
+ gmrun,
+ compton | xcompmgr
+Suggests: lxtask, bunsen-utilities
 Architecture: all
 Description: Utopia Desktop Collection - Openbox (meta-package)
 
