@@ -17,3 +17,9 @@
 [submodule "mint-cinnamon-themes"]
 	path = mint-cinnamon-themes
 	url = https://github.com/GLolol/mint-cinnamon-themes
+[submodule "numix-icon-theme"]
+	path = numix-icon-theme
+	url = https://github.com/GLolol/numix-icon-theme
+[submodule "numix-icon-theme-circle"]
+	path = numix-icon-theme-circle
+	url = https://github.com/GLolol/numix-icon-theme-circle
