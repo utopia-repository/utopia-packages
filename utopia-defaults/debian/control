@@ -1,0 +1,34 @@
+Source: utopia-defaults
+Section: x11
+Priority: optional
+Maintainer: James Lu <glolol1@hotmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/GLolol/utopia-packages
+
+Package: utopia-cinnamon-defaults
+Architecture: all
+Depends: ${misc:Depends},
+ utopia-themes,
+ mint-cinnamon-themes,
+ cinnamon-common (>= 2.6~),
+ cinnamon-desktop-data (>= 2.6.4),
+ muffin-common (>= 2.6~),
+ cinnamon-settings-daemon (>= 2.6)
+Recommends: libpam-systemd, gnome-terminal-data
+Description: Utopia Desktop Defaults (Cinnamon Desktop)
+ This package contains customized defaults for the Cinnamon Desktop.
+
+Package: utopia-mate-defaults
+Architecture: all
+Depends: ${misc:Depends},
+ utopia-themes (>= 2014.08.27),
+ mate-menu,
+ mate-desktop-common (>= 1.8~),
+ marco-common (>= 1.8~),
+ caja-common (>= 1.8~),
+ mate-settings-daemon (>= 1.8~),
+ mate-panel (>= 1.8~),
+ mate-terminal-common (>= 1.8~)
+Description: Utopia Desktop Defaults (MATE Desktop)
+ This package contains customized defaults for the MATE Desktop.

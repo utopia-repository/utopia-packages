@@ -39,3 +39,8 @@ menu-accelerator-enabled=false
 
 [org.nemo.desktop]
 font="Noto Sans 10"
+
+[org.cinnamon.desktop.session]
+session-manager-uses-logind=true
+settings-daemon-uses-logind=true
+screensaver-uses-logind=true
