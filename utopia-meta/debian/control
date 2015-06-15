@@ -276,17 +276,16 @@ Description: Utopia Desktop Collection - MATE (meta-package)
 
 Package: utopia-themes
 Depends: ${misc:Depends},
- mint-x-icons,
  mint-themes,
  mint-themes-gtk3,
- ttf-ubuntu-font-family,
  numix-gtk-theme,
- fonts-noto
-Recommends:
- numix-icon-theme-bevel,
- numix-frost-theme,
+ fonts-noto,
  numix-icon-theme-circle,
- gnome-themes-standard
+ numix-frost-theme,
+Recommends: numix-icon-theme-bevel,
+ gnome-themes-standard,
+ ttf-ubuntu-font-family,
+ mint-x-icons
 Architecture: all
 Description: Utopia Themes Collection (meta-package)
  A collection of themes available for the Linux desktop.

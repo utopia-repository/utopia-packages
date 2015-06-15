@@ -9,7 +9,7 @@ Homepage: https://github.com/GLolol/utopia-packages
 Package: utopia-cinnamon-defaults
 Architecture: all
 Depends: ${misc:Depends},
- utopia-themes,
+ utopia-themes (>= 2015.06.14~),
  mint-cinnamon-themes,
  cinnamon-common (>= 2.6~),
  cinnamon-desktop-data (>= 2.6.4),
@@ -22,7 +22,7 @@ Description: Utopia Desktop Defaults (Cinnamon Desktop)
 Package: utopia-mate-defaults
 Architecture: all
 Depends: ${misc:Depends},
- utopia-themes (>= 2014.08.27),
+ utopia-themes (>= 2015.06.14~),
  mate-menu,
  mate-desktop-common (>= 1.8~),
  marco-common (>= 1.8~),

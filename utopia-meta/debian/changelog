@@ -10,6 +10,8 @@ utopia-meta (2015.06.14~) UNRELEASED; urgency=medium
       - remove debtree and debian-security-support
       - add gem2deb, git-buildpackage, and imagemagick to recommends
   * utopia-network-gtk: add network-manager-openvpn-gnome
+  * utopia-themes: move numix themes to depends and ubuntu font/mint-x-icons
+    to recommends.
 
  -- James Lu <glolol1@hotmail.com>  Sun, 14 Jun 2015 20:18:03 -0700
 
