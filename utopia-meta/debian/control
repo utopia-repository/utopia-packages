@@ -121,7 +121,8 @@ Depends: ${misc:Depends}
 Recommends: vinagre,
  wireshark,
  uget,
- utopia-network
+ utopia-network,
+ network-manager-openvpn-gnome
 Architecture: all
 Description: Utopia Network Collection (GTK)
 
@@ -195,35 +196,49 @@ Depends: ${misc:Depends},
  tig,
  tcpdump,
  pkg-config,
+ mtr | mtr-tiny,
+ python-pip | python3-pip,
+ nmap
 Recommends:
  cmake,
  convmv,
  deborphan,
- nmap,
- mtr | mtr-tiny,
  iotop,
  python-pip,
  python3-pip,
  debootstrap,
- debtree,
  apt-rdepends,
  ruby-dev,
  quilt,
  dh-make,
  graphviz,
- shellcheck
-Suggests: scons,
- cowbuilder,
- imagemagick,
- bison,
- flex,
- debian-security-support,
- libssl-dev,
- yasm
+ shellcheck,
+ gem2deb,
+ git-buildpackage,
+ imagemagick
+Suggests: utopia-devel-extras
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  A collection of utilities to assist with system administration,
  compiling software, and more.
+
+Package: utopia-devel-extras
+Depends: ${misc:Depends},
+ utopia-devel,
+ libwww-perl,
+ libssl-dev,
+ libgnutls28-dev | libgnutls-dev
+Recommends: bison,
+ flex,
+ yasm,
+ scons,
+ python-twisted
+Suggests: cowbuilder
+ 
+Architecture: all
+Description: Utopia Development Collection (extra libraries)
+ This package provides extra libraries and utilities for
+ compiling applications. 
 
 Package: utopia-devel-gui
 Depends: ${misc:Depends},

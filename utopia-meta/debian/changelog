@@ -3,6 +3,13 @@ utopia-meta (2015.06.14~) UNRELEASED; urgency=medium
   * utopia-desktop-cinnamon:
       - Update dependency versions to >= 2.6
       - Drop nemo-compare, add nemo-share (>= 2.6)
+  * New utopia-devel-extras package.
+  * utopia-devel:
+      - promote python3-pip | python-pip, nmap, mtr-tiny | mtr
+        to depends
+      - remove debtree and debian-security-support
+      - add gem2deb, git-buildpackage, and imagemagick to recommends
+  * utopia-network-gtk: add network-manager-openvpn-gnome
 
  -- James Lu <glolol1@hotmail.com>  Sun, 14 Jun 2015 20:18:03 -0700
 
