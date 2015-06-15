@@ -1,3 +1,11 @@
+utopia-meta (2015.06.14~) UNRELEASED; urgency=medium
+
+  * utopia-desktop-cinnamon:
+      - Update dependency versions to >= 2.6
+      - Drop nemo-compare, add nemo-share (>= 2.6)
+
+ -- James Lu <glolol1@hotmail.com>  Sun, 14 Jun 2015 20:18:03 -0700
+
 utopia-meta (2015.05.23) unstable; urgency=medium
 
   * -devel: recommend shellcheck, python3-pip
