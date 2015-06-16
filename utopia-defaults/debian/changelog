@@ -1,4 +1,4 @@
-utopia-defaults (2015.06.14~) UNRELEASED; urgency=medium
+utopia-defaults (2015.06.16~) UNRELEASED; urgency=medium
 
   * Update my email.
   * Merge utopia-cinnamon-defaults and utopia-mate-defaults into one
@@ -10,11 +10,13 @@ utopia-defaults (2015.06.14~) UNRELEASED; urgency=medium
       - Add org.cinnamon.desktop.session overrides and a recommends
         on libpam-systemd so that Cinnamon uses logind for
         session management by default.
+      - System Tray applet was missing from the default applets configuration.
+        Fix that.
   * Make defaults consistent: Noto Sans as font, Mint-X-Blue as GTK theme,
     and Numix-Circle as icon set.
   * Declare dependency on utopia-themes >= 2015.06.14~.
 
- -- James Lu <glolol1@hotmail.com>  Sun, 14 Jun 2015 20:37:52 -0700
+ -- James Lu <glolol1@hotmail.com>  Tue, 16 Jun 2015 16:07:56 -0700
 
 utopia-cinnamon-defaults (2015.03.24) unstable; urgency=high
 
