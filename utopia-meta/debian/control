@@ -234,7 +234,6 @@ Recommends: bison,
  scons,
  python-twisted
 Suggests: cowbuilder
- 
 Architecture: all
 Description: Utopia Development Collection (extra libraries)
  This package provides extra libraries and utilities for
@@ -281,7 +280,7 @@ Depends: ${misc:Depends},
  numix-gtk-theme,
  fonts-noto,
  numix-icon-theme-circle,
- numix-frost-theme,
+ numix-frost-theme
 Recommends: numix-icon-theme-bevel,
  gnome-themes-standard,
  ttf-ubuntu-font-family,
@@ -304,7 +303,7 @@ Depends: ${misc:Depends},
  eog | eom,
  evince | evince-gtk | atril
 Recommends: utopia-themes,
- cinnamon-themes,
+ mint-cinnamon-themes,
  utopia-cinnamon-defaults,
  dconf-editor | dconf-tools,
  gnome-system-monitor | mate-system-monitor,

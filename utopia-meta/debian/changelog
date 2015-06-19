@@ -1,8 +1,9 @@
-utopia-meta (2015.06.14~) UNRELEASED; urgency=medium
+utopia-meta (2015.06.18) unstable; urgency=medium
 
   * utopia-desktop-cinnamon:
       - Update dependency versions to >= 2.6
       - Drop nemo-compare, add nemo-share (>= 2.6)
+      - Coerse cinnamon-themes dependency to mint-cinnamon-themes.
   * New utopia-devel-extras package.
   * utopia-devel:
       - promote python3-pip | python-pip, nmap, mtr-tiny | mtr
@@ -13,7 +14,7 @@ utopia-meta (2015.06.14~) UNRELEASED; urgency=medium
   * utopia-themes: move numix themes to depends and ubuntu font/mint-x-icons
     to recommends.
 
- -- James Lu <glolol1@hotmail.com>  Sun, 14 Jun 2015 20:18:03 -0700
+ -- James Lu <glolol1@hotmail.com>  Thu, 18 Jun 2015 20:43:35 -0700
 
 utopia-meta (2015.05.23) unstable; urgency=medium
 
