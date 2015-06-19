@@ -1,9 +1,9 @@
 [submodule "roblox-linux-wrapper"]
 	path = roblox-linux-wrapper
-	url = https://github.com/GLolol/roblox-linux-wrapper
+	url = https://github.com/roblox-linux-wrapper/roblox-linux-wrapper
 [submodule "gnome-exe-thumbnailer"]
 	path = gnome-exe-thumbnailer
-	url = https://github.com/GLolol/gnome-exe-thumbnailer
+	url = git://anonscm.debian.org/pkg-wine/gnome-exe-thumbnailer.git
 [submodule "mintmenu"]
 	path = mate-menu
 	url = https://github.com/GLolol/mintmenu/
@@ -23,3 +23,6 @@
 [submodule "numix-icon-theme-circle"]
 	path = numix-icon-theme-circle
 	url = https://github.com/GLolol/numix-icon-theme-circle
+[submodule "gtk3-engines-unico"]
+	path = gtk3-engines-unico
+	url = https://github.com/GLolol/gtk3-engines-unico.git
