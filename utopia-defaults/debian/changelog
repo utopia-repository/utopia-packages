@@ -1,4 +1,4 @@
-utopia-defaults (2015.06.16~) UNRELEASED; urgency=medium
+utopia-defaults (2015.06.18) unstable; urgency=medium
 
   * Update my email.
   * Merge utopia-cinnamon-defaults and utopia-mate-defaults into one
@@ -16,7 +16,7 @@ utopia-defaults (2015.06.16~) UNRELEASED; urgency=medium
     and Numix-Circle as icon set.
   * Declare dependency on utopia-themes >= 2015.06.14~.
 
- -- James Lu <glolol1@hotmail.com>  Tue, 16 Jun 2015 16:07:56 -0700
+ -- James Lu <glolol1@hotmail.com>  Thu, 18 Jun 2015 20:46:50 -0700
 
 utopia-cinnamon-defaults (2015.03.24) unstable; urgency=high
 
