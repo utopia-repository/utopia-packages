@@ -1,3 +1,10 @@
+utopia-defaults (2015.06.20) unstable; urgency=high
+
+  * Fix a mistake in the installation paths, causing defaults
+    to not be applied at all.
+
+ -- James Lu <glolol1@hotmail.com>  Sat, 20 Jun 2015 14:31:11 -0700
+
 utopia-defaults (2015.06.18) unstable; urgency=medium
 
   * Update my email.
