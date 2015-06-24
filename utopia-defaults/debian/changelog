@@ -1,3 +1,10 @@
+utopia-defaults (2015.06.23~) UNRELEASED; urgency=medium
+
+  * Add more Nemo customizations.
+  * Bump font size to Noto Sans* 11.
+
+ -- James Lu <glolol1@hotmail.com>  Tue, 23 Jun 2015 20:21:39 -0700
+
 utopia-defaults (2015.06.20) unstable; urgency=high
 
   * Fix a mistake in the installation paths, causing defaults
