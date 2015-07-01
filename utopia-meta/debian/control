@@ -44,7 +44,8 @@ Recommends: vlc, browser-plugin-vlc,
  spek,
  audacity,
  gimp,
- jpegoptim
+ jpegoptim,
+ kazam
 Suggests: inkscape,
  cheese,
  puddletag,
@@ -169,15 +170,14 @@ Depends: ${misc:Depends},
  file,
  rsync,
  screenfetch,
- id-utils | libuser
 Recommends: iptables,
  command-not-found,
  scrot,
  tree,
  iftop,
- utopia-keyring
-Suggests: elinks | lynx | www-browser,
- utopia-devel
+ lynx
+Suggests: utopia-devel,
+ utopia-games
 Architecture: all
 Description: Utopia Base Collection (meta-package)
  A collection of somewhat useful command-line utilities.
@@ -232,8 +232,13 @@ Recommends: bison,
  flex,
  yasm,
  scons,
- python-twisted
-Suggests: cowbuilder
+ python-twisted,
+ bzr,
+ subversion,
+ mercurial
+Suggests: cowbuilder,
+ packaging-dev,
+ git-remote-bzr
 Architecture: all
 Description: Utopia Development Collection (extra libraries)
  This package provides extra libraries and utilities for
@@ -465,6 +470,7 @@ Depends: ${misc:Depends},
  utopia-desktop
 Recommends:
  cups-pdf,
- system-config-printer
+ system-config-printer,
+ task-print-server
 Architecture: all
 Description: Utopia Desktop Collection - Printing Support (meta-package)

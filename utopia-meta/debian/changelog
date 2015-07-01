@@ -1,3 +1,15 @@
+utopia-meta (2015.06.30) unstable; urgency=medium
+
+  * -printing: recommend task-print-server
+  * -multimedia: recommend kazam
+  * -devel-extras: recommend bzr, subversion, mercurial; suggest packaging-dev, git-remote-bzr
+  * -baseutils:
+     - drop utopia-keyring (we use keyservers now) and id-utils;
+     - recommend lynx
+     - suggest utopia-games
+
+ -- James Lu <glolol1@hotmail.com>  Tue, 30 Jun 2015 20:21:51 -0700
+
 utopia-meta (2015.06.18) unstable; urgency=medium
 
   * utopia-desktop-cinnamon:

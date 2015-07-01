@@ -48,6 +48,8 @@ date-format="iso"
 context-menus-show-all-actions=true
 show-advanced-permissions=true
 show-location-entry=true
+
+[org.nemo.list-view]
 default-column-order=['name', 'size', 'detailed_type', 'date_modified', 'date_accessed', 'where', 'mime_type', 'octal_permissions', 'type', 'owner', 'group', 'permissions']
 default-visible-columns=['name', 'size', 'detailed_type', 'date_modified', 'type', 'owner', 'group', 'permissions']
 
