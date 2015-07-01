@@ -1,9 +1,11 @@
-utopia-defaults (2015.06.23~) UNRELEASED; urgency=medium
+utopia-defaults (2015.06.30~) UNRELEASED; urgency=medium
 
   * Add more Nemo customizations.
   * Bump font size to Noto Sans* 11.
+  * -cinnamon: Remove key 'dark-theme' from
+    'org.gnome.Terminal.Legacy.Settings' override; it doesn't exist anymore.
 
- -- James Lu <glolol1@hotmail.com>  Tue, 23 Jun 2015 20:21:39 -0700
+ -- James Lu <glolol1@hotmail.com>  Tue, 30 Jun 2015 20:15:51 -0700
 
 utopia-defaults (2015.06.20) unstable; urgency=high
 

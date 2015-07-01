@@ -34,7 +34,6 @@ exec='x-terminal-emulator'
 
 [org.gnome.Terminal.Legacy.Settings]
 confirm-close=false
-dark-theme=true
 menu-accelerator-enabled=false
 
 [org.nemo.desktop]
