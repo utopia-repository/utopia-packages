@@ -59,7 +59,6 @@ Description: Utopia Multimedia Collection (meta-package)
 
 Package: utopia-accessories
 Depends: ${misc:Depends},
- synaptic,
  utopia-accessories-gtk | utopia-accessories-kde
 Recommends: geany,
  galculator,
@@ -73,6 +72,7 @@ Description: Utopia Accessories Collection (meta-package)
 Package: utopia-accessories-gtk
 Depends: ${misc:Depends},
  gdebi,
+ synaptic
 Recommends: lightdm-gtk-greeter-settings,
  mintlocale,
  utopia-accessories,
@@ -92,7 +92,8 @@ Description: Utopia Accessories Collection (GTK)
 Package: utopia-accessories-kde
 Depends: ${misc:Depends},
  gdebi-kde,
- partitionmanager
+ partitionmanager,
+ muon
 Recommends: filelight,
  kmag,
  kcharselect,

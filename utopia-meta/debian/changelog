@@ -1,3 +1,10 @@
+utopia-meta (2015.08.13~exp1) UNRELEASED; urgency=medium
+
+  * Move synaptic to -accessories-gtk, and add muon as an alternative 
+    in -accessories-kde.
+
+ -- James Lu <glolol1@hotmail.com>  Thu, 13 Aug 2015 20:25:51 -0700
+
 utopia-meta (2015.06.30) unstable; urgency=medium
 
   * -printing: recommend task-print-server
