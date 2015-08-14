@@ -475,3 +475,38 @@ Recommends:
  task-print-server
 Architecture: all
 Description: Utopia Desktop Collection - Printing Support (meta-package)
+
+Package: utopia-desktop-kde
+Depends: ${misc:Depends},
+ kde-plasma-desktop,
+ okular,
+ ark,
+ gwenview,
+ kmix,
+ ksnapshot,
+ systemsettings,
+ utopia-desktop,
+ kfind,
+ kdesudo
+Recommends: kdenetwork-filesharing,
+ kgamma,
+ plasma-nm,
+ kde-config-gtk-style,
+ gtk2-engines-oxygen,
+ gtk3-engines-oxygen,
+ utopia-accessories-kde,
+ kwalletmanager,
+ ksysguard,
+ kdf,
+ okular-extra-backends,
+ kdeadmin,
+ user-manager,
+ kdegraphics-thumbnailers,
+ kwin-x11
+Suggests: kate,
+ libreoffice-kde,
+ amarok,
+ kdeutils
+Architecture: all
+Description: Utopia Desktop Collection - KDE edition (meta-package)
+
