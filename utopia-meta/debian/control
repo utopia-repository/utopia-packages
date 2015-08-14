@@ -23,7 +23,7 @@ Recommends: alsa-utils,
  fonts-liberation,
  fonts-dejavu,
  acpi-support,
- utopia-accessories,
+ utopia-accessories
 Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-lxde,
  utopia-multimedia,
  utopia-network,
@@ -216,7 +216,9 @@ Recommends:
  shellcheck,
  gem2deb,
  git-buildpackage,
- imagemagick
+ imagemagick,
+ apt-listchanges,
+ apt-listbugs
 Suggests: utopia-devel-extras
 Architecture: all
 Description: Utopia Development Collection (meta-package)
