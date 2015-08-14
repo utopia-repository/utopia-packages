@@ -176,7 +176,8 @@ Recommends: iptables,
  scrot,
  tree,
  iftop,
- lynx
+ lynx,
+ gdebi-core
 Suggests: utopia-devel,
  utopia-games
 Architecture: all
