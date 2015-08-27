@@ -92,13 +92,13 @@ Description: Utopia Accessories Collection (GTK)
 Package: utopia-accessories-kde
 Depends: ${misc:Depends},
  gdebi-kde,
- partitionmanager,
- muon
+ partitionmanager
 Recommends: filelight,
  kmag,
  kcharselect,
  utopia-accessories,
- ibus-qt4
+ ibus-qt4,
+ muon
 Suggests: skanlite,
  k3b
 Architecture: all
@@ -219,7 +219,8 @@ Recommends:
  git-buildpackage,
  imagemagick,
  apt-listchanges,
- apt-listbugs
+ apt-listbugs,
+ help2man
 Suggests: utopia-devel-extras
 Architecture: all
 Description: Utopia Development Collection (meta-package)
