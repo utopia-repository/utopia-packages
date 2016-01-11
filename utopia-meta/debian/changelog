@@ -1,8 +1,26 @@
-utopia-meta (2015.08.27~) UNRELEASED; urgency=medium
+utopia-meta (2016.01.10) unstable; urgency=medium
 
   * -accessories-kde: Demote muon to recommends; it isn't installable
     in sid right now.
   * -devel: recommend help2man.
+  * -devel-extras: Move git-remote-bzr to recommends, utopia-accessories-extras
+    to suggests
+  * -accessories: recommend keepassx (>= 2.0~)
+  * Replace instances of evince-gtk with evince, as the latter is just a
+    transitional package as of 3.16.1-1
+  * -themes: Demote Mint-X themes to recommends
+  * Add utopia-accessories-extras for pulling in the following (these are
+    useful in specialized installations, but not all):
+      - wine (>= 1.8~) | wine-development (>= 1.7.52~) | wine-staging-compat
+        (>= 1.7)
+      - virtualbox (>= 5.0)
+      - openjdk-8-jre | default-jre
+  * -accessories-gtk: add baobab | gdmap | mate-utils
+  * -multimedia: suggest livestreamer
+  * -desktop-cinnamon: promote brasero to recommends
+  * -desktop-xfce: add xfburn to recommends
+  * -desktop-kde: add k3b to recommmends
+  * -desktop-openbox: add obsession
 
  -- James Lu <glolol1@hotmail.com>  Thu, 27 Aug 2015 09:49:56 -0700
 

@@ -45,7 +45,8 @@ Recommends: vlc, browser-plugin-vlc,
  audacity,
  gimp,
  jpegoptim,
- kazam
+ kazam,
+ livestreamer
 Suggests: inkscape,
  cheese,
  puddletag,
@@ -63,7 +64,7 @@ Depends: ${misc:Depends},
 Recommends: geany,
  galculator,
  ibus,
-Suggests: keepassx
+ keepassx (>= 2.0~)
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
@@ -79,11 +80,11 @@ Recommends: lightdm-gtk-greeter-settings,
  ibus-gtk,
  ibus-gtk3,
  gucharmap,
- gparted
+ gparted,
+ baobab | gdmap | mate-utils
 Suggests: ibus-clutter,
  xfburn,
  simple-scan,
- baobab | mate-utils,
  mugshot | usermode,
  menulibre
 Architecture: all
@@ -98,9 +99,9 @@ Recommends: filelight,
  kcharselect,
  utopia-accessories,
  ibus-qt4,
- muon
-Suggests: skanlite,
- k3b
+ muon,
+ k3b,
+Suggests: skanlite
 Architecture: all
 Description: Utopia Accessories Collection (KDE/Qt)
 
@@ -240,14 +241,15 @@ Recommends: bison,
  python-twisted,
  bzr,
  subversion,
- mercurial
+ mercurial,
+ git-remote-bzr
 Suggests: cowbuilder,
  packaging-dev,
- git-remote-bzr
+ utopia-accessories-extras
 Architecture: all
 Description: Utopia Development Collection (extra libraries)
  This package provides extra libraries and utilities for
- compiling applications. 
+ compiling applications.
 
 Package: utopia-devel-gui
 Depends: ${misc:Depends},
@@ -285,13 +287,12 @@ Description: Utopia Desktop Collection - MATE (meta-package)
 
 Package: utopia-themes
 Depends: ${misc:Depends},
- mint-themes,
- mint-themes-gtk3,
  numix-gtk-theme,
  fonts-noto,
  numix-icon-theme-circle,
  numix-frost-theme
-Recommends: numix-icon-theme-bevel,
+Recommends: mint-themes,
+ mint-themes-gtk3,
  gnome-themes-standard,
  ttf-ubuntu-font-family,
  mint-x-icons
@@ -311,7 +312,7 @@ Depends: ${misc:Depends},
  nemo (>= 2.6),
  gnome-terminal (>= 3.14.2-0ubuntu1~utopia1) | mate-terminal | x-terminal-emulator,
  eog | eom,
- evince | evince-gtk | atril
+ evince | atril
 Recommends: utopia-themes,
  mint-cinnamon-themes,
  utopia-cinnamon-defaults,
@@ -324,9 +325,9 @@ Recommends: utopia-themes,
  gnome-system-log,
  nemo-share (>= 2.6),
  nemo-emblems (>= 2.6),
- simple-scan
-Suggests: brasero,
- gedit | pluma,
+ simple-scan,
+ brasero
+Suggests: gedit | pluma
 Breaks: nautilus
 Architecture: all
 Description: Utopia Desktop - Cinnamon edition (meta-package)
@@ -348,7 +349,7 @@ Recommends: xarchiver | engrampa | file-roller,
  volumeicon-alsa,
  xfce4-mixer,
  xfce4-screenshooter,
- evince-gtk | atril | evince,
+ evince | atril,
  lxtask,
  wicd | network-manager-gnome,
  lubuntu-artwork,
@@ -437,9 +438,10 @@ Recommends: gtk3-engines-xfce,
  xfce4-datetime-plugin,
  xfce4-places-plugin,
  menulibre,
- evince-gtk | evince | atril,
+ evince | atril,
  xfce4-mixer,
- mugshot
+ mugshot,
+ xfburn
 Suggests: mousepad
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (meta-package)
@@ -453,7 +455,7 @@ Depends: ${misc:Depends},
  lxappearance,
  lxappearance-obconf,
 Recommends: nitrogen,
- evince-gtk | atril | evince,
+ evince | atril,
  xarchiver | engrampa | file-roller,
  wicd | network-manager-gnome,
  tint2,
@@ -464,7 +466,8 @@ Recommends: nitrogen,
  thunar | pcmanfm,
  gpicview | ristretto | eog | eom,
  gmrun,
- compton | xcompmgr
+ compton | xcompmgr,
+ obsession
 Suggests: lxtask, bunsen-utilities
 Architecture: all
 Description: Utopia Desktop Collection - Openbox (meta-package)
@@ -514,3 +517,10 @@ Suggests: kate,
 Architecture: all
 Description: Utopia Desktop Collection - KDE edition (meta-package)
 
+Package: utopia-accessories-extras
+Recommends: wine (>= 1.8~) | wine-development (>= 1.7.52~) | wine-staging-compat (>= 1.7),
+ virtualbox (>= 5.0~),
+ openjdk-8-jre | default-jre,
+ utopia-accessories
+Architecture: all
+Description: Utopia Accessories Collection - Extra accessories (meta-package)
