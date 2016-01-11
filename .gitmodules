@@ -1,6 +1,3 @@
-[submodule "roblox-linux-wrapper"]
-	path = roblox-linux-wrapper
-	url = https://github.com/roblox-linux-wrapper/roblox-linux-wrapper
 [submodule "gnome-exe-thumbnailer"]
 	path = gnome-exe-thumbnailer
 	url = git://anonscm.debian.org/pkg-wine/gnome-exe-thumbnailer.git
@@ -11,9 +8,6 @@
 [submodule "numix-gtk-theme"]
 	path = numix-gtk-theme
 	url = https://github.com/GLolol/numix-gtk-theme
-[submodule "screenfetch"]
-	path = screenfetch
-	url = https://github.com/GLolol/screenFetch
 [submodule "mint-cinnamon-themes"]
 	path = mint-cinnamon-themes
 	url = https://github.com/GLolol/mint-cinnamon-themes
