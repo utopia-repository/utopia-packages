@@ -1,3 +1,11 @@
+utopia-defaults (2016.01.10) unstable; urgency=low
+
+  * Default GTK/WM theme is now Numix Frost.
+  * Bump dependency version on utopia-themes.
+  * Update my email.
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 10 Jan 2016 18:22:28 -0800
+
 utopia-defaults (2015.06.30) unstable; urgency=medium
 
   * Add more Nemo customizations.

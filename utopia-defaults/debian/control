@@ -1,7 +1,7 @@
 Source: utopia-defaults
 Section: x11
 Priority: optional
-Maintainer: James Lu <glolol1@hotmail.com>
+Maintainer: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
 Homepage: https://github.com/GLolol/utopia-packages
@@ -9,7 +9,7 @@ Homepage: https://github.com/GLolol/utopia-packages
 Package: utopia-cinnamon-defaults
 Architecture: all
 Depends: ${misc:Depends},
- utopia-themes (>= 2015.06.14~),
+ utopia-themes (>= 2016.01.10~),
  mint-cinnamon-themes,
  cinnamon-common (>= 2.6~),
  cinnamon-desktop-data (>= 2.6.4),
@@ -22,7 +22,7 @@ Description: Utopia Desktop Defaults (Cinnamon Desktop)
 Package: utopia-mate-defaults
 Architecture: all
 Depends: ${misc:Depends},
- utopia-themes (>= 2015.06.14~),
+ utopia-themes (>= 2016.01.10~),
  mate-menu,
  mate-desktop-common (>= 1.8~),
  marco-common (>= 1.8~),
