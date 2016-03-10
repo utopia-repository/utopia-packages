@@ -1,3 +1,38 @@
+utopia-meta (2016.03.09) unstable; urgency=medium
+
+  * -desktop: suggest -desktop-openbox as an alternative
+  * New utopia-vnc-desktop for a basic VNC server setup (provides utopia-desktop)
+  * -devel-gui: remove dependency on -accessories, add explicit recommends on geany instead
+  * -devel-gui: remove python*-tk from recommends
+  * -network-gtk/kde: depend on wireshark-gtk/qt | wireshark, and not plain "wireshark"
+      - Pre-Debian Jessie, only one graphical version of wireshark (the Qt version) was available, under the package name "wireshark"
+  * -desktop-openbox: various changes
+      - recommend orage, menu
+      - move gmrun from recommends to depends
+      - remove bunsen-utilities from suggests (was never available anyways)
+  * New utopia-intl, utopia-intl-zh packages: installs fcitx, mintlocale, gucharmap, etc.
+      - Remove these entries from other utopia-accessories* packages
+  * -baseutils: recommend debian-goodies, dos2unix
+  * -baseutils: demote screenfetch to recommends
+  * -accessories-gtk: Move lightdm-gtk-greeter-settings to suggests
+  * Move network-manager-gnome depends to utopia-network-gtk
+  * -accessories*: loosen dependencies on specific utilities
+  * -themes: move Linux Mint themes, Ubuntu fonts, etc. to suggests
+  * Update my email.
+  * -multimedia: demote mediainfo to suggests, add alternatives to cheese
+  * -themes: recommend breeze-cursor-theme
+  * *-kde: modernize for Plasma 5
+      - Replace kgamma recommends with kgamma5 | kgamma
+      - Add k3b to recommmends
+      - Replace kmix dependency with plasma-pa | kmix
+      - Replace gtk(2|3)-engines-oxygen with gnome-breeze
+      - Move plasma-nm to -network-kde
+      - Suggest utopia-games-gui, which uses many apps from the KDE games suite already
+  * -office: Recommend libreoffice-gtk | libreoffice-kde, libreoffice-math
+  * Bump standards version to 3.9.7.
+
+ -- James Lu <bitflip3@gmail.com>  Wed, 09 Mar 2016 18:15:02 -0800
+
 utopia-meta (2016.01.10) unstable; urgency=medium
 
   * -accessories-kde: Demote muon to recommends; it isn't installable
