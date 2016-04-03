@@ -22,7 +22,9 @@ Depends: ${misc:Depends}
 Recommends: wine (>= 1.8~) | wine-development (>= 1.7.52~) | wine-staging-compat (>= 1.7),
  virtualbox (>= 5.0~),
  openjdk-8-jre | default-jre,
- utopia-accessories
+ utopia-accessories,
+ samba
+Suggests: gnome-exe-thumbnailer
 Architecture: all
 Description: Utopia Accessories Collection - Extra accessories (meta-package)
 
@@ -291,7 +293,6 @@ Depends: ${misc:Depends},
  devscripts,
  utopia-baseutils,
  lsb-release,
- automake,
  debhelper,
  optipng | pngcrush,
  jpegoptim,
@@ -299,8 +300,6 @@ Depends: ${misc:Depends},
  tcpdump,
  pkg-config,
  mtr | mtr-tiny,
- python-pip,
- python3-pip,
  nmap
 Recommends:
  cmake,
@@ -319,7 +318,19 @@ Recommends:
  imagemagick,
  apt-listchanges,
  apt-listbugs,
- help2man
+ help2man,
+ python3-pip,
+ openssl,
+ gnutls-dev,
+ libssl-dev,
+ gnutls-bin,
+ ntp,
+ ntpdate,
+ openssl,
+ libssl-dev,
+ libwww-perl,
+ libgnutls-dev | gnutls-dev,
+ gnutls-bin
 Suggests: utopia-devel-extras
 Architecture: all
 Description: Utopia Development Collection (meta-package)
@@ -329,9 +340,6 @@ Description: Utopia Development Collection (meta-package)
 Package: utopia-devel-extras
 Depends: ${misc:Depends},
  utopia-devel,
- libwww-perl,
- libssl-dev,
- libgnutls28-dev | libgnutls-dev
 Recommends: bison,
  flex,
  yasm,
@@ -340,7 +348,9 @@ Recommends: bison,
  bzr,
  subversion,
  mercurial,
- git-remote-bzr
+ git-remote-bzr,
+ lua5.3 | lua,
+ lua-socket (>= 3.0~rc1~)
 Suggests: cowbuilder,
  packaging-dev,
  utopia-accessories-extras
@@ -467,7 +477,6 @@ Depends: ${misc:Depends},
  iceweasel | firefox | x-www-browser,
  utopia-network-gtk | utopia-network-kde
 Recommends:
- hexchat,
  thunderbird | icedove,
  deluge,
  zenmap,
@@ -483,7 +492,8 @@ Recommends: vinagre,
  uget,
  utopia-network,
  network-manager-openvpn-gnome,
- network-manager-gnome | wicd
+ network-manager-gnome | wicd,
+ hexchat
 Architecture: all
 Description: Utopia Network Collection (GTK)
 
@@ -493,7 +503,8 @@ Recommends: krdc,
  wireshark-qt | wireshark,
  kget,
  utopia-network,
- plasma-nm
+ plasma-nm,
+ konversation
 Architecture: all
 Description: Utopia Network Collection (KDE/Qt)
 
