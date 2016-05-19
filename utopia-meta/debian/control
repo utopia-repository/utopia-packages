@@ -415,6 +415,7 @@ Package: utopia-multimedia
 Depends: ${misc:Depends}
 Recommends: audacity,
             browser-plugin-vlc,
+            ffmpeg (>= 7:3.0~),
             gimp,
             jpegoptim,
             kazam,
@@ -424,7 +425,6 @@ Recommends: audacity,
             spek,
             vlc
 Suggests: cheese | kamoso | kamerka | guvcview,
-          ffmpeg (>= 7:2.0.0) | libav-tools,
           inkscape,
           isomaster,
           mediainfo,
