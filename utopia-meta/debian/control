@@ -436,7 +436,7 @@ Description: Utopia Multimedia Collection (meta-package)
  (audio, video, and images).
 
 Package: utopia-network
-Depends: iceweasel | firefox | x-www-browser,
+Depends: firefox | firefox-esr | iceweasel | x-www-browser,
          utopia-network-gtk | utopia-network-kde,
          ${misc:Depends}
 Recommends: deluge, mtr, thunderbird | icedove, zenmap
