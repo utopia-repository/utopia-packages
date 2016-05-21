@@ -1,3 +1,9 @@
+utopia-defaults (2016.05.21) unstable; urgency=medium
+
+  * "Numix Frost" GTK theme is now "Numix-Frost".
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 21 May 2016 11:29:39 -0700
+
 utopia-defaults (2016.01.10) unstable; urgency=low
 
   * Default GTK/WM theme is now Numix Frost.
