@@ -1,3 +1,10 @@
+utopia-defaults (2016.05.21+1) unstable; urgency=medium
+
+  * Fix window manager themes to use Numix-Frost too.
+  * Bump Standards version to 3.9.8.
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 21 May 2016 12:51:14 -0700
+
 utopia-defaults (2016.05.21) unstable; urgency=medium
 
   * "Numix Frost" GTK theme is now "Numix-Frost".

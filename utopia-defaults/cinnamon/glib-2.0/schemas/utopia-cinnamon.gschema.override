@@ -9,7 +9,7 @@ font-name="Noto Sans 11"
 document-font-name="Noto Sans 11"
 
 [org.cinnamon.desktop.wm.preferences]
-theme='Numix Frost'
+theme='Numix-Frost'
 num-workspaces=1
 titlebar-font="Noto Sans Bold 11"
 titlebar-uses-system-font=false

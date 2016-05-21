@@ -32,7 +32,7 @@ font="Noto Sans 11"
 enable-delete=true
 
 [org.mate.Marco.general]
-theme="Mumix Frost"
+theme="Numix-Frost"
 button-layout="menu:minimize,maximize,close"
 num-workspaces=1
 side-by-side-tiling=true
