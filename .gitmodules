@@ -22,3 +22,11 @@
 [submodule "ircmatch"]
 	path = ircmatch
 	url = https://github.com/GLolol/ircmatch
+[submodule "numix-frost-theme"]
+	path = numix-frost-theme
+	url = https://github.com/GLolol/numix-gtk-themes
+	branch = numix-frost+debian
+[submodule "numix-frost-light-theme"]
+	path = numix-frost-light-theme
+	url = https://github.com/GLolol/numix-gtk-themes
+	branch = numix-frost-light+debian
