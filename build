@@ -2,7 +2,7 @@
 if [[ -z "$1" || "$1" == "all" ]]; then
 	packages=$(find . -maxdepth 1 -mindepth 1 -type d ! -name '.git')
 else
-	packages=($1)
+	packages="$@"
 fi
 
 echo Packages to build: $packages
@@ -11,6 +11,6 @@ shift
 for dir in $packages; do
 	cd $dir
 	echo BUILDING: $dir
-	dpkg-buildpackage $@
+	dpkg-buildpackage -us -uc
 	cd ..
 done
