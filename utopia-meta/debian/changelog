@@ -1,6 +1,7 @@
 utopia-meta (2016.07.10~) UNRELEASED; urgency=medium
 
   * Bump standards-version to 3.9.8
+  * Re-run wrap-and-sort.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 10 Jul 2016 16:40:14 -0700
 
