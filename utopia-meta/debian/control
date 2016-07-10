@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.7
+Standards-Version: 3.9.8
 Maintainer: James Lu <bitflip3@gmail.com>
 
 Package: utopia-accessories
