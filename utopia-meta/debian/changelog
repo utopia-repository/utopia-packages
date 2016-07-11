@@ -1,7 +1,23 @@
-utopia-meta (2016.07.10~) UNRELEASED; urgency=medium
+utopia-meta (2016.07.10) unstable; urgency=medium
 
-  * Bump standards-version to 3.9.8
+  * Bump standards-version to 3.9.8.
   * Re-run wrap-and-sort.
+  * Move gparted to utopia-accessories, removing partitionmanager (missing from stretch),
+  * -accessories-extras: recommend gnome-exe-thumbnailer, cifs-utils, smbclient.
+  * -accessories-gtk: add brasero as alternative to xfburn.
+  * -desktop: remove fonts-droid and cifs-utils.
+  * -desktop-cinnamon: bump versioned depends to Cinnamon 3.x.
+  * -desktop-cinnamon: remove versioned recommends on forked gnome-terminal.
+  * -desktop-kde: remove amarok from suggests.
+  * -desktop-lxde: remove lubuntu-artwork from suggests.
+  * -desktop-(lxde|xfce): prefer file-roller over xarchiver.
+  * -devel: lower dependencies to recommends.
+  * -games-gui: remove depends on CLI-based utopia-games.
+  * -utopia-network: recommend google-chrome-stable when available.
+  * -themes: recommend Arc, Vertex, Numix, Zuki*, and Paper themes.
+  * -themes: suggest mate-icon-theme-faenza.
+  * -vnc-desktop: replace fonts-droid with fonts-noto.
+  * -vnc-desktop: prefer tigervnc-standalone-server over tightvncserver.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 10 Jul 2016 16:40:14 -0700
 
