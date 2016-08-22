@@ -1,3 +1,11 @@
+utopia-meta (2016.08.21) unstable; urgency=medium
+
+  * utopia-themes: update dependencies (arc-gtk-theme->arc-theme, vertex-gtk-theme->vertex-theme)
+  * utopia-desktop-kde: switch gnome-breeze to gtk3-engines-breeze
+  * utopia-vnc-desktop: reworded description
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 21 Aug 2016 19:44:30 -0700
+
 utopia-meta (2016.07.10) unstable; urgency=medium
 
   * Bump standards-version to 3.9.8.
