@@ -1,19 +1,16 @@
 Source: utopia-transitional
-Section: misc
+Section: oldlibs
 Build-Depends: debhelper (>= 9)
 Priority: extra
 Homepage: https://github.com/GLolol/utopia-packages
-Standards-Version: 3.9.6
-Maintainer: James Lu <glolol1@hotmail.com>
+Standards-Version: 3.9.8
+Maintainer: James Lu <bitflip3@gmail.com>
 
-Package: gnome-icon-theme-full
-Depends: ${misc:Depends}, gnome-icon-theme-extras
+Package: arc-gtk-theme
+Depends: ${misc:Depends}, arc-theme
 Architecture: all
-Description: Dependency package for gnome-icon-theme-full
- Dependency package routing gnome-icon-theme-full -> gnome-icon-theme-extras.
-
-Package: wine-dummy
-Depends: ${misc:Depends}
-Architecture: all
-Description: Dummy dependency package for Wine
- This is a dummy dependency package for Wine.
+Description: Transitional package for arc-theme
+ Arc is a flat theme with transparent elements for GTK+ 3, GTK+ 2 and GNOME
+ Shell. It supports GNOME, Unity, Budgie, Pantheon, XFCE, Mate, and others.
+ .
+ This transitional package can be safely removed.
