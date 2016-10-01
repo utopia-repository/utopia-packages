@@ -60,6 +60,7 @@ Depends: bind9-host | host,
          less,
          nano,
          openssh-client,
+         iputils-ping | ping,
          python3,
          rsync,
          screen,
@@ -77,6 +78,7 @@ Recommends: command-not-found,
             screenfetch,
             scrot,
             tree,
+            whois
 Suggests: utopia-devel, utopia-games
 Architecture: all
 Description: Utopia Base Collection (meta-package)
@@ -327,7 +329,12 @@ Recommends: bison,
             scons,
             subversion,
             yasm,
-Suggests: cowbuilder, packaging-dev, utopia-accessories-extras
+            python3-pypandoc,
+            doxygen
+Suggests: cowbuilder,
+          nodejs (>= 4),
+          packaging-dev,
+          utopia-accessories-extras
 Architecture: all
 Description: Utopia Development Collection (extra libraries)
  This package provides extra libraries and utilities for
@@ -470,11 +477,18 @@ Depends: libreoffice-calc,
          libreoffice-impress,
          libreoffice-writer,
          ${misc:Depends},
-Recommends: browser-plugin-libreoffice,
+Recommends: fonts-crosextra-caladea,
+            fonts-crosextra-carlito,
+            fonts-linuxlibertine,
+            fonts-sil-gentium-basic,
+            hunspell-en-ca,
             hunspell-en-us,
             hyphen-en-us,
-            libreoffice-gtk | libreoffice-kde,
+            libreoffice-gtk2 | libreoffice-gtk | libreoffice-kde,
+            libreoffice-lightproof-en,
             libreoffice-math,
+            libreoffice-ogltrans,
+            mythes-en-ca,
             mythes-en-us,
 Suggests: libreoffice, openclipart-libreoffice
 Architecture: all

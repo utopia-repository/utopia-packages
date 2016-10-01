@@ -1,3 +1,20 @@
+utopia-meta (2016.10.01) unstable; urgency=medium
+
+  * baseutils: recommend whois
+  * baseutils: depend on iputils-ping | ping
+  * devel-extras: suggest nodejs (>= 4)
+  * devel-extras: recommend python3-pypandoc, doxygen
+  * office: Updates to match the 'libreoffice' package better
+    - recommend upstream fonts: fonts-crosextra-caladea, fonts-crosextra-carlito,
+      fonts-linuxlibertine, fonts-sil-gentium-basic
+    - Add English (Canadian) language support: hunspell-en-ca, mythes-en-ca
+    - Prefer GTK2 integration: libreoffice-gtk2
+    - Add English grammar checking: libreoffice-lightproof-en
+    - Recommend libreoffice-ogltrans for OpenGL support in Libreoffice Impress
+    - Drop browser-plugin-libreoffice; it is no longer available
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 01 Oct 2016 13:25:11 -0700
+
 utopia-meta (2016.08.21) unstable; urgency=medium
 
   * utopia-themes: update dependencies (arc-gtk-theme->arc-theme, vertex-gtk-theme->vertex-theme)
