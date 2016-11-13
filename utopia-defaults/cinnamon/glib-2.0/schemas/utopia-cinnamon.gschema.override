@@ -28,6 +28,9 @@ numlock-state="on"
 [org.cinnamon.desktop.default-applications.terminal]
 exec='x-terminal-emulator'
 
+[org.cinnamon.muffin]
+tile-maximize=true
+
 [org.nemo.desktop]
 font="Noto Sans 11"
 computer-icon-visible=true
