@@ -15,9 +15,17 @@ Depends: ${misc:Depends},
  cinnamon-desktop-data (>= 2.6.4),
  muffin-common (>= 2.6~),
  cinnamon-settings-daemon (>= 2.6)
-Recommends: libpam-systemd, gnome-terminal-data
+Recommends: libpam-systemd, utopia-gnomeapps-defaults
 Description: Utopia Desktop Defaults (Cinnamon Desktop)
  This package contains customized defaults for the Cinnamon Desktop.
+
+Package: utopia-gnomeapps-defaults
+Architecture: all
+Depends: ${misc:Depends},
+ gnome-terminal-data,
+ gsettings-desktop-schemas
+Description: Utopia Desktop Defaults (GNOME apps)
+ This package contains customized defaults for GNOME applications.
 
 Package: utopia-mate-defaults
 Architecture: all

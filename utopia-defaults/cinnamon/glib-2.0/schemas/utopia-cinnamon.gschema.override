@@ -4,10 +4,6 @@ gtk-theme='Numix-Frost'
 icon-theme='Numix-Circle'
 font-name="Noto Sans 11"
 
-[org.gnome.desktop.interface]
-font-name="Noto Sans 11"
-document-font-name="Noto Sans 11"
-
 [org.cinnamon.desktop.wm.preferences]
 theme='Numix-Frost'
 num-workspaces=1
@@ -31,10 +27,6 @@ numlock-state="on"
 
 [org.cinnamon.desktop.default-applications.terminal]
 exec='x-terminal-emulator'
-
-[org.gnome.Terminal.Legacy.Settings]
-confirm-close=false
-menu-accelerator-enabled=false
 
 [org.nemo.desktop]
 font="Noto Sans 11"
