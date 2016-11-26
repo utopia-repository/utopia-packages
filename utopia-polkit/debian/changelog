@@ -1,0 +1,12 @@
+utopia-polkit (2016.11.26) experimental; urgency=low
+
+  * New package, forked from Ubuntu's policykit-desktop-privileges 0.20:
+    http://packages.ubuntu.com/xenial/policykit-desktop-privileges
+  * Utopia Repository-specific changes:
+      - Refresh group names for Debian: use "adm", "sudo", and "netdev" where
+        applicable instead of "sudo" and "admin".
+      - Drop Whoopsie, hibernation, apt, usb-creator rules; they aren't
+        relevant for my use-case.
+      - Refresh long description.
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 26 Nov 2016 00:09:37 -0800
