@@ -1,3 +1,22 @@
+utopia-meta (2016.12.01) unstable; urgency=medium
+
+  * -accessories: make sure that a browser (firefox, chromium, or any
+    x-www-browser) and a media player (vlc) are installed
+  * -accessories-extras: demote gnome-exe-thumbnailer to suggests;
+    it's not relevant on all setups
+  * -accessories-gtk: recommend qt5-style-plugins (>= 5.0.0+git20161024-0.1~)
+    and qt5ct for GTK+ theme support on Qt >= 5.7
+  * -desktop: recommend iw, xdg-utils to better match task-desktop
+  * -desktop: drop irrelevant ubufox breaks
+  * -desktop: recommend utopia-polkit (policykit privileges for admins)
+  * -desktop-cinnamon: recommend qt5ct for Qt theme configuration
+  * -multimedia: drop jpegoptim, optipng
+  * -multimedia: recommend obs-studio | kazam for screen recording
+  * -themes: remove recommends on Linux Mint themes; they aren't yet
+    compatible with new GTK+ and thus aren't shipped anymore
+
+ -- James Lu <bitflip3@gmail.com>  Wed, 30 Nov 2016 23:23:55 -0800
+
 utopia-meta (2016.10.01) unstable; urgency=medium
 
   * baseutils: recommend whois
