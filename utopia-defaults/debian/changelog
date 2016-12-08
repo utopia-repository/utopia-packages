@@ -1,3 +1,10 @@
+utopia-defaults (2016.12.07) unstable; urgency=medium
+
+  * -cinnamon: default to maximize when dragging windows to the top of screen
+  * -cinnamon: disable automatically opening Nemo when media is automounted
+
+ -- James Lu <bitflip3@gmail.com>  Wed, 07 Dec 2016 20:02:57 -0800
+
 utopia-defaults (2016.11.12) unstable; urgency=medium
 
   * Split Cinnamon defaults into -cinnamon-defaults and -gnomeapps-defaults.
