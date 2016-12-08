@@ -35,6 +35,8 @@ Description: Utopia Accessories Collection - Extra accessories (meta-package)
 Package: utopia-accessories-gtk
 Depends: gdebi, synaptic, ${misc:Depends}
 Recommends: baobab | gdmap | mate-utils,
+            fuse,
+            gvfs-backends,
             qt5-style-plugins (>= 5.0.0+git20161024-0.1~),
             qt5ct,
             utopia-accessories
@@ -100,19 +102,18 @@ Depends: desktop-base,
          ${misc:Depends}
 Recommends: acpi-support,
             alsa-utils,
+            anacron,
             avahi-daemon,
             eject,
             fonts-dejavu,
             fonts-liberation,
             fonts-noto,
-            fuse,
-            gvfs-backends,
             iw,
             ntfs-3g,
             utopia-accessories,
             utopia-polkit,
             xdg-utils
-Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-openbox | utopia-desktop-lxde,
+Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-lxqt,
           utopia-devel-gui,
           utopia-multimedia,
           utopia-network,
@@ -144,14 +145,15 @@ Recommends: baobab,
             gnome-system-log,
             gnome-system-monitor | mate-system-monitor,
             mint-cinnamon-themes,
+            nemo-audio-tab,
             nemo-emblems (>= 2.6),
             nemo-fileroller (>= 2.6),
-            nemo-share (>= 2.6),
+            nemo-media-columns,
             qt5ct,
             simple-scan,
             utopia-cinnamon-defaults,
             utopia-themes
-Suggests: gedit | pluma
+Suggests: gedit | pluma, nemo-share
 Breaks: nautilus
 Architecture: all
 Description: Utopia Desktop - Cinnamon edition (meta-package)
@@ -538,7 +540,7 @@ Recommends: desktop-base,
             tigervnc-standalone-server | tightvncserver,
             xorg
 Suggests: utopia-accessories,
-          utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde,
+          utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde | utopia-desktop-lxqt,
           utopia-devel-gui
 Architecture: all
 Provides: utopia-desktop

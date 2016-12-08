@@ -1,5 +1,7 @@
-utopia-meta (2016.12.01) unstable; urgency=medium
+utopia-meta (2016.12.07) unstable; urgency=medium
 
+  * Move fuse, gvfs-backends from -desktop to -accessories-gtk,
+    as not all desktop environments use them.
   * -accessories: make sure that a browser (firefox, chromium, or any
     x-www-browser) and a media player (vlc) are installed
   * -accessories-extras: demote gnome-exe-thumbnailer to suggests;
@@ -9,13 +11,19 @@ utopia-meta (2016.12.01) unstable; urgency=medium
   * -desktop: recommend iw, xdg-utils to better match task-desktop
   * -desktop: drop irrelevant ubufox breaks
   * -desktop: recommend utopia-polkit (policykit privileges for admins)
+  * -desktop: add utopia-desktop-lxqt alternative (not yet
+    available but may be in the future)
+  * -desktop: suggest anacron to match task-desktop more closely
+  * -desktop-cinnamon: recommend new extensions nemo-audio-tab
+    and nemo-media-columns
+  * -desktop-cinnamon: demote nemo-share to suggests
   * -desktop-cinnamon: recommend qt5ct for Qt theme configuration
   * -multimedia: drop jpegoptim, optipng
   * -multimedia: recommend obs-studio | kazam for screen recording
   * -themes: remove recommends on Linux Mint themes; they aren't yet
     compatible with new GTK+ and thus aren't shipped anymore
 
- -- James Lu <bitflip3@gmail.com>  Wed, 30 Nov 2016 23:23:55 -0800
+ -- James Lu <bitflip3@gmail.com>  Wed, 07 Dec 2016 20:05:43 -0800
 
 utopia-meta (2016.10.01) unstable; urgency=medium
 
