@@ -22,6 +22,9 @@ favorite-apps=['iceweasel.desktop', 'cinnamon-settings.desktop', 'gnome-terminal
 [org.cinnamon.theme]
 name="Linux Mint"
 
+[org.cinnamon.desktop.media-handling]
+automount-open=false
+
 [org.cinnamon.settings-daemon.peripherals.keyboard]
 numlock-state="on"
 
