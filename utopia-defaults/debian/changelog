@@ -1,3 +1,11 @@
+utopia-defaults (2017.02.09) unstable; urgency=medium
+
+  * Add package utopia-cinnamon-tweaks to pull in some tweaks:
+      - Installing a (non-hidden) desktop shortcut to Cinnamon's Menu Editor.
+  * Bump to debhelper 10.
+
+ -- James Lu <bitflip3@gmail.com>  Thu, 09 Feb 2017 17:15:30 -0800
+
 utopia-defaults (2016.12.07) unstable; urgency=medium
 
   * -cinnamon: default to maximize when dragging windows to the top of screen
