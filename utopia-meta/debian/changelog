@@ -1,3 +1,16 @@
+utopia-meta (2017.02.09) unstable; urgency=medium
+
+  * -accessories: suggest psensor, lmsensors
+  * -baseutils: recommend reptyr
+  * -desktop: suggest lxpolkit | polkit-1-auth-agent
+  * -desktop-openbox: add alternative recommends obsession | lxsession-logout
+  * -intl-zh: prefer fcitx-sunpinyin, add fcitx-pinyin alternative
+  * -baseutils: demote git, rsync to recommends
+  * -baseutils: depend on alternative: openssh-client | ssh-client
+  * -desktop-cinnamon: recommend utopia-cinnamon-tweaks
+
+ -- James Lu <bitflip3@gmail.com>  Thu, 09 Feb 2017 17:30:27 -0800
+
 utopia-meta (2016.12.07) unstable; urgency=medium
 
   * Move fuse, gvfs-backends from -desktop to -accessories-gtk,

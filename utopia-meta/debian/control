@@ -13,6 +13,8 @@ Recommends: firefox | firefox-esr | google-chrome-stable | chromium | x-www-brow
             geany,
             gparted,
             keepassx (>= 2.0~),
+            lmsensors,
+            psensor,
             vlc
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
@@ -65,14 +67,12 @@ Package: utopia-baseutils
 Depends: bind9-host | host,
          curl,
          file,
-         git,
          htop,
          iputils-ping | ping,
          less,
          nano,
-         openssh-client,
+         openssh-client | ssh-client,
          python3,
-         rsync,
          screen,
          sudo,
          traceroute,
@@ -82,9 +82,12 @@ Recommends: command-not-found,
             debian-goodies,
             dos2unix,
             gdebi-core,
+            git,
             iftop,
             iptables,
             lynx,
+            reptyr,
+            rsync,
             screenfetch,
             scrot,
             tree,
@@ -113,7 +116,8 @@ Recommends: acpi-support,
             utopia-accessories,
             utopia-polkit,
             xdg-utils
-Suggests: utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-lxqt,
+Suggests: lxpolkit | polkit-1-auth-agent,
+          utopia-desktop-cinnamon | utopia-desktop-mate | utopia-desktop-xfce | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-lxqt,
           utopia-devel-gui,
           utopia-multimedia,
           utopia-network,
@@ -152,6 +156,7 @@ Recommends: baobab,
             qt5ct,
             simple-scan,
             utopia-cinnamon-defaults,
+            utopia-cinnamon-tweaks,
             utopia-themes
 Suggests: gedit | pluma, nemo-share
 Breaks: nautilus
@@ -242,7 +247,7 @@ Recommends: compton | xcompmgr,
             gpicview | ristretto | eog | eom,
             lxterminal | xfce4-terminal,
             nitrogen,
-            obsession,
+            obsession | lxsession-logout,
             thunar | pcmanfm,
             tint2,
             volumeicon-alsa,
@@ -414,7 +419,7 @@ Architecture: all
 Description: Utopia I18n - common packagest (meta-package)
 
 Package: utopia-intl-zh
-Depends: fcitx-googlepinyin | fcitx-sunpinyin | fctix-libpinyin,
+Depends: fcitx-sunpinyin | fcitx-googlepinyin | fctix-libpinyin | fcitx-pinyin,
          utopia-intl,
          ${misc:Depends}
 Recommends: fonts-arphic-ukai,
