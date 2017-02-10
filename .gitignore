@@ -13,3 +13,4 @@
 !**/debian/source/
 *.build
 utopia-keyring/*.gpg
+**/debhelper-build-stamp
