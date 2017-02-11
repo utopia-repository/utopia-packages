@@ -32,3 +32,8 @@ ResultActive=yes
 Identity=unix-group:adm;unix-group:sudo
 Action=org.freedesktop.locale1.set-locale;org.freedesktop.locale1.set-keyboard;org.freedesktop.hostname1.set-static-hostname;org.freedesktop.hostname1.set-hostname
 ResultActive=yes
+
+[Passwordless virtual machine management]
+Identity=unix-group:adm;unix-group:sudo
+Action=org.libvirt.unix.manage
+ResultActive=yes
