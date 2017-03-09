@@ -1,10 +1,10 @@
 Source: utopia-keyring
 Section: misc
 Priority: optional
-Maintainer: James Lu <glolol@overdrive.pw>
+Maintainer: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.6
-Homepage: https://github.com/GLolol/utopia-packages
+Standards-Version: 3.9.8
+Homepage: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-keyring
 Architecture: all
