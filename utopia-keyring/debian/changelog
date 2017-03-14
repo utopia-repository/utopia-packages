@@ -1,3 +1,11 @@
+utopia-keyring (2017.03.14) unstable; urgency=medium
+
+  * Add new key: "Utopia Repository Automatic Signing Key
+    <webmaster@overdrivenetworks.com>" (keyid 4A8C96B8EEBB01E6) for the
+    sid-nightlies repository.
+
+ -- James Lu <bitflip3@gmail.com>  Tue, 14 Mar 2017 12:40:34 -0700
+
 utopia-keyring (2017.03.08) unstable; urgency=medium
 
   * Update to the latest signing key.
