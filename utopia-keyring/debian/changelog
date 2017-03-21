@@ -1,3 +1,9 @@
+utopia-keyring (2017.03.20+2~) UNRELEASED; urgency=low
+
+  * Loosen gnupg build dependency version.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 23:28:04 -0700
+
 utopia-keyring (2017.03.20+1) unstable; urgency=critical
 
   * Fix corrupt output files due to gnupg 2.1's new default keybox format.
