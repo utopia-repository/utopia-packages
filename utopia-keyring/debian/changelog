@@ -1,3 +1,20 @@
+utopia-keyring (2017.03.20+1) unstable; urgency=critical
+
+  * Fix corrupt output files due to gnupg 2.1's new default keybox format.
+    This adapts build system fixes as mentioned at
+    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=846892
+  * Add gnupg (>= 2.1~) as a build dependency.
+  * Add a simple test case using 'gpg --list-packets' to make sure the output
+    key data is valid.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 19:40:11 -0700
+
+utopia-keyring (2017.03.20) unstable; urgency=high
+
+  * Bugfix: re-add keyid 4A8C96B8EEBB01E6 from last upload.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 19:12:40 -0700
+
 utopia-keyring (2017.03.19) unstable; urgency=medium
 
   * Refresh subkeys.
