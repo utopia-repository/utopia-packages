@@ -1,0 +1,52 @@
+utopia-keyring (2017.03.20+2~) UNRELEASED; urgency=low
+
+  * Loosen gnupg build dependency version.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 23:28:04 -0700
+
+utopia-keyring (2017.03.20+1) unstable; urgency=critical
+
+  * Fix corrupt output files due to gnupg 2.1's new default keybox format.
+    This adapts build system fixes as mentioned at
+    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=846892
+  * Add gnupg (>= 2.1~) as a build dependency.
+  * Add a simple test case using 'gpg --list-packets' to make sure the output
+    key data is valid.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 19:40:11 -0700
+
+utopia-keyring (2017.03.20) unstable; urgency=high
+
+  * Bugfix: re-add keyid 4A8C96B8EEBB01E6 from last upload.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 19:12:40 -0700
+
+utopia-keyring (2017.03.19) unstable; urgency=medium
+
+  * Refresh subkeys.
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 19 Mar 2017 17:11:34 -0700
+
+utopia-keyring (2017.03.14) unstable; urgency=medium
+
+  * Add new key: "Utopia Repository Automatic Signing Key
+    <webmaster@overdrivenetworks.com>" (keyid 4A8C96B8EEBB01E6) for the
+    sid-nightlies repository.
+  * Refresh my main key with updated UIDs.
+
+ -- James Lu <bitflip3@gmail.com>  Tue, 14 Mar 2017 12:40:34 -0700
+
+utopia-keyring (2017.03.08) unstable; urgency=medium
+
+  * Update to the latest signing key.
+  * Update maintainer email and homepage link.
+  * Bump standards version to 3.9.8 - no changes needed.
+  * Copyright file updates.
+
+ -- James Lu <bitflip3@gmail.com>  Wed, 08 Mar 2017 19:15:34 -0800
+
+utopia-keyring (2015.01.13) unstable; urgency=medium
+
+  * Initial release.
+
+ -- James Lu <glolol@overdrive.pw>  Tue, 13 Jan 2015 20:19:43 -0800

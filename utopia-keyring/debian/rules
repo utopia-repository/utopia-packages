@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+KEYRING=utopia-repository.gpg
+
+%:
+	dh $@
+
+$(KEYRING): archive.asc
+	gpg --dearmor --output $(CURDIR)/$@ $<
+
+override_dh_auto_build: $(KEYRING)
+
+override_dh_auto_clean:
+	rm -f *.gpg *.gpg~
+
+override_dh_auto_test:
+	# Make sure the keyring file is valid
+	gpg --list-packets $(KEYRING)

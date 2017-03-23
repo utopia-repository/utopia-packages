@@ -1,0 +1,13 @@
+Source: utopia-keyring
+Section: misc
+Priority: optional
+Maintainer: James Lu <bitflip3@gmail.com>
+Build-Depends: debhelper (>= 9), gnupg
+Standards-Version: 3.9.8
+Homepage: https://github.com/utopia-repository/utopia-packages
+
+Package: utopia-keyring
+Architecture: all
+Depends: ${misc:Depends}
+Description: GnuPG archive keys for the Utopia Repository
+ This package contains the GnuPG public keys for the Utopia Repository.
