@@ -15,17 +15,17 @@ Depends: ${misc:Depends},
  cinnamon-desktop-data (>= 2.6.4),
  muffin-common (>= 2.6~),
  cinnamon-settings-daemon (>= 2.6)
-Recommends: libpam-systemd, utopia-gnomeapps-defaults, utopia-cinnamon-tweaks
+Recommends: libpam-systemd, utopia-gnomeapps-defaults
 Description: Utopia Desktop Defaults (Cinnamon Desktop)
  This package contains customized defaults for the Cinnamon Desktop.
 
 Package: utopia-cinnamon-tweaks
 Architecture: all
-Depends: ${misc:Depends}, cinnamon
-Description: Utopia Tweaks for Cinnamon
- This package includes some tweaks for the Cinnamon desktop:
- .
- * Installing a (non-hidden) desktop shortcut to Cinnamon's Menu Editor.
+Section: oldlibs
+Depends: ${misc:Depends}, utopia-cinnamon-defaults
+Description: Utopia Tweaks for Cinnamon (transitional package)
+ This is a transitional package to utopia-cinnamon-defaults; it can be safely
+ removed.
 
 Package: utopia-gnomeapps-defaults
 Architecture: all

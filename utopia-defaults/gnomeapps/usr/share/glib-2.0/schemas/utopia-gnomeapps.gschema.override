@@ -6,3 +6,7 @@ document-font-name="Noto Sans 11"
 confirm-close=false
 menu-accelerator-enabled=false
 theme-variant="dark"
+
+[org.gtk.Settings.FileChooser]
+location-mode="filename-entry"
+startup-mode="cwd"
