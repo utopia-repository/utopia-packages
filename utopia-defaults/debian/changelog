@@ -1,7 +1,7 @@
-utopia-defaults (2017.03.23!) UNRELEASED; urgency=medium
+utopia-defaults (2017.04.13) unstable; urgency=medium
 
-  * Merge utopia-cinnamon-tweaks into utopia-cinnamon-defaults, making the former
-    a transitional package.
+  * Merge utopia-cinnamon-tweaks into utopia-cinnamon-defaults, making the
+    former a transitional package.
   * Restructured sources to pull from FHS-style paths directly.
   * -gnomeapps-defaults: override GTK 3 file chooser defaults to start in
     file entry mode and the current working directory.

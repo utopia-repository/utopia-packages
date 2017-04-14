@@ -22,6 +22,7 @@ Description: Utopia Desktop Defaults (Cinnamon Desktop)
 Package: utopia-cinnamon-tweaks
 Architecture: all
 Section: oldlibs
+Priority: extra
 Depends: ${misc:Depends}, utopia-cinnamon-defaults
 Description: Utopia Tweaks for Cinnamon (transitional package)
  This is a transitional package to utopia-cinnamon-defaults; it can be safely
