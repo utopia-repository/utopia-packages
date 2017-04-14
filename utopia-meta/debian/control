@@ -9,13 +9,12 @@ Maintainer: James Lu <bitflip3@gmail.com>
 Package: utopia-accessories
 Depends: utopia-accessories-gtk | utopia-accessories-kde, ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | x-www-browser,
-            galculator,
             geany,
-            gparted,
             keepassx (>= 2.0~),
-            lmsensors,
-            psensor,
+            lm-sensors,
+            qalculate-gtk | qalculate | galculator,
             vlc
+Suggests: psensor
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
@@ -38,11 +37,14 @@ Package: utopia-accessories-gtk
 Depends: gdebi, synaptic, ${misc:Depends}
 Recommends: baobab | gdmap | mate-utils,
             fuse,
+            gparted,
             gvfs-backends,
             qt5-style-plugins (>= 5.0.0+git20161024-0.1~),
             qt5ct,
-            utopia-accessories
+            utopia-accessories,
+            xzoom
 Suggests: brasero | xfburn,
+          gnome-alsamixer,
           lightdm-gtk-greeter-settings,
           menulibre,
           mugshot | usermode,
@@ -51,13 +53,12 @@ Architecture: all
 Description: Utopia Accessories Collection (GTK)
 
 Package: utopia-accessories-kde
-Depends: ${misc:Depends}
+Depends: muon, qapt-utils | gdebi-kde, ${misc:Depends}
 Recommends: filelight,
-            gdebi-kde,
             k3b,
             kcharselect,
             kmag,
-            muon,
+            partitionmanager | gparted,
             utopia-accessories
 Suggests: skanlite
 Architecture: all
@@ -91,6 +92,7 @@ Recommends: command-not-found,
             screenfetch,
             scrot,
             tree,
+            utopia-keyring,
             whois
 Suggests: utopia-devel, utopia-games
 Architecture: all
@@ -134,11 +136,11 @@ Depends: cinnamon (>= 3),
          cinnamon-screensaver (>= 3),
          cinnamon-session (>= 3),
          cinnamon-settings-daemon (>= 3),
-         eog | eom,
          evince | atril,
          gnome-terminal | mate-terminal | x-terminal-emulator,
          muffin (>= 3),
          nemo (>= 3),
+         shotwell | eog | eom,
          utopia-desktop,
          ${misc:Depends}
 Recommends: baobab,
@@ -159,33 +161,40 @@ Recommends: baobab,
             utopia-cinnamon-tweaks,
             utopia-themes
 Suggests: gedit | pluma, nemo-share
-Breaks: nautilus
 Architecture: all
 Description: Utopia Desktop - Cinnamon edition (meta-package)
  This meta-package will pull in the Cinnamon Desktop Environment.
 
 Package: utopia-desktop-kde
 Depends: ark,
+         dolphin,
          gwenview,
-         kde-plasma-desktop (>= 5:89),
-         kdesudo,
-         kfind,
-         ksnapshot,
+         kde-spectacle | ksnapshot,
+         kdepasswd,
+         konsole,
+         kwin-x11 | kwin,
          okular,
+         plasma-desktop (>= 4:5),
          plasma-pa | kmix,
          systemsettings,
          utopia-desktop,
          ${misc:Depends}
 Recommends: gtk3-engines-breeze,
+            kde-baseapps-bin,
             kde-config-gtk-style,
             kdeadmin,
             kdenetwork-filesharing,
+            kdesudo,
             kdf,
+            kfind,
             kgamma5 | kgamma,
             ksysguard,
             kwalletmanager,
             kwin-x11,
             okular-extra-backends,
+            sddm | lightdm-kde-greeter,
+            udisks2,
+            upower,
             user-manager,
             utopia-accessories-kde
 Suggests: kate, kdeutils, libreoffice-kde, utopia-games-gui
@@ -244,7 +253,7 @@ Depends: gmrun,
 Recommends: compton | xcompmgr,
             evince | atril,
             file-roller | engrampa | xarchiver,
-            gpicview | ristretto | eog | eom,
+            gpicview | ristretto | shotwell | eog | eom,
             lxterminal | xfce4-terminal,
             nitrogen,
             obsession | lxsession-logout,
@@ -302,6 +311,7 @@ Recommends: apt-listbugs,
             debootstrap,
             deborphan,
             dh-make,
+            diffoscope,
             gem2deb,
             git-buildpackage,
             gnutls-bin,
@@ -444,12 +454,12 @@ Recommends: audacity,
             obs-studio | kazam,
             spek,
             vlc
-Suggests: cheese | kamoso | kamerka | guvcview,
-          inkscape,
+Suggests: inkscape,
           isomaster,
           mediainfo,
           puddletag,
-          vlc-plugin-fluidsynth
+          vlc-plugin-fluidsynth,
+          webcamoid | cheese | kamoso | kamerka | guvcview
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  Pulls in some useful packages for working with media files
