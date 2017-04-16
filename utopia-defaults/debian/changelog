@@ -1,3 +1,9 @@
+utopia-defaults (2017.04.16) unstable; urgency=high
+
+  * Fix upgrade path for utopia-cinnamon-(tweaks|defaults)
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 16 Apr 2017 00:56:25 -0700
+
 utopia-defaults (2017.04.13) unstable; urgency=medium
 
   * Merge utopia-cinnamon-tweaks into utopia-cinnamon-defaults, making the
