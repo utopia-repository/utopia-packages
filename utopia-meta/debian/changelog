@@ -1,3 +1,27 @@
+utopia-meta (2017.04.22) unstable; urgency=low
+
+  * Rewrote package descriptions, filling in empty extended descriptions and
+    explicitly including "(meta-package)" in all short descriptions..
+  * -accessories, -network: tweak web browser dependency alternatives to
+    "firefox | firefox-esr | iceweasel | google-chrome-stable | chromium |
+     chromium-browser | www-browser"
+  * -accessories-extra: move utopia-accessories to depends
+  * -printing: add print-manager as an alternative to system-config-printer
+  * Update copyright dates and source URLs.
+  * -office: depend on LibreOffice 5.2+ in jessie-backports and newer
+  * Add utopia-full-desktop and utopia-full-desktop-kde: these are more
+    complete meta-packages that install both a DE and programs.
+  * -multimedia: recommend youtube-dl
+  * -network*: move deluge to -network-gtk, adding transmission-gtk alternative
+  * -network-kde: add qbittorrent | transmission-qt | ktorrent | deluge
+    recommend
+  * -accessories-extras: recommend wine-binfmt
+  * -games-gui: add minetest
+  * -accessories-gtk: adjust preferred qt5-style-plugins version to what's
+    actually in Debian
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 22 Apr 2017 22:28:25 -0700
+
 utopia-meta (2017.04.13) unstable; urgency=medium
 
   * -accessories: replace galculator with qalculate-gtk
