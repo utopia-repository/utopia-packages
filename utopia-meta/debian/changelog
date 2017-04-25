@@ -1,3 +1,10 @@
+utopia-meta (2017.04.22~deb8u1) stable; urgency=medium
+
+  * Backport to Debian Jessie.
+  * Drop KDE and Xfce-related packages that are uninstallable on stable.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 24 Apr 2017 23:04:55 -0700
+
 utopia-meta (2017.04.22) unstable; urgency=low
 
   * Rewrote package descriptions, filling in empty extended descriptions and

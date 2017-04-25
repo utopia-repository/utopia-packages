@@ -56,20 +56,6 @@ Description: Utopia Accessories Collection - GNOME/GTK+ (meta-package)
  This meta-package pulls in some accessories targeting a GNOME/GTK+ based
  desktop.
 
-Package: utopia-accessories-kde
-Depends: muon, qapt-utils | gdebi-kde, ${misc:Depends}
-Recommends: filelight,
-            k3b,
-            kcharselect,
-            kmag,
-            partitionmanager | gparted,
-            utopia-accessories
-Suggests: skanlite
-Architecture: all
-Description: Utopia Accessories Collection - KDE/Qt (meta-package)
- This meta-package pulls in some accessories targeting a KDE/Qt based
- desktop.
-
 Package: utopia-baseutils
 Depends: bind9-host | host,
          curl,
@@ -173,44 +159,6 @@ Description: Utopia Desktop Collection - Cinnamon (meta-package)
  This meta-package installs a minimal Cinnamon Desktop Environment with Utopia
  Desktop tweaks.
 
-Package: utopia-desktop-kde
-Depends: ark,
-         dolphin,
-         gwenview,
-         kde-spectacle | ksnapshot,
-         kdepasswd,
-         konsole,
-         kwin-x11 | kwin,
-         okular | pdf-viewer,
-         plasma-desktop (>= 4:5),
-         plasma-pa | kmix,
-         systemsettings,
-         utopia-desktop,
-         ${misc:Depends}
-Recommends: gtk3-engines-breeze,
-            kde-baseapps-bin,
-            kde-config-gtk-style,
-            kdeadmin,
-            kdenetwork-filesharing,
-            kdesudo,
-            kdf,
-            kfind,
-            kgamma5 | kgamma,
-            ksysguard,
-            kwalletmanager,
-            kwin-x11,
-            okular-extra-backends,
-            sddm | lightdm-kde-greeter,
-            udisks2,
-            upower,
-            user-manager,
-            utopia-accessories-kde
-Suggests: kate, kdeutils, libreoffice-kde, utopia-games-gui
-Architecture: all
-Description: Utopia Desktop Collection - KDE Plasma 5 (meta-package)
- This meta-package installs a minimal KDE Plasma desktop with a hand-picked set
- of programs.
-
 Package: utopia-desktop-lxde
 Depends: gpicview,
          lxappearance,
@@ -279,39 +227,6 @@ Architecture: all
 Description: Utopia Desktop Collection - Openbox (meta-package)
  This meta-package installs a minimal Openbox-based desktop with a hand-picked
  set of programs.
-
-Package: utopia-desktop-xfce
-Depends: thunar-archive-plugin,
-         utopia-desktop,
-         xfce4 (>= 4.12),
-         xfce4-notifyd,
-         xfce4-power-manager,
-         xfce4-screenshooter,
-         xfce4-terminal,
-         xfce4-whiskermenu-plugin,
-         ${misc:Depends}
-Recommends: evince | atril | pdf-viewer,
-            file-roller | engrampa | xarchiver,
-            gtk3-engines-xfce,
-            menulibre,
-            mugshot,
-            ristretto,
-            thunar-media-tags-plugin,
-            xfburn,
-            xfce4-clipman-plugin,
-            xfce4-datetime-plugin,
-            xfce4-mixer,
-            xfce4-mount-plugin,
-            xfce4-netload-plugin,
-            xfce4-places-plugin,
-            xfce4-quicklauncher-plugin,
-            xfce4-taskmanager,
-            xfce4-volumed
-Suggests: mousepad
-Architecture: all
-Description: Utopia Desktop Collection - Xfce (meta-package)
- This meta-package installs a minimal Xfce desktop with a hand-picked set of
- programs.
 
 Package: utopia-devel
 Depends: build-essential,
@@ -606,21 +521,4 @@ Suggests: utopia-accessories-extras, utopia-devel-gui, utopia-games-gui
 Architecture: all
 Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
  This meta-package installs a complete desktop with a GNOME/GTK+ based desktop
- environment and programs for multimedia, productivity, networking, etc.
-
-Package: utopia-full-desktop-kde
-Depends: utopia-accessories,
-         utopia-accessories-kde,
-         utopia-desktop,
-         utopia-desktop-kde | utopia-desktop-lxqt,
-         utopia-office,
-         utopia-printing,
-         ${misc:Depends}
-Recommends: libreoffice-kde, utopia-network, utopia-network-kde, wine,
-            wine-binfmt
-Suggests: utopia-accessories-extras, utopia-devel-gui, utopia-games-gui
-Provides: utopia-full-desktop
-Architecture: all
-Description: Utopia Desktop Collection - full KDE/Qt desktop (meta-package)
- This meta-package installs a complete desktop with a KDE/Qt based desktop
  environment and programs for multimedia, productivity, networking, etc.
