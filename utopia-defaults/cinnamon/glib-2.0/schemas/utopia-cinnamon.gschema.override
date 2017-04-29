@@ -4,6 +4,10 @@ gtk-theme='Numix-Frost'
 icon-theme='Numix-Circle'
 font-name="Noto Sans 11"
 
+[org.gnome.desktop.interface]
+font-name="Noto Sans 11"
+document-font-name="Noto Sans 11"
+
 [org.cinnamon.desktop.wm.preferences]
 theme='Numix-Frost'
 num-workspaces=1
@@ -22,17 +26,15 @@ favorite-apps=['iceweasel.desktop', 'cinnamon-settings.desktop', 'gnome-terminal
 [org.cinnamon.theme]
 name="Linux Mint"
 
-[org.cinnamon.desktop.media-handling]
-automount-open=false
-
 [org.cinnamon.settings-daemon.peripherals.keyboard]
 numlock-state="on"
 
 [org.cinnamon.desktop.default-applications.terminal]
 exec='x-terminal-emulator'
 
-[org.cinnamon.muffin]
-tile-maximize=true
+[org.gnome.Terminal.Legacy.Settings]
+confirm-close=false
+menu-accelerator-enabled=false
 
 [org.nemo.desktop]
 font="Noto Sans 11"

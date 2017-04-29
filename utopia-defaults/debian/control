@@ -2,7 +2,7 @@ Source: utopia-defaults
 Section: x11
 Priority: optional
 Maintainer: James Lu <bitflip3@gmail.com>
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.8
 Homepage: https://github.com/GLolol/utopia-packages
 
@@ -15,28 +15,9 @@ Depends: ${misc:Depends},
  cinnamon-desktop-data (>= 2.6.4),
  muffin-common (>= 2.6~),
  cinnamon-settings-daemon (>= 2.6)
-Recommends: libpam-systemd, utopia-gnomeapps-defaults
-Breaks: utopia-cinnamon-tweaks (<< 2017.04.16~)
-Replaces: utopia-cinnamon-tweaks (<< 2017.04.16~)
+Recommends: libpam-systemd, gnome-terminal-data
 Description: Utopia Desktop Defaults (Cinnamon Desktop)
  This package contains customized defaults for the Cinnamon Desktop.
-
-Package: utopia-cinnamon-tweaks
-Architecture: all
-Section: oldlibs
-Priority: extra
-Depends: ${misc:Depends}, utopia-cinnamon-defaults (>= 2017.04.16~)
-Description: Utopia Tweaks for Cinnamon (transitional package)
- This is a transitional package to utopia-cinnamon-defaults; it can be safely
- removed.
-
-Package: utopia-gnomeapps-defaults
-Architecture: all
-Depends: ${misc:Depends},
- gnome-terminal-data,
- gsettings-desktop-schemas
-Description: Utopia Desktop Defaults (GNOME apps)
- This package contains customized defaults for GNOME applications.
 
 Package: utopia-mate-defaults
 Architecture: all
