@@ -21,7 +21,7 @@ panels-enabled=['1:0:bottom']
 panels-height=['1:32']
 panels-resizable=['1:true']
 panels-scale-text-icons=['1:true']
-favorite-apps=['iceweasel.desktop', 'cinnamon-settings.desktop', 'gnome-terminal.desktop', 'nemo.desktop']
+favorite-apps=['firefox.desktop', 'cinnamon-settings.desktop', 'gnome-terminal.desktop', 'nemo.desktop']
 
 [org.cinnamon.theme]
 name="Linux Mint"
