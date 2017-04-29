@@ -1,3 +1,14 @@
+utopia-defaults (2016.05.21+1ubuntu1) xenial; urgency=low
+
+  * cinnamon-defaults updates:
+    - Replace iceweasel with firefox
+    - Disable automatically opening Nemo when media is automounted (backported
+      from 2016.12.07)
+    - Default to maximize when dragging windows to the top of the screen
+      (backported from 2016.12.07)
+
+ -- James Lu <bitflip3@gmail.com>  Fri, 28 Apr 2017 17:54:18 -0700
+
 utopia-defaults (2016.05.21+1) unstable; urgency=medium
 
   * Fix window manager themes to use Numix-Frost too.
