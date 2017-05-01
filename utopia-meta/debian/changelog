@@ -1,3 +1,22 @@
+utopia-meta (2017.04.30) unstable; urgency=low
+
+  * Reapply bittorrent split from 2017.04.22, as it seems to have
+    disappeared...
+  * Add utopia-desktop-gnome and utopia-desktop-lxqt variants.
+  * -accessories-gtk: recommend seahorse, gvfs-fuse, gvfs-bin; suggest
+    blueman | gnome-bluetooth for bluetooth support
+  * -accessories: recommend florence | caribou
+  * -cinnamon: recommend gnome-keyring, cinnamon-l10n (translations), and
+    nemo-seahorse
+  * -cinnamon: remove utopia-cinnamon-tweaks and demote nemo-media-columns
+    to suggests
+  * -network*: add gnome-nettool and cmst as alternatives to zenmap and
+    plasma-nm, respectively
+  * -office: Decrease libreoffice version requirement to 5.1, so that it
+    installs on stock Ubuntu Xenial as well.
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 30 Apr 2017 18:08:51 -0700
+
 utopia-meta (2017.04.22) unstable; urgency=low
 
   * Rewrote package descriptions, filling in empty extended descriptions and
