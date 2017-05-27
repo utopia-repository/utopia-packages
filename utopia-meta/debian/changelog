@@ -1,3 +1,21 @@
+utopia-meta (2017.05.26) unstable; urgency=medium
+
+  * The "Last batch before Stretch?" release.
+  * utopia-desktop-xfce updates:
+    - Add x-terminal-emulator alternative to xfce4-terminal
+    - Depend on xfce4-pulseaudio-plugin | xfce4-mixer
+    - Move xfce4-datetime-plugin to depends
+    - Demote gtk3-engines-xfce to suggests, it's somewhat broken
+      with new GTK+ 3.
+    - Refresh list of recommended panel plugins: add battery, sensors,
+      systemload, timer, weather; remove mount and places.
+  * utopia-multimedia: Add krita as an alternative to gimp
+  * utopia-multimedia: Suggest pinta | kolourpaint
+  * utopia-desktop-gnome fixes: rm non-existent nautilus-open-terminal,
+    fix seahorse-nautilus name
+
+ -- James Lu <bitflip3@gmail.com>  Fri, 26 May 2017 21:47:02 -0700
+
 utopia-meta (2017.04.30) unstable; urgency=low
 
   * Reapply bittorrent split from 2017.04.22, as it seems to have

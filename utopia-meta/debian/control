@@ -290,30 +290,31 @@ Package: utopia-desktop-xfce
 Depends: thunar-archive-plugin,
          utopia-desktop,
          xfce4 (>= 4.12),
+         xfce4-datetime-plugin,
          xfce4-notifyd,
          xfce4-power-manager,
+         xfce4-pulseaudio-plugin | xfce4-mixer,
          xfce4-screenshooter,
-         xfce4-terminal,
+         xfce4-terminal | x-terminal-emulator,
          xfce4-whiskermenu-plugin,
          ${misc:Depends}
 Recommends: evince | atril | pdf-viewer,
             file-roller | engrampa | xarchiver,
-            gtk3-engines-xfce,
             menulibre,
             mugshot,
             ristretto,
             thunar-media-tags-plugin,
             xfburn,
+            xfce4-battery-plugin,
             xfce4-clipman-plugin,
-            xfce4-datetime-plugin,
-            xfce4-mixer,
-            xfce4-mount-plugin,
             xfce4-netload-plugin,
-            xfce4-places-plugin,
-            xfce4-quicklauncher-plugin,
+            xfce4-sensors-plugin,
+            xfce4-systemload-plugin,
+            xfce4-timer-plugin,
             xfce4-taskmanager,
-            xfce4-volumed
-Suggests: mousepad
+            xfce4-volumed,
+            xfce4-weather-plugin
+Suggests: mousepad, gtk3-engines-xfce, xfce4-goodies
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (meta-package)
  This meta-package installs a minimal Xfce desktop with a hand-picked set of
@@ -473,7 +474,7 @@ Depends: ${misc:Depends}
 Recommends: audacity,
             browser-plugin-vlc,
             ffmpeg (>= 7:3.0~),
-            gimp,
+            gimp | krita,
             livestreamer,
             mediainfo-gui,
             obs-studio | kazam,
@@ -485,7 +486,8 @@ Suggests: inkscape,
           mediainfo,
           puddletag,
           vlc-plugin-fluidsynth,
-          webcamoid | cheese | kamoso | kamerka | guvcview
+          webcamoid | cheese | kamoso | kamerka | guvcview,
+          pinta | kolourpaint
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  This meta-package pulls in some programs (players, editors, etc.) for working
@@ -667,8 +669,7 @@ Recommends: alacarte,
             gnome-system-monitor,
             nautilus-actions,
             nautilus-emblems,
-            nautilus-open-terminal,
-            nautilus-seahorse,
+            seahorse-nautilus,
             shotwell,
             simple-scan,
             utopia-themes
