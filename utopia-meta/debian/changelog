@@ -1,3 +1,13 @@
+utopia-meta (2017.05.26~deb8u1) stable; urgency=low
+
+  * Backport to Debian Jessie.
+  * Reintroduce utopia-desktop-xfce with a tweaked dependency version
+    (>= 4.10) instead of (>= 4.12).
+  * Introduce new utopia-desktop-gnome and utopia-full-desktop variants
+    (utopia-desktop-lxqt is not included as LXQt is not in Jessie).
+
+ -- James Lu <bitflip3@gmail.com>  Fri, 26 May 2017 21:57:17 -0700
+
 utopia-meta (2017.05.26) unstable; urgency=medium
 
   * The "Last batch before Stretch?" release.
