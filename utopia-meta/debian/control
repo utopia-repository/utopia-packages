@@ -9,6 +9,7 @@ Maintainer: James Lu <bitflip3@gmail.com>
 Package: utopia-accessories
 Depends: utopia-accessories-gtk | utopia-accessories-kde, ${misc:Depends}
 Recommends: firefox | firefox-esr | iceweasel | google-chrome-stable | chromium | chromium-browser | www-browser,
+            florence | caribou,
             geany,
             keepassx (>= 2.0~),
             lm-sensors,
@@ -41,11 +42,15 @@ Recommends: baobab | gdmap | mate-utils,
             fuse,
             gparted,
             gvfs-backends,
+            gvfs-bin,
+            gvfs-fuse,
             qt5-style-plugins (>= 5.0.0+git16~),
             qt5ct,
+            seahorse,
             utopia-accessories,
             xzoom
-Suggests: brasero | xfburn,
+Suggests: blueman | gnome-bluetooth,
+          brasero | xfburn,
           gnome-alsamixer,
           lightdm-gtk-greeter-settings,
           menulibre,
@@ -111,7 +116,7 @@ Recommends: acpi-support,
             utopia-polkit,
             xdg-utils
 Suggests: lxpolkit | polkit-1-auth-agent,
-          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-kde | utopia-desktop-mate | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-lxqt,
+          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-kde | utopia-desktop-mate | utopia-desktop-lxqt | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-gnome,
           utopia-devel-gui,
           utopia-multimedia,
           utopia-network,
@@ -138,8 +143,10 @@ Depends: cinnamon (>= 3),
          ${misc:Depends}
 Recommends: baobab,
             brasero,
+            cinnamon-l10n | cinnamon-translations,
             dconf-editor | dconf-tools,
             gnome-font-viewer,
+            gnome-keyring,
             gnome-screenshot,
             gnome-system-log,
             gnome-system-monitor | mate-system-monitor,
@@ -147,13 +154,12 @@ Recommends: baobab,
             nemo-audio-tab,
             nemo-emblems (>= 2.6),
             nemo-fileroller (>= 2.6),
-            nemo-media-columns,
+            nemo-seahorse,
             qt5ct,
             simple-scan,
             utopia-cinnamon-defaults,
-            utopia-cinnamon-tweaks,
             utopia-themes
-Suggests: gedit | pluma, nemo-share
+Suggests: gedit | pluma, nemo-media-columns, nemo-share
 Architecture: all
 Description: Utopia Desktop Collection - Cinnamon (meta-package)
  This meta-package installs a minimal Cinnamon Desktop Environment with Utopia
@@ -227,6 +233,40 @@ Architecture: all
 Description: Utopia Desktop Collection - Openbox (meta-package)
  This meta-package installs a minimal Openbox-based desktop with a hand-picked
  set of programs.
+
+Package: utopia-desktop-xfce
+Depends: thunar-archive-plugin,
+         utopia-desktop,
+         xfce4 (>= 4.10),
+         xfce4-datetime-plugin,
+         xfce4-notifyd,
+         xfce4-power-manager,
+         xfce4-pulseaudio-plugin | xfce4-mixer,
+         xfce4-screenshooter,
+         xfce4-terminal | x-terminal-emulator,
+         xfce4-whiskermenu-plugin,
+         ${misc:Depends}
+Recommends: evince | atril | pdf-viewer,
+            file-roller | engrampa | xarchiver,
+            menulibre,
+            mugshot,
+            ristretto,
+            thunar-media-tags-plugin,
+            xfburn,
+            xfce4-battery-plugin,
+            xfce4-clipman-plugin,
+            xfce4-netload-plugin,
+            xfce4-sensors-plugin,
+            xfce4-systemload-plugin,
+            xfce4-timer-plugin,
+            xfce4-taskmanager,
+            xfce4-volumed,
+            xfce4-weather-plugin
+Suggests: mousepad, gtk3-engines-xfce, xfce4-goodies
+Architecture: all
+Description: Utopia Desktop Collection - Xfce (meta-package)
+ This meta-package installs a minimal Xfce desktop with a hand-picked set of
+ programs.
 
 Package: utopia-devel
 Depends: build-essential,
@@ -382,7 +422,7 @@ Depends: ${misc:Depends}
 Recommends: audacity,
             browser-plugin-vlc,
             ffmpeg (>= 7:3.0~),
-            gimp,
+            gimp | krita,
             livestreamer,
             mediainfo-gui,
             obs-studio | kazam,
@@ -394,7 +434,8 @@ Suggests: inkscape,
           mediainfo,
           puddletag,
           vlc-plugin-fluidsynth,
-          webcamoid | cheese | kamoso | kamerka | guvcview
+          webcamoid | cheese | kamoso | kamerka | guvcview,
+          pinta | kolourpaint
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  This meta-package pulls in some programs (players, editors, etc.) for working
@@ -404,14 +445,15 @@ Package: utopia-network
 Depends: firefox | firefox-esr | iceweasel | google-chrome-stable | chromium | chromium-browser | www-browser,
          utopia-network-gtk | utopia-network-kde,
          ${misc:Depends}
-Recommends: deluge, mtr, thunderbird | icedove, zenmap
+Recommends: mtr, thunderbird | icedove, zenmap | gnome-nettool
 Architecture: all
 Description: Utopia Network Collection (meta-package)
  This meta-package pulls in various programs related to networking.
 
 Package: utopia-network-gtk
 Depends: ${misc:Depends}
-Recommends: hexchat,
+Recommends: deluge | transmission-gtk,
+            hexchat,
             network-manager-gnome | wicd,
             network-manager-openvpn-gnome,
             uget,
@@ -428,7 +470,8 @@ Depends: ${misc:Depends}
 Recommends: kget,
             konversation,
             krdc,
-            plasma-nm,
+            plasma-nm | cmst,
+            qbittorrent | transmission-qt | ktorrent,
             utopia-network,
             wireshark-qt | wireshark
 Architecture: all
@@ -437,9 +480,9 @@ Description: Utopia Network Collection - KDE/Qt (meta-package)
  based desktop.
 
 Package: utopia-office
-Depends: libreoffice-calc (>= 5.2~),
-         libreoffice-impress (>= 5.2~),
-         libreoffice-writer (>= 5.2~),
+Depends: libreoffice-calc (>= 5.1~),
+         libreoffice-impress (>= 5.1~),
+         libreoffice-writer (>= 5.1~),
          ${misc:Depends}
 Recommends: fonts-crosextra-caladea,
             fonts-crosextra-carlito,
@@ -508,7 +551,7 @@ Package: utopia-full-desktop
 Depends: utopia-accessories,
          utopia-accessories-gtk,
          utopia-desktop,
-         utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-openbox | utopia-desktop-lxde,
+         utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-gnome | utopia-desktop-openbox | utopia-desktop-lxde,
          utopia-office,
          utopia-printing,
          ${misc:Depends}
@@ -522,3 +565,49 @@ Architecture: all
 Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
  This meta-package installs a complete desktop with a GNOME/GTK+ based desktop
  environment and programs for multimedia, productivity, networking, etc.
+
+Package: utopia-desktop-gnome
+Depends: evince | pdf-viewer,
+         file-roller,
+         fonts-cantarell,
+         gdm3 | lightdm | x-display-manager,
+         gnome-control-center,
+         gnome-keyring,
+         gnome-screenshot,
+         gnome-session,
+         gnome-settings-daemon,
+         gnome-shell,
+         gnome-shell-extensions,
+         gnome-terminal | mate-terminal | x-terminal-emulator,
+         gnome-themes-standard,
+         gnome-tweak-tool,
+         shotwell | eog,
+         utopia-desktop,
+         ${misc:Depends}
+Recommends: alacarte,
+            baobab,
+            brasero,
+            chrome-gnome-shell,
+            dconf-editor | dconf-tools,
+            eog,
+            gnome-characters,
+            gnome-font-viewer,
+            gnome-sushi,
+            gnome-system-log,
+            gnome-system-monitor,
+            nautilus-actions,
+            nautilus-emblems,
+            seahorse-nautilus,
+            shotwell,
+            simple-scan,
+            utopia-themes
+Suggests: gedit,
+          gnome-bluetooth,
+          goobox | sound-juicer,
+          nautilus-admin,
+          nautilus-share,
+          nautilus-wipe
+Architecture: all
+Description: Utopia Desktop Collection - GNOME (meta-package)
+ This meta-package installs a GNOME 3 desktop with a hand-picked set of
+ programs.
