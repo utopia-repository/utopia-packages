@@ -1,3 +1,20 @@
+utopia-meta (2017.06.12) UNRELEASED; urgency=medium
+
+  * The "Okay, I lied" release.
+  * utopia-desktop-openbox updates:
+    - Recommend gsimplecal as recommended by Unit 193
+    - Add pavucontrol | gnome-alsamixer, tumbler, and feh as an alternative
+      to nitrogen
+    - Consistently prefer Xfce utils over LXDE
+    - Move tint2, thunar | pcmanfm, and terminal to depends
+  * utopia-desktop-xfce updates:
+    - Drop xfce4-batter-plugin; the power manager provides similar
+      functionality.
+    - Recommend tumbler for thumbnailing support in Thunar
+  * Re-run wrap-and-sort.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 12 Jun 2017 16:23:44 -0700
+
 utopia-meta (2017.05.26) unstable; urgency=medium
 
   * The "Last batch before Stretch?" release.

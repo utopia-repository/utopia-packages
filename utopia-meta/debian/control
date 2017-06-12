@@ -266,21 +266,24 @@ Depends: gmrun,
          obconf,
          obmenu,
          openbox,
+         thunar | pcmanfm,
+         tint2,
          utopia-desktop,
+         xfce4-terminal | lxterminal | x-terminal-emulator,
          ${misc:Depends}
 Recommends: compton | xcompmgr,
             evince | atril | pdf-viewer,
             file-roller | engrampa | xarchiver,
-            gpicview | ristretto | shotwell | eog | eom,
-            lxterminal | xfce4-terminal,
-            nitrogen,
+            gsimplecal,
+            nitrogen | feh,
             obsession | lxsession-logout,
-            thunar | pcmanfm,
-            tint2,
+            pavucontrol | gnome-alsamixer | xfce4-mixer,
+            ristretto | gpicview | shotwell | eog | eom,
             volumeicon-alsa,
-            xfce4-mixer,
-            xfce4-screenshooter
-Suggests: lxtask
+            xfce4-screenshooter,
+            thunar-archive-plugin | pcmanfm,
+            tumbler
+Suggests: xfce4-taskmanager | lxtask, xfburn
 Architecture: all
 Description: Utopia Desktop Collection - Openbox (meta-package)
  This meta-package installs a minimal Openbox-based desktop with a hand-picked
@@ -305,16 +308,16 @@ Recommends: evince | atril | pdf-viewer,
             ristretto,
             thunar-media-tags-plugin,
             xfburn,
-            xfce4-battery-plugin,
             xfce4-clipman-plugin,
             xfce4-netload-plugin,
             xfce4-sensors-plugin,
             xfce4-systemload-plugin,
-            xfce4-timer-plugin,
             xfce4-taskmanager,
+            xfce4-timer-plugin,
             xfce4-volumed,
             xfce4-weather-plugin
-Suggests: mousepad, gtk3-engines-xfce, xfce4-goodies
+            tumbler
+Suggests: gtk3-engines-xfce, mousepad, xfce4-goodies
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (meta-package)
  This meta-package installs a minimal Xfce desktop with a hand-picked set of
@@ -484,10 +487,10 @@ Recommends: audacity,
 Suggests: inkscape,
           isomaster,
           mediainfo,
+          pinta | kolourpaint,
           puddletag,
           vlc-plugin-fluidsynth,
-          webcamoid | cheese | kamoso | kamerka | guvcview,
-          pinta | kolourpaint
+          webcamoid | cheese | kamoso | kamerka | guvcview
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  This meta-package pulls in some programs (players, editors, etc.) for working
