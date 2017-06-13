@@ -12,6 +12,7 @@ utopia-meta (2017.06.12) UNRELEASED; urgency=medium
       functionality.
     - Recommend tumbler for thumbnailing support in Thunar
   * Re-run wrap-and-sort.
+  * Add utopia-desktop-budgie variant.
 
  -- James Lu <bitflip3@gmail.com>  Mon, 12 Jun 2017 16:23:44 -0700
 

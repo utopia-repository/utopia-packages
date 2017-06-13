@@ -130,7 +130,7 @@ Recommends: acpi-support,
             utopia-polkit,
             xdg-utils
 Suggests: lxpolkit | polkit-1-auth-agent,
-          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-kde | utopia-desktop-mate | utopia-desktop-lxqt | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-gnome,
+          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-kde | utopia-desktop-mate | utopia-desktop-lxqt | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-gnome | utopia-desktop-budgie,
           utopia-devel-gui,
           utopia-multimedia,
           utopia-network,
@@ -279,11 +279,11 @@ Recommends: compton | xcompmgr,
             obsession | lxsession-logout,
             pavucontrol | gnome-alsamixer | xfce4-mixer,
             ristretto | gpicview | shotwell | eog | eom,
-            volumeicon-alsa,
-            xfce4-screenshooter,
             thunar-archive-plugin | pcmanfm,
-            tumbler
-Suggests: xfce4-taskmanager | lxtask, xfburn
+            tumbler,
+            volumeicon-alsa,
+            xfce4-screenshooter
+Suggests: xfburn, xfce4-taskmanager | lxtask
 Architecture: all
 Description: Utopia Desktop Collection - Openbox (meta-package)
  This meta-package installs a minimal Openbox-based desktop with a hand-picked
@@ -685,6 +685,35 @@ Suggests: gedit,
 Architecture: all
 Description: Utopia Desktop Collection - GNOME (meta-package)
  This meta-package installs a GNOME 3 desktop with a hand-picked set of
+ programs.
+
+Package: utopia-desktop-budgie
+Depends: budgie-desktop,
+         budgie-indicator-applet,
+         evince | atril | pdf-viewer,
+         shotwell | eog | eom,
+         tilix | gnome-terminal | x-terminal-emulator,
+         utopia-desktop,
+         ${misc:Depends}
+Recommends: baobab,
+            brasero,
+            dconf-editor | dconf-tools,
+            gnome-characters,
+            gnome-font-viewer,
+            gnome-keyring,
+            gnome-screenshot,
+            gnome-sushi,
+            gnome-system-log,
+            gnome-system-monitor,
+            nautilus-actions,
+            nautilus-emblems,
+            seahorse-nautilus,
+            simple-scan,
+            utopia-themes
+Suggests: gedit, nautilus-admin, nautilus-share, nautilus-wipe, plank
+Architecture: all
+Description: Utopia Desktop Collection - Budgie Desktop (meta-package)
+ This meta-package installs Budgie Desktop with a hand-picked set of
  programs.
 
 Package: utopia-desktop-lxqt
