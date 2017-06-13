@@ -27,6 +27,7 @@ utopia-meta (2017.06.12) UNRELEASED; urgency=medium
     - Remove packages moved into -baseutils.
     - Recommend Debian, Ubuntu archive keyrings; this makes it easier to
       verify packages manually downloaded from either source
+    - Add recommends for: pandoc
   * -devel-extras: move packaging-dev to recommends, demote python-twisted to
     suggests.
   * Re-run wrap-and-sort.
