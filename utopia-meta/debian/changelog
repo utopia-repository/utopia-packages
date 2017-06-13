@@ -13,7 +13,8 @@ utopia-meta (2017.06.12) UNRELEASED; urgency=medium
     - Recommend tumbler for thumbnailing support in Thunar
   * Add utopia-desktop-budgie variant.
   * utopia-baseutils updates:
-    - Move git, lynx (and alternatives), reptyr, rsync to depends
+    - Move git, lynx (and alternatives), reptyr, dos2unix, deborphan to
+      depends
     - Add depends for apt-listbugs and apt-listchanges
     - Add recommends for deborphan, convmv, gnupg, dirmngr, gnupg-agent,
       and surfraw
