@@ -76,8 +76,7 @@ Description: Utopia Accessories Collection - KDE/Qt (meta-package)
  desktop.
 
 Package: utopia-baseutils
-Depends: apt-listbugs,
-         apt-listchanges,
+Depends: apt-listchanges,
          bind9-host | host,
          curl,
          deborphan,
@@ -97,7 +96,8 @@ Depends: apt-listbugs,
          traceroute,
          wget,
          ${misc:Depends}
-Recommends: command-not-found,
+Recommends: apt-listbugs,
+            command-not-found,
             convmv,
             debian-goodies,
             gdebi-core,
