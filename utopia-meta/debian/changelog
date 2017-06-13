@@ -11,8 +11,24 @@ utopia-meta (2017.06.12) UNRELEASED; urgency=medium
     - Drop xfce4-batter-plugin; the power manager provides similar
       functionality.
     - Recommend tumbler for thumbnailing support in Thunar
-  * Re-run wrap-and-sort.
   * Add utopia-desktop-budgie variant.
+  * utopia-baseutils updates:
+    - Move git, lynx (and alternatives), reptyr, rsync to depends
+    - Add depends for apt-listbugs and apt-listchanges
+    - Add recommends for deborphan, convmv, gnupg, dirmngr, gnupg-agent,
+      and surfraw
+  * utopia-devel updates:
+    - Move openssl, libssl-dev, ntp, ntpdate, quilt, python3-pip, pkg-config,
+      dh-make, git-buildpackage, gnupg (and friends) to depends
+      The goal of these changes is to make -baseutils and -devel still install
+      a usable system if apt is configured to ignore Recommended packages.
+    - Add cowbuilder | sbuild | pbuilder as depends, moving it from
+      utopia-devel-extras
+    - Recommend Debian, Ubuntu archive keyrings; this makes it easier to
+      verify packages manually downloaded from either source
+  * -devel-extras: move packaging-dev to recommends, demote python-twisted to
+    suggests.
+  * Re-run wrap-and-sort.
 
  -- James Lu <bitflip3@gmail.com>  Mon, 12 Jun 2017 16:23:44 -0700
 
