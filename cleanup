@@ -1,2 +1,2 @@
 #!/bin/sh
-rm *.deb *.dsc *.changes *.build *.tar.gz
+rm *.deb *.dsc *.changes *.build *.tar.*
