@@ -30,6 +30,7 @@ utopia-meta (2017.06.16) unstable; urgency=medium
     - Add recommends for: pandoc
   * -devel-extras: move packaging-dev to recommends, demote python-twisted to
     suggests.
+  * -accessories-gtk: add variety to recommends.
   * Re-run wrap-and-sort.
 
  -- James Lu <bitflip3@gmail.com>  Fri, 16 Jun 2017 22:11:37 -0700

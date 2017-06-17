@@ -48,6 +48,7 @@ Recommends: baobab | gdmap | mate-utils,
             qt5ct,
             seahorse,
             utopia-accessories,
+            variety,
             xzoom
 Suggests: blueman | gnome-bluetooth,
           brasero | xfburn,
