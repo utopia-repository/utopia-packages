@@ -8,13 +8,13 @@ Homepage: https://github.com/GLolol/utopia-packages
 
 Package: utopia-cinnamon-defaults
 Architecture: all
-Depends: ${misc:Depends},
- arc-theme (>= 20170302-1~)
+Depends: arc-theme (>= 20170302-1~)
  utopia-themes (>= 2016.01.10~),
- cinnamon-common (>= 2.6~),
- cinnamon-desktop-data (>= 2.6.4),
- muffin-common (>= 2.6~),
- cinnamon-settings-daemon (>= 2.6)
+         cinnamon-common (>= 2.6~),
+         cinnamon-desktop-data (>= 2.6.4),
+         cinnamon-settings-daemon (>= 2.6),
+         muffin-common (>= 2.6~),
+         ${misc:Depends}
 Recommends: libpam-systemd, mint-cinnamon-themes, utopia-gnomeapps-defaults
 Breaks: utopia-cinnamon-tweaks (<< 2017.04.16~)
 Replaces: utopia-cinnamon-tweaks (<< 2017.04.16~)
@@ -25,29 +25,27 @@ Package: utopia-cinnamon-tweaks
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: ${misc:Depends}, utopia-cinnamon-defaults (>= 2017.04.16~)
+Depends: utopia-cinnamon-defaults (>= 2017.04.16~), ${misc:Depends}
 Description: Utopia Tweaks for Cinnamon (transitional package)
  This is a transitional package to utopia-cinnamon-defaults; it can be safely
  removed.
 
 Package: utopia-gnomeapps-defaults
 Architecture: all
-Depends: ${misc:Depends},
- gnome-terminal-data,
- gsettings-desktop-schemas
+Depends: gnome-terminal-data, gsettings-desktop-schemas, ${misc:Depends}
 Description: Utopia Desktop Defaults (GNOME apps)
  This package contains customized defaults for GNOME applications.
 
 Package: utopia-mate-defaults
 Architecture: all
-Depends: ${misc:Depends},
- utopia-themes (>= 2016.01.10~),
- mate-menu,
- mate-desktop-common (>= 1.8~),
- marco-common (>= 1.8~),
- caja-common (>= 1.8~),
- mate-settings-daemon (>= 1.8~),
- mate-panel (>= 1.8~),
- mate-terminal-common (>= 1.8~)
+Depends: caja-common (>= 1.8~),
+         marco-common (>= 1.8~),
+         mate-desktop-common (>= 1.8~),
+         mate-menu,
+         mate-panel (>= 1.8~),
+         mate-settings-daemon (>= 1.8~),
+         mate-terminal-common (>= 1.8~),
+         utopia-themes (>= 2016.01.10~),
+         ${misc:Depends}
 Description: Utopia Desktop Defaults (MATE Desktop)
  This package contains customized defaults for the MATE Desktop.
