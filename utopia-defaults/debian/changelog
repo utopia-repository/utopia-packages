@@ -1,4 +1,4 @@
-utopia-defaults (2017.06.17) UNRELEASED; urgency=medium
+utopia-defaults (2017.06.17) unstable; urgency=medium
 
   * Set default Cinnamon theme to Arc-Dark, as mint-cinnamon-themes has
     been bumped to imports.
@@ -8,7 +8,7 @@ utopia-defaults (2017.06.17) UNRELEASED; urgency=medium
   * Remove utopia-cinnamon-tweaks transitional package, no longer needed
     post stretch.
 
- -- James Lu <bitflip3@gmail.com>  Sat, 17 Jun 2017 11:49:54 -0700
+ -- James Lu <bitflip3@gmail.com>  Sat, 17 Jun 2017 11:52:05 -0700
 
 utopia-defaults (2017.04.16) unstable; urgency=high
 
