@@ -8,7 +8,7 @@ Maintainer: James Lu <bitflip3@gmail.com>
 
 Package: utopia-accessories
 Depends: utopia-accessories-gtk | utopia-accessories-kde, ${misc:Depends}
-Recommends: firefox | firefox-esr | iceweasel | google-chrome-stable | chromium | chromium-browser | www-browser,
+Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
             florence | caribou,
             geany,
             keepassx (>= 2.0~),
@@ -505,7 +505,7 @@ Description: Utopia Multimedia Collection (meta-package)
  with media files.
 
 Package: utopia-network
-Depends: firefox | firefox-esr | iceweasel | google-chrome-stable | chromium | chromium-browser | www-browser,
+Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
          utopia-network-gtk | utopia-network-kde,
          ${misc:Depends}
 Recommends: mtr, thunderbird | icedove, zenmap | gnome-nettool
