@@ -5,6 +5,8 @@ utopia-defaults (2017.06.17) UNRELEASED; urgency=medium
     - Adjust dependencies: add arc-theme (>= 20170302-1~) as that version
       introduces support for Cinnamon 3.2.
   * Re-run wrap-and-sort.
+  * Remove utopia-cinnamon-tweaks transitional package, no longer needed
+    post stretch.
 
  -- James Lu <bitflip3@gmail.com>  Sat, 17 Jun 2017 11:49:54 -0700
 
