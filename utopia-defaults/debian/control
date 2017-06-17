@@ -9,13 +9,13 @@ Homepage: https://github.com/GLolol/utopia-packages
 Package: utopia-cinnamon-defaults
 Architecture: all
 Depends: ${misc:Depends},
+ arc-theme (>= 20170302-1~)
  utopia-themes (>= 2016.01.10~),
- mint-cinnamon-themes,
  cinnamon-common (>= 2.6~),
  cinnamon-desktop-data (>= 2.6.4),
  muffin-common (>= 2.6~),
  cinnamon-settings-daemon (>= 2.6)
-Recommends: libpam-systemd, utopia-gnomeapps-defaults
+Recommends: libpam-systemd, mint-cinnamon-themes, utopia-gnomeapps-defaults
 Breaks: utopia-cinnamon-tweaks (<< 2017.04.16~)
 Replaces: utopia-cinnamon-tweaks (<< 2017.04.16~)
 Description: Utopia Desktop Defaults (Cinnamon Desktop)

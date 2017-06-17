@@ -20,7 +20,7 @@ panels-scale-text-icons=['1:true']
 favorite-apps=['iceweasel.desktop', 'cinnamon-settings.desktop', 'gnome-terminal.desktop', 'nemo.desktop']
 
 [org.cinnamon.theme]
-name="Linux Mint"
+name="Arc-Dark"
 
 [org.cinnamon.desktop.media-handling]
 automount-open=false
