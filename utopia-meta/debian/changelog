@@ -1,6 +1,6 @@
-utopia-meta (2017.06.12) UNRELEASED; urgency=medium
+utopia-meta (2017.06.16) unstable; urgency=medium
 
-  * The "Okay, I lied" release.
+  * The "🎉🏄☀!" release.
   * utopia-desktop-openbox updates:
     - Recommend gsimplecal as recommended by Unit 193
     - Add pavucontrol | gnome-alsamixer, tumbler, and feh as an alternative
@@ -32,7 +32,7 @@ utopia-meta (2017.06.12) UNRELEASED; urgency=medium
     suggests.
   * Re-run wrap-and-sort.
 
- -- James Lu <bitflip3@gmail.com>  Mon, 12 Jun 2017 16:23:44 -0700
+ -- James Lu <bitflip3@gmail.com>  Fri, 16 Jun 2017 22:11:37 -0700
 
 utopia-meta (2017.05.26) unstable; urgency=medium
 
