@@ -1,11 +1,12 @@
 utopia-defaults (2017.06.17) UNRELEASED; urgency=medium
 
-  * Set default Cinnamon theme to Arc-Dark.
+  * Set default Cinnamon theme to Arc-Dark, as mint-cinnamon-themes has
+    been bumped to imports.
     - Adjust dependencies: add arc-theme (>= 20170302-1~) as that version
       introduces support for Cinnamon 3.2.
   * Re-run wrap-and-sort.
 
- -- James Lu <bitflip3@gmail.com>  Sat, 17 Jun 2017 11:43:43 -0700
+ -- James Lu <bitflip3@gmail.com>  Sat, 17 Jun 2017 11:49:54 -0700
 
 utopia-defaults (2017.04.16) unstable; urgency=high
 

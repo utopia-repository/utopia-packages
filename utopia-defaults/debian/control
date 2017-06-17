@@ -8,8 +8,8 @@ Homepage: https://github.com/GLolol/utopia-packages
 
 Package: utopia-cinnamon-defaults
 Architecture: all
-Depends: arc-theme (>= 20170302-1~)
- utopia-themes (>= 2016.01.10~),
+Depends: arc-theme (>= 20170302-1~),
+         utopia-themes (>= 2016.01.10~),
          cinnamon-common (>= 2.6~),
          cinnamon-desktop-data (>= 2.6.4),
          cinnamon-settings-daemon (>= 2.6),
