@@ -7,6 +7,8 @@ utopia-meta (2017.06.19) UNRELEASED; urgency=medium
     - utopia-network-kde -> utopia-network-qt
   * Move plasma-nm | cmst to desktop-kde and desktop-lxqt respectively.
   * utopia-network-qt: Demote kget to suggests
+  * Move shellcheck to utopia-devel-extras.
+  * utopia-devel-extras: add adb, fastboot
 
  -- James Lu <bitflip3@gmail.com>  Sun, 18 Jun 2017 16:44:56 -0700
 
