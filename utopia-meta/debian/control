@@ -122,11 +122,10 @@ Recommends: apt-listbugs,
             rsync,
             screenfetch,
             scrot,
-            surfraw,
             tree,
             utopia-keyring,
             whois
-Suggests: utopia-devel, utopia-games
+Suggests: surfraw, utopia-devel, utopia-games
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
