@@ -1,6 +1,12 @@
-utopia-meta (2017.06.18) UNRELEASED; urgency=medium
+utopia-meta (2017.06.19) UNRELEASED; urgency=medium
 
   * utopia-desktop-gnome: add taskbar and top-icons-plus extensions.
+  * Rename some packages to better reflect their actual contents:
+    - utopia-desktop -> utopia-desktop-common
+    - utopia-accessories-kde -> utopia-accessories-qt
+    - utopia-network-kde -> utopia-network-qt
+  * Move plasma-nm | cmst to desktop-kde and desktop-lxqt respectively.
+  * utopia-network-qt: Demote kget to suggests
 
  -- James Lu <bitflip3@gmail.com>  Sun, 18 Jun 2017 16:44:56 -0700
 
