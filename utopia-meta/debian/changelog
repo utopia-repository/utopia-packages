@@ -1,3 +1,9 @@
+utopia-meta (2017.06.18) UNRELEASED; urgency=medium
+
+  * utopia-desktop-gnome: add taskbar and top-icons-plus extensions.
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 18 Jun 2017 16:44:56 -0700
+
 utopia-meta (2017.06.17) unstable; urgency=medium
 
   * Tweak web browser dependencies to ensure that a graphical browser is
