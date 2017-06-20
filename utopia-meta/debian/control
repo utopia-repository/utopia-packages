@@ -395,7 +395,6 @@ Recommends: apt-rdepends,
             optipng | pngcrush,
             pandoc,
             ruby-dev,
-            shellcheck,
             tcpdump,
             tig,
             ubuntu-keyring | ubuntu-archive-keyring
@@ -406,8 +405,10 @@ Description: Utopia Development Collection (meta-package)
 
 Package: utopia-devel-extras
 Depends: bzr, git-remote-bzr, subversion, utopia-devel, ${misc:Depends}
-Recommends: bison,
+Recommends: adb,
+            bison,
             doxygen,
+            fastboot,
             flex,
             lua-socket (>= 3.0~rc1~),
             lua5.3 | lua,
@@ -415,6 +416,7 @@ Recommends: bison,
             packaging-dev,
             python3-pypandoc,
             scons,
+            shellcheck,
             yasm
 Suggests: nodejs (>= 4), python-twisted, utopia-accessories-extras
 Architecture: all
