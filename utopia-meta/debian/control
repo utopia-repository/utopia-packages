@@ -123,6 +123,7 @@ Recommends: apt-listbugs,
             screenfetch,
             scrot,
             tree,
+            uptimed,
             utopia-keyring,
             whois
 Suggests: surfraw, utopia-devel, utopia-games
