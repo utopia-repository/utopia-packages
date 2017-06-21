@@ -1,4 +1,4 @@
-utopia-meta (2017.06.19) UNRELEASED; urgency=medium
+utopia-meta (2017.06.20) UNRELEASED; urgency=medium
 
   * utopia-desktop-gnome: add taskbar and top-icons-plus extensions.
   * Rename some packages to better reflect their actual contents:
@@ -9,8 +9,10 @@ utopia-meta (2017.06.19) UNRELEASED; urgency=medium
   * utopia-network-qt: Demote kget to suggests, it still uses qt4
   * Move shellcheck to utopia-devel-extras.
   * utopia-devel-extras: add adb, fastboot
-  * utopia-baseutils: demote surfraw to suggests as it pulls in quite
-    a number of dependencies.
+  * utopia-baseutils updates:
+    - Demote surfraw to suggests as it pulls in quite a number of
+      dependencies.
+    - Add uptimed to recommends.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 18 Jun 2017 16:44:56 -0700
 
