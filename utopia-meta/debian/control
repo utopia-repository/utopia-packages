@@ -618,6 +618,7 @@ Depends: fonts-noto,
 Recommends: arc-theme,
             breeze-cursor-theme,
             numix-gtk-theme,
+            numix-icon-theme-square,
             paper-gtk-theme,
             vertex-theme | vertex-gtk-theme,
             zuki-themes
