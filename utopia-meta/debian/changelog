@@ -1,3 +1,25 @@
+utopia-meta (2017.06.25) experimental; urgency=medium
+
+  * utopia-desktop-gnome: add taskbar and top-icons-plus extensions.
+  * Rename some packages to better reflect their actual contents:
+    - utopia-desktop -> utopia-desktop-common
+    - utopia-accessories-kde -> utopia-accessories-qt
+    - utopia-network-kde -> utopia-network-qt
+  * Move plasma-nm | cmst to desktop-kde and desktop-lxqt respectively.
+  * utopia-network-qt: Demote kget to suggests, it still uses qt4
+  * Move shellcheck to utopia-devel-extras.
+  * utopia-devel: add git-remote-bzr, bzr, subversion, git-svn
+  * utopia-devel-extras: bump nodejs to recommends; add adb, fastboot
+  * utopia-baseutils updates:
+    - Demote surfraw to suggests as it pulls in quite a number of
+      dependencies.
+    - Add uptimed to recommends.
+  * utopia-themes: recommend numix-icon-theme-square
+  * Move iotop from utopia-devel to utopia-baseutils
+  * Run wrap-and-sort -b
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 25 Jun 2017 14:12:27 -0700
+
 utopia-meta (2017.06.17~deb9u1) stretch; urgency=medium
 
   * No-change backport to stretch.

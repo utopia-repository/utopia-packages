@@ -7,7 +7,7 @@ Standards-Version: 3.9.8
 Maintainer: James Lu <bitflip3@gmail.com>
 
 Package: utopia-accessories
-Depends: utopia-accessories-gtk | utopia-accessories-kde, ${misc:Depends}
+Depends: utopia-accessories-gtk | utopia-accessories-qt, ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
             florence | caribou,
             geany,
@@ -63,6 +63,15 @@ Description: Utopia Accessories Collection - GNOME/GTK+ (meta-package)
  desktop.
 
 Package: utopia-accessories-kde
+Depends: utopia-accessories-qt, ${misc:Depends}
+Architecture: all
+Section: oldlibs
+Priority: extra
+Description: Utopia Accessories Collection - Qt (transitional package)
+ This is a dummy transitional package for utopia-accessories-qt, and can be
+ safely removed when nothing depends on it.
+
+Package: utopia-accessories-qt
 Depends: muon, qapt-utils | gdebi-kde, ${misc:Depends}
 Recommends: filelight,
             k3b,
@@ -72,8 +81,11 @@ Recommends: filelight,
             utopia-accessories
 Suggests: skanlite
 Architecture: all
-Description: Utopia Accessories Collection - KDE/Qt (meta-package)
- This meta-package pulls in some accessories targeting a KDE/Qt based
+Breaks: utopia-accessories-kde (<< 2017.06.19~)
+Replaces: utopia-accessories-kde (<< 2017.06.19~)
+Provides: utopia-accessories-kde
+Description: Utopia Accessories Collection - Qt (meta-package)
+ This meta-package pulls in some accessories targeting a Qt-based
  desktop.
 
 Package: utopia-baseutils
@@ -106,20 +118,96 @@ Recommends: apt-listbugs,
             gnupg (<< 2.1~) | dirmngr,
             gnupg-agent,
             iftop,
+            iotop,
             iptables,
             rsync,
             screenfetch,
             scrot,
-            surfraw,
             tree,
+            uptimed,
             utopia-keyring,
             whois
-Suggests: utopia-devel, utopia-games
+Suggests: surfraw, utopia-devel, utopia-games
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
 
 Package: utopia-desktop
+Depends: utopia-desktop-common, ${misc:Depends}
+Architecture: all
+Section: oldlibs
+Priority: extra
+Description: Utopia Desktop Collection - common programs (transitional package)
+ This is a dummy transitional package for utopia-desktop, and can be safely
+ removed when nothing depends on it.
+
+Package: utopia-desktop-budgie
+Depends: budgie-desktop,
+         budgie-indicator-applet,
+         evince | atril | pdf-viewer,
+         shotwell | eog | eom,
+         tilix | gnome-terminal | x-terminal-emulator,
+         utopia-desktop-common,
+         ${misc:Depends}
+Recommends: baobab,
+            brasero,
+            dconf-editor | dconf-tools,
+            gnome-characters,
+            gnome-font-viewer,
+            gnome-keyring,
+            gnome-screenshot,
+            gnome-sushi,
+            gnome-system-log,
+            gnome-system-monitor,
+            nautilus-actions,
+            nautilus-emblems,
+            seahorse-nautilus,
+            simple-scan,
+            utopia-themes
+Suggests: gedit, nautilus-admin, nautilus-share, nautilus-wipe, plank
+Architecture: all
+Description: Utopia Desktop Collection - Budgie Desktop (meta-package)
+ This meta-package installs Budgie Desktop with a hand-picked set of
+ programs.
+
+Package: utopia-desktop-cinnamon
+Depends: cinnamon (>= 3),
+         cinnamon-control-center (>= 3),
+         cinnamon-screensaver (>= 3),
+         cinnamon-session (>= 3),
+         cinnamon-settings-daemon (>= 3),
+         evince | atril | pdf-viewer,
+         gnome-terminal | mate-terminal | x-terminal-emulator,
+         muffin (>= 3),
+         nemo (>= 3),
+         shotwell | eog | eom,
+         utopia-desktop-common,
+         ${misc:Depends}
+Recommends: baobab,
+            brasero,
+            cinnamon-l10n | cinnamon-translations,
+            dconf-editor | dconf-tools,
+            gnome-font-viewer,
+            gnome-keyring,
+            gnome-screenshot,
+            gnome-system-log,
+            gnome-system-monitor | mate-system-monitor,
+            mint-cinnamon-themes,
+            nemo-audio-tab,
+            nemo-emblems (>= 2.6),
+            nemo-fileroller (>= 2.6),
+            nemo-seahorse,
+            qt5ct,
+            simple-scan,
+            utopia-cinnamon-defaults,
+            utopia-themes
+Suggests: gedit | pluma, nemo-media-columns, nemo-share
+Architecture: all
+Description: Utopia Desktop Collection - Cinnamon (meta-package)
+ This meta-package installs a minimal Cinnamon Desktop Environment with Utopia
+ Desktop tweaks.
+
+Package: utopia-desktop-common
 Depends: desktop-base,
          lightdm | x-display-manager,
          utopia-baseutils,
@@ -146,47 +234,116 @@ Suggests: lxpolkit | polkit-1-auth-agent,
           utopia-office,
           utopia-printing
 Architecture: all
+Breaks: utopia-desktop (<< 2017.06.19~)
+Replaces: utopia-desktop (<< 2017.06.19~)
+Provides: utopia-desktop
 Description: Utopia Desktop Collection - common programs (meta-package)
  This meta-package fetches some common, desktop-independent dependencies (fonts,
- utilities, etc.). It does not install a full desktop environment; choose one of
- the many utopia-desktop-* variants to do that.
+ utilities, etc.).
 
-Package: utopia-desktop-cinnamon
-Depends: cinnamon (>= 3),
-         cinnamon-control-center (>= 3),
-         cinnamon-screensaver (>= 3),
-         cinnamon-session (>= 3),
-         cinnamon-settings-daemon (>= 3),
-         evince | atril | pdf-viewer,
-         gnome-terminal | mate-terminal | x-terminal-emulator,
-         muffin (>= 3),
-         nemo (>= 3),
-         shotwell | eog | eom,
-         utopia-desktop,
-         ${misc:Depends}
-Recommends: baobab,
-            brasero,
-            cinnamon-l10n | cinnamon-translations,
-            dconf-editor | dconf-tools,
-            gnome-font-viewer,
-            gnome-keyring,
-            gnome-screenshot,
-            gnome-system-log,
-            gnome-system-monitor | mate-system-monitor,
-            mint-cinnamon-themes,
-            nemo-audio-tab,
-            nemo-emblems (>= 2.6),
-            nemo-fileroller (>= 2.6),
-            nemo-seahorse,
-            qt5ct,
-            simple-scan,
-            utopia-cinnamon-defaults,
-            utopia-themes
-Suggests: gedit | pluma, nemo-media-columns, nemo-share
+Package: utopia-desktop-common-vnc
+Depends: utopia-baseutils, ${misc:Depends}
+Recommends: desktop-base,
+            fonts-dejavu,
+            fonts-liberation,
+            fonts-noto,
+            tigervnc-standalone-server | tightvncserver,
+            xorg
+Suggests: utopia-accessories,
+          utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde | utopia-desktop-lxqt,
+          utopia-devel-gui
 Architecture: all
-Description: Utopia Desktop Collection - Cinnamon (meta-package)
- This meta-package installs a minimal Cinnamon Desktop Environment with Utopia
- Desktop tweaks.
+Provides: utopia-desktop-common
+Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
+ This meta-package installs a lighter version of utopia-desktop-common,
+ tailored for a VNC-based remote desktop setup on headless machines.
+
+Package: utopia-desktop-full
+Depends: utopia-accessories,
+         utopia-accessories-gtk,
+         utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-gnome | utopia-desktop-openbox | utopia-desktop-lxde,
+         utopia-desktop-common,
+         utopia-office,
+         utopia-printing,
+         ${misc:Depends}
+Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
+            utopia-network,
+            utopia-network-gtk,
+            wine,
+            wine-binfmt
+Suggests: utopia-accessories-extras, utopia-devel-gui, utopia-games-gui
+Architecture: all
+Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
+ This meta-package installs a complete desktop with a GNOME/GTK+ based desktop
+ environment and programs for multimedia, productivity, networking, etc.
+
+Package: utopia-desktop-full-qt
+Depends: utopia-accessories,
+         utopia-accessories-qt,
+         utopia-desktop-common,
+         utopia-desktop-kde | utopia-desktop-lxqt,
+         utopia-office,
+         utopia-printing,
+         ${misc:Depends}
+Recommends: libreoffice-kde,
+            utopia-network,
+            utopia-network-kde,
+            wine,
+            wine-binfmt
+Suggests: utopia-accessories-extras, utopia-devel-gui, utopia-games-gui
+Provides: utopia-full-desktop
+Architecture: all
+Description: Utopia Desktop Collection - full KDE/Qt desktop (meta-package)
+ This meta-package installs a complete desktop with a KDE/Qt based desktop
+ environment and programs for multimedia, productivity, networking, etc.
+
+Package: utopia-desktop-gnome
+Depends: evince | pdf-viewer,
+         file-roller,
+         fonts-cantarell,
+         gdm3 | lightdm | x-display-manager,
+         gnome-control-center,
+         gnome-keyring,
+         gnome-screenshot,
+         gnome-session,
+         gnome-settings-daemon,
+         gnome-shell,
+         gnome-shell-extension-top-icons-plus,
+         gnome-shell-extensions,
+         gnome-terminal | mate-terminal | x-terminal-emulator,
+         gnome-themes-standard,
+         gnome-tweak-tool,
+         shotwell | eog,
+         utopia-desktop-common,
+         ${misc:Depends}
+Recommends: alacarte,
+            baobab,
+            brasero,
+            chrome-gnome-shell,
+            dconf-editor | dconf-tools,
+            eog,
+            gnome-characters,
+            gnome-font-viewer,
+            gnome-shell-extension-taskbar,
+            gnome-sushi,
+            gnome-system-log,
+            gnome-system-monitor,
+            nautilus-actions,
+            nautilus-emblems,
+            seahorse-nautilus,
+            shotwell,
+            simple-scan,
+            utopia-themes
+Suggests: gedit,
+          gnome-bluetooth,
+          goobox | sound-juicer,
+          nautilus-admin,
+          nautilus-share,
+          nautilus-wipe
+Architecture: all
+Description: Utopia Desktop Collection - GNOME (meta-package)
+ This meta-package installs a GNOME 3 desktop with a hand-picked set of
+ programs.
 
 Package: utopia-desktop-kde
 Depends: ark,
@@ -200,7 +357,7 @@ Depends: ark,
          plasma-desktop (>= 4:5),
          plasma-pa | kmix,
          systemsettings,
-         utopia-desktop,
+         utopia-desktop-common,
          ${misc:Depends}
 Recommends: gtk3-engines-breeze,
             kde-baseapps-bin,
@@ -215,11 +372,12 @@ Recommends: gtk3-engines-breeze,
             kwalletmanager,
             kwin-x11,
             okular-extra-backends,
+            plasma-nm,
             sddm | lightdm-kde-greeter,
             udisks2,
             upower,
             user-manager,
-            utopia-accessories-kde
+            utopia-accessories-qt
 Suggests: kate, kdeutils, libreoffice-kde, utopia-games-gui
 Architecture: all
 Description: Utopia Desktop Collection - KDE Plasma 5 (meta-package)
@@ -235,7 +393,7 @@ Depends: gpicview,
          lxsession,
          lxterminal,
          obconf,
-         utopia-desktop,
+         utopia-desktop-common,
          ${misc:Depends}
 Recommends: evince | atril | pdf-viewer,
             file-roller | xarchiver | engrampa,
@@ -251,8 +409,39 @@ Description: Utopia Desktop Collection - LXDE (meta-package)
  This meta-package installs a minimal LXDE desktop with a hand-picked set of
  programs.
 
+Package: utopia-desktop-lxqt
+Depends: lximage-qt,
+         lxqt-admin,
+         lxqt-config,
+         lxqt-core,
+         lxqt-notificationd,
+         lxqt-openssh-askpass,
+         lxqt-policykit,
+         lxqt-qtplugin,
+         lxqt-runner,
+         qterminal | x-terminal-emulator,
+         ${misc:Depends}
+Recommends: ark | xarchiver,
+            cmst | wicd | network-manager-gnome,
+            lxqt-about,
+            lxqt-globalkeys,
+            lxqt-powermanagement,
+            qlipper,
+            qpdfview | okular | evince | pdf-viewer,
+            qps,
+            screengrab,
+            sddm,
+            sddm-theme-maui | sddm-theme-debian-maui,
+            utopia-themes,
+            xfwm4-theme-breeze
+Suggests: juffed | kate | kwrite
+Architecture: all
+Description: Utopia Desktop Collection - LXQt (meta-package)
+ This meta-package installs a LXQt desktop with a hand-picked set of
+ programs.
+
 Package: utopia-desktop-mate
-Depends: mate-desktop-environment, utopia-desktop, ${misc:Depends}
+Depends: mate-desktop-environment, utopia-desktop-common, ${misc:Depends}
 Recommends: caja-gksu,
             caja-open-terminal,
             caja-share,
@@ -277,7 +466,7 @@ Depends: gmrun,
          openbox,
          thunar | pcmanfm,
          tint2,
-         utopia-desktop,
+         utopia-desktop-common,
          xfce4-terminal | lxterminal | x-terminal-emulator,
          ${misc:Depends}
 Recommends: compton | xcompmgr,
@@ -300,7 +489,7 @@ Description: Utopia Desktop Collection - Openbox (meta-package)
 
 Package: utopia-desktop-xfce
 Depends: thunar-archive-plugin,
-         utopia-desktop,
+         utopia-desktop-common,
          xfce4 (>= 4.12),
          xfce4-datetime-plugin,
          xfce4-notifyd,
@@ -351,17 +540,19 @@ Depends: build-essential,
          utopia-baseutils,
          ${misc:Depends}
 Recommends: apt-rdepends,
+            bzr,
             cmake,
             debian-archive-keyring,
             debootstrap,
             diffoscope,
             gem2deb,
+            git-remote-bzr,
+            git-svn,
             gnutls-bin,
             gnutls-dev,
             graphviz,
             help2man,
             imagemagick,
-            iotop,
             jpegoptim,
             libgnutls-dev | gnutls-dev,
             libwww-perl,
@@ -371,7 +562,7 @@ Recommends: apt-rdepends,
             optipng | pngcrush,
             pandoc,
             ruby-dev,
-            shellcheck,
+            subversion,
             tcpdump,
             tig,
             ubuntu-keyring | ubuntu-archive-keyring
@@ -381,18 +572,27 @@ Description: Utopia Development Collection (meta-package)
  This meta-package installs libraries and tools for a development environment.
 
 Package: utopia-devel-extras
-Depends: bzr, git-remote-bzr, subversion, utopia-devel, ${misc:Depends}
-Recommends: bison,
+Depends: bzr,
+         git-remote-bzr,
+         git-svn,
+         subversion,
+         utopia-devel,
+         ${misc:Depends}
+Recommends: adb,
+            bison,
             doxygen,
+            fastboot,
             flex,
             lua-socket (>= 3.0~rc1~),
             lua5.3 | lua,
             mercurial,
+            nodejs (>= 4),
             packaging-dev,
             python3-pypandoc,
             scons,
+            shellcheck,
             yasm
-Suggests: nodejs (>= 4), python-twisted, utopia-accessories-extras
+Suggests: python-twisted, utopia-accessories-extras
 Architecture: all
 Description: Utopia Development Collection - extra tools (meta-package)
  This meta-package installs extra libraries and utilities for a development
@@ -506,7 +706,7 @@ Description: Utopia Multimedia Collection (meta-package)
 
 Package: utopia-network
 Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-         utopia-network-gtk | utopia-network-kde,
+         utopia-network-gtk | utopia-network-qt,
          ${misc:Depends}
 Recommends: mtr, thunderbird | icedove, zenmap | gnome-nettool
 Architecture: all
@@ -529,18 +729,29 @@ Description: Utopia Network Collection - GNOME/GTK+ (meta-package)
  based desktop.
 
 Package: utopia-network-kde
+Depends: utopia-network-qt, ${misc:Depends}
+Architecture: all
+Section: oldlibs
+Priority: extra
+Description: Utopia Network Collection - Qt (transitional package)
+ This is a dummy transitional package for utopia-network-qt, and can be safely
+ removed when nothing depends on it.
+
+Package: utopia-network-qt
 Depends: ${misc:Depends}
-Recommends: kget,
-            konversation,
+Recommends: konversation,
             krdc,
-            plasma-nm | cmst,
             qbittorrent | transmission-qt | ktorrent,
             utopia-network,
             wireshark-qt | wireshark
+Suggests: kget
 Architecture: all
-Description: Utopia Network Collection - KDE/Qt (meta-package)
- This meta-package pulls in some networking programs targeting a KDE/Qt
- based desktop.
+Breaks: utopia-network-kde (<< 2017.06.19~)
+Replaces: utopia-network-kde (<< 2017.06.19~)
+Provides: utopia-network-kde
+Description: Utopia Network Collection - Qt (meta-package)
+ This meta-package pulls in some networking programs targeting a Qt-based
+ desktop.
 
 Package: utopia-office
 Depends: libreoffice-calc (>= 5.1~),
@@ -566,7 +777,7 @@ Description: Utopia Productivity Collection (meta-package)
  This meta-package installs LibreOffice with a hand-picked set of components.
 
 Package: utopia-printing
-Depends: cups, utopia-desktop, ${misc:Depends}
+Depends: cups, utopia-desktop-common, ${misc:Depends}
 Recommends: cups-pdf, system-config-printer | print-manager, task-print-server
 Architecture: all
 Description: Utopia Desktop Collection - Printing Support (meta-package)
@@ -581,6 +792,7 @@ Depends: fonts-noto,
 Recommends: arc-theme,
             breeze-cursor-theme,
             numix-gtk-theme,
+            numix-icon-theme-square,
             paper-gtk-theme,
             vertex-theme | vertex-gtk-theme,
             zuki-themes
@@ -592,165 +804,3 @@ Suggests: gnome-themes-standard,
 Architecture: all
 Description: Utopia Desktop Themes Collection (meta-package)
  This meta-package installs various themes for the Linux desktop.
-
-Package: utopia-vnc-desktop
-Depends: utopia-baseutils, ${misc:Depends}
-Recommends: desktop-base,
-            fonts-dejavu,
-            fonts-liberation,
-            fonts-noto,
-            tigervnc-standalone-server | tightvncserver,
-            xorg
-Suggests: utopia-accessories,
-          utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde | utopia-desktop-lxqt,
-          utopia-devel-gui
-Architecture: all
-Provides: utopia-desktop
-Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
- This meta-package installs a lighter version of utopia-desktop, tailored for
- a VNC-based remote desktop setup on headless machines.
-
-Package: utopia-full-desktop
-Depends: utopia-accessories,
-         utopia-accessories-gtk,
-         utopia-desktop,
-         utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-gnome | utopia-desktop-openbox | utopia-desktop-lxde,
-         utopia-office,
-         utopia-printing,
-         ${misc:Depends}
-Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
-            utopia-network,
-            utopia-network-gtk,
-            wine,
-            wine-binfmt
-Suggests: utopia-accessories-extras, utopia-devel-gui, utopia-games-gui
-Architecture: all
-Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
- This meta-package installs a complete desktop with a GNOME/GTK+ based desktop
- environment and programs for multimedia, productivity, networking, etc.
-
-Package: utopia-full-desktop-kde
-Depends: utopia-accessories,
-         utopia-accessories-kde,
-         utopia-desktop,
-         utopia-desktop-kde | utopia-desktop-lxqt,
-         utopia-office,
-         utopia-printing,
-         ${misc:Depends}
-Recommends: libreoffice-kde,
-            utopia-network,
-            utopia-network-kde,
-            wine,
-            wine-binfmt
-Suggests: utopia-accessories-extras, utopia-devel-gui, utopia-games-gui
-Provides: utopia-full-desktop
-Architecture: all
-Description: Utopia Desktop Collection - full KDE/Qt desktop (meta-package)
- This meta-package installs a complete desktop with a KDE/Qt based desktop
- environment and programs for multimedia, productivity, networking, etc.
-
-Package: utopia-desktop-gnome
-Depends: evince | pdf-viewer,
-         file-roller,
-         fonts-cantarell,
-         gdm3 | lightdm | x-display-manager,
-         gnome-control-center,
-         gnome-keyring,
-         gnome-screenshot,
-         gnome-session,
-         gnome-settings-daemon,
-         gnome-shell,
-         gnome-shell-extensions,
-         gnome-terminal | mate-terminal | x-terminal-emulator,
-         gnome-themes-standard,
-         gnome-tweak-tool,
-         shotwell | eog,
-         utopia-desktop,
-         ${misc:Depends}
-Recommends: alacarte,
-            baobab,
-            brasero,
-            chrome-gnome-shell,
-            dconf-editor | dconf-tools,
-            eog,
-            gnome-characters,
-            gnome-font-viewer,
-            gnome-sushi,
-            gnome-system-log,
-            gnome-system-monitor,
-            nautilus-actions,
-            nautilus-emblems,
-            seahorse-nautilus,
-            shotwell,
-            simple-scan,
-            utopia-themes
-Suggests: gedit,
-          gnome-bluetooth,
-          goobox | sound-juicer,
-          nautilus-admin,
-          nautilus-share,
-          nautilus-wipe
-Architecture: all
-Description: Utopia Desktop Collection - GNOME (meta-package)
- This meta-package installs a GNOME 3 desktop with a hand-picked set of
- programs.
-
-Package: utopia-desktop-budgie
-Depends: budgie-desktop,
-         budgie-indicator-applet,
-         evince | atril | pdf-viewer,
-         shotwell | eog | eom,
-         tilix | gnome-terminal | x-terminal-emulator,
-         utopia-desktop,
-         ${misc:Depends}
-Recommends: baobab,
-            brasero,
-            dconf-editor | dconf-tools,
-            gnome-characters,
-            gnome-font-viewer,
-            gnome-keyring,
-            gnome-screenshot,
-            gnome-sushi,
-            gnome-system-log,
-            gnome-system-monitor,
-            nautilus-actions,
-            nautilus-emblems,
-            seahorse-nautilus,
-            simple-scan,
-            utopia-themes
-Suggests: gedit, nautilus-admin, nautilus-share, nautilus-wipe, plank
-Architecture: all
-Description: Utopia Desktop Collection - Budgie Desktop (meta-package)
- This meta-package installs Budgie Desktop with a hand-picked set of
- programs.
-
-Package: utopia-desktop-lxqt
-Depends: lximage-qt,
-         lxqt-admin,
-         lxqt-config,
-         lxqt-core,
-         lxqt-notificationd,
-         lxqt-openssh-askpass,
-         lxqt-policykit,
-         lxqt-qtplugin,
-         lxqt-runner,
-         qterminal | x-terminal-emulator,
-         ${misc:Depends}
-Recommends: ark | xarchiver,
-            cmst | wicd | network-manager-gnome,
-            lxqt-about,
-            lxqt-globalkeys,
-            lxqt-powermanagement,
-            qlipper,
-            qpdfview | okular | evince | pdf-viewer,
-            qps,
-            screengrab,
-            sddm,
-            sddm-theme-maui | sddm-theme-debian-maui,
-            utopia-themes,
-            xfwm4-theme-breeze
-Suggests: juffed | kate | kwrite
-Architecture: all
-Description: Utopia Desktop Collection - LXQt (meta-package)
- This meta-package installs a LXQt desktop with a hand-picked set of
- programs.
