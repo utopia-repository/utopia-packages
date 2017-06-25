@@ -8,14 +8,15 @@ utopia-meta (2017.06.22) UNRELEASED; urgency=medium
   * Move plasma-nm | cmst to desktop-kde and desktop-lxqt respectively.
   * utopia-network-qt: Demote kget to suggests, it still uses qt4
   * Move shellcheck to utopia-devel-extras.
-  * utopia-devel-extras: add adb, fastboot
+  * utopia-devel: add git-remote-bzr, bzr, subversion, git-svn
+  * utopia-devel-extras: bump nodejs to recommends; add adb, fastboot
   * utopia-baseutils updates:
     - Demote surfraw to suggests as it pulls in quite a number of
       dependencies.
     - Add uptimed to recommends.
   * utopia-themes: recommend numix-icon-theme-square
 
- -- James Lu <bitflip3@gmail.com>  Sun, 18 Jun 2017 16:44:56 -0700
+ -- James Lu <bitflip3@gmail.com>  Sun, 25 Jun 2017 14:04:29 -0700
 
 utopia-meta (2017.06.17) unstable; urgency=medium
 
