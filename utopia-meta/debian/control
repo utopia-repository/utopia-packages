@@ -255,8 +255,8 @@ Suggests: utopia-accessories,
 Architecture: all
 Provides: utopia-desktop-common
 Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
- This meta-package installs a lighter version of utopia-desktop-common, tailored for
- a VNC-based remote desktop setup on headless machines.
+ This meta-package installs a lighter version of utopia-desktop-common,
+ tailored for a VNC-based remote desktop setup on headless machines.
 
 Package: utopia-desktop-full
 Depends: utopia-accessories,
