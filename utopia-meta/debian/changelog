@@ -15,6 +15,7 @@ utopia-meta (2017.06.22) UNRELEASED; urgency=medium
       dependencies.
     - Add uptimed to recommends.
   * utopia-themes: recommend numix-icon-theme-square
+  * Move iotop from utopia-devel to utopia-baseutils
 
  -- James Lu <bitflip3@gmail.com>  Sun, 25 Jun 2017 14:04:29 -0700
 
