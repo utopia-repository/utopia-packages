@@ -16,6 +16,7 @@ utopia-meta (2017.06.22) UNRELEASED; urgency=medium
     - Add uptimed to recommends.
   * utopia-themes: recommend numix-icon-theme-square
   * Move iotop from utopia-devel to utopia-baseutils
+  * Run wrap-and-sort -b
 
  -- James Lu <bitflip3@gmail.com>  Sun, 25 Jun 2017 14:04:29 -0700
 
