@@ -63,7 +63,7 @@ Description: Utopia Accessories Collection - GNOME/GTK+ (meta-package)
  desktop.
 
 Package: utopia-accessories-kde
-Depends: utopia-accessories-qt
+Depends: utopia-accessories-qt, ${misc:Depends}
 Architecture: all
 Section: oldlibs
 Priority: extra
@@ -133,7 +133,7 @@ Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
 
 Package: utopia-desktop
-Depends: utopia-desktop-common
+Depends: utopia-desktop-common, ${misc:Depends}
 Architecture: all
 Section: oldlibs
 Priority: extra
@@ -729,7 +729,7 @@ Description: Utopia Network Collection - GNOME/GTK+ (meta-package)
  based desktop.
 
 Package: utopia-network-kde
-Depends: utopia-network-qt
+Depends: utopia-network-qt, ${misc:Depends}
 Architecture: all
 Section: oldlibs
 Priority: extra
