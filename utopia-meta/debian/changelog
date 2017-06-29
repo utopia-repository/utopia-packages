@@ -3,6 +3,8 @@ utopia-meta (2017.06.25~ubuntu16.04.1) UNRELEASED; urgency=low
   * Backport to Ubuntu xenial.
   * Drop Cinnamon and Budgie variants, they aren't installable without extra
     PPAs.
+  * Demote gnome-shell-extension-taskbar to recommends as it isn't available
+    in xenial.
 
  -- James Lu <bitflip3@gmail.com>  Wed, 28 Jun 2017 19:42:35 -0700
 
