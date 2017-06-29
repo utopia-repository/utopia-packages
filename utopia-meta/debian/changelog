@@ -1,3 +1,48 @@
+utopia-meta (2017.06.17) unstable; urgency=medium
+
+  * Tweak web browser dependencies to ensure that a graphical browser is
+    pulled in: use gnome-www-browser (and some hand-picked packages) instead
+    of www-browser.
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 17 Jun 2017 00:00:34 -0700
+
+utopia-meta (2017.06.16) unstable; urgency=medium
+
+  * The "🎉🏄☀!" release.
+  * utopia-desktop-openbox updates:
+    - Recommend gsimplecal as recommended by Unit 193
+    - Add pavucontrol | gnome-alsamixer, tumbler, and feh as an alternative
+      to nitrogen
+    - Consistently prefer Xfce utils over LXDE
+    - Move tint2, thunar | pcmanfm, and terminal to depends
+  * utopia-desktop-xfce updates:
+    - Drop xfce4-batter-plugin; the power manager provides similar
+      functionality.
+    - Recommend tumbler for thumbnailing support in Thunar
+  * Add utopia-desktop-budgie variant.
+  * utopia-baseutils updates:
+    - Move git, lynx (and alternatives), reptyr, dos2unix, to depends
+    - Add depends for apt-listbugs, deborphan
+    - Add recommends for apt-listchanges, convmv, gnupg, dirmngr, gnupg-agent,
+      and surfraw
+  * utopia-devel updates:
+    - Move openssl, libssl-dev, ntp, ntpdate, quilt, python3-pip, pkg-config,
+      dh-make, git-buildpackage, gnupg (and friends) to depends
+      The goal of these changes is to make -baseutils and -devel still install
+      a usable system if apt is configured to ignore Recommended packages.
+    - Add cowbuilder | sbuild | pbuilder as depends, moving it from
+      utopia-devel-extras
+    - Remove packages moved into -baseutils.
+    - Recommend Debian, Ubuntu archive keyrings; this makes it easier to
+      verify packages manually downloaded from either source
+    - Add recommends for: pandoc
+  * -devel-extras: move packaging-dev to recommends, demote python-twisted to
+    suggests.
+  * -accessories-gtk: add variety to recommends.
+  * Re-run wrap-and-sort.
+
+ -- James Lu <bitflip3@gmail.com>  Fri, 16 Jun 2017 22:11:37 -0700
+
 utopia-meta (2017.05.26~ubuntu16.04.1) xenial; urgency=low
 
   * No change backport to Ubuntu Xenial.
