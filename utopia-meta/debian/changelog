@@ -1,3 +1,11 @@
+utopia-meta (2017.06.25~ubuntu16.04.1) UNRELEASED; urgency=low
+
+  * Backport to Ubuntu xenial.
+  * Drop Cinnamon and Budgie variants, they aren't installable without extra
+    PPAs.
+
+ -- James Lu <bitflip3@gmail.com>  Wed, 28 Jun 2017 19:42:35 -0700
+
 utopia-meta (2017.06.25) experimental; urgency=medium
 
   * utopia-desktop-gnome: add taskbar and top-icons-plus extensions.
