@@ -15,6 +15,10 @@ utopia-meta (2017.07.04) UNRELEASED; urgency=medium
     - Add mate-tweak, mate-sensors-applet, to suggests
   * Move DE-specific text editors for most desktops from suggests to
     recommends.
+  * utopia-desktop-lxde: remove lxshortcut, xfce4-mixer; these are no longer
+    available
+  * utopia-desktop-xfce: remove xfce4-volumed
+  * utopia-themes: remove ttf-ubuntu-font-family
 
  -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
 

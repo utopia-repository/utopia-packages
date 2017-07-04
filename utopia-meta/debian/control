@@ -402,11 +402,10 @@ Depends: gpicview,
 Recommends: evince | atril | pdf-viewer,
             file-roller | xarchiver | engrampa,
             leafpad,
-            libfm-tools | lxshortcut,
+            libfm-tools,
             lxrandr,
             lxtask,
             volumeicon-alsa,
-            xfce4-mixer,
             xfce4-screenshooter
 Suggests: utopia-office
 Architecture: all
@@ -521,7 +520,6 @@ Recommends: evince | atril | pdf-viewer,
             xfce4-systemload-plugin,
             xfce4-taskmanager,
             xfce4-timer-plugin,
-            xfce4-volumed,
             xfce4-weather-plugin
 Suggests: gtk3-engines-xfce, xfce4-goodies
 Architecture: all
@@ -807,8 +805,7 @@ Recommends: arc-theme,
 Suggests: gnome-themes-standard,
           mate-icon-theme-faenza,
           mate-themes,
-          paper-icon-theme,
-          ttf-ubuntu-font-family
+          paper-icon-theme
 Architecture: all
 Description: Utopia Desktop Themes Collection (meta-package)
  This meta-package installs various themes for the Linux desktop.
