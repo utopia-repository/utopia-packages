@@ -25,6 +25,7 @@ utopia-meta (2017.07.04) UNRELEASED; urgency=medium
   * utopia-desktop-kde: suggest print-manager
   * various: remove gnome-characters, kcharselect, gnome-system-log
   * Move font-manager/gnome-font-viewer to -accessories-gtk
+  * -baseutils: recommend netselect-apt
 
  -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
 
