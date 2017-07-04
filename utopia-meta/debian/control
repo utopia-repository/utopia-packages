@@ -435,17 +435,25 @@ Description: Utopia Desktop Collection - LXQt (meta-package)
  programs.
 
 Package: utopia-desktop-mate
-Depends: mate-desktop-environment, utopia-desktop-common, ${misc:Depends}
+Depends: atril | pdf-viewer,
+         engrampa,
+         eom,
+         mate-desktop-environment,
+         mate-media,
+         utopia-desktop-common,
+         ${misc:Depends}
 Recommends: caja-gksu,
             caja-open-terminal,
             caja-share,
+            caja-wallpaper,
             dconf-editor | dconf-tools,
             mate-menu,
-            mate-netspeed,
-            mate-system-tools,
             mozo,
             utopia-mate-defaults
-Suggests: mate-desktop-environment-extras, utopia-themes
+Suggests: mate-desktop-environment-extras,
+          mate-sensors-applet,
+          mate-tweak,
+          utopia-themes
 Architecture: all
 Description: Utopia Desktop Collection - MATE (meta-package)
  This meta-package installs a minimal MATE Desktop Environment with Utopia
