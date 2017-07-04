@@ -412,6 +412,7 @@ Depends: lxqt-admin,
          ${misc:Depends}
 Recommends: ark | xarchiver,
             cmst | wicd | network-manager-gnome,
+            juffed | kwrite,
             lxqt-globalkeys,
             lxqt-openssh-askpass,
             lxqt-powermanagement,
@@ -421,10 +422,8 @@ Recommends: ark | xarchiver,
             qterminal,
             screengrab,
             utopia-themes,
-            xfwm4-theme-breeze,
-            juffed | kwrite,
-Suggests: sddm | lightdm,
-          sddm-theme-maui | sddm-theme-debian-maui | lightdm
+            xfwm4-theme-breeze
+Suggests: sddm | lightdm, sddm-theme-maui | sddm-theme-debian-maui | lightdm
 Architecture: all
 Description: Utopia Desktop Collection - LXQt (meta-package)
  This meta-package installs a LXQt desktop with a hand-picked set of
@@ -669,8 +668,8 @@ Recommends: fonts-arphic-ukai,
             fonts-arphic-uming,
             fonts-wqy-microhei,
             fonts-wqy-zenhei
-Suggests: goldendict,
-          firefox-esr-l10n-zh-cn | firefox-esr-l10n-zh-tw,
+Suggests: firefox-esr-l10n-zh-cn | firefox-esr-l10n-zh-tw,
+          goldendict,
           libreoffice-l10n-zh-cn | libreoffice-l10n-zh-tw,
           task-chinese-s-desktop | task-chinese-t-desktop
 Architecture: all
@@ -796,9 +795,7 @@ Recommends: arc-theme,
             paper-icon-theme,
             vertex-theme | vertex-gtk-theme,
             zuki-themes
-Suggests: gnome-themes-standard,
-          mate-icon-theme-faenza,
-          mate-themes
+Suggests: gnome-themes-standard, mate-icon-theme-faenza, mate-themes
 Architecture: all
 Description: Utopia Desktop Themes Collection (meta-package)
  This meta-package installs various themes for the Linux desktop.
