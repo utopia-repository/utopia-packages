@@ -410,31 +410,25 @@ Description: Utopia Desktop Collection - LXDE (meta-package)
  programs.
 
 Package: utopia-desktop-lxqt
-Depends: lximage-qt,
-         lxqt-admin,
-         lxqt-config,
-         lxqt-core,
-         lxqt-notificationd,
-         lxqt-openssh-askpass,
-         lxqt-policykit,
-         lxqt-qtplugin,
-         lxqt-runner,
+Depends: lxqt-admin,
+         lxqt-core (>= 16~),
          qterminal | x-terminal-emulator,
          ${misc:Depends}
 Recommends: ark | xarchiver,
             cmst | wicd | network-manager-gnome,
-            lxqt-about,
             lxqt-globalkeys,
+            lxqt-openssh-askpass,
             lxqt-powermanagement,
             qlipper,
             qpdfview | okular | evince | pdf-viewer,
             qps,
+            qterminal,
             screengrab,
-            sddm,
-            sddm-theme-maui | sddm-theme-debian-maui,
             utopia-themes,
             xfwm4-theme-breeze
-Suggests: juffed | kate | kwrite
+Suggests: juffed | kate | kwrite,
+          sddm | lightdm,
+          sddm-theme-maui | sddm-theme-debian-maui | lightdm
 Architecture: all
 Description: Utopia Desktop Collection - LXQt (meta-package)
  This meta-package installs a LXQt desktop with a hand-picked set of

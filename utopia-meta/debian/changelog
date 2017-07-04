@@ -1,3 +1,14 @@
+utopia-meta (2017.07.04) UNRELEASED; urgency=medium
+
+  * Refactor utopia-desktop-lxqt to remove items covered by lxqt-core >= 16.
+    Remaining changes:
+    - Demote lxqt-openssh-askpass to recommends
+    - Add explicit recommends on qterminal
+    - Demote sddm (display manager deps) to suggests; it's not needed on
+      setups where X is manually started.
+
+ -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
+
 utopia-meta (2017.06.25) experimental; urgency=medium
 
   * utopia-desktop-gnome: add taskbar and top-icons-plus extensions.
