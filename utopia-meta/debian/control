@@ -800,12 +800,12 @@ Recommends: arc-theme,
             numix-gtk-theme,
             numix-icon-theme-square,
             paper-gtk-theme,
+            paper-icon-theme,
             vertex-theme | vertex-gtk-theme,
             zuki-themes
 Suggests: gnome-themes-standard,
           mate-icon-theme-faenza,
-          mate-themes,
-          paper-icon-theme
+          mate-themes
 Architecture: all
 Description: Utopia Desktop Themes Collection (meta-package)
  This meta-package installs various themes for the Linux desktop.

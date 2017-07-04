@@ -18,7 +18,8 @@ utopia-meta (2017.07.04) UNRELEASED; urgency=medium
   * utopia-desktop-lxde: remove lxshortcut, xfce4-mixer; these are no longer
     available
   * utopia-desktop-xfce: remove xfce4-volumed
-  * utopia-themes: remove ttf-ubuntu-font-family
+  * utopia-themes: remove ttf-ubuntu-font-family, bump paper-icon-theme to
+    recommends
 
  -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
 
