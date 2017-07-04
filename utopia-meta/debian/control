@@ -152,6 +152,7 @@ Depends: budgie-desktop,
 Recommends: baobab,
             brasero,
             dconf-editor | dconf-tools,
+            gedit,
             gnome-characters,
             gnome-font-viewer,
             gnome-keyring,
@@ -164,7 +165,7 @@ Recommends: baobab,
             seahorse-nautilus,
             simple-scan,
             utopia-themes
-Suggests: gedit, nautilus-admin, nautilus-share, nautilus-wipe, plank
+Suggests: nautilus-admin, nautilus-share, nautilus-wipe, plank
 Architecture: all
 Description: Utopia Desktop Collection - Budgie Desktop (meta-package)
  This meta-package installs Budgie Desktop with a hand-picked set of
@@ -187,6 +188,7 @@ Recommends: baobab,
             brasero,
             cinnamon-l10n | cinnamon-translations,
             dconf-editor | dconf-tools,
+            gedit | pluma,
             gnome-font-viewer,
             gnome-keyring,
             gnome-screenshot,
@@ -201,7 +203,7 @@ Recommends: baobab,
             simple-scan,
             utopia-cinnamon-defaults,
             utopia-themes
-Suggests: gedit | pluma, nemo-media-columns, nemo-share
+Suggests: nemo-media-columns, nemo-share
 Architecture: all
 Description: Utopia Desktop Collection - Cinnamon (meta-package)
  This meta-package installs a minimal Cinnamon Desktop Environment with Utopia
@@ -322,6 +324,7 @@ Recommends: alacarte,
             chrome-gnome-shell,
             dconf-editor | dconf-tools,
             eog,
+            gedit,
             gnome-characters,
             gnome-font-viewer,
             gnome-shell-extension-taskbar,
@@ -371,6 +374,7 @@ Recommends: gtk3-engines-breeze,
             ksysguard,
             kwalletmanager,
             kwin-x11,
+            kwrite,
             okular-extra-backends,
             plasma-nm,
             sddm | lightdm-kde-greeter,
@@ -397,13 +401,14 @@ Depends: gpicview,
          ${misc:Depends}
 Recommends: evince | atril | pdf-viewer,
             file-roller | xarchiver | engrampa,
+            leafpad,
             libfm-tools | lxshortcut,
             lxrandr,
             lxtask,
             volumeicon-alsa,
             xfce4-mixer,
             xfce4-screenshooter
-Suggests: leafpad, utopia-office
+Suggests: utopia-office
 Architecture: all
 Description: Utopia Desktop Collection - LXDE (meta-package)
  This meta-package installs a minimal LXDE desktop with a hand-picked set of
@@ -425,9 +430,9 @@ Recommends: ark | xarchiver,
             qterminal,
             screengrab,
             utopia-themes,
-            xfwm4-theme-breeze
-Suggests: juffed | kate | kwrite,
-          sddm | lightdm,
+            xfwm4-theme-breeze,
+            juffed | kwrite,
+Suggests: sddm | lightdm,
           sddm-theme-maui | sddm-theme-debian-maui | lightdm
 Architecture: all
 Description: Utopia Desktop Collection - LXQt (meta-package)
@@ -504,6 +509,7 @@ Depends: thunar-archive-plugin,
 Recommends: evince | atril | pdf-viewer,
             file-roller | engrampa | xarchiver,
             menulibre,
+            mousepad,
             mugshot,
             ristretto,
             thunar-media-tags-plugin,
@@ -517,7 +523,7 @@ Recommends: evince | atril | pdf-viewer,
             xfce4-timer-plugin,
             xfce4-volumed,
             xfce4-weather-plugin
-Suggests: gtk3-engines-xfce, mousepad, xfce4-goodies
+Suggests: gtk3-engines-xfce, xfce4-goodies
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (meta-package)
  This meta-package installs a minimal Xfce desktop with a hand-picked set of

@@ -9,10 +9,12 @@ utopia-meta (2017.07.04) UNRELEASED; urgency=medium
   * utopia-desktop-mate tweaks:
     - Drop mate-netspeed, mate-system-tools, which haven't existed since
       jessie.
-    - Add atril | pdf-viewer, engrampa, eom to depends to make sure that
-      some programs are installed even when recommends are disabled.
+    - Add atril | pdf-viewer, engrampa, eom to depends to make sure that some
+      programs are installed even when recommends are disabled.
     - Add caja-wallpaper to recommends
     - Add mate-tweak, mate-sensors-applet, to suggests
+  * Move DE-specific text editors for most desktops from suggests to
+    recommends.
 
  -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
 
