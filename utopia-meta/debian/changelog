@@ -21,6 +21,8 @@ utopia-meta (2017.07.04) UNRELEASED; urgency=medium
   * utopia-themes: remove ttf-ubuntu-font-family, bump paper-icon-theme to
     recommends
   * -intl-zh: rename iceweasel-* deps to firefox-esr-*
+  * -multimedia: suggest kdenlive
+  * utopia-desktop-kde: suggest print-manager
 
  -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
 

@@ -382,7 +382,7 @@ Recommends: gtk3-engines-breeze,
             upower,
             user-manager,
             utopia-accessories-qt
-Suggests: kate, kdeutils, libreoffice-kde, utopia-games-gui
+Suggests: kate, kdeutils, libreoffice-kde, print-manager, utopia-games-gui
 Architecture: all
 Description: Utopia Desktop Collection - KDE Plasma 5 (meta-package)
  This meta-package installs a minimal KDE Plasma desktop with a hand-picked set
@@ -700,6 +700,7 @@ Recommends: audacity,
             youtube-dl
 Suggests: inkscape,
           isomaster,
+          kdenlive,
           mediainfo,
           pinta | kolourpaint,
           puddletag,
