@@ -678,7 +678,7 @@ Recommends: fonts-arphic-ukai,
             fonts-wqy-microhei,
             fonts-wqy-zenhei
 Suggests: goldendict,
-          iceweasel-l10n-zh-cn | iceweasel-l10n-zh-tw,
+          firefox-esr-l10n-zh-cn | firefox-esr-l10n-zh-tw,
           libreoffice-l10n-zh-cn | libreoffice-l10n-zh-tw,
           task-chinese-s-desktop | task-chinese-t-desktop
 Architecture: all
