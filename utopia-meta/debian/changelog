@@ -23,6 +23,7 @@ utopia-meta (2017.07.04) UNRELEASED; urgency=medium
   * -intl-zh: rename iceweasel-* deps to firefox-esr-*
   * -multimedia: suggest kdenlive
   * utopia-desktop-kde: suggest print-manager
+  * various: remove gnome-characters, kcharselect, gnome-system-log
 
  -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
 
