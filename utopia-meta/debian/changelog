@@ -1,4 +1,4 @@
-utopia-meta (2017.07.04) UNRELEASED; urgency=medium
+utopia-meta (2017.07.09) UNRELEASED; urgency=medium
 
   * Refactor utopia-desktop-lxqt to remove items covered by lxqt-core >= 16.
     Remaining changes:
@@ -27,6 +27,7 @@ utopia-meta (2017.07.04) UNRELEASED; urgency=medium
   * Move font-manager/gnome-font-viewer to -accessories-gtk
   * -baseutils: recommend netselect-apt
   * -devel: recommend hexedit
+  * Removed utopia-games* packages, they are fairly unmaintained
 
  -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
 
