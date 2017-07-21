@@ -1,3 +1,37 @@
+utopia-meta (2017.07.21) unstable; urgency=medium
+
+  * Refactor utopia-desktop-lxqt to remove items covered by lxqt-core >= 16.
+    Remaining changes:
+    - Demote lxqt-openssh-askpass to recommends
+    - Add explicit recommends on qterminal
+    - Demote sddm (display manager deps) to suggests; it's not needed on
+      setups where X is manually started.
+  * utopia-desktop-mate tweaks:
+    - Drop mate-netspeed, mate-system-tools, which haven't existed since
+      jessie.
+    - Add atril | pdf-viewer, engrampa, eom to depends to make sure that some
+      programs are installed even when recommends are disabled.
+    - Add caja-wallpaper to recommends
+    - Add mate-tweak, mate-sensors-applet, to suggests
+  * Move DE-specific text editors for most desktops from suggests to
+    recommends.
+  * utopia-desktop-lxde: remove lxshortcut, xfce4-mixer; these are no longer
+    available
+  * utopia-desktop-xfce: remove xfce4-volumed
+  * utopia-themes updates:
+    - Remove ttf-ubuntu-font-family
+    - Add paper-icon-theme, moka-icon-theme, faenza-icon-theme, mate-themes to
+      recommends
+  * -intl-zh: rename iceweasel-* deps to firefox-esr-*
+  * -multimedia: suggest kdenlive
+  * utopia-desktop-kde: suggest print-manager
+  * various: remove gnome-characters, kcharselect, gnome-system-log
+  * Move font-manager/gnome-font-viewer to -accessories-gtk
+  * -baseutils: recommend netselect-apt
+  * -devel: recommend hexedit
+
+ -- James Lu <bitflip3@gmail.com>  Fri, 21 Jul 2017 19:48:03 +0800
+
 utopia-meta (2017.07.09) UNRELEASED; urgency=medium
 
   * Refactor utopia-desktop-lxqt to remove items covered by lxqt-core >= 16.
