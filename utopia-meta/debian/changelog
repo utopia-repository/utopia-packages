@@ -1,3 +1,9 @@
+utopia-meta (2017.07.28) UNRELEASED; urgency=medium
+
+  * -baseutils: Add Depends: aria2, p7zip-full & Suggests: p7zip-rar
+
+ -- James Lu <bitflip3@gmail.com>  Fri, 28 Jul 2017 22:47:56 +0800
+
 utopia-meta (2017.07.21) unstable; urgency=medium
 
   * Refactor utopia-desktop-lxqt to remove items covered by lxqt-core >= 16.
