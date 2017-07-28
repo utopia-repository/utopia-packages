@@ -89,7 +89,8 @@ Description: Utopia Accessories Collection - Qt (meta-package)
  desktop.
 
 Package: utopia-baseutils
-Depends: apt-listchanges,
+Depends: aria2,
+         apt-listchanges,
          bind9-host | host,
          curl,
          deborphan,
@@ -102,6 +103,7 @@ Depends: apt-listchanges,
          lynx | links2 | elinks | links | w3m | www-browser,
          nano,
          openssh-client | ssh-client,
+         p7zip-full,
          python3,
          reptyr,
          screen,
@@ -128,7 +130,7 @@ Recommends: apt-listbugs,
             uptimed,
             utopia-keyring,
             whois
-Suggests: surfraw, utopia-devel
+Suggests: p7zip-rar, surfraw, utopia-devel
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
