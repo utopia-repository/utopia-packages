@@ -1,3 +1,11 @@
+utopia-transitional (1:2016.1+deb9u1) stretch; urgency=medium
+
+  * Add package arc-theme-git -> arc-theme
+  * Bump epoch to ensure that this package takes precedence over
+    the things it is replacing.
+
+ -- James Lu <bitflip3@gmail.com>  Tue, 08 Aug 2017 18:04:50 -0700
+
 utopia-transitional (2016.1) unstable; urgency=medium
 
   * Update my email.
