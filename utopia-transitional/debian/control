@@ -14,3 +14,10 @@ Description: Transitional package for arc-theme
  Shell. It supports GNOME, Unity, Budgie, Pantheon, XFCE, Mate, and others.
  .
  This transitional package can be safely removed.
+
+Package: arc-theme-git
+Depends: ${misc:Depends}, arc-theme
+Architecture: all
+Description: Transitional package for arc-theme
+ This is a transitional package for arc-theme-git, which can be safely
+ removed.
