@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Homepage: https://github.com/utopia-repository/utopia-packages
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.8
+Standards-Version: 4.1.0
 Maintainer: James Lu <bitflip3@gmail.com>
 
 Package: utopia-accessories

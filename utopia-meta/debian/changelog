@@ -1,7 +1,8 @@
-utopia-meta (2017.07.28) UNRELEASED; urgency=medium
+utopia-meta (2017.08.23) UNRELEASED; urgency=medium
 
   * -baseutils: Add Depends: aria2, p7zip-full & Suggests: p7zip-rar
   * Remove wine-binfmt from full-desktop* variants; it's not really needed.
+  * Bump Standards-Version to 4.1.0, no changes needed.
 
  -- James Lu <bitflip3@gmail.com>  Fri, 28 Jul 2017 22:47:56 +0800
 
