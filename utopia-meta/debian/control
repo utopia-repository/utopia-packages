@@ -10,7 +10,6 @@ Package: utopia-accessories
 Depends: utopia-accessories-gtk | utopia-accessories-qt, ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
             florence | caribou,
-            geany,
             keepassx (>= 2.0~),
             lm-sensors,
             qalculate-gtk | qalculate | galculator,
@@ -37,10 +36,12 @@ Description: Utopia Accessories Collection - Extra accessories (meta-package)
  administrative tasks.
 
 Package: utopia-accessories-gtk
-Depends: gdebi, synaptic, ${misc:Depends}
+Depends: ${misc:Depends}
 Recommends: baobab | gdmap | mate-utils,
-            fuse,
             font-manager | gnome-font-viewer,
+            fuse,
+            gdebi,
+            geany,
             gparted,
             gvfs-backends,
             gvfs-bin,
@@ -48,6 +49,7 @@ Recommends: baobab | gdmap | mate-utils,
             qt5-style-plugins (>= 5.0.0+git16~),
             qt5ct,
             seahorse,
+            synaptic,
             utopia-accessories,
             variety,
             xzoom
@@ -73,11 +75,14 @@ Description: Utopia Accessories Collection - Qt (transitional package)
  safely removed when nothing depends on it.
 
 Package: utopia-accessories-qt
-Depends: muon, qapt-utils | gdebi-kde, ${misc:Depends}
+Depends: ${misc:Depends}
 Recommends: filelight,
             k3b,
+            kate | juffed,
             kmag,
+            muon,
             partitionmanager | gparted,
+            qapt-utils | gdebi-kde,
             utopia-accessories
 Suggests: skanlite
 Architecture: all
@@ -89,8 +94,8 @@ Description: Utopia Accessories Collection - Qt (meta-package)
  desktop.
 
 Package: utopia-baseutils
-Depends: aria2,
-         apt-listchanges,
+Depends: apt-listchanges,
+         aria2,
          bind9-host | host,
          curl,
          deborphan,
@@ -249,7 +254,7 @@ Recommends: desktop-base,
             tigervnc-standalone-server | tightvncserver,
             xorg
 Suggests: utopia-accessories,
-          utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde | utopia-desktop-lxqt,
+          utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde | utopia-desktop-lxqt
 Architecture: all
 Provides: utopia-desktop-common
 Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
@@ -267,7 +272,7 @@ Depends: utopia-accessories,
 Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
             utopia-network,
             utopia-network-gtk,
-            wine,
+            wine
 Suggests: utopia-accessories-extras
 Architecture: all
 Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
@@ -282,10 +287,7 @@ Depends: utopia-accessories,
          utopia-office,
          utopia-printing,
          ${misc:Depends}
-Recommends: libreoffice-kde,
-            utopia-network,
-            utopia-network-kde,
-            wine,
+Recommends: libreoffice-kde, utopia-network, utopia-network-kde, wine
 Suggests: utopia-accessories-extras
 Provides: utopia-full-desktop
 Architecture: all

@@ -6,6 +6,10 @@ utopia-meta (2017.08.27) UNRELEASED; urgency=medium
   * utopia-devel: add golang to recommends
   * utopia-devel: add an alternative dependency on libssl1.0-dev
   * Drop utopia-devel-gui, it's hardly used.
+  * Move geany to utopia-accessories-gtk, add kate | juffed to the Qt
+    alternative
+  * Re-run wrap-and-sort.
+  * Move Depends in utopia-accessories-* to Recommends.
 
  -- James Lu <bitflip3@gmail.com>  Fri, 28 Jul 2017 22:47:56 +0800
 
