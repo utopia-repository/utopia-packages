@@ -228,7 +228,6 @@ Recommends: acpi-support,
             xdg-utils
 Suggests: lxpolkit | polkit-1-auth-agent,
           utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-kde | utopia-desktop-mate | utopia-desktop-lxqt | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-gnome | utopia-desktop-budgie,
-          utopia-devel-gui,
           utopia-multimedia,
           utopia-network,
           utopia-office,
@@ -251,7 +250,6 @@ Recommends: desktop-base,
             xorg
 Suggests: utopia-accessories,
           utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde | utopia-desktop-lxqt,
-          utopia-devel-gui
 Architecture: all
 Provides: utopia-desktop-common
 Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
@@ -270,7 +268,7 @@ Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
             utopia-network,
             utopia-network-gtk,
             wine,
-Suggests: utopia-accessories-extras, utopia-devel-gui
+Suggests: utopia-accessories-extras
 Architecture: all
 Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
  This meta-package installs a complete desktop with a GNOME/GTK+ based desktop
@@ -288,7 +286,7 @@ Recommends: libreoffice-kde,
             utopia-network,
             utopia-network-kde,
             wine,
-Suggests: utopia-accessories-extras, utopia-devel-gui
+Suggests: utopia-accessories-extras
 Provides: utopia-full-desktop
 Architecture: all
 Description: Utopia Desktop Collection - full KDE/Qt desktop (meta-package)
@@ -595,18 +593,6 @@ Suggests: python-twisted, utopia-accessories-extras
 Architecture: all
 Description: Utopia Development Collection - extra tools (meta-package)
  This meta-package installs extra libraries and utilities for a development
- environment.
-
-Package: utopia-devel-gui
-Depends: gitg | qgit | gitk, utopia-devel, ${misc:Depends}
-Recommends: geany,
-            geany-plugin-lipsum,
-            geany-plugin-markdown,
-            geany-plugin-spellcheck
-Suggests: meld, utopia-accessories
-Architecture: all
-Description: Utopia Development Collection - GUI tools (meta-package)
- This meta-package installs GUI tools to assist in a development
  environment.
 
 Package: utopia-intl
