@@ -351,6 +351,7 @@ Depends: ark,
          okular | pdf-viewer,
          plasma-desktop (>= 4:5),
          plasma-pa | kmix,
+         plasma-widgets-addons,
          systemsettings,
          utopia-desktop-common,
          ${misc:Depends}
