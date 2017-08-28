@@ -1,6 +1,7 @@
 utopia-meta (2017.08.28) UNRELEASED; urgency=medium
 
   * Add plasma-widgets-addons to desktop-kde.
+  * -accessories: remove galculator alternate.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 

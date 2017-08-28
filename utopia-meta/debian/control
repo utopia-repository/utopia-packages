@@ -12,7 +12,7 @@ Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-b
             florence | caribou,
             keepassx (>= 2.0~),
             lm-sensors,
-            qalculate-gtk | qalculate | galculator,
+            qalculate-gtk | qalculate,
             vlc
 Suggests: psensor
 Architecture: all
