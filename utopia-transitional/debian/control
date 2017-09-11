@@ -1,9 +1,9 @@
 Source: utopia-transitional
 Section: oldlibs
 Build-Depends: debhelper (>= 9)
-Priority: extra
+Priority: optional
 Homepage: https://github.com/GLolol/utopia-packages
-Standards-Version: 3.9.8
+Standards-Version: 4.1.0
 Maintainer: James Lu <bitflip3@gmail.com>
 
 Package: arc-gtk-theme
