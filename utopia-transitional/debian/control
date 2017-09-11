@@ -19,7 +19,7 @@ Package: arc-theme-git
 Depends: ${misc:Depends}, arc-theme
 Architecture: all
 Description: Transitional package for arc-theme
- This is a transitional package for arc-theme-git, which can be safely
+ This is a transitional package for arc-theme, which can be safely
  removed.
 
 Package: gnome-terminal-nautilus
