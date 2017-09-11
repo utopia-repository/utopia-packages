@@ -1,3 +1,9 @@
+utopia-transitional (1:2017.1) UNRELEASED; urgency=medium
+
+  * Add transitional package: gnome-terminal-nautilus -> gnome-terminal
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 10 Sep 2017 18:00:51 -0700
+
 utopia-transitional (1:2016.1+deb9u1) stretch; urgency=medium
 
   * Add package arc-theme-git -> arc-theme
