@@ -1,9 +1,12 @@
 utopia-meta (2017.08.28) UNRELEASED; urgency=medium
 
-  * Add plasma-widgets-addons to desktop-kde.
+  * -desktop-kde: recommend plasma-widgets-addons
   * -accessories: remove galculator alternate.
   * -desktop-kde: add lightdm-gtk-greeter as an alternate to sddm to avoid
     pulling in multiple display managers if lightdm was installed
+  * -desktop-kde: demote muon to suggests. There is already a software manager
+    (plasma-discover) installed by default, and apt-xapian-index is somewhat
+    resource intensive.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 

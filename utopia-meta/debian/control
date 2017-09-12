@@ -80,11 +80,10 @@ Recommends: filelight,
             k3b,
             kate | juffed,
             kmag,
-            muon,
             partitionmanager | gparted,
             qapt-utils | gdebi-kde,
             utopia-accessories
-Suggests: skanlite
+Suggests: muon, skanlite
 Architecture: all
 Breaks: utopia-accessories-kde (<< 2017.06.19~)
 Replaces: utopia-accessories-kde (<< 2017.06.19~)
