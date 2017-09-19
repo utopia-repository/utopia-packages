@@ -1,12 +1,19 @@
 utopia-meta (2017.08.28) UNRELEASED; urgency=medium
 
-  * -desktop-kde: recommend plasma-widgets-addons
+  * The "Where's my Show Desktop?!" release
+  * -desktop-kde: depend on plasma-widgets-addons
   * -accessories: remove galculator alternate.
   * -desktop-kde: add lightdm-gtk-greeter as an alternate to sddm to avoid
     pulling in multiple display managers if lightdm was installed
   * -desktop-kde: demote muon to suggests. There is already a software manager
     (plasma-discover) installed by default, and apt-xapian-index is somewhat
     resource intensive.
+  * -intl-zh: tweaks to follow Debian's task-chinese-* packages
+    - Depend on im-config, task-chinese-s (command line utils)
+    - Recommend fcitx-googlepinyin, fcitx-sunpinyin, fcitx-table-wubi,
+      fonts-noto, fonts-noto-cjk, poppler-data per task-chinese-s-desktop
+    - Downgrade fonts-wqy-zenhei, fonts-wqy-microhei to suggests per
+      #861934
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 

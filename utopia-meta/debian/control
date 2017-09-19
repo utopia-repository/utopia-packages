@@ -608,15 +608,23 @@ Description: Utopia I18n - common packages (meta-package)
 
 Package: utopia-intl-zh
 Depends: fcitx-sunpinyin | fcitx-googlepinyin | fctix-libpinyin | fcitx-pinyin,
+         im-config,
+         task-chinese-s,
          utopia-intl,
          ${misc:Depends}
-Recommends: fonts-arphic-ukai,
+Recommends: fcitx-googlepinyin,
+            fcitx-sunpinyin,
+            fcitx-table-wubi,
+            fonts-arphic-ukai,
             fonts-arphic-uming,
-            fonts-wqy-microhei,
-            fonts-wqy-zenhei
-Suggests: firefox-esr-l10n-zh-cn | firefox-esr-l10n-zh-tw,
+            fonts-noto,
+            fonts-noto-cjk,
+            poppler-data
+Suggests: firefox-esr-l10n-zh-cn | firefox-l10n-zh-cn,
+          fonts-wqy-microhei,
+          fonts-wqy-zenhei,
           goldendict,
-          libreoffice-l10n-zh-cn | libreoffice-l10n-zh-tw,
+          libreoffice-l10n-zh-cn,
           task-chinese-s-desktop | task-chinese-t-desktop
 Architecture: all
 Description: Utopia I18n - Chinese language support (meta-package)
