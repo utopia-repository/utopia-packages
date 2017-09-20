@@ -1,4 +1,4 @@
-utopia-meta (2017.08.28) UNRELEASED; urgency=medium
+utopia-meta (2017.09.19) UNRELEASED; urgency=medium
 
   * The "Where's my Show Desktop?!" release
   * -desktop-kde: depend on plasma-widgets-addons
@@ -16,6 +16,7 @@ utopia-meta (2017.08.28) UNRELEASED; urgency=medium
       #861934
   * -baseutils: add rename, xz-utils to depends
   * -baseutils: add bzip2 to recommends
+  * -baseutils: promote convmv to depends
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 
