@@ -9,12 +9,11 @@ Maintainer: James Lu <bitflip3@gmail.com>
 Package: utopia-accessories
 Depends: utopia-accessories-gtk | utopia-accessories-qt, ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-            florence | caribou,
             keepassx (>= 2.0~),
             lm-sensors,
             qalculate-gtk | qalculate,
             vlc
-Suggests: psensor
+Suggests: florence | caribou, psensor
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and

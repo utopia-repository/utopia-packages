@@ -1,4 +1,4 @@
-utopia-meta (2017.09.19) UNRELEASED; urgency=medium
+utopia-meta (2017.10.08) UNRELEASED; urgency=medium
 
   * The "Where's my Show Desktop?!" release
   * -desktop-kde: depend on plasma-widgets-addons
@@ -20,6 +20,7 @@ utopia-meta (2017.09.19) UNRELEASED; urgency=medium
   * -accessories-kde: recommend variety (>= 0.6.6~), as that version supports
     Plasma 5.
   * Remove utopia-printing; task-print-server suits our needs fine.
+  * utopia-accessories: demote florence | caribou to suggests.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 
