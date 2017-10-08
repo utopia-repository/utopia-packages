@@ -82,7 +82,8 @@ Recommends: filelight,
             kmag,
             partitionmanager | gparted,
             qapt-utils | gdebi-kde,
-            utopia-accessories
+            utopia-accessories,
+            variety (>= 0.6.6-1~),
 Suggests: muon, skanlite
 Architecture: all
 Breaks: utopia-accessories-kde (<< 2017.06.19~)
