@@ -19,6 +19,7 @@ utopia-meta (2017.09.19) UNRELEASED; urgency=medium
   * -baseutils: promote convmv to depends
   * -accessories-kde: recommend variety (>= 0.6.6~), as that version supports
     Plasma 5.
+  * Remove utopia-printing; task-print-server suits our needs fine.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 

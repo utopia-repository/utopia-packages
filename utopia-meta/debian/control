@@ -239,7 +239,7 @@ Suggests: lxpolkit | polkit-1-auth-agent,
           utopia-multimedia,
           utopia-network,
           utopia-office,
-          utopia-printing
+          task-print-server
 Architecture: all
 Breaks: utopia-desktop (<< 2017.06.19~)
 Replaces: utopia-desktop (<< 2017.06.19~)
@@ -265,14 +265,15 @@ Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
  tailored for a VNC-based remote desktop setup on headless machines.
 
 Package: utopia-desktop-full
-Depends: utopia-accessories,
+Depends: task-print-server,
+         utopia-accessories,
          utopia-accessories-gtk,
          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-gnome | utopia-desktop-openbox | utopia-desktop-lxde,
          utopia-desktop-common,
          utopia-office,
-         utopia-printing,
          ${misc:Depends}
 Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
+            system-config-printer,
             utopia-network,
             utopia-network-gtk,
             wine
@@ -283,14 +284,14 @@ Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
  environment and programs for multimedia, productivity, networking, etc.
 
 Package: utopia-desktop-full-qt
-Depends: utopia-accessories,
+Depends: task-print-server,
+         utopia-accessories,
          utopia-accessories-qt,
          utopia-desktop-common,
          utopia-desktop-kde | utopia-desktop-lxqt,
          utopia-office,
-         utopia-printing,
          ${misc:Depends}
-Recommends: libreoffice-kde, utopia-network, utopia-network-kde, wine
+Recommends: libreoffice-kde, utopia-network, utopia-network-kde, print-manager, wine
 Suggests: utopia-accessories-extras
 Provides: utopia-full-desktop
 Architecture: all
@@ -731,14 +732,6 @@ Suggests: libreoffice, openclipart-libreoffice
 Architecture: all
 Description: Utopia Productivity Collection (meta-package)
  This meta-package installs LibreOffice with a hand-picked set of components.
-
-Package: utopia-printing
-Depends: cups, utopia-desktop-common, ${misc:Depends}
-Recommends: cups-pdf, system-config-printer | print-manager, task-print-server
-Architecture: all
-Description: Utopia Desktop Collection - Printing Support (meta-package)
- This meta-package installs various packages for printing support on a
- desktop system.
 
 Package: utopia-themes
 Depends: fonts-noto,
