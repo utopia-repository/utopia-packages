@@ -5,6 +5,8 @@ Homepage: https://github.com/utopia-repository/utopia-packages
 Build-Depends: debhelper (>= 9)
 Standards-Version: 4.1.0
 Maintainer: James Lu <bitflip3@gmail.com>
+Vcs-Git: https://github.com/utopia-repository/utopia-packages
+Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: utopia-accessories-gtk | utopia-accessories-qt, ${misc:Depends}

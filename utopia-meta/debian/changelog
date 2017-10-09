@@ -21,6 +21,7 @@ utopia-meta (2017.10.08) UNRELEASED; urgency=medium
     Plasma 5.
   * Remove utopia-printing; task-print-server suits our needs fine.
   * utopia-accessories: demote florence | caribou to suggests.
+  * Add in Vcs-Git, Vcs-Browser fields.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 
