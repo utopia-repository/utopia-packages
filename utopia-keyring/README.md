@@ -5,8 +5,4 @@ The Utopia Repository currently uses two keys for signing:
 
 #### Package refreshes
 
-To regenerate `archive.asc`, the command is as follows:
-
-```bash
-gpg --armor --export SPACE-SEPARATED-LIST-OF-RELEVENT-KEYIDS > archive.asc
-```
+To regenerate `archive.asc`, run `./gen-keys.sh` after fetching a copy of all the relevant pubkeys.
