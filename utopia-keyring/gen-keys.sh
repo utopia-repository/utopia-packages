@@ -9,5 +9,7 @@ KEYS=(
 
 OUTFILE="archive.asc"
 
+echo "Ok, generating $OUTFILE"
 gpg --armor --export "${KEYS[@]}" > "$OUTFILE"
-gpg --list-packets archive.asc 2>&1 | grep "$OUTFILE"
+echo "Done:"
+gpg "$OUTFILE"  # show the resulting file info
