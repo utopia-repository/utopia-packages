@@ -1,27 +1,33 @@
-utopia-meta (2017.10.08) UNRELEASED; urgency=medium
+utopia-meta (2017.10.13) UNRELEASED; urgency=medium
 
-  * The "Where's my Show Desktop?!" release
-  * -desktop-kde: depend on plasma-widgets-addons
-  * -accessories: remove galculator alternate.
-  * -desktop-kde: add lightdm-gtk-greeter as an alternate to sddm to avoid
-    pulling in multiple display managers if lightdm was installed
-  * -desktop-kde: demote muon to suggests. There is already a software manager
-    (plasma-discover) installed by default, and apt-xapian-index is somewhat
-    resource intensive.
+  * The "Where's my Show Desktop?!" release.
+  * -accessories updates:
+    - Remove galculator alternate to qalculate-gtk.
+    - Demote florence | caribou to suggests.
+  * -accessories-kde: recommend variety (>= 0.6.6~), as that version supports
+    Plasma 5.
+  * -baseutils updates:
+    - Add rename, xz-utils to depends
+    - Add bzip2 to recommends
+    - Promote convmv to depends
+  * -desktop-kde updates:
+    - Depend on plasma-widgets-addons, which provides common widgets like
+      "Show Desktop"
+    - Add lightdm-gtk-greeter as an alternate to sddm to avoid installing
+      multiple display managers if lightdm was previously installed.
+    - Demote muon to suggests. There is already a software manager
+      (plasma-discover) installed by default, and apt-xapian-index (which muon
+      requires) is fairly resource intensive.
   * -intl-zh: tweaks to follow Debian's task-chinese-* packages
     - Depend on im-config, task-chinese-s (command line utils)
     - Recommend fcitx-googlepinyin, fcitx-sunpinyin, fcitx-table-wubi,
       fonts-noto, fonts-noto-cjk, poppler-data per task-chinese-s-desktop
     - Downgrade fonts-wqy-zenhei, fonts-wqy-microhei to suggests per
       #861934
-  * -baseutils: add rename, xz-utils to depends
-  * -baseutils: add bzip2 to recommends
-  * -baseutils: promote convmv to depends
-  * -accessories-kde: recommend variety (>= 0.6.6~), as that version supports
-    Plasma 5.
-  * Remove utopia-printing; task-print-server suits our needs fine.
-  * utopia-accessories: demote florence | caribou to suggests.
-  * Add in Vcs-Git, Vcs-Browser fields.
+  * Removed utopia-printing; task-print-server suits our needs fine.
+  * General metadata changes:
+    - Add in Vcs-Git, Vcs-Browser fields.
+    - Bump Standards-Version to 4.1.1.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 
