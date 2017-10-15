@@ -666,7 +666,7 @@ Package: utopia-network
 Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
          utopia-network-gtk | utopia-network-qt,
          ${misc:Depends}
-Recommends: mtr, thunderbird | icedove, zenmap | gnome-nettool
+Recommends: mtr, thunderbird, zenmap | gnome-nettool
 Architecture: all
 Description: Utopia Network Collection (meta-package)
  This meta-package pulls in various programs related to networking.

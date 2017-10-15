@@ -1,4 +1,4 @@
-utopia-meta (2017.10.13) UNRELEASED; urgency=medium
+utopia-meta (2017.10.15) UNRELEASED; urgency=medium
 
   * The "Where's my Show Desktop?!" release.
   * -accessories updates:
@@ -25,7 +25,8 @@ utopia-meta (2017.10.13) UNRELEASED; urgency=medium
     - Downgrade fonts-wqy-zenhei, fonts-wqy-microhei to suggests per
       #861934
   * Removed utopia-printing; task-print-server suits our needs fine.
-  * utopia-themes: add R: greybird-gtk-theme
+  * -network: remove reference to icedove, which no longer exists.
+  * -themes: add R: greybird-gtk-theme
   * General metadata changes:
     - Add in Vcs-Git, Vcs-Browser fields.
     - Bump Standards-Version to 4.1.1.
