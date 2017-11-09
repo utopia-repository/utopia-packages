@@ -30,6 +30,10 @@ utopia-meta (2017.10.15) UNRELEASED; urgency=medium
   * General metadata changes:
     - Add in Vcs-Git, Vcs-Browser fields.
     - Bump Standards-Version to 4.1.1.
+  * -desktop-cinnamon: fix capitalization in package description
+  * -desktop-common*: Remove redundant suggests on individual desktop packages
+  * Reword long package descriptions to consistently use "Qt-based" and
+    "GTK+-based" instead of "KDE/Qt" and "GNOME/GTK+".
 
  -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
 

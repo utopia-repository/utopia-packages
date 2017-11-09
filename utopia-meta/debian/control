@@ -213,7 +213,7 @@ Recommends: baobab,
 Suggests: nemo-media-columns, nemo-share
 Architecture: all
 Description: Utopia Desktop Collection - Cinnamon (meta-package)
- This meta-package installs a minimal Cinnamon Desktop Environment with Utopia
+ This meta-package installs a minimal Cinnamon desktop environment with Utopia
  Desktop tweaks.
 
 Package: utopia-desktop-common
@@ -236,7 +236,6 @@ Recommends: acpi-support,
             utopia-polkit,
             xdg-utils
 Suggests: lxpolkit | polkit-1-auth-agent,
-          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-kde | utopia-desktop-mate | utopia-desktop-lxqt | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-gnome | utopia-desktop-budgie,
           utopia-multimedia,
           utopia-network,
           utopia-office,
@@ -257,8 +256,7 @@ Recommends: desktop-base,
             fonts-noto,
             tigervnc-standalone-server | tightvncserver,
             xorg
-Suggests: utopia-accessories,
-          utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde | utopia-desktop-lxqt
+Suggests: utopia-accessories
 Architecture: all
 Provides: utopia-desktop-common
 Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
@@ -280,8 +278,8 @@ Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
             wine
 Suggests: utopia-accessories-extras
 Architecture: all
-Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
- This meta-package installs a complete desktop with a GNOME/GTK+ based desktop
+Description: Utopia Desktop Collection - full GTK+-based desktop (meta-package)
+ This meta-package installs a complete desktop with a GTK+-based desktop
  environment and programs for multimedia, productivity, networking, etc.
 
 Package: utopia-desktop-full-qt
@@ -292,12 +290,12 @@ Depends: task-print-server,
          utopia-desktop-kde | utopia-desktop-lxqt,
          utopia-office,
          ${misc:Depends}
-Recommends: libreoffice-kde, utopia-network, utopia-network-kde, print-manager, wine
+Recommends: libreoffice-kde, utopia-network, utopia-network-qt, print-manager, wine
 Suggests: utopia-accessories-extras
 Provides: utopia-full-desktop
 Architecture: all
-Description: Utopia Desktop Collection - full KDE/Qt desktop (meta-package)
- This meta-package installs a complete desktop with a KDE/Qt based desktop
+Description: Utopia Desktop Collection - full Qt-based desktop (meta-package)
+ This meta-package installs a complete desktop with a Qt-based desktop
  environment and programs for multimedia, productivity, networking, etc.
 
 Package: utopia-desktop-gnome
