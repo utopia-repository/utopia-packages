@@ -30,7 +30,7 @@ Recommends: cifs-utils,
             virtualbox (>= 5.0~),
             wine | wine-development | wine-staging-compat,
             wine-binfmt
-Suggests: gnome-exe-thumbnailer
+Suggests: exe-thumbnailer | gnome-exe-thumbnailer
 Architecture: all
 Description: Utopia Accessories Collection - Extra accessories (meta-package)
  This meta-package pulls in some extra accessories for daily use and

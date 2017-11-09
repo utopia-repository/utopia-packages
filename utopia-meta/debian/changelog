@@ -4,6 +4,7 @@ utopia-meta (2017.10.15) UNRELEASED; urgency=medium
   * -accessories updates:
     - Remove galculator alternate to qalculate-gtk.
     - Demote florence | caribou to suggests.
+    - Replace gnome-exe-thumbnailer with exe-thumbnailer.
   * -accessories-kde: recommend variety (>= 0.6.6~), as that version supports
     Plasma 5.
   * -baseutils updates:
