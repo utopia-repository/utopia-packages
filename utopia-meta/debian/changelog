@@ -1,6 +1,6 @@
-utopia-meta (2017.10.15) UNRELEASED; urgency=medium
+utopia-meta (2017.11.11) unstable; urgency=medium
 
-  * The "Where's my Show Desktop?!" release.
+  * The "Windy Winter" release.
   * -accessories updates:
     - Remove galculator alternate to qalculate-gtk.
     - Demote florence | caribou to suggests.
@@ -23,8 +23,7 @@ utopia-meta (2017.10.15) UNRELEASED; urgency=medium
     - Depend on im-config, task-chinese-s (command line utils)
     - Recommend fcitx-googlepinyin, fcitx-sunpinyin, fcitx-table-wubi,
       fonts-noto, fonts-noto-cjk, poppler-data per task-chinese-s-desktop
-    - Downgrade fonts-wqy-zenhei, fonts-wqy-microhei to suggests per
-      #861934
+    - Downgrade fonts-wqy-zenhei, fonts-wqy-microhei to suggests per #861934
   * Removed utopia-printing; task-print-server suits our needs fine.
   * -network: remove reference to icedove, which no longer exists.
   * -themes: add R: greybird-gtk-theme
@@ -37,7 +36,7 @@ utopia-meta (2017.10.15) UNRELEASED; urgency=medium
     "GTK+-based" instead of "KDE/Qt" and "GNOME/GTK+".
   * -office: recommend fonts-open-sans, libreoffice-draw
 
- -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 19:50:46 -0700
+ -- James Lu <bitflip3@gmail.com>  Sat, 11 Nov 2017 17:22:06 -0800
 
 utopia-meta (2017.08.27) unstable; urgency=medium
 
