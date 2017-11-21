@@ -413,6 +413,7 @@ Package: utopia-desktop-lxqt
 Depends: lxqt-admin,
          lxqt-core (>= 16~),
          qterminal | x-terminal-emulator,
+         xfwm4 | kwin-x11 | openbox | x-window-manager,
          ${misc:Depends}
 Recommends: ark | xarchiver,
             cmst | wicd | network-manager-gnome,
