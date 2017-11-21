@@ -402,6 +402,7 @@ Recommends: evince | atril | pdf-viewer,
             lxrandr,
             lxtask,
             volumeicon-alsa,
+            xfce4-notifyd | lxqt-notificationd,
             xfce4-screenshooter
 Suggests: utopia-office
 Architecture: all
