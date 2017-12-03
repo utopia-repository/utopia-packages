@@ -25,6 +25,7 @@ Package: utopia-accessories-extras
 Depends: utopia-accessories, ${misc:Depends}
 Recommends: cifs-utils,
             default-jre,
+            fileinsight,
             samba,
             smbclient,
             virtualbox (>= 5.0~),
