@@ -9,6 +9,7 @@ Homepage: https://github.com/GLolol/utopia-packages
 Package: utopia-cinnamon-defaults
 Architecture: all
 Depends: arc-theme (>= 20170302-1~),
+         fonts-noto-hinted,
          utopia-themes (>= 2016.01.10~),
          cinnamon-common (>= 2.6~),
          cinnamon-desktop-data (>= 2.6.4),
@@ -23,13 +24,17 @@ Description: Utopia Desktop Defaults (Cinnamon Desktop)
 
 Package: utopia-gnomeapps-defaults
 Architecture: all
-Depends: gnome-terminal-data, gsettings-desktop-schemas, ${misc:Depends}
+Depends: fonts-noto-hinted,
+         gnome-terminal-data,
+         gsettings-desktop-schemas,
+         ${misc:Depends}
 Description: Utopia Desktop Defaults (GNOME apps)
  This package contains customized defaults for GNOME applications.
 
 Package: utopia-mate-defaults
 Architecture: all
 Depends: caja-common (>= 1.8~),
+         fonts-noto-hinted,
          marco-common (>= 1.8~),
          mate-desktop-common (>= 1.8~),
          mate-menu,
