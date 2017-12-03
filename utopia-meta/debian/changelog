@@ -10,6 +10,7 @@ utopia-meta (2017.11.20) UNRELEASED; urgency=medium
   * -accessories-qt: replace filelight with qdirstat
   * -accessories-extras: Remove explicit preference on openjdk-8-jre
     This will eventually be replaced by openjdk-9-jre.
+  * Fix typo in long description for utopia-desktop (transitional pkg)
 
  -- James Lu <bitflip3@gmail.com>  Mon, 20 Nov 2017 18:24:10 -0800
 

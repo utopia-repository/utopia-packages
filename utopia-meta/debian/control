@@ -151,8 +151,8 @@ Architecture: all
 Section: oldlibs
 Priority: extra
 Description: Utopia Desktop Collection - common programs (transitional package)
- This is a dummy transitional package for utopia-desktop, and can be safely
- removed when nothing depends on it.
+ This is a dummy transitional package for utopia-desktop-common, and can be
+ safely removed when nothing depends on it.
 
 Package: utopia-desktop-budgie
 Depends: budgie-desktop,
