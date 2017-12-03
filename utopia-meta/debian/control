@@ -77,12 +77,12 @@ Description: Utopia Accessories Collection - Qt (transitional package)
 
 Package: utopia-accessories-qt
 Depends: ${misc:Depends}
-Recommends: filelight,
-            k3b,
+Recommends: k3b,
             kate | juffed,
             kmag,
             partitionmanager | gparted,
             qapt-utils | gdebi-kde,
+            qdirstat,
             utopia-accessories,
             variety (>= 0.6.6-1~)
 Suggests: muon, skanlite
