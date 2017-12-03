@@ -24,7 +24,7 @@ Description: Utopia Accessories Collection (meta-package)
 Package: utopia-accessories-extras
 Depends: utopia-accessories, ${misc:Depends}
 Recommends: cifs-utils,
-            openjdk-8-jre | default-jre,
+            default-jre,
             samba,
             smbclient,
             virtualbox (>= 5.0~),
