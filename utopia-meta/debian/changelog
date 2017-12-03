@@ -6,6 +6,7 @@ utopia-meta (2017.11.20) UNRELEASED; urgency=medium
   * -accessories-gtk: remove version restriction on R: qt5-style-plugins;
     every Debian version (and Ubuntu Zesty and above) shipping it already
     has the GTK+ 2 theme.
+  * various: Replace baobab | mate-utils with gdmap.
 
  -- James Lu <bitflip3@gmail.com>  Mon, 20 Nov 2017 18:24:10 -0800
 

@@ -38,7 +38,7 @@ Description: Utopia Accessories Collection - Extra accessories (meta-package)
 
 Package: utopia-accessories-gtk
 Depends: ${misc:Depends}
-Recommends: baobab | gdmap | mate-utils,
+Recommends: gdmap,
             font-manager | gnome-font-viewer,
             fuse,
             gdebi,
@@ -161,8 +161,7 @@ Depends: budgie-desktop,
          tilix | gnome-terminal | x-terminal-emulator,
          utopia-desktop-common,
          ${misc:Depends}
-Recommends: baobab,
-            brasero,
+Recommends: brasero,
             dconf-editor | dconf-tools,
             gedit,
             gnome-keyring,
@@ -193,8 +192,7 @@ Depends: cinnamon (>= 3),
          shotwell | eog | eom,
          utopia-desktop-common,
          ${misc:Depends}
-Recommends: baobab,
-            brasero,
+Recommends: brasero,
             cinnamon-l10n | cinnamon-translations,
             dconf-editor | dconf-tools,
             gedit | pluma,
@@ -322,7 +320,6 @@ Depends: evince | pdf-viewer,
          utopia-desktop-common,
          ${misc:Depends}
 Recommends: alacarte,
-            baobab,
             brasero,
             chrome-gnome-shell,
             dconf-editor | dconf-tools,
