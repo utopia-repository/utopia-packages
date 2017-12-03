@@ -3,6 +3,9 @@ utopia-meta (2017.11.20) UNRELEASED; urgency=medium
   * -desktop-lxqt: add explicit depends on a window manager as lxqt-core does
     not specify one by default
   * -desktop-lxde: add R: xfce4-notifyd | lxqt-notificationd
+  * -accessories-gtk: remove version restriction on R: qt5-style-plugins;
+    every Debian version (and Ubuntu Zesty and above) shipping it already
+    has the GTK+ 2 theme.
 
  -- James Lu <bitflip3@gmail.com>  Mon, 20 Nov 2017 18:24:10 -0800
 
