@@ -232,6 +232,7 @@ Recommends: acpi-support,
             iw,
             ntfs-3g,
             utopia-accessories,
+            utopia-desktop-defaults,
             utopia-polkit,
             xdg-utils
 Suggests: lxpolkit | polkit-1-auth-agent,

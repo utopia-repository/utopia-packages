@@ -12,6 +12,7 @@ utopia-meta (2017.11.20) UNRELEASED; urgency=medium
     This will eventually be replaced by openjdk-9-jre.
   * Fix typo in long description for utopia-desktop (transitional pkg)
   * Bump S-V to 4.1.2.
+  * -desktop-common: add R: utopia-desktop-defaults
 
  -- James Lu <bitflip3@gmail.com>  Mon, 20 Nov 2017 18:24:10 -0800
 
