@@ -25,6 +25,14 @@ Replaces: utopia-cinnamon-tweaks (<< 2017.04.16~)
 Description: Utopia Desktop Defaults (Cinnamon Desktop)
  This package contains customized defaults for the Cinnamon Desktop.
 
+Package: utopia-cinnamon-tweaks
+Architecture: all
+Section: oldlibs
+Depends: utopia-cinnamon-defaults (>= 2017.04.16~), ${misc:Depends}
+Description: Utopia Tweaks for Cinnamon (transitional package)
+ This is a transitional package to utopia-cinnamon-defaults; it can be safely
+ removed.
+
 Package: utopia-desktop-defaults
 Architecture: all
 Depends: fonts-noto-hinted,
