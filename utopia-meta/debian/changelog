@@ -1,5 +1,6 @@
-utopia-meta (2017.11.20) UNRELEASED; urgency=medium
+utopia-meta (2017.12.19) unstable; urgency=medium
 
+  * The "Install Linux EVERYWHERE!" release.
   * -desktop-lxqt: add explicit depends on a window manager as lxqt-core does
     not specify one by default
   * -desktop-lxde: add R: xfce4-notifyd | lxqt-notificationd
@@ -14,7 +15,7 @@ utopia-meta (2017.11.20) UNRELEASED; urgency=medium
   * Bump S-V to 4.1.2.
   * -desktop-common: add R: utopia-desktop-defaults
 
- -- James Lu <bitflip3@gmail.com>  Mon, 20 Nov 2017 18:24:10 -0800
+ -- James Lu <bitflip3@gmail.com>  Tue, 19 Dec 2017 14:42:46 -0800
 
 utopia-meta (2017.11.11) unstable; urgency=medium
 
