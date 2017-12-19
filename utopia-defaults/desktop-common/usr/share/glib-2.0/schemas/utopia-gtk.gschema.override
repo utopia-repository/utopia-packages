@@ -5,3 +5,4 @@ document-font-name="Noto Sans 11"
 [org.gtk.Settings.FileChooser]
 location-mode="filename-entry"
 startup-mode="cwd"
+sort-directories-first=true

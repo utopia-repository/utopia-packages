@@ -5,6 +5,7 @@ utopia-defaults (2017.12.19) UNRELEASED; urgency=medium
   * Update homepage to new GitHub repository.
   * New package: utopia-desktop-defaults containing general settings for all
     desktops (fontconfig, GTK+ tweaks).
+  * Add setting to sort directories first in GTK+3's file picker.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 03 Dec 2017 12:40:24 -0800
 
