@@ -3,19 +3,19 @@ Section: misc
 Priority: optional
 Homepage: https://github.com/utopia-repository/utopia-packages
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.8
+Standards-Version: 4.1.2
 Maintainer: James Lu <bitflip3@gmail.com>
+Vcs-Git: https://github.com/utopia-repository/utopia-packages
+Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: utopia-accessories-gtk | utopia-accessories-qt, ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-            florence | caribou,
-            geany,
             keepassx (>= 2.0~),
             lm-sensors,
-            qalculate-gtk | qalculate | galculator,
+            qalculate-gtk | qalculate,
             vlc
-Suggests: psensor
+Suggests: florence | caribou, psensor
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
@@ -24,30 +24,34 @@ Description: Utopia Accessories Collection (meta-package)
 Package: utopia-accessories-extras
 Depends: utopia-accessories, ${misc:Depends}
 Recommends: cifs-utils,
-            openjdk-8-jre | default-jre,
+            default-jre,
+            fileinsight,
             samba,
             smbclient,
             virtualbox (>= 5.0~),
             wine | wine-development | wine-staging-compat,
             wine-binfmt
-Suggests: gnome-exe-thumbnailer
+Suggests: exe-thumbnailer | gnome-exe-thumbnailer
 Architecture: all
 Description: Utopia Accessories Collection - Extra accessories (meta-package)
  This meta-package pulls in some extra accessories for daily use and
  administrative tasks.
 
 Package: utopia-accessories-gtk
-Depends: gdebi, synaptic, ${misc:Depends}
-Recommends: baobab | gdmap | mate-utils,
-            fuse,
+Depends: ${misc:Depends}
+Recommends: gdmap,
             font-manager | gnome-font-viewer,
+            fuse,
+            gdebi,
+            geany,
             gparted,
             gvfs-backends,
             gvfs-bin,
             gvfs-fuse,
-            qt5-style-plugins (>= 5.0.0+git16~),
+            qt5-style-plugins,
             qt5ct,
             seahorse,
+            synaptic,
             utopia-accessories,
             variety,
             xzoom
@@ -73,13 +77,16 @@ Description: Utopia Accessories Collection - Qt (transitional package)
  safely removed when nothing depends on it.
 
 Package: utopia-accessories-qt
-Depends: muon, qapt-utils | gdebi-kde, ${misc:Depends}
-Recommends: filelight,
-            k3b,
+Depends: ${misc:Depends}
+Recommends: k3b,
+            kate | juffed,
             kmag,
             partitionmanager | gparted,
-            utopia-accessories
-Suggests: skanlite
+            qapt-utils | gdebi-kde,
+            qdirstat,
+            utopia-accessories,
+            variety (>= 0.6.6-1~)
+Suggests: muon, skanlite
 Architecture: all
 Breaks: utopia-accessories-kde (<< 2017.06.19~)
 Replaces: utopia-accessories-kde (<< 2017.06.19~)
@@ -90,7 +97,9 @@ Description: Utopia Accessories Collection - Qt (meta-package)
 
 Package: utopia-baseutils
 Depends: apt-listchanges,
+         aria2,
          bind9-host | host,
+         convmv,
          curl,
          deborphan,
          dos2unix,
@@ -102,16 +111,19 @@ Depends: apt-listchanges,
          lynx | links2 | elinks | links | w3m | www-browser,
          nano,
          openssh-client | ssh-client,
+         p7zip-full,
          python3,
+         rename,
          reptyr,
          screen,
          sudo,
          traceroute,
          wget,
+         xz-utils,
          ${misc:Depends}
 Recommends: apt-listbugs,
+            bzip2,
             command-not-found,
-            convmv,
             debian-goodies,
             gdebi-core,
             gnupg,
@@ -128,7 +140,7 @@ Recommends: apt-listbugs,
             uptimed,
             utopia-keyring,
             whois
-Suggests: surfraw, utopia-devel
+Suggests: p7zip-rar, surfraw, utopia-devel
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
@@ -139,8 +151,8 @@ Architecture: all
 Section: oldlibs
 Priority: extra
 Description: Utopia Desktop Collection - common programs (transitional package)
- This is a dummy transitional package for utopia-desktop, and can be safely
- removed when nothing depends on it.
+ This is a dummy transitional package for utopia-desktop-common, and can be
+ safely removed when nothing depends on it.
 
 Package: utopia-desktop-budgie
 Depends: budgie-desktop,
@@ -150,8 +162,7 @@ Depends: budgie-desktop,
          tilix | gnome-terminal | x-terminal-emulator,
          utopia-desktop-common,
          ${misc:Depends}
-Recommends: baobab,
-            brasero,
+Recommends: brasero,
             dconf-editor | dconf-tools,
             gedit,
             gnome-keyring,
@@ -182,8 +193,7 @@ Depends: cinnamon (>= 3),
          shotwell | eog | eom,
          utopia-desktop-common,
          ${misc:Depends}
-Recommends: baobab,
-            brasero,
+Recommends: brasero,
             cinnamon-l10n | cinnamon-translations,
             dconf-editor | dconf-tools,
             gedit | pluma,
@@ -202,7 +212,7 @@ Recommends: baobab,
 Suggests: nemo-media-columns, nemo-share
 Architecture: all
 Description: Utopia Desktop Collection - Cinnamon (meta-package)
- This meta-package installs a minimal Cinnamon Desktop Environment with Utopia
+ This meta-package installs a minimal Cinnamon desktop environment with Utopia
  Desktop tweaks.
 
 Package: utopia-desktop-common
@@ -222,15 +232,14 @@ Recommends: acpi-support,
             iw,
             ntfs-3g,
             utopia-accessories,
+            utopia-desktop-defaults,
             utopia-polkit,
             xdg-utils
 Suggests: lxpolkit | polkit-1-auth-agent,
-          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-kde | utopia-desktop-mate | utopia-desktop-lxqt | utopia-desktop-openbox | utopia-desktop-lxde | utopia-desktop-gnome | utopia-desktop-budgie,
-          utopia-devel-gui,
+          task-print-server,
           utopia-multimedia,
           utopia-network,
-          utopia-office,
-          utopia-printing
+          utopia-office
 Architecture: all
 Breaks: utopia-desktop (<< 2017.06.19~)
 Replaces: utopia-desktop (<< 2017.06.19~)
@@ -247,9 +256,7 @@ Recommends: desktop-base,
             fonts-noto,
             tigervnc-standalone-server | tightvncserver,
             xorg
-Suggests: utopia-accessories,
-          utopia-desktop-openbox | utopia-desktop-xfce | utopia-desktop-lxde | utopia-desktop-lxqt,
-          utopia-devel-gui
+Suggests: utopia-accessories
 Architecture: all
 Provides: utopia-desktop-common
 Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
@@ -257,42 +264,42 @@ Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
  tailored for a VNC-based remote desktop setup on headless machines.
 
 Package: utopia-desktop-full
-Depends: utopia-accessories,
+Depends: task-print-server,
+         utopia-accessories,
          utopia-accessories-gtk,
          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-gnome | utopia-desktop-openbox | utopia-desktop-lxde,
          utopia-desktop-common,
          utopia-office,
-         utopia-printing,
          ${misc:Depends}
 Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
+            system-config-printer,
             utopia-network,
             utopia-network-gtk,
-            wine,
-            wine-binfmt
-Suggests: utopia-accessories-extras, utopia-devel-gui
+            wine
+Suggests: utopia-accessories-extras
 Architecture: all
-Description: Utopia Desktop Collection - full GNOME/GTK+ desktop (meta-package)
- This meta-package installs a complete desktop with a GNOME/GTK+ based desktop
+Description: Utopia Desktop Collection - full GTK+-based desktop (meta-package)
+ This meta-package installs a complete desktop with a GTK+-based desktop
  environment and programs for multimedia, productivity, networking, etc.
 
 Package: utopia-desktop-full-qt
-Depends: utopia-accessories,
+Depends: task-print-server,
+         utopia-accessories,
          utopia-accessories-qt,
          utopia-desktop-common,
          utopia-desktop-kde | utopia-desktop-lxqt,
          utopia-office,
-         utopia-printing,
          ${misc:Depends}
 Recommends: libreoffice-kde,
+            print-manager,
             utopia-network,
-            utopia-network-kde,
-            wine,
-            wine-binfmt
-Suggests: utopia-accessories-extras, utopia-devel-gui
+            utopia-network-qt,
+            wine
+Suggests: utopia-accessories-extras
 Provides: utopia-full-desktop
 Architecture: all
-Description: Utopia Desktop Collection - full KDE/Qt desktop (meta-package)
- This meta-package installs a complete desktop with a KDE/Qt based desktop
+Description: Utopia Desktop Collection - full Qt-based desktop (meta-package)
+ This meta-package installs a complete desktop with a Qt-based desktop
  environment and programs for multimedia, productivity, networking, etc.
 
 Package: utopia-desktop-gnome
@@ -315,7 +322,6 @@ Depends: evince | pdf-viewer,
          utopia-desktop-common,
          ${misc:Depends}
 Recommends: alacarte,
-            baobab,
             brasero,
             chrome-gnome-shell,
             dconf-editor | dconf-tools,
@@ -351,6 +357,7 @@ Depends: ark,
          okular | pdf-viewer,
          plasma-desktop (>= 4:5),
          plasma-pa | kmix,
+         plasma-widgets-addons,
          systemsettings,
          utopia-desktop-common,
          ${misc:Depends}
@@ -369,7 +376,7 @@ Recommends: gtk3-engines-breeze,
             kwrite,
             okular-extra-backends,
             plasma-nm,
-            sddm | lightdm-kde-greeter,
+            sddm | lightdm-kde-greeter | lightdm-gtk-greeter,
             udisks2,
             upower,
             user-manager,
@@ -398,6 +405,7 @@ Recommends: evince | atril | pdf-viewer,
             lxrandr,
             lxtask,
             volumeicon-alsa,
+            xfce4-notifyd | lxqt-notificationd,
             xfce4-screenshooter
 Suggests: utopia-office
 Architecture: all
@@ -409,6 +417,7 @@ Package: utopia-desktop-lxqt
 Depends: lxqt-admin,
          lxqt-core (>= 16~),
          qterminal | x-terminal-emulator,
+         xfwm4 | kwin-x11 | openbox | x-window-manager,
          ${misc:Depends}
 Recommends: ark | xarchiver,
             cmst | wicd | network-manager-gnome,
@@ -527,7 +536,7 @@ Depends: build-essential,
          dirmngr | gnupg (<< 2.1~),
          git-buildpackage,
          gnupg,
-         libssl-dev,
+         libssl-dev | libssl1.0-dev,
          ntp,
          ntpdate,
          openssl,
@@ -547,6 +556,7 @@ Recommends: apt-rdepends,
             git-svn,
             gnutls-bin,
             gnutls-dev,
+            golang,
             graphviz,
             help2man,
             hexedit,
@@ -596,18 +606,6 @@ Description: Utopia Development Collection - extra tools (meta-package)
  This meta-package installs extra libraries and utilities for a development
  environment.
 
-Package: utopia-devel-gui
-Depends: gitg | qgit | gitk, utopia-devel, ${misc:Depends}
-Recommends: geany,
-            geany-plugin-lipsum,
-            geany-plugin-markdown,
-            geany-plugin-spellcheck
-Suggests: meld, utopia-accessories
-Architecture: all
-Description: Utopia Development Collection - GUI tools (meta-package)
- This meta-package installs GUI tools to assist in a development
- environment.
-
 Package: utopia-intl
 Depends: fcitx, ${misc:Depends}
 Recommends: fcitx-frontend-all, utopia-desktop
@@ -619,15 +617,23 @@ Description: Utopia I18n - common packages (meta-package)
 
 Package: utopia-intl-zh
 Depends: fcitx-sunpinyin | fcitx-googlepinyin | fctix-libpinyin | fcitx-pinyin,
+         im-config,
+         task-chinese-s,
          utopia-intl,
          ${misc:Depends}
-Recommends: fonts-arphic-ukai,
+Recommends: fcitx-googlepinyin,
+            fcitx-sunpinyin,
+            fcitx-table-wubi,
+            fonts-arphic-ukai,
             fonts-arphic-uming,
-            fonts-wqy-microhei,
-            fonts-wqy-zenhei
-Suggests: firefox-esr-l10n-zh-cn | firefox-esr-l10n-zh-tw,
+            fonts-noto,
+            fonts-noto-cjk,
+            poppler-data
+Suggests: firefox-esr-l10n-zh-cn | firefox-l10n-zh-cn,
+          fonts-wqy-microhei,
+          fonts-wqy-zenhei,
           goldendict,
-          libreoffice-l10n-zh-cn | libreoffice-l10n-zh-tw,
+          libreoffice-l10n-zh-cn,
           task-chinese-s-desktop | task-chinese-t-desktop
 Architecture: all
 Description: Utopia I18n - Chinese language support (meta-package)
@@ -663,7 +669,7 @@ Package: utopia-network
 Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
          utopia-network-gtk | utopia-network-qt,
          ${misc:Depends}
-Recommends: mtr, thunderbird | icedove, zenmap | gnome-nettool
+Recommends: mtr, thunderbird, zenmap | gnome-nettool
 Architecture: all
 Description: Utopia Network Collection (meta-package)
  This meta-package pulls in various programs related to networking.
@@ -716,10 +722,12 @@ Depends: libreoffice-calc (>= 5.1~),
 Recommends: fonts-crosextra-caladea,
             fonts-crosextra-carlito,
             fonts-linuxlibertine,
+            fonts-open-sans,
             fonts-sil-gentium-basic,
             hunspell-en-ca,
             hunspell-en-us,
             hyphen-en-us,
+            libreoffice-draw,
             libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk | libreoffice-kde,
             libreoffice-lightproof-en,
             libreoffice-math,
@@ -731,14 +739,6 @@ Architecture: all
 Description: Utopia Productivity Collection (meta-package)
  This meta-package installs LibreOffice with a hand-picked set of components.
 
-Package: utopia-printing
-Depends: cups, utopia-desktop-common, ${misc:Depends}
-Recommends: cups-pdf, system-config-printer | print-manager, task-print-server
-Architecture: all
-Description: Utopia Desktop Collection - Printing Support (meta-package)
- This meta-package installs various packages for printing support on a
- desktop system.
-
 Package: utopia-themes
 Depends: fonts-noto,
          numix-frost-theme,
@@ -747,6 +747,7 @@ Depends: fonts-noto,
 Recommends: arc-theme,
             breeze-cursor-theme,
             faenza-icon-theme | mate-icon-theme-faenza,
+            greybird-gtk-theme,
             mate-themes,
             moka-icon-theme,
             numix-gtk-theme,

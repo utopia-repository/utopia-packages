@@ -1,3 +1,14 @@
+utopia-defaults (2017.12.19) unstable; urgency=medium
+
+  * various: add missing dependencies on fonts-noto-hinted (for Noto Sans).
+  * Bump Standards-Version to 4.1.2.
+  * Update homepage to new GitHub repository.
+  * New package: utopia-desktop-defaults containing general settings for all
+    desktops (fontconfig, GTK+ tweaks).
+  * Add setting to sort directories first in GTK+3's file picker.
+
+ -- James Lu <bitflip3@gmail.com>  Tue, 19 Dec 2017 14:44:36 -0800
+
 utopia-defaults (2017.06.17) unstable; urgency=medium
 
   * Set default Cinnamon theme to Arc-Dark, as mint-cinnamon-themes has

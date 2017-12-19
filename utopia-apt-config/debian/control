@@ -1,0 +1,27 @@
+Source: utopia-apt-config
+Section: misc
+Priority: optional
+Maintainer: James Lu <bitflip3@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.1.0
+Homepage: https://packages.overdrivenetworks.com
+Vcs-Git: https://github.com/utopia-repository/utopia-packages/tree/master/utopia-apt-config
+Vcs-Browser: https://github.com/utopia-repository/utopia-packages/tree/master/utopia-apt-config
+
+Package: utopia-apt-config
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: utopia-keyring
+Description: custom APT configuration for the Utopia Repository
+ This package contains custom APT configuration for the Utopia Repository.
+ Specifically, it adds the following:
+ .
+ * Pinning rules in /etc/apt/preferences.d to allow automatic updates from
+   experimental, prefer testing over unstable, and prefer the Utopia Repository
+   -forks and -nightlies dists.
+ .
+ * A rule in /etc/apt/apt.conf.d to always enable installing recommended
+   packages.
+ .
+ Note: because this package installs configuration files, removing its settings
+ requires using 'apt-get purge' instead of 'remove'.

@@ -1,3 +1,78 @@
+utopia-meta (2017.12.19) unstable; urgency=medium
+
+  * The "Install Linux EVERYWHERE!" release.
+  * -desktop-lxqt: add explicit depends on a window manager as lxqt-core does
+    not specify one by default
+  * -desktop-lxde: add R: xfce4-notifyd | lxqt-notificationd
+  * -accessories-gtk: remove version restriction on R: qt5-style-plugins;
+    every Debian version (and Ubuntu Zesty and above) shipping it already
+    has the GTK+ 2 theme.
+  * various: Replace baobab | mate-utils with gdmap
+  * -accessories-qt: replace filelight with qdirstat
+  * -accessories-extras: Remove explicit preference on openjdk-8-jre
+    This will eventually be replaced by openjdk-9-jre.
+  * Fix typo in long description for utopia-desktop (transitional pkg)
+  * Bump S-V to 4.1.2.
+  * -desktop-common: add R: utopia-desktop-defaults
+
+ -- James Lu <bitflip3@gmail.com>  Tue, 19 Dec 2017 14:42:46 -0800
+
+utopia-meta (2017.11.11) unstable; urgency=medium
+
+  * The "Windy Winter" release.
+  * -accessories updates:
+    - Remove galculator alternate to qalculate-gtk.
+    - Demote florence | caribou to suggests.
+    - Replace gnome-exe-thumbnailer with exe-thumbnailer.
+  * -accessories-kde: recommend variety (>= 0.6.6~), as that version supports
+    Plasma 5.
+  * -baseutils updates:
+    - Add rename, xz-utils to depends
+    - Add bzip2 to recommends
+    - Promote convmv to depends
+  * -desktop-kde updates:
+    - Depend on plasma-widgets-addons, which provides common widgets like
+      "Show Desktop"
+    - Add lightdm-gtk-greeter as an alternate to sddm to avoid installing
+      multiple display managers if lightdm was previously installed.
+    - Demote muon to suggests. There is already a software manager
+      (plasma-discover) installed by default, and apt-xapian-index (which muon
+      requires) is fairly resource intensive.
+  * -intl-zh: tweaks to follow Debian's task-chinese-* packages
+    - Depend on im-config, task-chinese-s (command line utils)
+    - Recommend fcitx-googlepinyin, fcitx-sunpinyin, fcitx-table-wubi,
+      fonts-noto, fonts-noto-cjk, poppler-data per task-chinese-s-desktop
+    - Downgrade fonts-wqy-zenhei, fonts-wqy-microhei to suggests per #861934
+  * Removed utopia-printing; task-print-server suits our needs fine.
+  * -network: remove reference to icedove, which no longer exists.
+  * -themes: add R: greybird-gtk-theme
+  * General metadata changes:
+    - Add in Vcs-Git, Vcs-Browser fields.
+    - Bump Standards-Version to 4.1.1.
+  * -desktop-cinnamon: fix capitalization in package description
+  * -desktop-common*: Remove redundant suggests on individual desktop packages
+  * Reword long package descriptions to consistently use "Qt-based" and
+    "GTK+-based" instead of "KDE/Qt" and "GNOME/GTK+".
+  * -office: recommend fonts-open-sans, libreoffice-draw
+
+ -- James Lu <bitflip3@gmail.com>  Sat, 11 Nov 2017 17:22:06 -0800
+
+utopia-meta (2017.08.27) unstable; urgency=medium
+
+  * The "Forgotten Stuff" release.
+  * -baseutils: Add Depends: aria2, p7zip-full & Suggests: p7zip-rar
+  * Remove wine-binfmt from full-desktop* variants; it's not really needed.
+  * Bump Standards-Version to 4.1.0, no changes needed.
+  * utopia-devel: add golang to recommends
+  * utopia-devel: add an alternative dependency on libssl1.0-dev
+  * Drop utopia-devel-gui, it's hardly used.
+  * Move geany to utopia-accessories-gtk, add kate | juffed to the Qt
+    alternative
+  * Re-run wrap-and-sort.
+  * Move Depends in utopia-accessories-* to Recommends.
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 17:50:44 -0700
+
 utopia-meta (2017.07.21) unstable; urgency=medium
 
   * Refactor utopia-desktop-lxqt to remove items covered by lxqt-core >= 16.
@@ -29,41 +104,9 @@ utopia-meta (2017.07.21) unstable; urgency=medium
   * Move font-manager/gnome-font-viewer to -accessories-gtk
   * -baseutils: recommend netselect-apt
   * -devel: recommend hexedit
-
- -- James Lu <bitflip3@gmail.com>  Fri, 21 Jul 2017 19:48:03 +0800
-
-utopia-meta (2017.07.09) UNRELEASED; urgency=medium
-
-  * Refactor utopia-desktop-lxqt to remove items covered by lxqt-core >= 16.
-    Remaining changes:
-    - Demote lxqt-openssh-askpass to recommends
-    - Add explicit recommends on qterminal
-    - Demote sddm (display manager deps) to suggests; it's not needed on
-      setups where X is manually started.
-  * utopia-desktop-mate tweaks:
-    - Drop mate-netspeed, mate-system-tools, which haven't existed since
-      jessie.
-    - Add atril | pdf-viewer, engrampa, eom to depends to make sure that some
-      programs are installed even when recommends are disabled.
-    - Add caja-wallpaper to recommends
-    - Add mate-tweak, mate-sensors-applet, to suggests
-  * Move DE-specific text editors for most desktops from suggests to
-    recommends.
-  * utopia-desktop-lxde: remove lxshortcut, xfce4-mixer; these are no longer
-    available
-  * utopia-desktop-xfce: remove xfce4-volumed
-  * utopia-themes: remove ttf-ubuntu-font-family, bump paper-icon-theme to
-    recommends
-  * -intl-zh: rename iceweasel-* deps to firefox-esr-*
-  * -multimedia: suggest kdenlive
-  * utopia-desktop-kde: suggest print-manager
-  * various: remove gnome-characters, kcharselect, gnome-system-log
-  * Move font-manager/gnome-font-viewer to -accessories-gtk
-  * -baseutils: recommend netselect-apt
-  * -devel: recommend hexedit
   * Removed utopia-games* packages, they are fairly unmaintained
 
- -- James Lu <bitflip3@gmail.com>  Tue, 04 Jul 2017 16:15:43 -0700
+ -- James Lu <bitflip3@gmail.com>  Fri, 21 Jul 2017 19:48:03 +0800
 
 utopia-meta (2017.06.25) experimental; urgency=medium
 

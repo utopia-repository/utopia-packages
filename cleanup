@@ -1,2 +1,12 @@
-#!/bin/sh
+#!/bin/bash
+
+pushd "$(dirname "${BASH_SOURCE[0]}")"
 rm -v *.deb *.dsc *.changes *.build* *.tar.*
+
+for directory in $(ls -d */); do
+    pushd "$directory"
+    dh_clean
+    popd
+done
+
+popd
