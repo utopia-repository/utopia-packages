@@ -3,8 +3,8 @@ Section: x11
 Priority: optional
 Maintainer: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 10)
-Standards-Version: 3.9.8
-Homepage: https://github.com/GLolol/utopia-packages
+Standards-Version: 4.1.2
+Homepage: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-cinnamon-defaults
 Architecture: all

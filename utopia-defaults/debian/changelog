@@ -1,6 +1,8 @@
-utopia-defaults (2017.12.03) UNRELEASED; urgency=medium
+utopia-defaults (2017.12.19) UNRELEASED; urgency=medium
 
-  * Add missing dependencies on fonts-noto-hinted (for Noto Sans).
+  * various: add missing dependencies on fonts-noto-hinted (for Noto Sans).
+  * Bump Standards-Version to 4.1.2.
+  * Update homepage to new GitHub repository.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 03 Dec 2017 12:40:24 -0800
 
