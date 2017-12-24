@@ -8,6 +8,8 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
     utopia-(accessories|network)-gtk unless the relevant -qt packages are
     also explicitly selected.
   * desktops: explicitly recommend the preferred utopia-accessories variant
+  * -xfce: switch to prefer MATE utils over GNOME (atril and engrampa)
+  * -xfce: allow alternatives to ristretto (gpicview, shotwell, eog, eom)
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 
