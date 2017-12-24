@@ -7,6 +7,7 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
     This fixes an issue where utopia-full-desktop-qt inadvertently pulls in
     utopia-(accessories|network)-gtk unless the relevant -qt packages are
     also explicitly selected.
+  * desktops: explicitly recommend the preferred utopia-accessories variant
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 

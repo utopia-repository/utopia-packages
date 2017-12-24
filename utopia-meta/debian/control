@@ -174,6 +174,7 @@ Recommends: brasero,
             nautilus-emblems,
             seahorse-nautilus,
             simple-scan,
+            utopia-accessories-gtk,
             utopia-themes
 Suggests: nautilus-admin, nautilus-share, nautilus-wipe, plank
 Architecture: all
@@ -208,6 +209,7 @@ Recommends: brasero,
             nemo-seahorse,
             qt5ct,
             simple-scan,
+            utopia-accessories-gtk,
             utopia-cinnamon-defaults,
             utopia-themes
 Suggests: nemo-media-columns, nemo-share
@@ -337,6 +339,7 @@ Recommends: alacarte,
             seahorse-nautilus,
             shotwell,
             simple-scan,
+            utopia-accessories-gtk,
             utopia-themes
 Suggests: gnome-bluetooth,
           goobox | sound-juicer,
@@ -406,6 +409,7 @@ Recommends: evince | atril | pdf-viewer,
             libfm-tools,
             lxrandr,
             lxtask,
+            utopia-accessories-gtk,
             volumeicon-alsa,
             xfce4-notifyd | lxqt-notificationd,
             xfce4-screenshooter
@@ -432,6 +436,7 @@ Recommends: ark | xarchiver,
             qps,
             qterminal,
             screengrab,
+            utopia-accessories-qt,
             utopia-themes,
             xfwm4-theme-breeze
 Suggests: sddm | lightdm, sddm-theme-maui | sddm-theme-debian-maui | lightdm
@@ -455,6 +460,7 @@ Recommends: caja-gksu,
             dconf-editor | dconf-tools,
             mate-menu,
             mozo,
+            utopia-accessories-gtk,
             utopia-mate-defaults
 Suggests: mate-desktop-environment-extras,
           mate-sensors-applet,
@@ -487,6 +493,7 @@ Recommends: compton | xcompmgr,
             ristretto | gpicview | shotwell | eog | eom,
             thunar-archive-plugin | pcmanfm,
             tumbler,
+            utopia-accessories-gtk,
             volumeicon-alsa,
             xfce4-screenshooter
 Suggests: xfburn, xfce4-taskmanager | lxtask
@@ -515,6 +522,7 @@ Recommends: evince | atril | pdf-viewer,
             ristretto,
             thunar-media-tags-plugin,
             tumbler,
+            utopia-accessories-gtk,
             xfburn,
             xfce4-clipman-plugin,
             xfce4-netload-plugin,
