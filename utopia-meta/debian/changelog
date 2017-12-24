@@ -1,3 +1,9 @@
+utopia-meta (2017.12.24) UNRELEASED; urgency=medium
+
+  * Move webcamoid and alternatives to -accessories-extras.
+
+ -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
+
 utopia-meta (2017.12.19) unstable; urgency=medium
 
   * The "Install Linux EVERYWHERE!" release.

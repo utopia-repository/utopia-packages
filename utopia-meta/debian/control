@@ -29,6 +29,7 @@ Recommends: cifs-utils,
             samba,
             smbclient,
             virtualbox (>= 5.0~),
+            webcamoid | cheese | kamoso | kamerka | guvcview,
             wine | wine-development | wine-staging-compat,
             wine-binfmt
 Suggests: exe-thumbnailer | gnome-exe-thumbnailer
@@ -658,8 +659,7 @@ Suggests: inkscape,
           mediainfo,
           pinta | kolourpaint,
           puddletag,
-          vlc-plugin-fluidsynth,
-          webcamoid | cheese | kamoso | kamerka | guvcview
+          vlc-plugin-fluidsynth
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  This meta-package pulls in some programs (players, editors, etc.) for working
