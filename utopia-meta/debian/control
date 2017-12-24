@@ -9,7 +9,7 @@ Vcs-Git: https://github.com/utopia-repository/utopia-packages
 Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
-Depends: utopia-accessories-gtk | utopia-accessories-qt, ${misc:Depends}
+Depends: ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
             keepassx (>= 2.0~),
             lm-sensors,
@@ -39,7 +39,7 @@ Description: Utopia Accessories Collection - Extra accessories (meta-package)
  administrative tasks.
 
 Package: utopia-accessories-gtk
-Depends: ${misc:Depends}
+Depends: utopia-accessories, ${misc:Depends}
 Recommends: gdmap,
             font-manager | gnome-font-viewer,
             fuse,
@@ -78,7 +78,7 @@ Description: Utopia Accessories Collection - Qt (transitional package)
  safely removed when nothing depends on it.
 
 Package: utopia-accessories-qt
-Depends: ${misc:Depends}
+Depends: utopia-accessories, ${misc:Depends}
 Recommends: k3b,
             kate | juffed,
             kmag,
@@ -238,6 +238,7 @@ Recommends: acpi-support,
             xdg-utils
 Suggests: lxpolkit | polkit-1-auth-agent,
           task-print-server,
+          utopia-accessories-gtk | utopia-accessories-qt,
           utopia-multimedia,
           utopia-network,
           utopia-office
@@ -667,7 +668,6 @@ Description: Utopia Multimedia Collection (meta-package)
 
 Package: utopia-network
 Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-         utopia-network-gtk | utopia-network-qt,
          ${misc:Depends}
 Recommends: mtr, thunderbird, zenmap | gnome-nettool
 Architecture: all
@@ -675,7 +675,7 @@ Description: Utopia Network Collection (meta-package)
  This meta-package pulls in various programs related to networking.
 
 Package: utopia-network-gtk
-Depends: ${misc:Depends}
+Depends: utopia-network, ${misc:Depends}
 Recommends: deluge | transmission-gtk,
             hexchat,
             network-manager-gnome | wicd,
@@ -699,7 +699,7 @@ Description: Utopia Network Collection - Qt (transitional package)
  removed when nothing depends on it.
 
 Package: utopia-network-qt
-Depends: ${misc:Depends}
+Depends: utopia-network, ${misc:Depends}
 Recommends: konversation,
             krdc,
             qbittorrent | transmission-qt | ktorrent,

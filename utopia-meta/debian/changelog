@@ -1,6 +1,12 @@
 utopia-meta (2017.12.24) UNRELEASED; urgency=medium
 
   * Move webcamoid and alternatives to -accessories-extras.
+  * -network*, -accessories*: flip dependency order so that the -gtk and -qt
+    packages depend on the common ones (i.e. utopia-accessories and
+    utopia-network).
+    This fixes an issue where utopia-full-desktop-qt inadvertently pulls in
+    utopia-(accessories|network)-gtk unless the relevant -qt packages are
+    also explicitly selected.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 
