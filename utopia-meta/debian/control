@@ -53,7 +53,6 @@ Recommends: gdmap,
             qt5ct,
             seahorse,
             synaptic,
-            utopia-accessories,
             variety,
             xzoom
 Suggests: blueman | gnome-bluetooth,
@@ -85,7 +84,6 @@ Recommends: k3b,
             partitionmanager | gparted,
             qapt-utils | gdebi-kde,
             qdirstat,
-            utopia-accessories,
             variety (>= 0.6.6-1~)
 Suggests: muon, skanlite
 Architecture: all
@@ -269,7 +267,6 @@ Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
 
 Package: utopia-desktop-full
 Depends: task-print-server,
-         utopia-accessories,
          utopia-accessories-gtk,
          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-gnome | utopia-desktop-openbox | utopia-desktop-lxde,
          utopia-desktop-common,
@@ -277,7 +274,6 @@ Depends: task-print-server,
          ${misc:Depends}
 Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
             system-config-printer,
-            utopia-network,
             utopia-network-gtk,
             wine
 Suggests: utopia-accessories-extras
@@ -288,7 +284,6 @@ Description: Utopia Desktop Collection - full GTK+-based desktop (meta-package)
 
 Package: utopia-desktop-full-qt
 Depends: task-print-server,
-         utopia-accessories,
          utopia-accessories-qt,
          utopia-desktop-common,
          utopia-desktop-kde | utopia-desktop-lxqt,
@@ -296,7 +291,6 @@ Depends: task-print-server,
          ${misc:Depends}
 Recommends: libreoffice-kde,
             print-manager,
-            utopia-network,
             utopia-network-qt,
             wine
 Suggests: utopia-accessories-extras
@@ -689,7 +683,6 @@ Recommends: deluge | transmission-gtk,
             network-manager-gnome | wicd,
             network-manager-openvpn-gnome,
             uget,
-            utopia-network,
             vinagre,
             wireshark-gtk | wireshark
 Architecture: all
@@ -711,7 +704,6 @@ Depends: utopia-network, ${misc:Depends}
 Recommends: konversation,
             krdc,
             qbittorrent | transmission-qt | ktorrent,
-            utopia-network,
             wireshark-qt | wireshark
 Suggests: kget
 Architecture: all

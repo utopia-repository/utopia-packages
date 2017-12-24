@@ -12,6 +12,8 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
   * -xfce: allow alternatives to ristretto (gpicview, shotwell, eog, eom)
   * Fix typo: -desktop-full-qt provides utopia-desktop-full, not
     utopia-full-desktop
+  * various: remove redundant relations on utopia-(accessories|network)
+    (Lintian warning stronger-dependency-implies-weaker)
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 
