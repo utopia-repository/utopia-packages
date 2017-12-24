@@ -14,6 +14,8 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
     utopia-full-desktop
   * various: remove redundant relations on utopia-(accessories|network)
     (Lintian warning stronger-dependency-implies-weaker)
+  * Remove priority: extra from transitional packages; this is deprecated since
+    policy 4.0.1
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 

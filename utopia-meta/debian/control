@@ -71,7 +71,6 @@ Package: utopia-accessories-kde
 Depends: utopia-accessories-qt, ${misc:Depends}
 Architecture: all
 Section: oldlibs
-Priority: extra
 Description: Utopia Accessories Collection - Qt (transitional package)
  This is a dummy transitional package for utopia-accessories-qt, and can be
  safely removed when nothing depends on it.
@@ -148,7 +147,6 @@ Package: utopia-desktop
 Depends: utopia-desktop-common, ${misc:Depends}
 Architecture: all
 Section: oldlibs
-Priority: extra
 Description: Utopia Desktop Collection - common programs (transitional package)
  This is a dummy transitional package for utopia-desktop-common, and can be
  safely removed when nothing depends on it.
@@ -694,7 +692,6 @@ Package: utopia-network-kde
 Depends: utopia-network-qt, ${misc:Depends}
 Architecture: all
 Section: oldlibs
-Priority: extra
 Description: Utopia Network Collection - Qt (transitional package)
  This is a dummy transitional package for utopia-network-qt, and can be safely
  removed when nothing depends on it.
