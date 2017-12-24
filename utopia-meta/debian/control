@@ -300,7 +300,7 @@ Recommends: libreoffice-kde,
             utopia-network-qt,
             wine
 Suggests: utopia-accessories-extras
-Provides: utopia-full-desktop
+Provides: utopia-desktop-full
 Architecture: all
 Description: Utopia Desktop Collection - full Qt-based desktop (meta-package)
  This meta-package installs a complete desktop with a Qt-based desktop

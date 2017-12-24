@@ -10,6 +10,8 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
   * desktops: explicitly recommend the preferred utopia-accessories variant
   * -xfce: switch to prefer MATE utils over GNOME (atril and engrampa)
   * -xfce: allow alternatives to ristretto (gpicview, shotwell, eog, eom)
+  * Fix typo: -desktop-full-qt provides utopia-desktop-full, not
+    utopia-full-desktop
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 
