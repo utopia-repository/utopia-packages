@@ -429,9 +429,10 @@ Recommends: ark | xarchiver,
             qterminal,
             screengrab,
             utopia-accessories-qt,
-            utopia-themes,
             xfwm4-theme-breeze
-Suggests: sddm | lightdm, sddm-theme-maui | sddm-theme-debian-maui | lightdm
+Suggests: sddm | lightdm,
+          sddm-theme-maui | sddm-theme-debian-maui | lightdm,
+          utopia-themes
 Architecture: all
 Description: Utopia Desktop Collection - LXQt (meta-package)
  This meta-package installs a LXQt desktop with a hand-picked set of
