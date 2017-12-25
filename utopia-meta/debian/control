@@ -253,7 +253,7 @@ Recommends: desktop-base,
             fonts-dejavu,
             fonts-liberation,
             fonts-noto,
-            tigervnc-standalone-server | tightvncserver,
+            tigervnc-standalone-server | vnc-server,
             xorg
 Suggests: utopia-accessories
 Architecture: all
