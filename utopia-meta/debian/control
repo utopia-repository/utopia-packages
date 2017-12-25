@@ -82,9 +82,8 @@ Recommends: k3b,
             kmag,
             partitionmanager | gparted,
             qapt-utils | gdebi-kde,
-            qdirstat,
-            variety (>= 0.6.6-1~)
-Suggests: muon, skanlite
+            qdirstat
+Suggests: muon, skanlite, variety (>= 0.6.6-1~)
 Architecture: all
 Breaks: utopia-accessories-kde (<< 2017.06.19~)
 Replaces: utopia-accessories-kde (<< 2017.06.19~)
