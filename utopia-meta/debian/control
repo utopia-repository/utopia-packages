@@ -467,37 +467,6 @@ Description: Utopia Desktop Collection - MATE (meta-package)
  This meta-package installs a minimal MATE Desktop Environment with Utopia
  Desktop tweaks.
 
-Package: utopia-desktop-openbox
-Depends: gmrun,
-         lxappearance,
-         lxappearance-obconf,
-         obconf,
-         obmenu,
-         openbox,
-         thunar | pcmanfm,
-         tint2,
-         utopia-desktop-common,
-         xfce4-terminal | lxterminal | x-terminal-emulator,
-         ${misc:Depends}
-Recommends: compton | xcompmgr,
-            evince | atril | pdf-viewer,
-            file-roller | engrampa | xarchiver,
-            gsimplecal,
-            nitrogen | feh,
-            obsession | lxsession-logout,
-            pavucontrol | gnome-alsamixer | xfce4-mixer,
-            ristretto | gpicview | shotwell | eog | eom,
-            thunar-archive-plugin | pcmanfm,
-            tumbler,
-            utopia-accessories-gtk,
-            volumeicon-alsa,
-            xfce4-screenshooter
-Suggests: xfburn, xfce4-taskmanager | lxtask
-Architecture: all
-Description: Utopia Desktop Collection - Openbox (meta-package)
- This meta-package installs a minimal Openbox-based desktop with a hand-picked
- set of programs.
-
 Package: utopia-desktop-xfce
 Depends: thunar-archive-plugin,
          utopia-desktop-common,
