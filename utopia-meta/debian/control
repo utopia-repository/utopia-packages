@@ -586,8 +586,8 @@ Depends: ${misc:Depends}
 Conflicts: connman, network-manager, wicd-daemon
 Architecture: all
 Description: Dependency package - marks the machine as a headless server
- This dummy dependency package is designed to prevent unnecessary packages
- from being installed on headless machines. It especially targets automatic
+ This dependency package is designed to prevent unnecessary packages from
+ being installed on headless machines. It especially targets automatic
  network configuration tools, which may unintentionally disrupt the live
  network on a machine when it is started or stopped.
 
