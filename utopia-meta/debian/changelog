@@ -22,6 +22,7 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
   * -lxqt: add alternatives kwin-style-breeze | openbox to xfwm4-theme-breeze,
     if an alternative WM is chosen
   * -lxqt: prefer lxtask over qps
+  * -kde: follow rename of gtk3-engines-breeze -> breeze-gtk-theme in buster
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 

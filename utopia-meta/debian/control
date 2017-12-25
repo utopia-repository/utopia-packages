@@ -358,7 +358,7 @@ Depends: ark,
          systemsettings,
          utopia-desktop-common,
          ${misc:Depends}
-Recommends: gtk3-engines-breeze,
+Recommends: breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
             kde-baseapps-bin,
             kde-config-gtk-style,
             kdeadmin,
