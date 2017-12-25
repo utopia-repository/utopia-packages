@@ -26,6 +26,11 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
   * -accessories-qt: demote variety to suggests
   * -desktop-openbox: remove; this has been cluttered and inconsistent for a
     long time, and I don't really use it
+  * Add utopia-headless: dependency package to prevent automatic network
+    configuration tools (e.g. connman) from being installed on servers
+    marked as headless. These programs have the potential to seriously disrupt
+    already configured networks when they are pulled in with a desktop
+    environment: #867015 is an example.
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 
