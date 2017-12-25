@@ -17,6 +17,11 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
   * Remove priority: extra from transitional packages; this is deprecated since
     policy 4.0.1
   * -lxqt: demote utopia-themes to suggests
+  * -lxqt: add R: breeze-gtk-theme, kde-style-breeze, lxappearance;
+    S: kde-style-breeze-qt4 for a consistent look across Qt 4/5 and GTK+ 2/3
+  * -lxqt: add alternatives kwin-style-breeze | openbox to xfwm4-theme-breeze,
+    if an alternative WM is chosen
+  * -lxqt: prefer lxtask over qps
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 
