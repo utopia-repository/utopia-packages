@@ -32,6 +32,7 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
     already configured networks when they are pulled in with a desktop
     environment: #867015 is an example.
   * -desktop-common-vnc: add vnc-server as an alternative recommends
+  * -multimedia: Replace puddletag with easytag | puddletag
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 

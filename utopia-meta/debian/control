@@ -637,12 +637,12 @@ Recommends: audacity,
             spek,
             vlc,
             youtube-dl
-Suggests: inkscape,
+Suggests: easytag | puddletag,
+          inkscape,
           isomaster,
           kdenlive,
           mediainfo,
           pinta | kolourpaint,
-          puddletag,
           vlc-plugin-fluidsynth
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
