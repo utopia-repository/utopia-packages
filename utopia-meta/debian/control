@@ -628,14 +628,14 @@ Description: Utopia I18n - Chinese language support (meta-package)
 Package: utopia-multimedia
 Depends: ${misc:Depends}
 Recommends: audacity,
-            browser-plugin-vlc,
             ffmpeg (>= 7:3.0~),
             gimp | krita,
-            livestreamer,
+            kazam,
             mediainfo-gui,
-            obs-studio | kazam,
+            obs-studio,
             spek,
             vlc,
+            you-get,
             youtube-dl
 Suggests: easytag | puddletag,
           inkscape,
