@@ -1,6 +1,9 @@
-utopia-keyring (2017.03.20+2~) UNRELEASED; urgency=low
+utopia-keyring (2018.01.21) UNRELEASED; urgency=medium
 
   * Loosen gnupg build dependency version.
+  * Key refresh.
+    - Extend repository signing key 7D7FA2DA2447645D expiry from 2018-03-16
+      to 2020-01-21.
 
  -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 23:28:04 -0700
 
