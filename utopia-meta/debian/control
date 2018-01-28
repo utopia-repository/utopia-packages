@@ -414,7 +414,7 @@ Depends: lxqt-admin,
          ${misc:Depends}
 Recommends: ark | xarchiver,
             breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
-            cmst | wicd | network-manager-gnome,
+            cmst | network-manager-gnome | plasma-nm | wicd,
             juffed | kwrite,
             kde-style-breeze,
             lxappearance,

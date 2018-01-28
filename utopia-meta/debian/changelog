@@ -1,4 +1,4 @@
-utopia-meta (2017.12.24) UNRELEASED; urgency=medium
+utopia-meta (2018.01.27) UNRELEASED; urgency=medium
 
   * Move webcamoid and alternatives to -accessories-extras.
   * -network*, -accessories*: flip dependency order so that the -gtk and -qt
@@ -16,12 +16,15 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
     (Lintian warning stronger-dependency-implies-weaker)
   * Remove priority: extra from transitional packages; this is deprecated since
     policy 4.0.1
-  * -lxqt: demote utopia-themes to suggests
-  * -lxqt: add R: breeze-gtk-theme, kde-style-breeze, lxappearance;
-    S: kde-style-breeze-qt4 for a consistent look across Qt 4/5 and GTK+ 2/3
-  * -lxqt: add alternatives kwin-style-breeze | openbox to xfwm4-theme-breeze,
-    if an alternative WM is chosen
-  * -lxqt: prefer lxtask over qps
+  * utopia-desktop-lxqt updates:
+    - Demote utopia-themes to suggests
+    - Add R: breeze-gtk-theme, kde-style-breeze, lxappearance;
+    - Add S: kde-style-breeze-qt4 for a consistent look across Qt 4/5
+    - Add alternatives kwin-style-breeze | openbox to xfwm4-theme-breeze,
+      if an alternative WM is chosen
+    - Prefer lxtask over qps
+    - Update to R: cmst | network-manager-gnome | plasma-nm | wicd following
+      Debian metapackages
   * -kde: follow rename of gtk3-engines-breeze -> breeze-gtk-theme in buster
   * -accessories-qt: demote variety to suggests
   * -desktop-openbox: remove; this has been cluttered and inconsistent for a
