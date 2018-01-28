@@ -37,6 +37,9 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
     - Recommend both kazam and obs-studio
     - Remove R: browser-plugin-vlc, livestreamer.
     - Add R: you-get
+  * Move CD-burning tools (xfburn, k3b, brasero) and scanner tools
+    (simple-scan, skanlite) from desktop packages to utopia-desktop-full*
+  * utopia-desktop-full*: suggest various Bluetooth stacks
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 
