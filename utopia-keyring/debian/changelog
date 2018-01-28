@@ -1,4 +1,4 @@
-utopia-keyring (2018.01.21) UNRELEASED; urgency=medium
+utopia-keyring (2018.01.27) unstable; urgency=medium
 
   * Loosen gnupg build dependency version.
   * Key refresh.
@@ -7,7 +7,7 @@ utopia-keyring (2018.01.21) UNRELEASED; urgency=medium
   * Bump standards version to 4.1.3, no changes needed.
   * Update my email.
 
- -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 23:28:04 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 27 Jan 2018 20:51:33 -0800
 
 utopia-keyring (2017.03.20+1) unstable; urgency=critical
 
