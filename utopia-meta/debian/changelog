@@ -40,6 +40,7 @@ utopia-meta (2017.12.24) UNRELEASED; urgency=medium
   * Move CD-burning tools (xfburn, k3b, brasero) and scanner tools
     (simple-scan, skanlite) from desktop packages to utopia-desktop-full*
   * utopia-desktop-full*: suggest various Bluetooth stacks
+  * -desktop-gnome: drop explicit recommends on both eog and shotwell
 
  -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
 
