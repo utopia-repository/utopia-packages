@@ -1,4 +1,4 @@
-utopia-meta (2018.01.27) UNRELEASED; urgency=medium
+utopia-meta (2018.01.27) unstable; urgency=medium
 
   * Move webcamoid and alternatives to -accessories-extras.
   * -network*, -accessories*: flip dependency order so that the -gtk and -qt
@@ -45,7 +45,7 @@ utopia-meta (2018.01.27) UNRELEASED; urgency=medium
   * utopia-desktop-full*: suggest various Bluetooth stacks
   * -desktop-gnome: drop explicit recommends on both eog and shotwell
 
- -- James Lu <bitflip3@gmail.com>  Sun, 24 Dec 2017 01:05:47 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sat, 27 Jan 2018 20:49:44 -0800
 
 utopia-meta (2017.12.19) unstable; urgency=medium
 
