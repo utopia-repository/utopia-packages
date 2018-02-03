@@ -30,8 +30,7 @@ Recommends: cifs-utils,
             smbclient,
             virtualbox (>= 5.0~),
             webcamoid | cheese | kamoso | kamerka | guvcview,
-            wine | wine-development | wine-staging-compat,
-            wine-binfmt
+            wine | wine-development | wine-staging-compat
 Suggests: exe-thumbnailer | gnome-exe-thumbnailer
 Architecture: all
 Description: Utopia Accessories Collection - Extra accessories (meta-package)
