@@ -6,6 +6,8 @@ utopia-meta (2018.02.02) UNRELEASED; urgency=medium
   * utopia-accessories: Prefer keepassxc over keepassx
   * utopia-accessories-gtk: Demote xzoom to suggests
   * Remove seahorse and related utilities
+  * utopia-devel: move diffoscope to -extras, it pulls in way too many
+    recommended packages
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 02 Feb 2018 22:25:37 -0800
 
