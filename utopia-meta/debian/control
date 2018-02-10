@@ -11,7 +11,7 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 Package: utopia-accessories
 Depends: ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-            keepassx (>= 2.0~),
+            keepassxc | keepassx (>= 2.0~),
             lm-sensors,
             qalculate-gtk | qalculate,
             vlc
