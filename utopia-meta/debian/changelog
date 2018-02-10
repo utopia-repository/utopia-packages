@@ -3,7 +3,8 @@ utopia-meta (2018.02.02) UNRELEASED; urgency=medium
   * -accessories-extras: remove wine-binfmt
   * utopia-baseutils: depend on psmisc for killall, fuser, etc.
   * utopia-multimedia: remove mediainfo, mediainfo-gui
-  * -accessories: prefer keepassxc over keepassx
+  * utopia-accessories: Prefer keepassxc over keepassx
+  * utopia-accessories-gtk: Demote xzoom to suggests
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 02 Feb 2018 22:25:37 -0800
 

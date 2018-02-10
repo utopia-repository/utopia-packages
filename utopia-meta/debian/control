@@ -52,14 +52,14 @@ Recommends: gdmap,
             qt5ct,
             seahorse,
             synaptic,
-            variety,
-            xzoom
+            variety
 Suggests: brasero | xfburn,
           gnome-alsamixer,
           lightdm-gtk-greeter-settings,
           menulibre,
           mugshot | usermode,
-          simple-scan
+          simple-scan,
+          xzoom
 Architecture: all
 Description: Utopia Accessories Collection - GNOME/GTK+ (meta-package)
  This meta-package pulls in some accessories targeting a GNOME/GTK+ based
