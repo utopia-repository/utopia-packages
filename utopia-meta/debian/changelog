@@ -1,4 +1,4 @@
-utopia-meta (2018.02.02) UNRELEASED; urgency=medium
+utopia-meta (2018.02.19) UNRELEASED; urgency=medium
 
   * -accessories-extras: remove wine-binfmt
   * utopia-baseutils: depend on psmisc for killall, fuser, etc.
@@ -8,6 +8,7 @@ utopia-meta (2018.02.02) UNRELEASED; urgency=medium
   * Remove seahorse and related utilities
   * utopia-devel: move diffoscope to -extras, it pulls in way too many
     recommended packages
+  * utopia-intl: add R: fonts-noto-color-emoji
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 02 Feb 2018 22:25:37 -0800
 
