@@ -1,4 +1,4 @@
-utopia-meta (2018.02.19) UNRELEASED; urgency=medium
+utopia-meta (2018.02.20) unstable; urgency=medium
 
   * -accessories-extras: remove wine-binfmt
   * utopia-baseutils: depend on psmisc for killall, fuser, etc.
@@ -11,7 +11,7 @@ utopia-meta (2018.02.19) UNRELEASED; urgency=medium
   * utopia-intl: add R: fonts-noto-color-emoji
   * utopia-desktop-full*: add R: utopia-intl
 
- -- James Lu <james@overdrivenetworks.com>  Fri, 02 Feb 2018 22:25:37 -0800
+ -- James Lu <james@overdrivenetworks.com>  Tue, 20 Feb 2018 14:10:34 -0800
 
 utopia-meta (2018.01.27) unstable; urgency=medium
 
