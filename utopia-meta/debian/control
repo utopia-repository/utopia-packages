@@ -116,6 +116,7 @@ Depends: apt-listchanges,
          xz-utils,
          ${misc:Depends}
 Recommends: apt-listbugs,
+            apt-utils,
             bzip2,
             command-not-found,
             debian-goodies,
@@ -133,6 +134,7 @@ Recommends: apt-listbugs,
             tree,
             uptimed,
             utopia-keyring,
+            whiptail | dialog,
             whois
 Suggests: p7zip-rar, surfraw, utopia-devel
 Architecture: all
