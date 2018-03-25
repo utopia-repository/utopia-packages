@@ -39,10 +39,10 @@ Description: Utopia Accessories Collection - Extra accessories (meta-package)
 
 Package: utopia-accessories-gtk
 Depends: utopia-accessories, ${misc:Depends}
-Recommends: gdmap,
-            font-manager | gnome-font-viewer,
+Recommends: font-manager | gnome-font-viewer,
             fuse,
             gdebi,
+            gdmap,
             geany,
             gparted,
             gvfs-backends,
@@ -267,9 +267,9 @@ Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
             system-config-printer,
             utopia-intl,
             utopia-network-gtk,
-            wine,
-Suggests: brasero | xfburn,
-          blueman | blueberry | gnome-bluetooth,
+            wine
+Suggests: blueman | blueberry | gnome-bluetooth,
+          brasero | xfburn,
           utopia-accessories-extras
 Architecture: all
 Description: Utopia Desktop Collection - full GTK+-based desktop (meta-package)
@@ -418,16 +418,16 @@ Recommends: ark | xarchiver,
             juffed | kwrite,
             kde-style-breeze,
             lxappearance,
-            lxtask | qps,
             lxqt-globalkeys,
             lxqt-openssh-askpass,
             lxqt-powermanagement,
+            lxtask | qps,
             qlipper,
             qpdfview | okular | evince | pdf-viewer,
             qterminal,
             screengrab,
             utopia-accessories-qt,
-            xfwm4-theme-breeze | kwin-style-breeze | openbox,
+            xfwm4-theme-breeze | kwin-style-breeze | openbox
 Suggests: kde-style-breeze-qt4,
           sddm | lightdm,
           sddm-theme-maui | sddm-theme-debian-maui | lightdm,
