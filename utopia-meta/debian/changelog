@@ -3,6 +3,8 @@ utopia-meta (2018.03.24) UNRELEASED; urgency=medium
   * utopia-baseutils: add R: apt-utils, whiptail | dialog for fully-functional
     debconf on systems based off minimal templates
   * Re-run wrap-and-sort.
+  * utopia-baseutils: add R: rssh | rush - these provide restricted login
+    shells (e.g. scp/sftp only) for specific service accounts
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 24 Mar 2018 23:46:48 -0700
 
