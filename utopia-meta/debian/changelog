@@ -5,6 +5,7 @@ utopia-meta (2018.03.24) UNRELEASED; urgency=medium
   * Re-run wrap-and-sort.
   * utopia-baseutils: add R: rssh | rush - these provide restricted login
     shells (e.g. scp/sftp only) for specific service accounts
+  * -accessories, -network: replace qupzilla with falkon (its successor)
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 24 Mar 2018 23:46:48 -0700
 

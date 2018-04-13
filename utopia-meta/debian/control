@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: ${misc:Depends}
-Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
+Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
             keepassxc | keepassx (>= 2.0~),
             lm-sensors,
             qalculate-gtk | qalculate,
@@ -644,7 +644,7 @@ Description: Utopia Multimedia Collection (meta-package)
  with media files.
 
 Package: utopia-network
-Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | qupzilla | midori | netsurf-gtk | gnome-www-browser,
+Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
          ${misc:Depends}
 Recommends: mtr, thunderbird, zenmap | gnome-nettool
 Architecture: all
