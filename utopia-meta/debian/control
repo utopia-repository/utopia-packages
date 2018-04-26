@@ -636,6 +636,7 @@ Suggests: easytag | puddletag,
           inkscape,
           isomaster,
           kdenlive,
+          mumble,
           pinta | kolourpaint,
           vlc-plugin-fluidsynth
 Architecture: all
