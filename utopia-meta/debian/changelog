@@ -1,4 +1,4 @@
-utopia-meta (2018.03.24) UNRELEASED; urgency=medium
+utopia-meta (2018.04.26) unstable; urgency=medium
 
   * utopia-baseutils: add R: apt-utils, whiptail | dialog for fully-functional
     debconf on systems based off minimal templates
@@ -10,7 +10,7 @@ utopia-meta (2018.03.24) UNRELEASED; urgency=medium
   * -baseutils, -accessories-*: make sure at least some pinentry variant is
     installed
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 24 Mar 2018 23:46:48 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 26 Apr 2018 17:22:01 -0700
 
 utopia-meta (2018.02.20) unstable; urgency=medium
 
