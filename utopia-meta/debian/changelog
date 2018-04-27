@@ -9,6 +9,7 @@ utopia-meta (2018.04.26) unstable; urgency=medium
   * utopia-multimedia: add S: mumble
   * -baseutils, -accessories-*: make sure at least some pinentry variant is
     installed
+  * Explicitly set source format to 3.0 (native)
 
  -- James Lu <james@overdrivenetworks.com>  Thu, 26 Apr 2018 17:22:01 -0700
 
