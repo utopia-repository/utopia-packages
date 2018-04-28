@@ -617,7 +617,6 @@ Description: Utopia I18n - common packages (meta-package)
 Package: utopia-intl-zh
 Depends: fcitx-sunpinyin | fcitx-googlepinyin | fctix-libpinyin | fcitx-pinyin,
          im-config,
-         task-chinese-s,
          utopia-intl,
          ${misc:Depends}
 Recommends: fcitx-googlepinyin,
@@ -627,7 +626,10 @@ Recommends: fcitx-googlepinyin,
             fonts-arphic-uming,
             fonts-noto,
             fonts-noto-cjk,
-            poppler-data
+            manpages-zh,
+            poppler-data,
+            opencc,
+            zhcon
 Suggests: firefox-esr-l10n-zh-cn | firefox-l10n-zh-cn,
           fonts-wqy-microhei,
           fonts-wqy-zenhei,
