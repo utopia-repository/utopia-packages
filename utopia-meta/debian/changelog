@@ -1,3 +1,10 @@
+utopia-meta (2018.04.26ubuntu1) bionic; urgency=medium
+
+  * Clone task-print-server from Debian tasksel 3.43 as a dependency package,
+    since it is not available in Ubuntu.
+
+ -- James Lu <james@overdrivenetworks.com>  Fri, 27 Apr 2018 18:27:52 -0700
+
 utopia-meta (2018.04.26) unstable; urgency=medium
 
   * utopia-baseutils: add R: apt-utils, whiptail | dialog for fully-functional

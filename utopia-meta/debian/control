@@ -8,6 +8,21 @@ Maintainer: James Lu <james@overdrivenetworks.com>
 Vcs-Git: https://github.com/utopia-repository/utopia-packages
 Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
+Package: task-print-server
+Depends: ${misc:Depends},
+         cups,
+         cups-bsd,
+         cups-client
+Recommends: foomatic-db-engine,
+            hp-ppd,
+            hplip,
+            openprinting-ppds,
+            printer-driver-all
+Architecture: all
+Description: Dependency package for task-print-server (meta-package)
+ This package is a clone of the Debian print-server task, which installs common
+ printing tools.
+
 Package: utopia-accessories
 Depends: ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,

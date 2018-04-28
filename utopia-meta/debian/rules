@@ -10,4 +10,10 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ 
+	dh $@
+
+include /usr/share/dpkg/pkg-info.mk
+
+override_dh_gencontrol:
+	dh_gencontrol
+	dh_gencontrol -ptask-print-server -- -v3.43~utopia1~$(DEB_VERSION)
