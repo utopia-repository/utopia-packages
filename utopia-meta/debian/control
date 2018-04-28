@@ -630,12 +630,13 @@ Recommends: fcitx-googlepinyin,
             poppler-data,
             opencc,
             zhcon
-Suggests: firefox-esr-l10n-zh-cn | firefox-l10n-zh-cn,
+Suggests: firefox-locale-zh-hans,
+          firefox-locale-zh-hant,
           fonts-wqy-microhei,
           fonts-wqy-zenhei,
           goldendict,
           libreoffice-l10n-zh-cn,
-          task-chinese-s-desktop | task-chinese-t-desktop
+          libreoffice-l10n-zh-tw
 Architecture: all
 Description: Utopia I18n - Chinese language support (meta-package)
  This meta package installs some tools and input methods to better support
