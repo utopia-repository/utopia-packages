@@ -2,6 +2,7 @@ utopia-meta (2018.05.10) UNRELEASED; urgency=medium
 
   * New package: utopia-web-server installs a basic web server with nginx and
     php-fpm
+  * Move variety to utopia-accessories/suggests
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
 

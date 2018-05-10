@@ -15,7 +15,7 @@ Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-b
             lm-sensors,
             qalculate-gtk | qalculate,
             vlc
-Suggests: florence | caribou, psensor
+Suggests: florence | caribou, psensor, variety
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
@@ -51,8 +51,7 @@ Recommends: font-manager | gnome-font-viewer,
             pinentry-gnome3 | pinentry-gtk2,
             qt5-style-plugins,
             qt5ct,
-            synaptic,
-            variety
+            synaptic
 Suggests: brasero | xfburn,
           gnome-alsamixer,
           lightdm-gtk-greeter-settings,
@@ -81,7 +80,7 @@ Recommends: kate | juffed,
             pinentry-qt,
             qapt-utils | gdebi-kde,
             qdirstat
-Suggests: k3b, muon, skanlite, variety (>= 0.6.6-1~)
+Suggests: k3b, muon, skanlite
 Architecture: all
 Breaks: utopia-accessories-kde (<< 2017.06.19~)
 Replaces: utopia-accessories-kde (<< 2017.06.19~)
