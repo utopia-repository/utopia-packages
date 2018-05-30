@@ -49,14 +49,13 @@ Recommends: font-manager | gnome-font-viewer,
             gvfs-bin,
             gvfs-fuse,
             pinentry-gnome3 | pinentry-gtk2,
-            qt5-style-plugins,
-            qt5ct,
             synaptic
 Suggests: brasero | xfburn,
           gnome-alsamixer,
           lightdm-gtk-greeter-settings,
           menulibre,
-          mugshot | usermode,
+          qt5-style-plugins,
+          qt5ct,
           simple-scan,
           xzoom
 Architecture: all
