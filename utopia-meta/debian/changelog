@@ -4,6 +4,8 @@ utopia-meta (2018.05.10) UNRELEASED; urgency=medium
     php-fpm
   * Move variety to utopia-accessories/suggests
   * utopia-devel: add R: arch-install-scripts
+  * utopia-office: update long description
+  * Bump Standards-Version to 4.1.4, no changes needed.
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
 

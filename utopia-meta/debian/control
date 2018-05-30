@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Homepage: https://github.com/utopia-repository/utopia-packages
 Build-Depends: debhelper (>= 9)
-Standards-Version: 4.1.3
+Standards-Version: 4.1.4
 Maintainer: James Lu <james@overdrivenetworks.com>
 Vcs-Git: https://github.com/utopia-repository/utopia-packages
 Vcs-Browser: https://github.com/utopia-repository/utopia-packages
@@ -714,7 +714,7 @@ Recommends: fonts-crosextra-caladea,
             mythes-en-us
 Suggests: libreoffice, openclipart-libreoffice
 Architecture: all
-Description: Utopia Productivity Collection (meta-package)
+Description: Utopia Office Collection (meta-package)
  This meta-package installs LibreOffice with a hand-picked set of components.
 
 Package: utopia-themes
@@ -746,5 +746,5 @@ Depends: nginx-full | nginx,
 Recommends: certbot (>= 0.23.0-1~)
 Suggests: default-mysql-server | postgresql
 Architecture: all
-Description: Utopia Server Collection - Web (meta-package)
+Description: Utopia Server Collection - Web Server (meta-package)
  This meta-package installs a basic web server with nginx and PHP.
