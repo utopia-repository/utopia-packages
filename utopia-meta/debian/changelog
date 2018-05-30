@@ -11,6 +11,8 @@ utopia-meta (2018.05.29) UNRELEASED; urgency=medium
   * utopia-desktop-lxde: add R: mugshot, remove extraneous S: utopia-office
   * utopia-desktop-xfce: remove S: gtk3-engines-xfce (broken with new GTK+ 3)
   * utopia-devel(-extras): drop all suggested packages
+  * utopia-accessories-extras: add kio-extras as an alternative to
+    exe-thumbnailer on Plasma 5 systems
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
 
