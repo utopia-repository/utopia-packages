@@ -398,11 +398,11 @@ Recommends: evince | atril | pdf-viewer,
             libfm-tools,
             lxrandr,
             lxtask,
+            mugshot,
             utopia-accessories-gtk,
             volumeicon-alsa,
             xfce4-notifyd | lxqt-notificationd,
             xfce4-screenshooter
-Suggests: utopia-office
 Architecture: all
 Description: Utopia Desktop Collection - LXDE (meta-package)
  This meta-package installs a minimal LXDE desktop with a hand-picked set of

@@ -1,4 +1,4 @@
-utopia-meta (2018.05.10) UNRELEASED; urgency=medium
+utopia-meta (2018.05.29) UNRELEASED; urgency=medium
 
   * New package: utopia-web-server installs a basic web server with nginx and
     php-fpm
@@ -8,6 +8,7 @@ utopia-meta (2018.05.10) UNRELEASED; urgency=medium
   * Bump Standards-Version to 4.1.4, no changes needed.
   * utopia-accessories-gtk: remove mugshot | usermode; demote qt5ct,
     qt5-style-plugins to suggests
+  * utopia-desktop-lxde: add R: mugshot, remove S: utopia-office
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
 
