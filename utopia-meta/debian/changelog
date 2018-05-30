@@ -8,7 +8,8 @@ utopia-meta (2018.05.29) UNRELEASED; urgency=medium
   * Bump Standards-Version to 4.1.4, no changes needed.
   * utopia-accessories-gtk: remove mugshot | usermode; demote qt5ct,
     qt5-style-plugins to suggests
-  * utopia-desktop-lxde: add R: mugshot, remove S: utopia-office
+  * utopia-desktop-lxde: add R: mugshot, remove extraneous S: utopia-office
+  * utopia-desktop-xfce: remove S: gtk3-engines-xfce (broken with new GTK+ 3)
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
 
