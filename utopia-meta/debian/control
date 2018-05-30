@@ -748,3 +748,5 @@ Suggests: default-mysql-server | postgresql
 Architecture: all
 Description: Utopia Server Collection - Web Server (meta-package)
  This meta-package installs a basic web server with nginx and PHP.
+ .
+ It also provides a certbot renewal script for nginx.
