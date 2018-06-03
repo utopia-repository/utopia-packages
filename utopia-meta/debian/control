@@ -138,7 +138,7 @@ Recommends: apt-listbugs,
             utopia-keyring,
             whiptail | dialog,
             whois
-Suggests: p7zip-rar, surfraw, utopia-devel
+Suggests: davfs2, p7zip-rar, sshfs, utopia-devel
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.

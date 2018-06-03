@@ -1,4 +1,4 @@
-utopia-meta (2018.06.01) UNRELEASED; urgency=medium
+utopia-meta (2018.06.03) UNRELEASED; urgency=medium
 
   * New package: utopia-web-server installs a basic web server with nginx and
     php-fpm
@@ -14,6 +14,7 @@ utopia-meta (2018.06.01) UNRELEASED; urgency=medium
   * utopia-accessories-extras: add kio-extras as an alternative to
     exe-thumbnailer on Plasma 5 systems
   * d/rules: override dh_missing to use --fail-missing
+  * -baseutils: add S: davfs2, sshfs; remove S: surfraw
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
 
