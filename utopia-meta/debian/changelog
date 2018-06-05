@@ -21,6 +21,9 @@ utopia-meta (2018.06.05) UNRELEASED; urgency=medium
       - Add some useful disk recovery / management tools; R: dosfstools,
         gddrescue, scalpel | foremost, testdisk
       - Add S: cifs-utils, smbclient (Samba tools)
+      - Recommend some non-free firmware packages for microcode, graphics, and
+        some consumer network cards: firmware-amd-graphics, firmware-atheros,
+        firmware-iwlwifi, firmware-realtek, firmware-linux (a meta-package)
   * -accessories: add S: tuxboot
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
