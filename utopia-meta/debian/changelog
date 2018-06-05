@@ -20,6 +20,7 @@ utopia-meta (2018.06.05) UNRELEASED; urgency=medium
       - Add R: lm-sensors (moved from -accessories)
       - Add some useful disk recovery / management tools; R: dosfstools,
         gddrescue, scalpel | foremost, testdisk
+  * -accessories: add S: tuxboot
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
 
