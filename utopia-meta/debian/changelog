@@ -1,4 +1,4 @@
-utopia-meta (2018.06.05) UNRELEASED; urgency=medium
+utopia-meta (2018.06.06) unstable; urgency=medium
 
   * New package: utopia-web-server installs a basic web server with nginx and
     php-fpm
@@ -26,7 +26,7 @@ utopia-meta (2018.06.05) UNRELEASED; urgency=medium
         firmware-iwlwifi, firmware-realtek, firmware-linux (a meta-package)
   * -accessories: add S: unetbootin | tuxboot
 
- -- James Lu <james@overdrivenetworks.com>  Sun, 06 May 2018 00:17:24 -0700
+ -- James Lu <james@overdrivenetworks.com>  Wed, 06 Jun 2018 14:53:01 -0700
 
 utopia-meta (2018.04.26) unstable; urgency=medium
 
