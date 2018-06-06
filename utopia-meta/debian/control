@@ -220,7 +220,7 @@ Recommends: acpi-support,
             avahi-daemon,
             dosfstools,
             eject,
-            # The latter: Ubuntu name
+# The latter: Ubuntu name
             firmware-amd-graphics | linux-firmware,
             firmware-atheros | linux-firmware,
             firmware-iwlwifi | linux-firmware,
