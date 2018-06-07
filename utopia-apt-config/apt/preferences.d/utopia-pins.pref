@@ -3,9 +3,17 @@ Package: *
 Pin: release a=unstable, o=Debian
 Pin-Priority: 450
 
+Package: *
+Pin: release a=unstable-debug, o=Debian
+Pin-Priority: 450
+
 # Allow automatic upgrades from experimental
 Package: *
 Pin: release a=experimental, o=Debian
+Pin-Priority: 101
+
+Package: *
+Pin: release a=experimental-debug, o=Debian
 Pin-Priority: 101
 
 # Prefer Utopia Repository forks

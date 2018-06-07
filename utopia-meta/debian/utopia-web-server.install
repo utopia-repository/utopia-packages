@@ -1,0 +1,1 @@
+scripts/nginx-renew.sh etc/letsencrypt/renewal-hooks/post

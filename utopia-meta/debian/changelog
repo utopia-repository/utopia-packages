@@ -1,3 +1,112 @@
+utopia-meta (2018.06.06) unstable; urgency=medium
+
+  * New package: utopia-web-server installs a basic web server with nginx and
+    php-fpm
+  * Move variety to utopia-accessories/suggests
+  * -devel: add R: arch-install-scripts
+  * -office: update long description
+  * Bump Standards-Version to 4.1.4, no changes needed.
+  * -accessories-gtk: remove mugshot | usermode; demote qt5ct,
+    qt5-style-plugins to suggests
+  * -desktop-lxde: add R: mugshot, remove extraneous S: utopia-office
+  * -desktop-xfce: remove S: gtk3-engines-xfce (broken with new GTK+ 3)
+  * -devel(-extras): drop all suggested packages
+  * -accessories-extras: add kio-extras as an alternative to exe-thumbnailer
+    on Plasma 5 systems
+  * d/rules: override dh_missing to use --fail-missing
+  * -baseutils: add S: davfs2, sshfs; remove S: surfraw
+  * -baseutils: add R: extundelete
+  * -desktop-common:
+      - Add R: lm-sensors (moved from -accessories)
+      - Add some useful disk recovery / management tools; R: dosfstools,
+        gddrescue, scalpel | foremost, testdisk
+      - Add S: cifs-utils, smbclient (Samba tools)
+      - Recommend some non-free firmware packages for microcode, graphics, and
+        some consumer network cards: firmware-amd-graphics, firmware-atheros,
+        firmware-iwlwifi, firmware-realtek, firmware-linux (a meta-package)
+  * -accessories: add S: unetbootin | tuxboot
+
+ -- James Lu <james@overdrivenetworks.com>  Wed, 06 Jun 2018 14:53:01 -0700
+
+utopia-meta (2018.04.26) unstable; urgency=medium
+
+  * utopia-baseutils: add R: apt-utils, whiptail | dialog for fully-functional
+    debconf on systems based off minimal templates
+  * Re-run wrap-and-sort.
+  * utopia-baseutils: add R: rssh | rush - these provide restricted login
+    shells (e.g. scp/sftp only) for specific service accounts
+  * -accessories, -network: replace qupzilla with falkon (its successor)
+  * utopia-multimedia: add S: mumble
+  * -baseutils, -accessories-*: make sure at least some pinentry variant is
+    installed
+  * Explicitly set source format to 3.0 (native)
+
+ -- James Lu <james@overdrivenetworks.com>  Thu, 26 Apr 2018 17:22:01 -0700
+
+utopia-meta (2018.02.20) unstable; urgency=medium
+
+  * -accessories-extras: remove wine-binfmt
+  * utopia-baseutils: depend on psmisc for killall, fuser, etc.
+  * utopia-multimedia: remove mediainfo, mediainfo-gui
+  * utopia-accessories: Prefer keepassxc over keepassx
+  * utopia-accessories-gtk: Demote xzoom to suggests
+  * Remove seahorse and related utilities
+  * utopia-devel: move diffoscope to -extras, it pulls in way too many
+    recommended packages
+  * utopia-intl: add R: fonts-noto-color-emoji
+  * utopia-desktop-full*: add R: utopia-intl
+
+ -- James Lu <james@overdrivenetworks.com>  Tue, 20 Feb 2018 14:10:34 -0800
+
+utopia-meta (2018.01.27) unstable; urgency=medium
+
+  * Move webcamoid and alternatives to -accessories-extras.
+  * -network*, -accessories*: flip dependency order so that the -gtk and -qt
+    packages depend on the common ones (i.e. utopia-accessories and
+    utopia-network).
+    This fixes an issue where utopia-full-desktop-qt inadvertently pulls in
+    utopia-(accessories|network)-gtk unless the relevant -qt packages are
+    also explicitly selected.
+  * desktops: explicitly recommend the preferred utopia-accessories variant
+  * -xfce: switch to prefer MATE utils over GNOME (atril and engrampa)
+  * -xfce: allow alternatives to ristretto (gpicview, shotwell, eog, eom)
+  * Fix typo: -desktop-full-qt provides utopia-desktop-full, not
+    utopia-full-desktop
+  * various: remove redundant relations on utopia-(accessories|network)
+    (Lintian warning stronger-dependency-implies-weaker)
+  * Remove priority: extra from transitional packages; this is deprecated since
+    policy 4.0.1
+  * utopia-desktop-lxqt updates:
+    - Demote utopia-themes to suggests
+    - Add R: breeze-gtk-theme, kde-style-breeze, lxappearance;
+    - Add S: kde-style-breeze-qt4 for a consistent look across Qt 4/5
+    - Add alternatives kwin-style-breeze | openbox to xfwm4-theme-breeze,
+      if an alternative WM is chosen
+    - Prefer lxtask over qps
+    - Update to R: cmst | network-manager-gnome | plasma-nm | wicd following
+      Debian metapackages
+  * -kde: follow rename of gtk3-engines-breeze -> breeze-gtk-theme in buster
+  * -accessories-qt: demote variety to suggests
+  * -desktop-openbox: remove; this has been cluttered and inconsistent for a
+    long time, and I don't really use it
+  * Add utopia-headless: dependency package to prevent automatic network
+    configuration tools (e.g. connman) from being installed on servers
+    marked as headless. These programs have the potential to seriously disrupt
+    already configured networks when they are pulled in with a desktop
+    environment: #867015 is an example.
+  * -desktop-common-vnc: add vnc-server as an alternative recommends
+  * utopia-multimedia updates:
+    - Replace puddletag with easytag | puddletag
+    - Recommend both kazam and obs-studio
+    - Remove R: browser-plugin-vlc, livestreamer.
+    - Add R: you-get
+  * Move CD-burning tools (xfburn, k3b, brasero) and scanner tools
+    (simple-scan, skanlite) from desktop packages to utopia-desktop-full*
+  * utopia-desktop-full*: suggest various Bluetooth stacks
+  * -desktop-gnome: drop explicit recommends on both eog and shotwell
+
+ -- James Lu <james@overdrivenetworks.com>  Sat, 27 Jan 2018 20:49:44 -0800
+
 utopia-meta (2017.12.19) unstable; urgency=medium
 
   * The "Install Linux EVERYWHERE!" release.
