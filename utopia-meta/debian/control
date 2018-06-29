@@ -753,7 +753,7 @@ Package: utopia-web-server
 Depends: nginx-full | nginx,
          php-fpm,
          ${misc:Depends}
-Recommends: certbot (>= 0.23.0-1~)
+Recommends: apache2-utils, certbot (>= 0.23.0-1~)
 Suggests: default-mysql-server | postgresql
 Architecture: all
 Description: Utopia Server Collection - Web Server (meta-package)
