@@ -1,6 +1,9 @@
 utopia-meta (2018.06.29) UNRELEASED; urgency=medium
 
   * utopia-web-server: recommend apache2-utils for htpasswd et al.
+  * utopia-baseutils:
+    - Demote extundelete to recommends; currently not available in buster
+    - Demote reptyr to recommends; not available on all architectures
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 29 Jun 2018 16:05:58 -0700
 
