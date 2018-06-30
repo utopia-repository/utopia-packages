@@ -1,4 +1,4 @@
-utopia-meta (2018.06.29) UNRELEASED; urgency=medium
+utopia-meta (2018.06.29) unstable; urgency=medium
 
   * utopia-web-server: recommend apache2-utils for htpasswd et al.
   * utopia-baseutils:
@@ -6,7 +6,7 @@ utopia-meta (2018.06.29) UNRELEASED; urgency=medium
     - Demote reptyr to recommends; not available on all architectures
   * utopia-devel-extras: add R: dose-distcheck
 
- -- James Lu <james@overdrivenetworks.com>  Fri, 29 Jun 2018 16:05:58 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 29 Jun 2018 17:05:16 -0700
 
 utopia-meta (2018.06.06) unstable; urgency=medium
 
