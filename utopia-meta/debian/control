@@ -255,20 +255,21 @@ Description: Utopia Desktop Collection - common programs (meta-package)
  This meta-package fetches some common, desktop-independent dependencies (fonts,
  utilities, etc.).
 
-Package: utopia-desktop-common-vnc
+Package: utopia-desktop-common-light
 Depends: utopia-baseutils, ${misc:Depends}
 Recommends: desktop-base,
             fonts-dejavu,
             fonts-liberation,
             fonts-noto,
-            tigervnc-standalone-server | vnc-server,
+            utopia-desktop-defaults,
+            xdg-utils,
             xorg
-Suggests: utopia-accessories
+Suggests: x2goserver | tigervnc-standalone-server | vnc-server, utopia-accessories
 Architecture: all
 Provides: utopia-desktop-common
-Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
+Description: Utopia Desktop Collection - light version (meta-package)
  This meta-package installs a lighter version of utopia-desktop-common,
- tailored for a VNC-based remote desktop setup on headless machines.
+ intended for e.g. remote desktop setups on headless machines.
 
 Package: utopia-desktop-full
 Depends: task-print-server,
