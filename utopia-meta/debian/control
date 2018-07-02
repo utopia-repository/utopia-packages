@@ -11,6 +11,7 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 Package: utopia-accessories
 Depends: ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
+            hardinfo | lshw-gtk | sysinfo,
             keepassxc | keepassx (>= 2.0~),
             qalculate-gtk | qalculate,
             vlc
@@ -53,6 +54,7 @@ Suggests: brasero | xfburn,
           gnome-alsamixer,
           lightdm-gtk-greeter-settings,
           menulibre,
+          pavucontrol,
           qt5-style-plugins,
           qt5ct,
           simple-scan,
@@ -75,6 +77,7 @@ Depends: utopia-accessories, ${misc:Depends}
 Recommends: kate | juffed,
             kmag,
             partitionmanager | gparted,
+            pavucontrol-qt,
             pinentry-qt,
             qapt-utils | gdebi-kde,
             qdirstat
