@@ -555,7 +555,8 @@ Recommends: arch-install-scripts,
             subversion,
             tcpdump,
             tig,
-            ubuntu-keyring | ubuntu-archive-keyring
+            ubuntu-keyring | ubuntu-archive-keyring,
+            virt-what
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  This meta-package installs libraries and tools for a development environment.

@@ -1,6 +1,6 @@
 utopia-meta (2018.06.30) UNRELEASED; urgency=medium
 
-  * utopia-devel: add D: gdb
+  * utopia-devel: add D: gdb, R: virt-what
   * Rename utopia-desktop-common-vnc -> utopia-desktop-common-light:
     - Demote tigervnc-standalone-server | vnc-server to suggests
     - Add x2goserver as an alternative to tigervnc-standalone-server |
