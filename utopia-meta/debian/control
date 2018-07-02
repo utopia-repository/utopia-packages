@@ -214,30 +214,19 @@ Depends: desktop-base,
          utopia-baseutils,
          xorg,
          ${misc:Depends}
-Recommends: acpi-support,
-            alsa-utils,
-            anacron,
+Recommends: anacron,
             avahi-daemon,
             dosfstools,
-            eject,
-# The latter: Ubuntu name
-            firmware-amd-graphics | linux-firmware,
-            firmware-atheros | linux-firmware,
-            firmware-iwlwifi | linux-firmware,
-            firmware-realtek | linux-firmware,
-            firmware-linux | linux-firmware,
             fonts-dejavu,
             fonts-liberation,
             fonts-noto,
             gddrescue,
             iw,
             libnss-mdns,
-            lm-sensors,
             ntfs-3g,
-            scalpel | foremost,
-            testdisk,
             utopia-accessories,
             utopia-desktop-defaults,
+            utopia-hardware-support,
             utopia-polkit,
             xdg-utils
 Suggests: cifs-utils,
@@ -265,7 +254,9 @@ Recommends: desktop-base,
             utopia-desktop-defaults,
             xdg-utils,
             xorg
-Suggests: x2goserver | tigervnc-standalone-server | vnc-server, utopia-accessories
+Suggests: x2goserver | tigervnc-standalone-server | vnc-server,
+          utopia-accessories,
+          utopia-hardware-support
 Architecture: all
 Provides: utopia-desktop-common
 Description: Utopia Desktop Collection - light version (meta-package)
@@ -593,6 +584,29 @@ Architecture: all
 Description: Utopia Development Collection - extra tools (meta-package)
  This meta-package installs extra libraries and utilities for a development
  environment.
+
+Package: utopia-hardware-support
+Depends: acpi-support,
+         cpufrequtils,
+         lm-sensors,
+         pciutils,
+         usbutils,
+         ${misc:Depends}
+Recommends: alsa-utils,
+            eject,
+            firmware-amd-graphics | linux-firmware,
+            firmware-atheros | linux-firmware,
+            firmware-iwlwifi | linux-firmware,
+            firmware-realtek | linux-firmware,
+            firmware-linux | linux-firmware,
+            inxi,
+            mesa-utils,
+            scalpel | foremost,
+            testdisk
+Architecture: all
+Description: Utopia Desktop Collection - hardware utilities (meta-package)
+ This meta-package installs utilities to list and manage hardware, as well as
+ firmware drivers for common consumer hardware.
 
 Package: utopia-headless
 Depends: ${misc:Depends}

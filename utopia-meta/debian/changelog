@@ -7,6 +7,10 @@ utopia-meta (2018.06.30) UNRELEASED; urgency=medium
       vnc-server
     - Add R: utopia-desktop-defaults, xdg-utils
   * utopia-desktop-common: add R: libnss-mdns
+  * Split hardware-related packages in utopia-desktop-common into a new
+    utopia-hardware-support package:
+    - Add D: acpi-support, cpufrequtils, lm-sensors, pciutils, usbutils
+    - Add R: inxi, mesa-utils
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 30 Jun 2018 18:04:07 -0700
 
