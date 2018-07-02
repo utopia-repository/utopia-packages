@@ -1,4 +1,4 @@
-utopia-meta (2018.06.30) UNRELEASED; urgency=medium
+utopia-meta (2018.07.02) UNRELEASED; urgency=medium
 
   * utopia-devel: add D: gdb
   * Rename utopia-desktop-common-vnc -> utopia-desktop-common-light:
@@ -6,7 +6,7 @@ utopia-meta (2018.06.30) UNRELEASED; urgency=medium
     - Add x2goserver as an alternative to tigervnc-standalone-server |
       vnc-server
     - Add R: utopia-desktop-defaults, xdg-utils
-  * utopia-desktop-common: add R: libnss-mdns
+  * utopia-desktop-common: add R: libnss-mdns, S: cpufrequtils
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 30 Jun 2018 18:04:07 -0700
 
