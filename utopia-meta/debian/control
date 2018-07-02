@@ -241,7 +241,6 @@ Recommends: acpi-support,
             utopia-polkit,
             xdg-utils
 Suggests: cifs-utils,
-          cpufrequtils,
           lxpolkit | polkit-1-auth-agent,
           smbclient,
           task-print-server,
