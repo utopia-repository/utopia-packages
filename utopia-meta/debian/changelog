@@ -14,6 +14,7 @@ utopia-meta (2018.06.30) UNRELEASED; urgency=medium
   * utopia-accessories: add R: hardinfo | lshw-gtk | sysinfo
   * utopia-accessories-gtk: add S: pavucontrol
   * utopia-accessories-qt: add S: pavucontrol-qt
+  * utopia-baseutils: add R: arch-test
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 30 Jun 2018 18:04:07 -0700
 
