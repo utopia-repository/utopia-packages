@@ -1,3 +1,9 @@
+utopia-meta (2018.08.04) UNRELEASED; urgency=medium
+
+  * Replace libreoffice-kde with libreoffice-kde5
+
+ -- James Lu <james@overdrivenetworks.com>  Sat, 04 Aug 2018 23:50:32 -0700
+
 utopia-meta (2018.07.07) unstable; urgency=medium
 
   * utopia-devel: add D: gdb, R: virt-what
