@@ -25,13 +25,12 @@ Package: utopia-accessories-extras
 Depends: utopia-accessories, ${misc:Depends}
 Recommends: cifs-utils,
             default-jre,
-            fileinsight,
             samba,
             smbclient,
             virtualbox (>= 5.0~),
             webcamoid | cheese | kamoso | kamerka | guvcview,
             wine | wine-development | wine-staging-compat
-Suggests: exe-thumbnailer | gnome-exe-thumbnailer | kio-extras
+Suggests: exe-thumbnailer | gnome-exe-thumbnailer | kio-extras, fileinsight
 Architecture: all
 Description: Utopia Accessories Collection - Extra accessories (meta-package)
  This meta-package pulls in some extra accessories for daily use and

@@ -3,6 +3,7 @@ utopia-meta (2018.08.04) UNRELEASED; urgency=medium
   * Replace libreoffice-kde with libreoffice-kde5
   * -desktop-kde: demote kdeadmin, kdenetwork-filesharing to Suggests
   * -desktop-kde: replace R: kgamma5 with S: kdegraphics
+  * -accessories-extras: demote fileinsight to suggests
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 04 Aug 2018 23:50:32 -0700
 
