@@ -15,7 +15,7 @@ Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-b
             keepassxc | keepassx (>= 2.0~),
             qalculate-gtk | qalculate,
             vlc
-Suggests: florence | caribou, psensor, unetbootin | tuxboot, variety
+Suggests: bleachbit, florence | caribou, psensor, unetbootin | tuxboot, variety
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
