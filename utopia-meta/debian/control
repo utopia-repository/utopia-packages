@@ -698,9 +698,9 @@ Recommends: deluge | transmission-gtk,
             hexchat,
             network-manager-gnome | wicd,
             network-manager-openvpn-gnome,
-            uget,
             vinagre,
             wireshark-gtk | wireshark
+Suggests: uget
 Architecture: all
 Description: Utopia Network Collection - GNOME/GTK+ (meta-package)
  This meta-package pulls in some networking programs targeting a GNOME/GTK+
