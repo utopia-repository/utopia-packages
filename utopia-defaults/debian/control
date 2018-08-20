@@ -66,3 +66,16 @@ Depends: caja-common (>= 1.8~),
 Recommends: utopia-desktop-defaults, utopia-desktop-mate
 Description: Utopia Desktop Defaults (MATE Desktop)
  This package contains customized defaults for the MATE Desktop.
+
+Package: utopia-xfce-defaults
+Architecture: all
+Depends: utopia-themes (>= 2016.01.10~),
+         xfce4-datetime-plugin,
+         xfce4-pulseaudio-plugin,
+         xfce4-sensors-plugin,
+         xfce4-whiskermenu-plugin,
+         utopia-desktop-defaults,
+         ${misc:Depends}
+Recommends: htop, utopia-desktop-xfce
+Description: Utopia Desktop Defaults (Xfce Desktop)
+ This package contains customized defaults for the Xfce Desktop.

@@ -1,0 +1,3 @@
+# Add Utopia default settings to XDG_CONFIG_DIRS
+# Inspired by kubuntu-default-settings & 60x11-common_xdg_path from Ubuntu, Xebian
+XDG_CONFIG_DIRS="$XDG_CONFIG_DIRS:/usr/share/utopia-default-settings/"
