@@ -1,3 +1,10 @@
+utopia-defaults (2018.1~) UNRELEASED; urgency=medium
+
+  * mate: set default terminal (e.g. for caja-open-terminal) to
+    x-terminal-emulator
+
+ -- James Lu <james@overdrivenetworks.com>  Sun, 19 Aug 2018 20:55:55 -0700
+
 utopia-defaults (2017.12.19) unstable; urgency=medium
 
   * various: add missing dependencies on fonts-noto-hinted (for Noto Sans).
