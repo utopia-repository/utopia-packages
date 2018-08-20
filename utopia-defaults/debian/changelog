@@ -4,7 +4,8 @@ utopia-defaults (2018.1~) UNRELEASED; urgency=medium
     x-terminal-emulator
   * desktop-common: add config defaults for LightDM
   * d/control:
-    - Add R: numix-frost-theme, E: lightdm, lightdm-gtk-greeter for new LightDM defaults
+    - Add R: numix-frost-theme, E: lightdm, lightdm-gtk-greeter for new
+      LightDM defaults
     - Maintenance: bump Standards-Version to 4.2.0, update my email
     - cinnamon, mate: recommend the corresponding utopia-desktop-* package
   * New package: utopia-xfce-defaults - defaults for Xfce, Thunar, etc.
