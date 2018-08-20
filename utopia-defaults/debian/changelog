@@ -3,6 +3,9 @@ utopia-defaults (2018.1~) UNRELEASED; urgency=medium
   * mate: set default terminal (e.g. for caja-open-terminal) to
     x-terminal-emulator
   * desktop-common: add config defaults for LightDM
+  * Add R: numix-frost-theme, E: lightdm, lightdm-gtk-greeter for new LightDM defaults
+  * Bump Standards-Version to 4.2.0.
+  * Update my email.
 
  -- James Lu <james@overdrivenetworks.com>  Sun, 19 Aug 2018 20:55:55 -0700
 
