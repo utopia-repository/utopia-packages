@@ -43,28 +43,28 @@
     <property name="plugin-16" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="14268208201.desktop"/>
+        <value type="string" value="exo-terminal-emulator.desktop"/>
       </property>
     </property>
     <property name="plugin-8" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="14268208263.desktop"/>
+        <value type="string" value="exo-file-manager.desktop"/>
       </property>
     </property>
     <property name="plugin-9" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="14954416663.desktop"/>
+        <value type="string" value="exo-mail-reader.desktop"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="datetime"/>
     <property name="plugin-2" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="14954414051.desktop"/>
+        <value type="string" value="exo-web-browser.desktop"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="14954415312.desktop"/>
+        <value type="string" value="htop.desktop"/>
       </property>
     </property>
     <property name="plugin-10" type="string" value="separator">
