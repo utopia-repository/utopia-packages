@@ -1,12 +1,25 @@
-utopia-meta (2018.08.04) UNRELEASED; urgency=medium
+utopia-meta (2018.08.24~) UNRELEASED; urgency=medium
 
-  * Replace libreoffice-kde with libreoffice-kde5
-  * -desktop-kde: demote kdeadmin, kdenetwork-filesharing to Suggests
-  * -desktop-kde: replace R: kgamma5 with S: kdegraphics
-  * -accessories-extras: demote fileinsight to suggests
-  * -accessories-extras: add S: dosbox
-  * -accessories: add S: bleachbit
-  * -network-gtk: demote uget to suggests
+  * various: replace libreoffice-kde with libreoffice-kde5
+  * utopia-desktop-kde: demote kdeadmin, kdenetwork-filesharing to Suggests
+  * utopia-desktop-kde: replace R: kgamma5 with S: kdegraphics
+  * utopia-accessories-extras: demote fileinsight to suggests
+  * utopia-accessories-extras: add S: dosbox
+  * utopia-accessories: add S: bleachbit
+  * utopia-network-gtk: demote uget to suggests
+  * utopia-devel updates:
+      - Add D: cmake, scons (common build systems)
+      - Demote dh-make to recommends
+      - Move jpegoptim, optipng | pngcrush back to utopia-multimedia
+      - Move help2man, hexedit to utopia-devel-extras
+      - Remove R: gem2deb, duplicate R: gnutls-dev
+      - Recommend ruby as well as ruby-dev
+      - Add R: shellcheck (moved from -extras)
+  * utopia-devel-extras:
+      - Add D: libwww-perl (used by lots of code in the wild)
+      - Add R: libtool
+      - Remove python3-pypandoc
+      - Demote adb, fastboot to Suggests
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 04 Aug 2018 23:50:32 -0700
 
