@@ -5,6 +5,8 @@ Maintainer: James Lu <james@overdrivenetworks.com>
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.2.0
 Homepage: https://github.com/utopia-repository/utopia-packages
+Vcs-Git: https://github.com/utopia-repository/utopia-packages
+Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-cinnamon-defaults
 Architecture: all
