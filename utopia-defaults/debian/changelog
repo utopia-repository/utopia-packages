@@ -1,4 +1,4 @@
-utopia-defaults (2018.1~) UNRELEASED; urgency=medium
+utopia-defaults (2018.08.27) unstable; urgency=medium
 
   * mate: set default terminal (e.g. for caja-open-terminal) to
     x-terminal-emulator
