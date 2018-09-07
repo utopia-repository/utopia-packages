@@ -20,6 +20,9 @@ utopia-meta (2018.08.24~) UNRELEASED; urgency=medium
       - Add R: libtool
       - Remove python3-pypandoc
       - Demote adb, fastboot to Suggests
+  * utopia-desktop-{lxde,xfce}:
+      - Add D: lxpolkit and D: policykit-1-gnome respectively, as non-default
+        auth agents don't seem to work correctly
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 04 Aug 2018 23:50:32 -0700
 

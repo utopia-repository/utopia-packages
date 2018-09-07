@@ -401,6 +401,7 @@ Depends: gpicview,
          lxappearance-obconf,
          lxde-core,
          lxinput,
+         lxpolkit,
          lxsession,
          lxterminal,
          obconf,
@@ -480,7 +481,8 @@ Description: Utopia Desktop Collection - MATE (meta-package)
  Desktop tweaks.
 
 Package: utopia-desktop-xfce
-Depends: thunar-archive-plugin,
+Depends: policykit-1-gnome,
+         thunar-archive-plugin,
          utopia-desktop-common,
          xfce4 (>= 4.12),
          xfce4-datetime-plugin,
