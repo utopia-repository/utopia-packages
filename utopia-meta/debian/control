@@ -518,9 +518,6 @@ Description: Utopia Desktop Collection - Xfce (meta-package)
 Package: utopia-devel
 Depends: build-essential,
          cmake,
-         cowbuilder | sbuild | pbuilder,
-         debhelper,
-         devscripts,
          dirmngr | gnupg (<< 2.1~),
          gdb,
          git-buildpackage,
@@ -532,15 +529,11 @@ Depends: build-essential,
          pkg-config,
          python3-pip,
          scons,
-         quilt,
          utopia-baseutils,
          ${misc:Depends}
 Recommends: arch-install-scripts,
             apt-rdepends,
             bzr,
-            debian-archive-keyring,
-            debootstrap,
-            dh-make,
             git-remote-bzr,
             git-svn,
             gnutls-bin,
@@ -559,7 +552,6 @@ Recommends: arch-install-scripts,
             subversion,
             tcpdump,
             tig,
-            ubuntu-keyring | ubuntu-archive-keyring,
             virt-what
 Architecture: all
 Description: Utopia Development Collection (meta-package)
@@ -574,8 +566,6 @@ Depends: bzr,
          utopia-devel,
          ${misc:Depends}
 Recommends: bison,
-            diffoscope,
-            dose-distcheck,
             doxygen,
             flex,
             help2man,
@@ -585,13 +575,28 @@ Recommends: bison,
             lua5.3 | lua,
             mercurial,
             nodejs (>= 4),
-            packaging-dev,
             yasm
-Suggests: adb, fastboot
+Suggests: adb, fastboot, utopia-devel-packaging
 Architecture: all
 Description: Utopia Development Collection - extra tools (meta-package)
  This meta-package installs extra libraries and utilities for a development
  environment.
+
+Package: utopia-devel-packaging
+Depends: cowbuilder | sbuild | pbuilder,
+         debhelper,
+         devscripts,
+         dh-make,
+         dput | dupload,
+         lintian,
+         quilt
+Recommends: debian-archive-keyring,
+            debootstrap,
+            ubuntu-keyring | ubuntu-archive-keyring
+Suggests: diffoscope, dose-distcheck, packaging-dev
+Architecture: all
+Description: Utopia Development Collection - packaging tools (meta-package)
+ This meta-package installs programs specific to a Debian packaging environment.
 
 Package: utopia-hardware-support
 Depends: acpi-support,

@@ -9,12 +9,12 @@ utopia-meta (2018.08.24~) UNRELEASED; urgency=medium
   * utopia-network-gtk: demote uget to suggests
   * utopia-devel updates:
       - Add D: cmake, scons (common build systems)
-      - Demote dh-make to recommends
       - Move jpegoptim, optipng | pngcrush back to utopia-multimedia
       - Move help2man, hexedit to utopia-devel-extras
       - Remove R: gem2deb, duplicate R: gnutls-dev
       - Recommend ruby as well as ruby-dev
       - Add R: shellcheck (moved from -extras)
+      - Split packaging related tools into new utopia-devel-packaging package
   * utopia-devel-extras:
       - Add D: libwww-perl (used by lots of code in the wild)
       - Add R: libtool
