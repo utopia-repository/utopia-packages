@@ -1,4 +1,4 @@
-utopia-meta (2018.08.24~) UNRELEASED; urgency=medium
+utopia-meta (2018.09.21) unstable; urgency=medium
 
   * various: replace libreoffice-kde with libreoffice-kde5
   * utopia-desktop-kde: demote kdeadmin, kdenetwork-filesharing to Suggests
@@ -24,7 +24,7 @@ utopia-meta (2018.08.24~) UNRELEASED; urgency=medium
       - Add D: lxpolkit and D: policykit-1-gnome respectively, as non-default
         auth agents don't seem to work correctly
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 04 Aug 2018 23:50:32 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 21 Sep 2018 23:45:09 -0700
 
 utopia-meta (2018.07.07) unstable; urgency=medium
 
