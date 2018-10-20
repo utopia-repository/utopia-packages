@@ -548,11 +548,11 @@ Recommends: arch-install-scripts,
             pandoc,
             ruby,
             ruby-dev,
-            shellcheck,
             subversion,
             tcpdump,
             tig,
             virt-what
+Suggests: jpegoptim, optipng | pngcrush, glade, qtchooser, xca
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  This meta-package installs libraries and tools for a development environment.
@@ -575,6 +575,7 @@ Recommends: bison,
             lua5.3 | lua,
             mercurial,
             nodejs (>= 4),
+            shellcheck,
             yasm
 Suggests: adb, fastboot, utopia-devel-packaging
 Architecture: all
@@ -589,7 +590,8 @@ Depends: cowbuilder | sbuild | pbuilder,
          dh-make,
          dput | dupload,
          lintian,
-         quilt
+         quilt,
+         ${misc:Depends}
 Recommends: debian-archive-keyring,
             debootstrap,
             ubuntu-keyring | ubuntu-archive-keyring
