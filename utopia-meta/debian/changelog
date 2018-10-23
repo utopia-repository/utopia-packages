@@ -1,3 +1,9 @@
+utopia-meta (2018.10.22) UNRELEASED; urgency=medium
+
+  * utopia-baseutils: add D: mutt | mail-reader, telnet; R: mutt
+
+ -- James Lu <james@overdrivenetworks.com>  Mon, 22 Oct 2018 20:24:20 -0700
+
 utopia-meta (2018.10.19) unstable; urgency=low
 
   * Revert moving shellcheck to utopia-devel.
