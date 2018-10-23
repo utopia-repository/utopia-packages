@@ -1,3 +1,9 @@
+utopia-meta (2018.10.22~deb9u1) stretch; urgency=medium
+
+  * No change backport to Stretch.
+
+ -- James Lu <james@overdrivenetworks.com>  Mon, 22 Oct 2018 20:54:49 -0700
+
 utopia-meta (2018.10.22) unstable; urgency=medium
 
   * utopia-baseutils: add D: mutt | mail-reader, telnet; R: mutt
