@@ -17,3 +17,6 @@ include /usr/share/dpkg/pkg-info.mk
 override_dh_gencontrol:
 	dh_gencontrol
 	dh_gencontrol -ptask-print-server -- -v3.43~utopia0~$(DEB_VERSION)
+
+override_dh_missing:
+	dh_missing --fail-missing
