@@ -10,8 +10,8 @@ echo Packages to build: $packages
 
 shift
 for dir in $packages; do
-	pushd $dir
-	echo BUILDING: $dir
+	pushd "$dir"
+	echo "BUILDING: $dir"
 	dpkg-buildpackage -us -uc
 	popd
 done

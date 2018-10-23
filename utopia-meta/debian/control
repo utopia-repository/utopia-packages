@@ -11,10 +11,11 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 Package: utopia-accessories
 Depends: ${misc:Depends}
 Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
+            hardinfo | lshw-gtk | sysinfo,
             keepassxc | keepassx (>= 2.0~),
             qalculate-gtk | qalculate,
             vlc
-Suggests: florence | caribou, psensor, unetbootin | tuxboot, variety
+Suggests: bleachbit, florence | caribou, psensor, unetbootin | tuxboot, variety
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
@@ -24,13 +25,14 @@ Package: utopia-accessories-extras
 Depends: utopia-accessories, ${misc:Depends}
 Recommends: cifs-utils,
             default-jre,
-            fileinsight,
             samba,
             smbclient,
             virtualbox (>= 5.0~),
             webcamoid | cheese | kamoso | kamerka | guvcview,
             wine | wine-development | wine-staging-compat
-Suggests: exe-thumbnailer | gnome-exe-thumbnailer | kio-extras
+Suggests: dosbox,
+          exe-thumbnailer | gnome-exe-thumbnailer | kio-extras,
+          fileinsight
 Architecture: all
 Description: Utopia Accessories Collection - Extra accessories (meta-package)
  This meta-package pulls in some extra accessories for daily use and
@@ -53,6 +55,7 @@ Suggests: brasero | xfburn,
           gnome-alsamixer,
           lightdm-gtk-greeter-settings,
           menulibre,
+          pavucontrol,
           qt5-style-plugins,
           qt5ct,
           simple-scan,
@@ -75,6 +78,7 @@ Depends: utopia-accessories, ${misc:Depends}
 Recommends: kate | juffed,
             kmag,
             partitionmanager | gparted,
+            pavucontrol-qt,
             pinentry-qt,
             qapt-utils | gdebi-kde,
             qdirstat
@@ -95,13 +99,13 @@ Depends: apt-listchanges,
          curl,
          deborphan,
          dos2unix,
-         extundelete,
          file,
          git,
          htop,
          iputils-ping | ping,
          less,
          lynx | links2 | elinks | links | w3m | www-browser,
+         mutt | mail-reader,
          nano,
          openssh-client | ssh-client,
          p7zip-full,
@@ -109,18 +113,20 @@ Depends: apt-listchanges,
          psmisc,
          python3,
          rename,
-         reptyr,
          screen,
          sudo,
+         telnet,
          traceroute,
          wget,
          xz-utils,
          ${misc:Depends}
 Recommends: apt-listbugs,
             apt-utils,
+            arch-test,
             bzip2,
             command-not-found,
             debian-goodies,
+            extundelete,
             gdebi-core,
             gnupg,
             gnupg (<< 2.1~) | dirmngr,
@@ -128,7 +134,9 @@ Recommends: apt-listbugs,
             iftop,
             iotop,
             iptables,
+            mutt,
             netselect-apt,
+            reptyr,
             rssh | rush,
             rsync,
             screenfetch,
@@ -214,29 +222,19 @@ Depends: desktop-base,
          utopia-baseutils,
          xorg,
          ${misc:Depends}
-Recommends: acpi-support,
-            alsa-utils,
-            anacron,
+Recommends: anacron,
             avahi-daemon,
             dosfstools,
-            eject,
-# The latter: Ubuntu name
-            firmware-amd-graphics | linux-firmware,
-            firmware-atheros | linux-firmware,
-            firmware-iwlwifi | linux-firmware,
-            firmware-realtek | linux-firmware,
-            firmware-linux | linux-firmware,
             fonts-dejavu,
             fonts-liberation,
             fonts-noto,
             gddrescue,
             iw,
-            lm-sensors,
+            libnss-mdns,
             ntfs-3g,
-            scalpel | foremost,
-            testdisk,
             utopia-accessories,
             utopia-desktop-defaults,
+            utopia-hardware-support,
             utopia-polkit,
             xdg-utils
 Suggests: cifs-utils,
@@ -255,20 +253,23 @@ Description: Utopia Desktop Collection - common programs (meta-package)
  This meta-package fetches some common, desktop-independent dependencies (fonts,
  utilities, etc.).
 
-Package: utopia-desktop-common-vnc
+Package: utopia-desktop-common-light
 Depends: utopia-baseutils, ${misc:Depends}
 Recommends: desktop-base,
             fonts-dejavu,
             fonts-liberation,
             fonts-noto,
-            tigervnc-standalone-server | vnc-server,
+            utopia-desktop-defaults,
+            xdg-utils,
             xorg
-Suggests: utopia-accessories
+Suggests: x2goserver | tigervnc-standalone-server | vnc-server,
+          utopia-accessories,
+          utopia-hardware-support
 Architecture: all
 Provides: utopia-desktop-common
-Description: Utopia Desktop Collection - VNC remote desktop (meta-package)
+Description: Utopia Desktop Collection - light version (meta-package)
  This meta-package installs a lighter version of utopia-desktop-common,
- tailored for a VNC-based remote desktop setup on headless machines.
+ intended for e.g. remote desktop setups on headless machines.
 
 Package: utopia-desktop-full
 Depends: task-print-server,
@@ -298,7 +299,7 @@ Depends: task-print-server,
          utopia-desktop-kde | utopia-desktop-lxqt,
          utopia-office,
          ${misc:Depends}
-Recommends: libreoffice-kde,
+Recommends: libreoffice-kde5 | libreoffice-kde,
             print-manager,
             skanlite,
             utopia-intl,
@@ -371,12 +372,9 @@ Depends: ark,
 Recommends: breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
             kde-baseapps-bin,
             kde-config-gtk-style,
-            kdeadmin,
-            kdenetwork-filesharing,
             kdesudo,
             kdf,
             kfind,
-            kgamma5 | kgamma,
             ksysguard,
             kwalletmanager,
             kwin-x11,
@@ -388,7 +386,13 @@ Recommends: breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
             upower,
             user-manager,
             utopia-accessories-qt
-Suggests: kate, kdeutils, libreoffice-kde, print-manager
+Suggests: kate,
+          kdeadmin,
+          kdegraphics,
+          kdeutils,
+          kdenetwork-filesharing,
+          libreoffice-kde5 | libreoffice-kde,
+          print-manager
 Architecture: all
 Description: Utopia Desktop Collection - KDE Plasma 5 (meta-package)
  This meta-package installs a minimal KDE Plasma desktop with a hand-picked set
@@ -400,6 +404,7 @@ Depends: gpicview,
          lxappearance-obconf,
          lxde-core,
          lxinput,
+         lxpolkit,
          lxsession,
          lxterminal,
          obconf,
@@ -479,7 +484,8 @@ Description: Utopia Desktop Collection - MATE (meta-package)
  Desktop tweaks.
 
 Package: utopia-desktop-xfce
-Depends: thunar-archive-plugin,
+Depends: policykit-1-gnome,
+         thunar-archive-plugin,
          utopia-desktop-common,
          xfce4 (>= 4.12),
          xfce4-datetime-plugin,
@@ -514,11 +520,9 @@ Description: Utopia Desktop Collection - Xfce (meta-package)
 
 Package: utopia-devel
 Depends: build-essential,
-         cowbuilder | sbuild | pbuilder,
-         debhelper,
-         devscripts,
-         dh-make,
+         cmake,
          dirmngr | gnupg (<< 2.1~),
+         gdb,
          git-buildpackage,
          gnupg,
          libssl-dev | libssl1.0-dev,
@@ -527,38 +531,31 @@ Depends: build-essential,
          openssl,
          pkg-config,
          python3-pip,
-         quilt,
+         scons,
          utopia-baseutils,
          ${misc:Depends}
 Recommends: arch-install-scripts,
             apt-rdepends,
             bzr,
-            cmake,
-            debian-archive-keyring,
-            debootstrap,
-            gem2deb,
             git-remote-bzr,
             git-svn,
             gnutls-bin,
-            gnutls-dev,
             golang,
             graphviz,
-            help2man,
-            hexedit,
             imagemagick,
-            jpegoptim,
             libgnutls-dev | gnutls-dev,
             libwww-perl,
             lsb-release,
-            mtr | mtr-tiny,
+            mtr-tiny | mtr,
             nmap,
-            optipng | pngcrush,
             pandoc,
+            ruby,
             ruby-dev,
             subversion,
             tcpdump,
             tig,
-            ubuntu-keyring | ubuntu-archive-keyring
+            virt-what
+Suggests: jpegoptim, optipng | pngcrush, glade, qtchooser, xca
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  This meta-package installs libraries and tools for a development environment.
@@ -567,28 +564,67 @@ Package: utopia-devel-extras
 Depends: bzr,
          git-remote-bzr,
          git-svn,
+         libwww-perl,
          subversion,
          utopia-devel,
          ${misc:Depends}
-Recommends: adb,
-            bison,
-            diffoscope,
+Recommends: bison,
             doxygen,
-            fastboot,
             flex,
+            help2man,
+            hexedit,
+            libtool,
             lua-socket (>= 3.0~rc1~),
             lua5.3 | lua,
             mercurial,
             nodejs (>= 4),
-            packaging-dev,
-            python3-pypandoc,
-            scons,
             shellcheck,
             yasm
+Suggests: adb, fastboot, utopia-devel-packaging
 Architecture: all
 Description: Utopia Development Collection - extra tools (meta-package)
  This meta-package installs extra libraries and utilities for a development
  environment.
+
+Package: utopia-devel-packaging
+Depends: cowbuilder | sbuild | pbuilder,
+         debhelper,
+         devscripts,
+         dh-make,
+         dput | dupload,
+         lintian,
+         quilt,
+         ${misc:Depends}
+Recommends: debian-archive-keyring,
+            debootstrap,
+            ubuntu-keyring | ubuntu-archive-keyring
+Suggests: diffoscope, dose-distcheck, packaging-dev
+Architecture: all
+Description: Utopia Development Collection - packaging tools (meta-package)
+ This meta-package installs programs specific to a Debian packaging environment.
+
+Package: utopia-hardware-support
+Depends: acpi-support,
+         cpufrequtils,
+         lm-sensors,
+         pciutils,
+         usbutils,
+         ${misc:Depends}
+Recommends: alsa-utils,
+            eject,
+            firmware-amd-graphics | linux-firmware,
+            firmware-atheros | linux-firmware,
+            firmware-iwlwifi | linux-firmware,
+            firmware-realtek | linux-firmware,
+            firmware-linux | linux-firmware,
+            inxi,
+            mesa-utils,
+            scalpel | foremost,
+            testdisk
+Architecture: all
+Description: Utopia Desktop Collection - hardware utilities (meta-package)
+ This meta-package installs utilities to list and manage hardware, as well as
+ firmware drivers for common consumer hardware.
 
 Package: utopia-headless
 Depends: ${misc:Depends}
@@ -639,8 +675,10 @@ Depends: ${misc:Depends}
 Recommends: audacity,
             ffmpeg (>= 7:3.0~),
             gimp | krita,
+            jpegoptim,
             kazam,
             obs-studio,
+            optipng | pngcrush,
             spek,
             vlc,
             you-get,
@@ -671,9 +709,9 @@ Recommends: deluge | transmission-gtk,
             hexchat,
             network-manager-gnome | wicd,
             network-manager-openvpn-gnome,
-            uget,
             vinagre,
             wireshark-gtk | wireshark
+Suggests: uget
 Architecture: all
 Description: Utopia Network Collection - GNOME/GTK+ (meta-package)
  This meta-package pulls in some networking programs targeting a GNOME/GTK+
@@ -716,7 +754,7 @@ Recommends: fonts-crosextra-caladea,
             hunspell-en-us,
             hyphen-en-us,
             libreoffice-draw,
-            libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk | libreoffice-kde,
+            libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk | libreoffice-kde5,
             libreoffice-lightproof-en,
             libreoffice-math,
             libreoffice-ogltrans,
@@ -753,7 +791,7 @@ Package: utopia-web-server
 Depends: nginx-full | nginx,
          php-fpm,
          ${misc:Depends}
-Recommends: certbot (>= 0.23.0-1~)
+Recommends: apache2-utils, certbot (>= 0.23.0-1~)
 Suggests: default-mysql-server | postgresql
 Architecture: all
 Description: Utopia Server Collection - Web Server (meta-package)

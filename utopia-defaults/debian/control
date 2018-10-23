@@ -1,10 +1,12 @@
 Source: utopia-defaults
 Section: x11
 Priority: optional
-Maintainer: James Lu <bitflip3@gmail.com>
+Maintainer: James Lu <james@overdrivenetworks.com>
 Build-Depends: debhelper (>= 10)
-Standards-Version: 4.1.2
+Standards-Version: 4.2.0
 Homepage: https://github.com/utopia-repository/utopia-packages
+Vcs-Git: https://github.com/utopia-repository/utopia-packages
+Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-cinnamon-defaults
 Architecture: all
@@ -18,6 +20,7 @@ Depends: arc-theme (>= 20170302-1~),
          ${misc:Depends}
 Recommends: libpam-systemd,
             mint-cinnamon-themes,
+            utopia-desktop-cinnamon,
             utopia-desktop-defaults,
             utopia-gnomeapps-defaults
 Breaks: utopia-cinnamon-tweaks (<< 2017.04.16~)
@@ -39,7 +42,8 @@ Depends: fonts-noto-hinted,
          gsettings-desktop-schemas,
          libgtk-3-common,
          ${misc:Depends}
-Recommends: fontconfig
+Recommends: fontconfig, numix-frost-theme
+Enhances: lightdm, lightdm-gtk-greeter
 Description: Utopia Desktop Defaults (common settings)
  This package contains general customized defaults for desktop systems.
  It currently tweaks the following:
@@ -47,6 +51,7 @@ Description: Utopia Desktop Defaults (common settings)
   - GTK+ file chooser defaults
   - Fontconfig rendering defaults
   - Default GTK+ 3 font
+  - Defaults for LightDM and LightDM GTK+ Greeter
 
 Package: utopia-gnomeapps-defaults
 Architecture: all
@@ -68,6 +73,6 @@ Depends: caja-common (>= 1.8~),
          mate-terminal-common (>= 1.8~),
          utopia-themes (>= 2016.01.10~),
          ${misc:Depends}
-Recommends: utopia-desktop-defaults
+Recommends: utopia-desktop-defaults, utopia-desktop-mate
 Description: Utopia Desktop Defaults (MATE Desktop)
  This package contains customized defaults for the MATE Desktop.
