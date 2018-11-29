@@ -120,8 +120,7 @@ Depends: apt-listchanges,
          wget,
          xz-utils,
          ${misc:Depends}
-Recommends: apt-listbugs,
-            apt-utils,
+Recommends: apt-utils,
             arch-test,
             bzip2,
             command-not-found,
@@ -146,7 +145,7 @@ Recommends: apt-listbugs,
             utopia-keyring,
             whiptail | dialog,
             whois
-Suggests: davfs2, p7zip-rar, sshfs, utopia-devel
+Suggests: apt-listbugs, davfs2, p7zip-rar, sshfs, utopia-devel
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.

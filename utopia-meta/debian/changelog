@@ -1,3 +1,10 @@
+utopia-meta (2018.10.22~deb9u2) UNRELEASED; urgency=medium
+
+  * [stretch] Demote apt-listbugs to suggests: it pulls in several dependencies
+    when stable updates are generally safe.
+
+ -- James Lu <james@overdrivenetworks.com>  Thu, 29 Nov 2018 11:18:59 -0800
+
 utopia-meta (2018.10.22~deb9u1) stretch; urgency=medium
 
   * No change backport to Stretch.
