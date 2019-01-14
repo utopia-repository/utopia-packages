@@ -6,6 +6,7 @@ utopia-meta (2019.01.13) UNRELEASED; urgency=medium
     - Move scrot to R: utopia-accessories
     - Remove R: gdebi-core
     - Demote command-not-found to suggests
+    - Install a iptables sample config to /usr/src
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 24 Nov 2018 11:29:10 -0800
 
