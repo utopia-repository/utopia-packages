@@ -14,6 +14,7 @@ Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-b
             hardinfo | lshw-gtk | sysinfo,
             keepassxc | keepassx (>= 2.0~),
             qalculate-gtk | qalculate,
+            scrot,
             vlc
 Suggests: bleachbit, florence | caribou, psensor, unetbootin | tuxboot, variety
 Architecture: all
@@ -124,10 +125,8 @@ Recommends: apt-listbugs,
             apt-utils,
             arch-test,
             bzip2,
-            command-not-found,
             debian-goodies,
             extundelete,
-            gdebi-core,
             gnupg,
             gnupg (<< 2.1~) | dirmngr,
             gnupg-agent,
@@ -140,13 +139,16 @@ Recommends: apt-listbugs,
             rssh | rush,
             rsync,
             screenfetch,
-            scrot,
             tree,
             uptimed,
             utopia-keyring,
             whiptail | dialog,
             whois
-Suggests: davfs2, p7zip-rar, sshfs, utopia-devel
+Suggests: command-not-found,
+          davfs2,
+          p7zip-rar,
+          sshfs,
+          utopia-devel
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.

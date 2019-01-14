@@ -1,7 +1,11 @@
-utopia-meta (2018.11.24) UNRELEASED; urgency=medium
+utopia-meta (2019.01.13) UNRELEASED; urgency=medium
 
   * utopia-devel-extras: add R: valgrind
   * utopia-themes: add R: materia-gtk-theme, papirus-icon-theme
+  * utopia-baseutils:
+    - Move scrot to R: utopia-accessories
+    - Remove R: gdebi-core
+    - Demote command-not-found to suggests
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 24 Nov 2018 11:29:10 -0800
 
