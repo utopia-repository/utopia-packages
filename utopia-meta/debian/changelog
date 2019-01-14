@@ -7,6 +7,8 @@ utopia-meta (2019.01.13) UNRELEASED; urgency=medium
     - Remove R: gdebi-core
     - Demote command-not-found to suggests
     - Install a iptables sample config to /usr/src
+  * Split web browser requirement into a new utopia-network-webbrowser
+    package, with chromium as default and R: chromium, firefox
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 24 Nov 2018 11:29:10 -0800
 

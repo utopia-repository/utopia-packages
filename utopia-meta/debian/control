@@ -10,11 +10,11 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: ${misc:Depends}
-Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-            hardinfo | lshw-gtk | sysinfo,
+Recommends: hardinfo | lshw-gtk | sysinfo,
             keepassxc | keepassx (>= 2.0~),
             qalculate-gtk | qalculate,
             scrot,
+            utopia-network-webbrowser,
             vlc
 Suggests: bleachbit, florence | caribou, psensor, unetbootin | tuxboot, variety
 Architecture: all
@@ -699,12 +699,20 @@ Description: Utopia Multimedia Collection (meta-package)
  with media files.
 
 Package: utopia-network
-Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-         ${misc:Depends}
+Depends: utopia-network-webbrowser, ${misc:Depends}
 Recommends: mtr, thunderbird, zenmap | gnome-nettool
 Architecture: all
 Description: Utopia Network Collection (meta-package)
- This meta-package pulls in various programs related to networking.
+ This meta-package pulls in various GUI programs related to networking.
+
+Package: utopia-network-webbrowser
+Depends: chromium | chromium-browser | firefox | firefox-esr | google-chrome-stable | google-chrome | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
+         ${misc:Depends}
+Recommends: chromium | chromium-browser, firefox | firefox-esr
+Architecture: all
+Description: Utopia Network Collection - Web browsers (meta-package)
+ This meta-package installs popular web browsers (Chromium, Firefox), falling
+ back to others if they are not available.
 
 Package: utopia-network-gtk
 Depends: utopia-network, ${misc:Depends}
