@@ -708,8 +708,8 @@ Depends: chromium | chromium-browser | firefox | firefox-esr | google-chrome-sta
 Recommends: chromium | chromium-browser, firefox | firefox-esr
 Architecture: all
 Description: Utopia Network Collection - Web browsers (meta-package)
- This meta-package installs popular web browsers (Chromium, Firefox), falling
- back to others if they are not available.
+ This meta-package installs two standard web browsers (Chromium, Firefox),
+ falling back to others if they are not available.
 
 Package: utopia-network-gtk
 Depends: utopia-network, ${misc:Depends}

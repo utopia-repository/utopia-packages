@@ -4,7 +4,7 @@ utopia-meta (2019.02.16) UNRELEASED; urgency=medium
   * utopia-themes: add R: materia-gtk-theme, papirus-icon-theme
   * utopia-baseutils:
     - Move scrot to R: utopia-accessories
-    - Remove R: gdebi-core
+    - Remove R: gdebi-core; apt can handle local packages just as well now
     - Demote command-not-found to suggests
     - Install a iptables sample config to /usr/src
   * Split web browser requirement into a new utopia-network-webbrowser
