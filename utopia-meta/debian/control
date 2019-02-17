@@ -567,6 +567,7 @@ Depends: bzr,
          utopia-devel,
          ${misc:Depends}
 Recommends: bison,
+            clang,
             doxygen,
             flex,
             help2man,

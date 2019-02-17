@@ -1,6 +1,6 @@
 utopia-meta (2019.01.13) UNRELEASED; urgency=medium
 
-  * utopia-devel-extras: add R: valgrind
+  * utopia-devel-extras: add R: clang, valgrind
   * utopia-themes: add R: materia-gtk-theme, papirus-icon-theme
   * utopia-baseutils:
     - Move scrot to R: utopia-accessories
