@@ -628,7 +628,7 @@ Description: Utopia Desktop Collection - hardware utilities (meta-package)
 
 Package: utopia-headless
 Depends: ${misc:Depends}
-Conflicts: connman, network-manager, wicd-daemon
+Conflicts: connman, network-manager, lightdm, wicd-daemon
 Architecture: all
 Description: Dependency package - marks the machine as a headless server
  This dependency package is designed to prevent unnecessary packages from
