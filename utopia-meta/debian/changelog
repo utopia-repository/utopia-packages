@@ -1,4 +1,4 @@
-utopia-meta (2019.02.16) UNRELEASED; urgency=medium
+utopia-meta (2019.02.17) unstable; urgency=medium
 
   * utopia-devel-extras: add R: clang, valgrind
   * utopia-themes: add R: materia-gtk-theme, papirus-icon-theme
@@ -11,7 +11,7 @@ utopia-meta (2019.02.16) UNRELEASED; urgency=medium
     package, with chromium as default and R: chromium, firefox
   * utopia-headless: conflict with lightdm (light-locker)
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 24 Nov 2018 11:29:10 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sun, 17 Feb 2019 02:22:58 -0800
 
 utopia-meta (2018.10.22) unstable; urgency=medium
 
