@@ -10,10 +10,11 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: ${misc:Depends}
-Recommends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-            hardinfo | lshw-gtk | sysinfo,
+Recommends: hardinfo | lshw-gtk | sysinfo,
             keepassxc | keepassx (>= 2.0~),
             qalculate-gtk | qalculate,
+            scrot,
+            utopia-network-webbrowser,
             vlc
 Suggests: bleachbit, florence | caribou, psensor, unetbootin | tuxboot, variety
 Architecture: all
@@ -123,10 +124,8 @@ Depends: apt-listchanges,
 Recommends: apt-utils,
             arch-test,
             bzip2,
-            command-not-found,
             debian-goodies,
             extundelete,
-            gdebi-core,
             gnupg,
             gnupg (<< 2.1~) | dirmngr,
             gnupg-agent,
@@ -139,13 +138,12 @@ Recommends: apt-utils,
             rssh | rush,
             rsync,
             screenfetch,
-            scrot,
             tree,
             uptimed,
             utopia-keyring,
             whiptail | dialog,
             whois
-Suggests: apt-listbugs, davfs2, p7zip-rar, sshfs, utopia-devel
+Suggests: apt-listbugs, command-not-found, davfs2, p7zip-rar, sshfs, utopia-devel
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
@@ -261,9 +259,9 @@ Recommends: desktop-base,
             utopia-desktop-defaults,
             xdg-utils,
             xorg
-Suggests: x2goserver | tigervnc-standalone-server | vnc-server,
-          utopia-accessories,
-          utopia-hardware-support
+Suggests: utopia-accessories,
+          utopia-hardware-support,
+          x2goserver | tigervnc-standalone-server | vnc-server
 Architecture: all
 Provides: utopia-desktop-common
 Description: Utopia Desktop Collection - light version (meta-package)
@@ -388,8 +386,8 @@ Recommends: breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
 Suggests: kate,
           kdeadmin,
           kdegraphics,
-          kdeutils,
           kdenetwork-filesharing,
+          kdeutils,
           libreoffice-kde5 | libreoffice-kde,
           print-manager
 Architecture: all
@@ -533,8 +531,8 @@ Depends: build-essential,
          scons,
          utopia-baseutils,
          ${misc:Depends}
-Recommends: arch-install-scripts,
-            apt-rdepends,
+Recommends: apt-rdepends,
+            arch-install-scripts,
             bzr,
             git-remote-bzr,
             git-svn,
@@ -554,7 +552,7 @@ Recommends: arch-install-scripts,
             tcpdump,
             tig,
             virt-what
-Suggests: jpegoptim, optipng | pngcrush, glade, qtchooser, xca
+Suggests: glade, jpegoptim, optipng | pngcrush, qtchooser, xca
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  This meta-package installs libraries and tools for a development environment.
@@ -568,6 +566,7 @@ Depends: bzr,
          utopia-devel,
          ${misc:Depends}
 Recommends: bison,
+            clang,
             doxygen,
             flex,
             help2man,
@@ -578,6 +577,7 @@ Recommends: bison,
             mercurial,
             nodejs (>= 4),
             shellcheck,
+            valgrind,
             yasm
 Suggests: adb, fastboot, utopia-devel-packaging
 Architecture: all
@@ -614,8 +614,8 @@ Recommends: alsa-utils,
             firmware-amd-graphics | linux-firmware,
             firmware-atheros | linux-firmware,
             firmware-iwlwifi | linux-firmware,
-            firmware-realtek | linux-firmware,
             firmware-linux | linux-firmware,
+            firmware-realtek | linux-firmware,
             inxi,
             mesa-utils,
             scalpel | foremost,
@@ -627,7 +627,7 @@ Description: Utopia Desktop Collection - hardware utilities (meta-package)
 
 Package: utopia-headless
 Depends: ${misc:Depends}
-Conflicts: connman, network-manager, wicd-daemon
+Conflicts: connman, network-manager, lightdm, wicd-daemon
 Architecture: all
 Description: Dependency package - marks the machine as a headless server
  This dependency package is designed to prevent unnecessary packages from
@@ -695,12 +695,20 @@ Description: Utopia Multimedia Collection (meta-package)
  with media files.
 
 Package: utopia-network
-Depends: firefox | firefox-esr | google-chrome-stable | chromium | chromium-browser | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-         ${misc:Depends}
+Depends: utopia-network-webbrowser, ${misc:Depends}
 Recommends: mtr, thunderbird, zenmap | gnome-nettool
 Architecture: all
 Description: Utopia Network Collection (meta-package)
- This meta-package pulls in various programs related to networking.
+ This meta-package pulls in various GUI programs related to networking.
+
+Package: utopia-network-webbrowser
+Depends: chromium | chromium-browser | firefox | firefox-esr | google-chrome-stable | google-chrome | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
+         ${misc:Depends}
+Recommends: chromium | chromium-browser, firefox | firefox-esr
+Architecture: all
+Description: Utopia Network Collection - Web browsers (meta-package)
+ This meta-package installs two standard web browsers (Chromium, Firefox),
+ falling back to others if they are not available.
 
 Package: utopia-network-gtk
 Depends: utopia-network, ${misc:Depends}
@@ -774,11 +782,13 @@ Recommends: arc-theme,
             faenza-icon-theme | mate-icon-theme-faenza,
             greybird-gtk-theme,
             mate-themes,
+            materia-gtk-theme,
             moka-icon-theme,
             numix-gtk-theme,
             numix-icon-theme-square,
             paper-gtk-theme,
             paper-icon-theme,
+            papirus-icon-theme,
             vertex-theme | vertex-gtk-theme,
             zuki-themes
 Suggests: gnome-themes-standard
@@ -787,9 +797,7 @@ Description: Utopia Desktop Themes Collection (meta-package)
  This meta-package installs various themes for the Linux desktop.
 
 Package: utopia-web-server
-Depends: nginx-full | nginx,
-         php-fpm,
-         ${misc:Depends}
+Depends: nginx-full | nginx, php-fpm, ${misc:Depends}
 Recommends: apache2-utils, certbot (>= 0.23.0-1~)
 Suggests: default-mysql-server | postgresql
 Architecture: all

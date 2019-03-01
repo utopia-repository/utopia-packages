@@ -1,3 +1,18 @@
+utopia-meta (2019.02.17) unstable; urgency=medium
+
+  * utopia-devel-extras: add R: clang, valgrind
+  * utopia-themes: add R: materia-gtk-theme, papirus-icon-theme
+  * utopia-baseutils:
+    - Move scrot to R: utopia-accessories
+    - Remove R: gdebi-core; apt can handle local packages just as well now
+    - Demote command-not-found to suggests
+    - Install a iptables sample config to /usr/src
+  * Split web browser requirement into a new utopia-network-webbrowser
+    package, with chromium as default and R: chromium, firefox
+  * utopia-headless: conflict with lightdm (light-locker)
+
+ -- James Lu <james@overdrivenetworks.com>  Sun, 17 Feb 2019 02:22:58 -0800
+
 utopia-meta (2018.10.22~deb9u2) UNRELEASED; urgency=medium
 
   * [stretch] Demote apt-listbugs to suggests: it pulls in several dependencies
