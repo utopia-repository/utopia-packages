@@ -21,8 +21,8 @@ Depends: arc-theme (>= 20170302-1~),
 Recommends: libpam-systemd,
             mint-cinnamon-themes,
             utopia-desktop-cinnamon,
-            utopia-desktop-defaults,
-            utopia-gnomeapps-defaults
+            utopia-desktop-defaults (= ${source:Version}),
+            utopia-gnomeapps-defaults (= ${source:Version})
 Breaks: utopia-cinnamon-tweaks (<< 2017.04.16~)
 Replaces: utopia-cinnamon-tweaks (<< 2017.04.16~)
 Description: Utopia Desktop Defaults (Cinnamon Desktop)
@@ -49,7 +49,7 @@ Package: utopia-gnomeapps-defaults
 Architecture: all
 Depends: gsettings-desktop-schemas,
          ${misc:Depends}
-Recommends: gnome-terminal, utopia-desktop-defaults
+Recommends: gnome-terminal, utopia-desktop-defaults (= ${source:Version})
 Description: Utopia Desktop Defaults (GNOME apps)
  This package contains customized defaults for GNOME applications.
 
@@ -65,6 +65,19 @@ Depends: caja-common (>= 1.8~),
          mate-terminal-common (>= 1.8~),
          utopia-themes (>= 2016.01.10~),
          ${misc:Depends}
-Recommends: utopia-desktop-defaults, utopia-desktop-mate
+Recommends: utopia-desktop-defaults (= ${source:Version}), utopia-desktop-mate
 Description: Utopia Desktop Defaults (MATE Desktop)
  This package contains customized defaults for the MATE Desktop.
+
+Package: utopia-xfce-defaults
+Architecture: all
+Depends: utopia-themes (>= 2016.01.10~),
+         xfce4-datetime-plugin,
+         xfce4-pulseaudio-plugin,
+         xfce4-sensors-plugin,
+         xfce4-whiskermenu-plugin,
+         utopia-desktop-defaults (= ${source:Version}),
+         ${misc:Depends}
+Recommends: htop, utopia-desktop-xfce
+Description: Utopia Desktop Defaults (Xfce Desktop)
+ This package contains customized defaults for the Xfce Desktop.
