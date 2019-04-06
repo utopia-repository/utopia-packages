@@ -1,6 +1,8 @@
 utopia-defaults (2019.04.06~xfce1) UNRELEASED; urgency=medium
 
   * New package: utopia-xfce-defaults - defaults for Xfce, Thunar, etc.
+  * desktop-common: add /etc/X11/70utopia-default-settings to source XDG confs
+    from /usr/share/utopia-default-settings
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 06 Apr 2019 12:37:18 -0700
 
