@@ -1,14 +1,61 @@
-utopia-meta (2018.08.04) UNRELEASED; urgency=medium
+utopia-meta (2019.02.17) unstable; urgency=medium
 
-  * Replace libreoffice-kde with libreoffice-kde5
-  * -desktop-kde: demote kdeadmin, kdenetwork-filesharing to Suggests
-  * -desktop-kde: replace R: kgamma5 with S: kdegraphics
-  * -accessories-extras: demote fileinsight to suggests
-  * -accessories-extras: add S: dosbox
-  * -accessories: add S: bleachbit
-  * -network-gtk: demote uget to suggests
+  * utopia-devel-extras: add R: clang, valgrind
+  * utopia-themes: add R: materia-gtk-theme, papirus-icon-theme
+  * utopia-baseutils:
+    - Move scrot to R: utopia-accessories
+    - Remove R: gdebi-core; apt can handle local packages just as well now
+    - Demote command-not-found to suggests
+    - Install a iptables sample config to /usr/src
+  * Split web browser requirement into a new utopia-network-webbrowser
+    package, with chromium as default and R: chromium, firefox
+  * utopia-headless: conflict with lightdm (light-locker)
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 04 Aug 2018 23:50:32 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 17 Feb 2019 02:22:58 -0800
+
+utopia-meta (2018.10.22) unstable; urgency=medium
+
+  * utopia-baseutils: add D: mutt | mail-reader, telnet; R: mutt
+  * utopia-devel: switch mtr recommends order to avoid installing GTK on
+    headless systems
+
+ -- James Lu <james@overdrivenetworks.com>  Mon, 22 Oct 2018 20:33:02 -0700
+
+utopia-meta (2018.10.19) unstable; urgency=low
+
+  * Revert moving shellcheck to utopia-devel.
+  * utopia-devel: add S: jpegoptim, optipng | pngcrush, glade, qtchooser, xca
+  * Fix debhelper-but-no-misc-depends warning in utopia-devel-packaging
+
+ -- James Lu <james@overdrivenetworks.com>  Fri, 19 Oct 2018 17:14:41 -0700
+
+utopia-meta (2018.09.21) unstable; urgency=medium
+
+  * various: replace libreoffice-kde with libreoffice-kde5
+  * utopia-desktop-kde: demote kdeadmin, kdenetwork-filesharing to Suggests
+  * utopia-desktop-kde: replace R: kgamma5 with S: kdegraphics
+  * utopia-accessories-extras: demote fileinsight to suggests
+  * utopia-accessories-extras: add S: dosbox
+  * utopia-accessories: add S: bleachbit
+  * utopia-network-gtk: demote uget to suggests
+  * utopia-devel updates:
+      - Add D: cmake, scons (common build systems)
+      - Move jpegoptim, optipng | pngcrush back to utopia-multimedia
+      - Move help2man, hexedit to utopia-devel-extras
+      - Remove R: gem2deb, duplicate R: gnutls-dev
+      - Recommend ruby as well as ruby-dev
+      - Add R: shellcheck (moved from -extras)
+      - Split packaging related tools into new utopia-devel-packaging package
+  * utopia-devel-extras:
+      - Add D: libwww-perl (used by lots of code in the wild)
+      - Add R: libtool
+      - Remove python3-pypandoc
+      - Demote adb, fastboot to Suggests
+  * utopia-desktop-{lxde,xfce}:
+      - Add D: lxpolkit and D: policykit-1-gnome respectively, as non-default
+        auth agents don't seem to work correctly
+
+ -- James Lu <james@overdrivenetworks.com>  Fri, 21 Sep 2018 23:45:09 -0700
 
 utopia-meta (2018.07.07) unstable; urgency=medium
 

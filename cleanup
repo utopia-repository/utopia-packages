@@ -5,6 +5,7 @@ rm -v *.deb *.dsc *.changes *.build* *.tar.*
 
 for directory in $(ls -d */); do
     pushd "$directory"
+    echo "Running dh_clean in $(pwd)"
     dh_clean
     popd
 done
