@@ -1,3 +1,14 @@
+utopia-meta (2019.04.06~) UNRELEASED; urgency=medium
+
+  * Updates to utopia-themes:
+    - D: +materia-gtk-theme, -numix-frost-theme
+    - R: -paper-gtk-theme
+    - S: +adapta-gtk-theme, adapta-kde, materia-kde, paper-gtk-theme,
+         qt5-style-kvantum, qt5-style-kvantum-themes
+    - This prepares for the default system theme being set to Materia-Dark.
+
+ -- James Lu <james@overdrivenetworks.com>  Sat, 06 Apr 2019 15:33:40 -0700
+
 utopia-meta (2019.02.17) unstable; urgency=medium
 
   * utopia-devel-extras: add R: clang, valgrind

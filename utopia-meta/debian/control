@@ -775,7 +775,7 @@ Description: Utopia Office Collection (meta-package)
 
 Package: utopia-themes
 Depends: fonts-noto,
-         numix-frost-theme,
+         materia-gtk-theme,
          numix-icon-theme-circle,
          ${misc:Depends}
 Recommends: arc-theme,
@@ -783,16 +783,21 @@ Recommends: arc-theme,
             faenza-icon-theme | mate-icon-theme-faenza,
             greybird-gtk-theme,
             mate-themes,
-            materia-gtk-theme,
             moka-icon-theme,
+            numix-frost-theme,
             numix-gtk-theme,
             numix-icon-theme-square,
-            paper-gtk-theme,
             paper-icon-theme,
             papirus-icon-theme,
             vertex-theme | vertex-gtk-theme,
             zuki-themes
-Suggests: gnome-themes-standard
+Suggests: adapta-gtk-theme,
+          adapta-kde,
+          gnome-themes-standard,
+          materia-kde,
+          paper-gtk-theme,
+          qt5-style-kvantum,
+          qt5-style-kvantum-themes
 Architecture: all
 Description: Utopia Desktop Themes Collection (meta-package)
  This meta-package installs various themes for the Linux desktop.
