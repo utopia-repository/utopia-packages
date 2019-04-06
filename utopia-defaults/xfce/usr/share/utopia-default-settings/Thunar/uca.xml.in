@@ -1,0 +1,54 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1495439862751141-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>catfish</icon>
+	<name>Search</name>
+	<unique-id>1495952916156389-2</unique-id>
+	<command>catfish --path=%f</command>
+	<description>Search for files</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>search</icon>
+	<name>FileInsight</name>
+	<unique-id>1495952889527742-1</unique-id>
+	<command>fileinsight %F</command>
+	<description>Check file type</description>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>baobab</icon>
+	<name>Analyze with Baobab</name>
+	<unique-id>1497318785266375-3</unique-id>
+	<command>baobab %f</command>
+	<description>Analyze with Baobab</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>palimpsest</icon>
+	<name>Analyze with gdmap</name>
+	<unique-id>1509512359467442-1</unique-id>
+	<command>gdmap -f %f</command>
+	<description>Analyze with gdmap</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
