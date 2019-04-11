@@ -1,4 +1,4 @@
-utopia-meta (2019.04.06~) UNRELEASED; urgency=medium
+utopia-meta (2019.04.11) experimental; urgency=medium
 
   * Updates to utopia-themes:
     - D: +materia-gtk-theme, -numix-frost-theme
@@ -8,7 +8,7 @@ utopia-meta (2019.04.06~) UNRELEASED; urgency=medium
     - This prepares for the default system theme being set to Materia-Dark.
   * Remove obsolete libreoffice-gtk alternative.
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 06 Apr 2019 15:33:40 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 11 Apr 2019 12:18:51 -0700
 
 utopia-meta (2019.02.17) unstable; urgency=medium
 
