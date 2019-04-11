@@ -6,6 +6,7 @@ utopia-meta (2019.04.06~) UNRELEASED; urgency=medium
     - S: +adapta-gtk-theme, adapta-kde, materia-kde, paper-gtk-theme,
          qt5-style-kvantum, qt5-style-kvantum-themes
     - This prepares for the default system theme being set to Materia-Dark.
+  * Remove obsolete libreoffice-gtk alternative.
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 06 Apr 2019 15:33:40 -0700
 
