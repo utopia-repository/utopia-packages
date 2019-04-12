@@ -2,10 +2,11 @@ utopia-meta (2019.04.11) experimental; urgency=medium
 
   * Updates to utopia-themes:
     - D: +materia-gtk-theme, -numix-frost-theme
-    - R: -paper-gtk-theme
-    - S: +adapta-gtk-theme, adapta-kde, materia-kde, paper-gtk-theme,
-         qt5-style-kvantum, qt5-style-kvantum-themes
     - This prepares for the default system theme being set to Materia-Dark.
+    - Add S: adapta-gtk-theme, adapta-kde, materia-kde, qt5-style-kvantum,
+             qt5-style-kvantum-themes
+    - Move paper-icon-theme, faenza-icon-theme, paper-gtk-theme to suggests for
+      a lighter installation.
   * Remove obsolete libreoffice-gtk alternative.
 
  -- James Lu <james@overdrivenetworks.com>  Thu, 11 Apr 2019 12:18:51 -0700
