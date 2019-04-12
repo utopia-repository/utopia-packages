@@ -10,13 +10,12 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-cinnamon-defaults
 Architecture: all
-Depends: arc-theme (>= 20170302-1~),
-         fonts-noto-hinted,
-         utopia-themes (>= 2016.01.10~),
+Depends: fonts-noto-hinted,
          cinnamon-common (>= 2.6~),
          cinnamon-desktop-data (>= 2.6.4),
          cinnamon-settings-daemon (>= 2.6),
          muffin-common (>= 2.6~),
+         utopia-themes (>= 2019.04.11~)
          ${misc:Depends}
 Recommends: libpam-systemd,
             mint-cinnamon-themes,
@@ -63,7 +62,7 @@ Depends: caja-common (>= 1.8~),
          mate-panel (>= 1.8~),
          mate-settings-daemon (>= 1.8~),
          mate-terminal-common (>= 1.8~),
-         utopia-themes (>= 2016.01.10~),
+         utopia-themes (>= 2019.04.11~),
          ${misc:Depends}
 Recommends: utopia-desktop-defaults (= ${source:Version}), utopia-desktop-mate
 Description: Utopia Desktop Defaults (MATE Desktop)
@@ -71,7 +70,7 @@ Description: Utopia Desktop Defaults (MATE Desktop)
 
 Package: utopia-xfce-defaults
 Architecture: all
-Depends: utopia-themes (>= 2016.01.10~),
+Depends: utopia-themes (>= 2019.04.11~),
          xfce4-datetime-plugin,
          xfce4-pulseaudio-plugin,
          xfce4-sensors-plugin,

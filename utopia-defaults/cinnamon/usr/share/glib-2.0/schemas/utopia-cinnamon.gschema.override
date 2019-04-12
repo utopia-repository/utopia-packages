@@ -1,11 +1,11 @@
 [org.cinnamon.desktop.interface]
 gtk-key-theme='Default'
-gtk-theme='Numix-Frost'
+gtk-theme='Materia-dark'
 icon-theme='Numix-Circle'
 font-name="Noto Sans 11"
 
 [org.cinnamon.desktop.wm.preferences]
-theme='Numix-Frost'
+theme='Materia-dark'
 num-workspaces=1
 titlebar-font="Noto Sans Bold 11"
 titlebar-uses-system-font=false
@@ -20,7 +20,7 @@ panels-scale-text-icons=['1:true']
 favorite-apps=['iceweasel.desktop', 'cinnamon-settings.desktop', 'gnome-terminal.desktop', 'nemo.desktop']
 
 [org.cinnamon.theme]
-name="Arc-Dark"
+name="Materia-dark"
 
 [org.cinnamon.desktop.media-handling]
 automount-open=false

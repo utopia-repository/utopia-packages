@@ -2,7 +2,7 @@
 hinting="slight"
 
 [org.mate.interface]
-gtk-theme="Numix-Frost"
+gtk-theme="Materia-dark"
 icon-theme="Numix-Circle"
 font-name="Noto Sans 11"
 monospace-font-name="Monospace 11"
@@ -32,7 +32,7 @@ font="Noto Sans 11"
 enable-delete=true
 
 [org.mate.Marco.general]
-theme="Numix-Frost"
+theme="Materia-dark"
 button-layout="menu:minimize,maximize,close"
 num-workspaces=1
 side-by-side-tiling=true
