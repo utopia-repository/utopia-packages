@@ -15,7 +15,7 @@ Depends: fonts-noto-hinted,
          cinnamon-desktop-data (>= 2.6.4),
          cinnamon-settings-daemon (>= 2.6),
          muffin-common (>= 2.6~),
-         utopia-themes (>= 2019.04.11~)
+         utopia-themes (>= 2019.04.11~),
          ${misc:Depends}
 Recommends: libpam-systemd,
             utopia-desktop-cinnamon,

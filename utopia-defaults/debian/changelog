@@ -1,4 +1,4 @@
-utopia-defaults (2019.04.12) UNRELEASED; urgency=medium
+utopia-defaults (2019.04.13) experimental; urgency=medium
 
   * New package: utopia-xfce-defaults - defaults for Xfce, Thunar, etc.
   * desktop-common: add /etc/X11/70utopia-default-settings to source XDG confs
@@ -6,9 +6,9 @@ utopia-defaults (2019.04.12) UNRELEASED; urgency=medium
   * Enforce (= ${source:Version}) relation between all packages built from this
     source package.
   * Set Materia-dark as default system theme.
-    - Various: add utopia-themes (>= 2019.04.11~) as dependency accordingly
+    - various: add utopia-themes (>= 2019.04.11~) as dependency accordingly
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 06 Apr 2019 12:37:18 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 13 Apr 2019 23:49:05 -0700
 
 utopia-defaults (2018.08.27) unstable; urgency=medium
 
