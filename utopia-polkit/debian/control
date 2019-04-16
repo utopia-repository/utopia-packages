@@ -4,9 +4,9 @@ Priority: optional
 Maintainer: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 10)
 Standards-Version: 3.9.8
-Homepage: https://github.com/GLolol/utopia-packages
-Vcs-Git: https://github.com/GLolol/utopia-packages
-Vcs-Browser: https://github.com/GLolol/utopia-packages
+Homepage: https://github.com/utopia-repository/utopia-packages
+Vcs-Git: https://github.com/utopia-repository/utopia-packages
+Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-polkit
 Architecture: all
