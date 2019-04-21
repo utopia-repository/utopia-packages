@@ -1,8 +1,12 @@
-utopia-meta (2019.04.18) UNRELEASED; urgency=high
+utopia-meta (2019.04.21) UNRELEASED; urgency=high
 
-  * utopia-desktop-kde: drop obsolete dependency on kdepasswd
+  * desktop-kde: drop obsolete dependency on kdepasswd
+  * -desktop-lxqt: apply changes from Debian lxqt-core
+    - Add clipit, xfce4-clipman as alternatives to qlipper
+    - Add featherpad as alternative to juffed
+  * -desktop-lxqt: remove redundant R: qterminal
 
- -- James Lu <james@overdrivenetworks.com>  Thu, 18 Apr 2019 21:21:31 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 20 Apr 2019 23:45:39 -0700
 
 utopia-meta (2019.04.11) experimental; urgency=medium
 
