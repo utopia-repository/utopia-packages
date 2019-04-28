@@ -1,4 +1,4 @@
-utopia-meta (2019.04.21) UNRELEASED; urgency=high
+utopia-meta (2019.04.27) UNRELEASED; urgency=high
 
   * -desktop-kde: drop obsolete dependency on kdepasswd
   * -desktop-lxqt: apply changes from Debian lxqt-core
@@ -7,6 +7,9 @@ utopia-meta (2019.04.21) UNRELEASED; urgency=high
   * -desktop-lxqt: remove redundant R: qterminal
   * -desktop-xfce: add R: catfish - useful search utility
   * -desktop-lxde: prefer mousepad over leafpad, it seems to be more reliable
+  * -network*:
+    - Recommend openconnect, openvpn plugins for network-manager
+    - Prefer remmina (remote desktop client) over vinagre
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 20 Apr 2019 23:45:39 -0700
 

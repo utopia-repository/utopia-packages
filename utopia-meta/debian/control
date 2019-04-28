@@ -715,8 +715,9 @@ Depends: utopia-network, ${misc:Depends}
 Recommends: deluge | transmission-gtk,
             hexchat,
             network-manager-gnome | wicd,
+            network-manager-openconnect-gnome,
             network-manager-openvpn-gnome,
-            vinagre,
+            remmina | vinagre,
             wireshark-gtk | wireshark
 Suggests: uget
 Architecture: all
@@ -736,6 +737,8 @@ Package: utopia-network-qt
 Depends: utopia-network, ${misc:Depends}
 Recommends: konversation,
             krdc,
+            network-manager-openconnect,
+            network-manager-openvpn,
             qbittorrent | transmission-qt | ktorrent,
             wireshark-qt | wireshark
 Suggests: kget
