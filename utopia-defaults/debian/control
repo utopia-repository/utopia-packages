@@ -76,6 +76,10 @@ Depends: xfce4-datetime-plugin,
          utopia-desktop-defaults (= ${source:Version}),
          utopia-themes (>= 2019.04.11~),
          ${misc:Depends}
-Recommends: htop, utopia-desktop-xfce
+Recommends: catfish,
+            gdmap | baobab,
+            htop,
+            utopia-desktop-xfce
+Suggests: fileinsight
 Description: Utopia Desktop Defaults (Xfce Desktop)
  This package contains customized defaults for the Xfce Desktop.
