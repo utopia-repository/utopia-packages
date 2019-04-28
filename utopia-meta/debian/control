@@ -493,6 +493,7 @@ Depends: policykit-1-gnome,
          xfce4-whiskermenu-plugin,
          ${misc:Depends}
 Recommends: atril | evince | pdf-viewer,
+            catfish,
             engrampa | ark | file-roller | xarchiver,
             menulibre,
             mousepad,

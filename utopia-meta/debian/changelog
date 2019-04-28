@@ -1,10 +1,11 @@
 utopia-meta (2019.04.21) UNRELEASED; urgency=high
 
-  * desktop-kde: drop obsolete dependency on kdepasswd
+  * -desktop-kde: drop obsolete dependency on kdepasswd
   * -desktop-lxqt: apply changes from Debian lxqt-core
     - Add clipit, xfce4-clipman as alternatives to qlipper
     - Add featherpad as alternative to juffed
   * -desktop-lxqt: remove redundant R: qterminal
+  * -desktop-xfce: add R: catfish - useful search utility
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 20 Apr 2019 23:45:39 -0700
 
