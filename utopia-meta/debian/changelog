@@ -6,6 +6,7 @@ utopia-meta (2019.04.21) UNRELEASED; urgency=high
     - Add featherpad as alternative to juffed
   * -desktop-lxqt: remove redundant R: qterminal
   * -desktop-xfce: add R: catfish - useful search utility
+  * -desktop-lxde: prefer mousepad over leafpad, it seems to be more reliable
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 20 Apr 2019 23:45:39 -0700
 
