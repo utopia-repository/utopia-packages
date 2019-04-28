@@ -21,10 +21,3 @@ Architecture: all
 Description: Transitional package for arc-theme
  This is a transitional package for arc-theme, which can be safely
  removed.
-
-Package: gnome-terminal-nautilus
-Depends: ${misc:Depends}, gnome-terminal
-Architecture: all
-Description: Transitional package for gnome-terminal
- This is a transitional package for gnome-terminal, which can be safely
- removed.
