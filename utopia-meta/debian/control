@@ -441,6 +441,7 @@ Recommends: ark | xarchiver,
             lxtask | qps,
             qlipper | clipit | xfce4-clipman,
             qpdfview | okular | evince | pdf-viewer,
+            qterminal,
             screengrab,
             utopia-accessories-qt,
             xfwm4-theme-breeze | kwin-style-breeze | openbox

@@ -4,7 +4,6 @@ utopia-meta (2019.04.27) UNRELEASED; urgency=high
   * -desktop-lxqt: apply changes from Debian lxqt-core
     - Add clipit, xfce4-clipman as alternatives to qlipper
     - Add featherpad as alternative to juffed
-  * -desktop-lxqt: remove redundant R: qterminal
   * -desktop-xfce: add R: catfish - useful search utility
   * -desktop-lxde: prefer mousepad over leafpad, it seems to be more reliable
   * -network*:
