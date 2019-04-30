@@ -1,4 +1,4 @@
-utopia-meta (2019.04.27) UNRELEASED; urgency=high
+utopia-meta (2019.04.30) unstable; urgency=high
 
   * -desktop-kde: drop obsolete dependency on kdepasswd
   * -desktop-lxqt: apply changes from Debian lxqt-core
@@ -10,7 +10,7 @@ utopia-meta (2019.04.27) UNRELEASED; urgency=high
     - Recommend openconnect, openvpn plugins for network-manager
     - Prefer remmina (remote desktop client) over vinagre
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 20 Apr 2019 23:45:39 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 30 Apr 2019 01:08:58 -0700
 
 utopia-meta (2019.04.11) experimental; urgency=medium
 
