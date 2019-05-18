@@ -1,3 +1,9 @@
+utopia-meta (2019.05.18~) UNRELEASED; urgency=medium
+
+  * -desktop-kde: drop obsolete R: kdesudo, kde-baseapps-bin
+
+ -- James Lu <james@overdrivenetworks.com>  Sat, 18 May 2019 19:33:22 +0800
+
 utopia-meta (2019.04.30) unstable; urgency=high
 
   * -desktop-kde: drop obsolete dependency on kdepasswd
