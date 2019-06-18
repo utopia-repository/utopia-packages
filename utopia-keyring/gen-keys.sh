@@ -7,7 +7,7 @@ KEYS=(
     D5D568B2D34AB32A337944D22EC3F60DE71C0B9D
 )
 
-OUTFILE="archive.asc"
+OUTFILE="utopia-repository.asc"
 
 echo "Ok, generating $OUTFILE"
 gpg --armor --export "${KEYS[@]}" > "$OUTFILE"

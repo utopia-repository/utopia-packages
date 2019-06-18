@@ -1,3 +1,11 @@
+utopia-keyring (2019.06.17~) UNRELEASED; urgency=medium
+
+  * Simplify install process, using ASCII-armored files in
+    /etc/apt/trusted.gpg.d
+    - Add D: apt (>= 1.4~beta1) accordingly
+
+ -- James Lu <james@overdrivenetworks.com>  Mon, 17 Jun 2019 18:15:30 -0700
+
 utopia-keyring (2018.01.27) unstable; urgency=medium
 
   * Loosen gnupg build dependency version.

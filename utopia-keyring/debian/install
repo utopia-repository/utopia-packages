@@ -1,1 +1,1 @@
-utopia-repository.gpg etc/apt/trusted.gpg.d
+utopia-repository.asc etc/apt/trusted.gpg.d
