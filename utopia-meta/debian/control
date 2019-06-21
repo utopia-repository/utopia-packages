@@ -508,7 +508,7 @@ Recommends: atril | evince | pdf-viewer,
             xfce4-taskmanager,
             xfce4-timer-plugin,
             xfce4-weather-plugin
-Suggests: xfce4-goodies
+Suggests: utopia-xfce-defaults, xfce4-goodies
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (meta-package)
  This meta-package installs a minimal Xfce desktop with a hand-picked set of
