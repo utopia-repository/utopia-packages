@@ -1,4 +1,4 @@
-utopia-meta (2019.06.20) UNRELEASED; urgency=medium
+utopia-meta (2019.06.20) unstable; urgency=medium
 
   * -desktop-kde: drop obsolete R: kdesudo, kde-baseapps-bin
   * Move R: pavucontrol-qt from -accessories-qt to -desktop-lxqt
@@ -11,7 +11,7 @@ utopia-meta (2019.06.20) UNRELEASED; urgency=medium
     - utopia-intl: drop obsolete R: utopia-desktop
   * Drop obsolete debian/lintian-overrides
 
- -- James Lu <james@overdrivenetworks.com>  Thu, 20 Jun 2019 20:45:36 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 20 Jun 2019 20:58:13 -0700
 
 utopia-meta (2019.04.30) unstable; urgency=high
 
