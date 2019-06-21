@@ -66,14 +66,6 @@ Description: Utopia Accessories Collection - GNOME/GTK+ (meta-package)
  This meta-package pulls in some accessories targeting a GNOME/GTK+ based
  desktop.
 
-Package: utopia-accessories-kde
-Depends: utopia-accessories-qt, ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Description: Utopia Accessories Collection - Qt (transitional package)
- This is a dummy transitional package for utopia-accessories-qt, and can be
- safely removed when nothing depends on it.
-
 Package: utopia-accessories-qt
 Depends: utopia-accessories, ${misc:Depends}
 Recommends: kate | juffed,
@@ -147,14 +139,6 @@ Suggests: command-not-found, davfs2, p7zip-rar, sshfs, utopia-devel
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
-
-Package: utopia-desktop
-Depends: utopia-desktop-common, ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Description: Utopia Desktop Collection - common programs (transitional package)
- This is a dummy transitional package for utopia-desktop-common, and can be
- safely removed when nothing depends on it.
 
 Package: utopia-desktop-budgie
 Depends: budgie-desktop,
@@ -723,14 +707,6 @@ Architecture: all
 Description: Utopia Network Collection - GNOME/GTK+ (meta-package)
  This meta-package pulls in some networking programs targeting a GNOME/GTK+
  based desktop.
-
-Package: utopia-network-kde
-Depends: utopia-network-qt, ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Description: Utopia Network Collection - Qt (transitional package)
- This is a dummy transitional package for utopia-network-qt, and can be safely
- removed when nothing depends on it.
 
 Package: utopia-network-qt
 Depends: utopia-network, ${misc:Depends}

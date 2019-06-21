@@ -1,11 +1,16 @@
-utopia-meta (2019.05.18~) UNRELEASED; urgency=medium
+utopia-meta (2019.06.20) UNRELEASED; urgency=medium
 
   * -desktop-kde: drop obsolete R: kdesudo, kde-baseapps-bin
   * Move R: pavucontrol-qt from -accessories-qt to -desktop-lxqt
+    - KDE has an equivalent already, so we don't need to install it there.
   * -desktop-xfce: add S: utopia-xfce-defaults
-  * utopia-intl: drop obsolete R: utopia-desktop
+  * Drop old transitional packages in preparation for buster:
+    - utopia-accessories-kde
+    - utopia-desktop
+    - utopia-network-kde
+    - utopia-intl: drop obsolete R: utopia-desktop
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 18 May 2019 19:33:22 +0800
+ -- James Lu <james@overdrivenetworks.com>  Thu, 20 Jun 2019 20:45:36 -0700
 
 utopia-meta (2019.04.30) unstable; urgency=high
 
