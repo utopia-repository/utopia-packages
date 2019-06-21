@@ -637,7 +637,7 @@ Description: Dependency package - marks the machine as a headless server
 
 Package: utopia-intl
 Depends: fcitx, ${misc:Depends}
-Recommends: fcitx-frontend-all, fonts-noto-color-emoji, utopia-desktop
+Recommends: fcitx-frontend-all, fonts-noto-color-emoji
 Suggests: gucharmap | kcharselect, mintlocale
 Architecture: all
 Description: Utopia I18n - common packages (meta-package)
