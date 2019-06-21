@@ -1,11 +1,11 @@
-utopia-defaults (2019.04.27~) UNRELEASED; urgency=medium
+utopia-defaults (2019.06.20) unstable; urgency=medium
 
   * xfce-defaults:
     - Recommend catfish, gdmap | baobab since they are used as Thunar actions
       by defaults
     - Suggest fileinsight since it is used as Thunar action by default
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 27 Apr 2019 21:28:23 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 20 Jun 2019 20:41:33 -0700
 
 utopia-defaults (2019.04.13) experimental; urgency=medium
 
