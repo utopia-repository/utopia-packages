@@ -3,6 +3,7 @@ utopia-meta (2019.05.18~) UNRELEASED; urgency=medium
   * -desktop-kde: drop obsolete R: kdesudo, kde-baseapps-bin
   * Move R: pavucontrol-qt from -accessories-qt to -desktop-lxqt
   * -desktop-xfce: add S: utopia-xfce-defaults
+  * utopia-intl: drop obsolete R: utopia-desktop
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 18 May 2019 19:33:22 +0800
 
