@@ -2,8 +2,8 @@ Source: utopia-meta
 Section: misc
 Priority: optional
 Homepage: https://github.com/utopia-repository/utopia-packages
-Build-Depends: debhelper (>= 9)
-Standards-Version: 4.1.4
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.0
 Maintainer: James Lu <james@overdrivenetworks.com>
 Vcs-Git: https://github.com/utopia-repository/utopia-packages
 Vcs-Browser: https://github.com/utopia-repository/utopia-packages

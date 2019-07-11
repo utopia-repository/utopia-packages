@@ -1,3 +1,9 @@
+utopia-meta (2019.07.10~) UNRELEASED; urgency=medium
+
+  * Bump to Standards-Version 4.4.0 and dh 12.
+
+ -- James Lu <james@overdrivenetworks.com>  Wed, 10 Jul 2019 21:05:37 -0700
+
 utopia-meta (2019.06.20) unstable; urgency=medium
 
   * -desktop-kde: drop obsolete R: kdesudo, kde-baseapps-bin
