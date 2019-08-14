@@ -1,6 +1,7 @@
-utopia-meta (2019.07.10~) UNRELEASED; urgency=medium
+utopia-meta (2019.08.13~) UNRELEASED; urgency=medium
 
   * Bump to Standards-Version 4.4.0 and dh 12.
+  * utopia-baseutils: add R: aptitude, ioping, vnstat
 
  -- James Lu <james@overdrivenetworks.com>  Wed, 10 Jul 2019 21:05:37 -0700
 
