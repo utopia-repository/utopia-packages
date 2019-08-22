@@ -4,9 +4,11 @@ utopia-meta (2019.08.13~) UNRELEASED; urgency=medium
   * utopia-baseutils: add R: aptitude, ioping, vnstat
   * Split font recommends into a new utopia-desktop-fonts package
   * -various: replace fonts-noto with fonts-noto-core
-  * -accessories-gtk: switch suggests to
-    qt5-gtk2-platformtheme | qt5-style-plugins (<< 5.0.0+git23.g335dbec-3~)
-    due to binary package split
+  * -accessories-gtk:
+    - Switch suggests to
+      qt5-gtk2-platformtheme | qt5-style-plugins (<< 5.0.0+git23.g335dbec-3~)
+      due to binary package split
+    - Remove obsolete S: gnome-alsamixer
   * -accessories-extras: remove obsolete S: gnome-exe-thumbnailer
 
  -- James Lu <james@overdrivenetworks.com>  Wed, 10 Jul 2019 21:05:37 -0700
