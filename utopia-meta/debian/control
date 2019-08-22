@@ -32,7 +32,7 @@ Recommends: cifs-utils,
             webcamoid | cheese | kamoso | kamerka | guvcview,
             wine | wine-development | wine-staging-compat
 Suggests: dosbox,
-          exe-thumbnailer | gnome-exe-thumbnailer | kio-extras,
+          exe-thumbnailer | kio-extras,
           fileinsight
 Architecture: all
 Description: Utopia Accessories Collection - Extra accessories (meta-package)
