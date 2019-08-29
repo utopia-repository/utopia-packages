@@ -10,6 +10,7 @@ utopia-meta (2019.08.13~) UNRELEASED; urgency=medium
       due to binary package split
     - Remove obsolete S: gnome-alsamixer
   * -accessories-extras: remove obsolete S: gnome-exe-thumbnailer
+  * -gnome, -budgie: replace nautilus-actions with nautilus-extension-fma
 
  -- James Lu <james@overdrivenetworks.com>  Wed, 10 Jul 2019 21:05:37 -0700
 
