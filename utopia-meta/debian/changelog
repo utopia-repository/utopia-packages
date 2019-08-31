@@ -12,6 +12,7 @@ utopia-meta (2019.08.13~) UNRELEASED; urgency=medium
   * -accessories-extras: remove obsolete S: gnome-exe-thumbnailer
   * -gnome, -budgie: replace nautilus-actions with nautilus-extension-fma
   * -cinnamon: remove obsolete R: mint-cinnamon-themes
+  * -devel: drop R: bzr, git-remote-bzr
 
  -- James Lu <james@overdrivenetworks.com>  Wed, 10 Jul 2019 21:05:37 -0700
 

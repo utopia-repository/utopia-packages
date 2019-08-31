@@ -534,8 +534,6 @@ Depends: build-essential,
          ${misc:Depends}
 Recommends: apt-rdepends,
             arch-install-scripts,
-            bzr,
-            git-remote-bzr,
             git-svn,
             gnutls-bin,
             golang,
