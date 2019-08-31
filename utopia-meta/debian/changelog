@@ -1,4 +1,4 @@
-utopia-meta (2019.08.13~) UNRELEASED; urgency=medium
+utopia-meta (2019.08.30) unstable; urgency=medium
 
   * Bump to Standards-Version 4.4.0 and dh 12.
   * utopia-baseutils: add R: aptitude, ioping, vnstat
@@ -14,7 +14,7 @@ utopia-meta (2019.08.13~) UNRELEASED; urgency=medium
   * -cinnamon: remove obsolete R: mint-cinnamon-themes
   * -devel: drop R: bzr, git-remote-bzr
 
- -- James Lu <james@overdrivenetworks.com>  Wed, 10 Jul 2019 21:05:37 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 30 Aug 2019 19:03:07 -0700
 
 utopia-meta (2019.06.20) unstable; urgency=medium
 
