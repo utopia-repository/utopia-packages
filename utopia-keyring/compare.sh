@@ -1,7 +1,7 @@
 #!/bin/bash
 
-KEYFILE="archive.asc"
-OLD_KEYFILE="archive.asc.old"
+KEYFILE="utopia-archive-keyring.asc"
+OLD_KEYFILE="utopia-archive-keyring.asc.old"
 
 mv "$KEYFILE" "$OLD_KEYFILE"
 

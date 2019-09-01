@@ -1,1 +1,1 @@
-utopia-repository.asc etc/apt/trusted.gpg.d
+utopia-archive-keyring.asc usr/share/keyrings

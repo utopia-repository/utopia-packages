@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-KEYRING=utopia-repository.asc
+KEYRING=utopia-archive-keyring.asc
 
 %:
 	dh $@

@@ -5,7 +5,7 @@ KEYS=(
     4A4A7B0E6EFB2FD90FD4F58C4A8C96B8EEBB01E6
 )
 
-OUTFILE="utopia-repository.asc"
+OUTFILE="utopia-archive-keyring.asc"
 
 echo "Ok, generating $OUTFILE"
 gpg --armor --export "${KEYS[@]}" > "$OUTFILE"
