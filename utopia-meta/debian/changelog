@@ -13,6 +13,7 @@ utopia-meta (2019.08.30) unstable; urgency=medium
   * -gnome, -budgie: replace nautilus-actions with nautilus-extension-fma
   * -cinnamon: remove obsolete R: mint-cinnamon-themes
   * -devel: drop R: bzr, git-remote-bzr
+  * -devel-extras: move bzr-related stuff to suggests
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 30 Aug 2019 19:03:07 -0700
 
