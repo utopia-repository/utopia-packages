@@ -447,7 +447,7 @@ Description: Utopia Desktop Collection - LXQt (meta-package)
 Package: utopia-desktop-lxqt-kwin
 # systemsettings allows configuring kwin settings
 # plasma-framework is needed for some options (e.g. window button controls) to load
-Depends: kwin-x11, plasma-framework, systemsettings
+Depends: kwin-x11, plasma-framework, systemsettings, ${misc:Depends}
 Recommends: kwin-style-breeze
 Architecture: all
 Description: Utopia Desktop Collection - LXQt with kwin-x11
@@ -455,7 +455,7 @@ Description: Utopia Desktop Collection - LXQt with kwin-x11
  desktop.
 
 Package: utopia-desktop-lxqt-openbox
-Depends: openbox
+Depends: openbox, ${misc:Depends}
 Recommends: obconf-qt
 Architecture: all
 Description: Utopia Desktop Collection - LXQt with openbox
@@ -463,7 +463,7 @@ Description: Utopia Desktop Collection - LXQt with openbox
  desktop.
 
 Package: utopia-desktop-lxqt-xfwm4
-Depends: xfwm4
+Depends: xfwm4, ${misc:Depends}
 Recommends: xfwm4-theme-breeze
 Architecture: all
 Description: Utopia Desktop Collection - LXQt with xfwm4
