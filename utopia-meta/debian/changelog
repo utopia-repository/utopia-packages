@@ -1,6 +1,11 @@
 utopia-meta (2019.10.04~) UNRELEASED; urgency=medium
 
-  * -lxqt, -xfce: move clipboard tools to Suggests
+  * -desktop-xfce: remove R: xfce4-clipman-plugin
+  * -desktop-lxqt: refactor, remove items implied by lxqt-core
+    - Increase dep version to lxqt-core >= 29~
+    - Split wm request packages into utopia-desktop-lxqt-{xfwm4,kwin,openbox}
+    - Remove obsolete reference to kde-style-breeze-qt4
+    - Prefer ark over xarchiver
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 04 Oct 2019 23:07:03 -0700
 

@@ -424,35 +424,51 @@ Description: Utopia Desktop Collection - LXDE (meta-package)
 
 Package: utopia-desktop-lxqt
 Depends: lxqt-admin,
-         lxqt-core (>= 16~),
+         lxqt-core (>= 29~),
          qterminal | x-terminal-emulator,
-         xfwm4 | kwin-x11 | openbox | x-window-manager,
+         utopia-desktop-lxqt-xfwm4 | utopia-desktop-lxqt-kwin | utopia-desktop-lxqt-openbox | x-window-manager,
          ${misc:Depends}
-Recommends: ark | xarchiver,
+Recommends: ark,
             breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
             cmst | network-manager-gnome | plasma-nm | wicd,
-            juffed | featherpad | kwrite,
-            kde-style-breeze,
-            lxappearance,
-            lxqt-globalkeys,
             lxqt-openssh-askpass,
-            lxqt-powermanagement,
-            lxtask | qps,
-            pavucontrol-qt | pavucontrol,
             qpdfview | okular | evince | pdf-viewer,
             qterminal,
             screengrab,
-            utopia-accessories-qt,
-            xfwm4-theme-breeze | kwin-style-breeze | openbox
-Suggests: kde-style-breeze-qt4,
-          qlipper | clipit | xfce4-clipman,
-          sddm | lightdm,
+            utopia-accessories-qt
+Suggests: sddm | lightdm,
           sddm-theme-maui | sddm-theme-debian-maui | lightdm,
           utopia-themes
 Architecture: all
 Description: Utopia Desktop Collection - LXQt (meta-package)
  This meta-package installs a LXQt desktop with a hand-picked set of
  programs.
+
+Package: utopia-desktop-lxqt-kwin
+# systemsettings allows configuring kwin settings
+# plasma-framework is needed for some options (e.g. window button controls) to load
+Depends: kwin-x11, plasma-framework, systemsettings
+Recommends: kwin-style-breeze
+Architecture: all
+Description: Utopia Desktop Collection - LXQt with kwin-x11
+ This meta-package installs kwin-x11 as a window manager for the LXQt
+ desktop.
+
+Package: utopia-desktop-lxqt-openbox
+Depends: openbox
+Recommends: obconf-qt
+Architecture: all
+Description: Utopia Desktop Collection - LXQt with openbox
+ This meta-package installs openbox as a window manager for the LXQt
+ desktop.
+
+Package: utopia-desktop-lxqt-xfwm4
+Depends: xfwm4
+Recommends: xfwm4-theme-breeze
+Architecture: all
+Description: Utopia Desktop Collection - LXQt with xfwm4
+ This meta-package installs xfwm4 as a window manager for the LXQt
+ desktop.
 
 Package: utopia-desktop-mate
 Depends: atril | pdf-viewer,
