@@ -271,7 +271,7 @@ Description: Utopia Desktop Collection - fonts (meta-package)
  This meta-package installs some common fonts for Linux systems.
 
 Package: utopia-desktop-full
-Depends: task-print-server,
+Depends: task-print-service | task-print-server,
          utopia-accessories-gtk,
          utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-gnome | utopia-desktop-openbox | utopia-desktop-lxde,
          utopia-desktop-common,
@@ -292,7 +292,7 @@ Description: Utopia Desktop Collection - full GTK+-based desktop (meta-package)
  environment and programs for multimedia, productivity, networking, etc.
 
 Package: utopia-desktop-full-qt
-Depends: task-print-server,
+Depends: task-print-service | task-print-server,
          utopia-accessories-qt,
          utopia-desktop-common,
          utopia-desktop-kde | utopia-desktop-lxqt,

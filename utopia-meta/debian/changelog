@@ -7,6 +7,7 @@ utopia-meta (2019.10.04~) UNRELEASED; urgency=medium
     - Remove obsolete reference to kde-style-breeze-qt4
     - Prefer ark over xarchiver
   * -desktop-mate: remove obsolete R: caja-gksu
+  * -desktop-full*: add D: task-print-service (renamed from task-print-server)
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 04 Oct 2019 23:07:03 -0700
 
