@@ -1,3 +1,9 @@
+utopia-meta (2019.10.04~) UNRELEASED; urgency=medium
+
+  * -lxqt, -xfce: move clipboard tools to Suggests
+
+ -- James Lu <james@overdrivenetworks.com>  Fri, 04 Oct 2019 23:07:03 -0700
+
 utopia-meta (2019.08.30) unstable; urgency=medium
 
   * Bump to Standards-Version 4.4.0 and dh 12.
