@@ -426,7 +426,7 @@ Package: utopia-desktop-lxqt
 Depends: lxqt-admin,
          lxqt-core (>= 29~),
          qterminal | x-terminal-emulator,
-         utopia-desktop-lxqt-xfwm4 | utopia-desktop-lxqt-kwin | utopia-desktop-lxqt-openbox | x-window-manager,
+         utopia-desktop-lxqt-xfwm4 | utopia-desktop-lxqt-kwin | utopia-desktop-lxqt-openbox,
          ${misc:Depends}
 Recommends: ark,
             breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
