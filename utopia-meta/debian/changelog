@@ -1,4 +1,4 @@
-utopia-meta (2019.10.04~) UNRELEASED; urgency=medium
+utopia-meta (2019.10.11) unstable; urgency=medium
 
   * -desktop-xfce: remove R: xfce4-clipman-plugin
   * -desktop-lxqt: refactor, remove items implied by lxqt-core
@@ -9,7 +9,7 @@ utopia-meta (2019.10.04~) UNRELEASED; urgency=medium
   * -desktop-mate: remove obsolete R: caja-gksu
   * -desktop-full*: add D: task-print-service (renamed from task-print-server)
 
- -- James Lu <james@overdrivenetworks.com>  Fri, 04 Oct 2019 23:07:03 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 11 Oct 2019 10:52:57 -0700
 
 utopia-meta (2019.08.30) unstable; urgency=medium
 
