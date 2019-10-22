@@ -1,3 +1,9 @@
+utopia-meta (2019.10.21) UNRELEASED; urgency=medium
+
+  * utopia-themes: remove obsolete R: numix-frost-theme, paper-gtk-theme
+
+ -- James Lu <james@overdrivenetworks.com>  Mon, 21 Oct 2019 19:14:51 -0700
+
 utopia-meta (2019.10.11) unstable; urgency=medium
 
   * -desktop-xfce: remove R: xfce4-clipman-plugin
