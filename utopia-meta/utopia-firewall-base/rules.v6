@@ -37,7 +37,7 @@
 -A INPUT -p udp --dport 33441:33500 -j ACCEPT
 
 # Log iptables denials
--A INPUT -m limit --limit 15/min -j LOG --log-prefix "ip6tables denied: " --log-level 4
+-A INPUT -m limit --limit 5/min -j LOG --log-prefix "ip6tables denied: " --log-level 4
 
 # Drop all other inbound
 -A INPUT -j DROP

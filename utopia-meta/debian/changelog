@@ -1,6 +1,7 @@
 utopia-meta (2019.10.21) UNRELEASED; urgency=medium
 
   * utopia-themes: remove obsolete R: numix-frost-theme, paper-gtk-theme
+  * firewall-base: lower limit to 5/min
 
  -- James Lu <james@overdrivenetworks.com>  Mon, 21 Oct 2019 19:14:51 -0700
 
