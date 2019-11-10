@@ -33,7 +33,7 @@
 #-A INPUT -p tcp --dport 873 -j ACCEPT
 
 # Allow ping/traceroute (v6)
--A INPUT -p icmp -j ACCEPT
+-A INPUT -p icmpv6 -j ACCEPT
 -A INPUT -p udp --dport 33441:33500 -j ACCEPT
 
 # Log iptables denials
