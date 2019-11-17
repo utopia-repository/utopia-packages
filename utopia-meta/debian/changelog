@@ -1,3 +1,9 @@
+utopia-meta (2019.11.17) UNRELEASED; urgency=medium
+
+  * -intl-zh: remove obsolste D: task-chinese-s
+
+ -- James Lu <james@overdrivenetworks.com>  Sat, 16 Nov 2019 22:11:46 -0800
+
 utopia-meta (2019.11.16) unstable; urgency=medium
 
   * utopia-themes: remove obsolete R: numix-frost-theme, paper-gtk-theme
