@@ -1,10 +1,10 @@
-utopia-meta (2019.10.21) UNRELEASED; urgency=medium
+utopia-meta (2019.11.16) unstable; urgency=medium
 
   * utopia-themes: remove obsolete R: numix-frost-theme, paper-gtk-theme
   * firewall-base: lower limit to 5/min
   * firewall-base: IPv6 ruleset should allow icmpv6, not icmp
 
- -- James Lu <james@overdrivenetworks.com>  Mon, 21 Oct 2019 19:14:51 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 16 Nov 2019 21:54:30 -0800
 
 utopia-meta (2019.10.11) unstable; urgency=medium
 
