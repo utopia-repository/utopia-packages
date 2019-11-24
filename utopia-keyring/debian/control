@@ -2,13 +2,13 @@ Source: utopia-keyring
 Section: misc
 Priority: optional
 Maintainer: James Lu <james@overdrivenetworks.com>
-# apt >= 1.4~beta1 is needed to support ASCII armored PGP keys
-Build-Depends: debhelper (>= 9), gnupg, apt (>= 1.4~beta1)
+Build-Depends: debhelper (>= 9), gnupg
 Standards-Version: 4.1.3
 Homepage: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-keyring
 Architecture: all
-Depends: ${misc:Depends}
+# apt >= 1.4~beta1 is needed to support ASCII armored PGP keys
+Depends: ${misc:Depends}, apt (>= 1.4~beta1)
 Description: GnuPG archive keys for the Utopia Repository
  This package contains the GnuPG public keys for the Utopia Repository.
