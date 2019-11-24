@@ -1,1 +1,1 @@
-Miscellaneous Debian packages for my personal APT repository @ https://packages.overdrivenetworks.com/
+Miscellaneous Debian packages for the Utopia Repository: https://deb.utopia-repository.org/
