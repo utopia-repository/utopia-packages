@@ -6,6 +6,7 @@ utopia-keyring (2019.06.17~) UNRELEASED; urgency=medium
   * Remove my personal key from the keyring package.
     The repository signing key 4A4A7B0E6EFB2FD90FD4F58C4A8C96B8EEBB01E6
     is now used to sign all releases.
+  * Remove obsolete B-D: gnupg
 
  -- James Lu <james@overdrivenetworks.com>  Mon, 17 Jun 2019 18:15:30 -0700
 
