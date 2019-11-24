@@ -1,19 +1,27 @@
 #!/bin/bash
-pushd "$(dirname "${BASH_SOURCE[0]}")"
+trap 'exit 1' INT TERM
+
+cd "$(dirname "${BASH_SOURCE[0]}")"
 if [[ -z "$1" || "$1" == "all" ]]; then
-	packages=$(find . -maxdepth 1 -mindepth 1 -type d ! -name '.git')
+	PACKAGES=$(find . -maxdepth 1 -mindepth 1 -type d ! -name '.git')
 else
-	packages="$@"
+	PACKAGES="$@"
 fi
 
-echo Packages to build: $packages
+echo "Packages to build: $PACKAGES"
 
-shift
-for dir in $packages; do
-	pushd "$dir"
-	echo "BUILDING: $dir"
-	dpkg-buildpackage -us -uc
+SUCCESSES=()
+FAILURES=()
+for pkg in $PACKAGES; do
+	pushd "$pkg"
+	pkg="$(basename "$pkg")"
+	echo
+	echo "BUILDING: $pkg"
+	echo
+	dpkg-buildpackage -us -uc && SUCCESSES+=("$pkg") || FAILURES+=("$pkg")
 	popd
 done
 
-popd
+echo "${#SUCCESSES[@]} packages built successfully: ${SUCCESSES[@]}"
+echo "${#FAILURES[@]} packages failed to build: ${FAILURES[@]}"
+exit ${#FAILURES[@]}
