@@ -543,7 +543,6 @@ Depends: build-essential,
          openssl,
          pkg-config,
          python3-pip,
-         scons,
          utopia-baseutils,
          ${misc:Depends}
 Recommends: apt-rdepends,
@@ -565,7 +564,7 @@ Recommends: apt-rdepends,
             tcpdump,
             tig,
             virt-what
-Suggests: glade, jpegoptim, optipng | pngcrush, qtchooser, xca
+Suggests: glade, jpegoptim, optipng | pngcrush, qtchooser, scons, xca
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  This meta-package installs libraries and tools for a development environment.
@@ -709,7 +708,9 @@ Description: Utopia Multimedia Collection (meta-package)
 
 Package: utopia-network
 Depends: utopia-network-webbrowser, ${misc:Depends}
-Recommends: mtr, thunderbird, zenmap | gnome-nettool
+Recommends: mtr, thunderbird
+# Requires python2
+Suggests: zenmap | gnome-nettool
 Architecture: all
 Description: Utopia Network Collection (meta-package)
  This meta-package pulls in various GUI programs related to networking.

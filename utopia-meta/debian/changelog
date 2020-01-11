@@ -1,6 +1,7 @@
-utopia-meta (2019.11.17) UNRELEASED; urgency=medium
+utopia-meta (2020.01.11) UNRELEASED; urgency=medium
 
   * -intl-zh: remove obsolste D: task-chinese-s
+  * Demote scons, zenmap to suggests (remaining Python 2 dependencies)
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 16 Nov 2019 22:11:46 -0800
 
