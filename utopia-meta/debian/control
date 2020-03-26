@@ -538,7 +538,6 @@ Depends: build-essential,
          git-buildpackage,
          gnupg,
          libssl-dev | libssl1.0-dev,
-         ntp | chrony,
          openssl,
          pkg-config,
          python3-pip,
@@ -563,7 +562,13 @@ Recommends: apt-rdepends,
             tcpdump,
             tig,
             virt-what
-Suggests: glade, jpegoptim, optipng | pngcrush, qtchooser, scons, xca
+Suggests: chrony | ntp,
+          glade,
+          jpegoptim,
+          optipng | pngcrush,
+          qtchooser
+          scons
+          xca
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  This meta-package installs libraries and tools for a development environment.

@@ -2,7 +2,7 @@ utopia-meta (2020.02.24) UNRELEASED; urgency=medium
 
   * -intl-zh: remove obsolste D: task-chinese-s
   * Demote scons, zenmap to suggests (remaining Python 2 dependencies)
-  * utopia-devel: add chrony as alternative to ntp
+  * utopia-devel: move ntp to Suggests & add chrony as alternative
   * utopia-devel: remove D: ntpdate as that has been deprecated
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 16 Nov 2019 22:11:46 -0800
