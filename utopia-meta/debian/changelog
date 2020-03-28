@@ -15,6 +15,7 @@ utopia-meta (2020.03.27) UNRELEASED; urgency=medium
     - utopia-accessories: add R: hexchat, S: variety, virt-manager | virtualbox,
       wireshark
     - various: replace task-print-* packages with cups
+    - Fold utopia-intl into utopia-intl-zh
   * -intl-zh: remove obsolete D: task-chinese-s
   * Demote scons, zenmap to suggests (remaining Python 2 dependencies)
   * utopia-devel: move ntp to Suggests & add chrony as alternative

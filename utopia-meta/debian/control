@@ -489,23 +489,12 @@ Description: Dependency package - marks the machine as a headless server
  network configuration tools, which may disrupt the existing network setup
  when it is started and stopped.
 
-Package: utopia-intl
-Depends: fcitx, ${misc:Depends}
-Recommends: fcitx-frontend-all
-Suggests: gucharmap | kcharselect, mintlocale
-Architecture: all
-Description: Utopia I18n - common packages (meta-package)
- This meta package installs some tools and input methods to better support
- non-English languages.
-
 Package: utopia-intl-zh
-Depends: fcitx-sunpinyin | fcitx-googlepinyin | fctix-libpinyin | fcitx-pinyin,
+Depends: fcitx,
+         fcitx-sunpinyin | fcitx-googlepinyin | fctix-libpinyin | fcitx-pinyin,
          im-config,
-         utopia-intl,
          ${misc:Depends}
-Recommends: fcitx-googlepinyin,
-            fcitx-sunpinyin,
-            fcitx-table-wubi,
+Recommends: fcitx-table-wubi,
             fonts-arphic-ukai,
             fonts-arphic-uming,
             fonts-noto-cjk,
