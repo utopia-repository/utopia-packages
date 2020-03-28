@@ -8,10 +8,18 @@ utopia-meta (2020.03.27) UNRELEASED; urgency=medium
     - desktop-mate: add menulibre alternative; remove R: mate-menu
     - Drop utopia-accessories-extras
     - Fold utopia-network, utopia-network-webbrowser into utopia-accessories
+    - Move utopia-desktop-full -> utopia-desktop-xfce-full,
+           utopia-desktop-full-qt -> utopia-desktop-kde-full
+    - Fold utopia-network-gtk, utopia-network-qt into new desktop-*-full
+      packages
+    - utopia-accessories: add R: hexchat, S: variety, virt-manager | virtualbox,
+      wireshark
+    - various: replace task-print-* packages with cups
   * -intl-zh: remove obsolete D: task-chinese-s
   * Demote scons, zenmap to suggests (remaining Python 2 dependencies)
   * utopia-devel: move ntp to Suggests & add chrony as alternative
   * utopia-devel: remove D: ntpdate as that has been deprecated
+  * utopia-multimedia: remove R: kazam
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 16 Nov 2019 22:11:46 -0800
 

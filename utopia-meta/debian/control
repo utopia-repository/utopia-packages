@@ -12,6 +12,7 @@ Package: utopia-accessories
 Depends: ${misc:Depends}
 Recommends: firefox | firefox-esr | chromium | qupzilla | midori,
             hardinfo | lshw-gtk | sysinfo,
+            hexchat,
             keepassxc | keepassx (>= 2.0~),
             qalculate-gtk | qalculate,
             scrot,
@@ -20,8 +21,10 @@ Recommends: firefox | firefox-esr | chromium | qupzilla | midori,
 Suggests: bleachbit,
           florence | caribou,
           thunderbird,
-          unetbootin | tuxboot,
-          variety
+          variety,
+          virt-manager | virtualbox,
+          wireshark,
+          unetbootin | tuxboot
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
@@ -40,13 +43,13 @@ Recommends: font-manager | gnome-font-viewer,
             gvfs-fuse,
             pinentry-gnome3 | pinentry-gtk2,
             synaptic
-Suggests: brasero | xfburn,
-          lightdm-gtk-greeter-settings,
-          menulibre,
+Suggests: lightdm-gtk-greeter-settings,
+          menulibre | mozo,
           pavucontrol,
           qt5-gtk2-platformtheme | qt5-style-plugins (<< 5.0.0+git23.g335dbec-3~),
           qt5ct,
           simple-scan,
+          xfburn | brasero,
           xzoom
 Architecture: all
 Description: Utopia Accessories Collection - GNOME/GTK+ (meta-package)
@@ -152,7 +155,6 @@ Recommends: anacron,
 Suggests: cifs-utils,
           lxpolkit | polkit-1-auth-agent,
           smbclient,
-          task-print-server,
           utopia-accessories-gtk | utopia-accessories-qt,
           utopia-multimedia,
           utopia-network,
@@ -202,47 +204,6 @@ Architecture: all
 Description: Utopia Desktop Collection - fonts (meta-package)
  This meta-package installs some common fonts for Linux systems.
 
-Package: utopia-desktop-full
-Depends: task-print-service | task-print-server,
-         utopia-accessories-gtk,
-         utopia-desktop-cinnamon | utopia-desktop-xfce | utopia-desktop-mate | utopia-desktop-gnome | utopia-desktop-openbox | utopia-desktop-lxde,
-         utopia-desktop-common,
-         utopia-office,
-         ${misc:Depends}
-Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
-            simple-scan,
-            system-config-printer,
-            utopia-intl,
-            utopia-network-gtk,
-            wine
-Suggests: blueman | blueberry | gnome-bluetooth,
-          brasero | xfburn
-Architecture: all
-Description: Utopia Desktop Collection - full GTK+-based desktop (meta-package)
- This meta-package installs a complete desktop with a GTK+-based desktop
- environment and programs for multimedia, productivity, networking, etc.
-
-Package: utopia-desktop-full-qt
-Depends: task-print-service | task-print-server,
-         utopia-accessories-qt,
-         utopia-desktop-common,
-         utopia-desktop-kde | utopia-desktop-lxqt,
-         utopia-office,
-         ${misc:Depends}
-Recommends: libreoffice-kde5 | libreoffice-kde,
-            print-manager,
-            skanlite,
-            utopia-intl,
-            utopia-network-qt,
-            wine
-Suggests: blueman | blueberry | bluemoon | bluedevil,
-          k3b
-Provides: utopia-desktop-full
-Architecture: all
-Description: Utopia Desktop Collection - full Qt-based desktop (meta-package)
- This meta-package installs a complete desktop with a Qt-based desktop
- environment and programs for multimedia, productivity, networking, etc.
-
 Package: utopia-desktop-kde
 Depends: ark,
          dolphin,
@@ -280,9 +241,30 @@ Suggests: kate,
           libreoffice-kde5 | libreoffice-kde,
           print-manager
 Architecture: all
-Description: Utopia Desktop Collection - KDE Plasma 5 (meta-package)
+Description: Utopia Desktop Collection - KDE Plasma 5 (minimal)
  This meta-package installs a minimal KDE Plasma desktop with a hand-picked set
  of programs.
+
+Package: utopia-desktop-kde-full
+Depends: cups,
+         utopia-accessories-qt,
+         utopia-desktop-kde,
+         utopia-office,
+         ${misc:Depends}
+Recommends: krdc,
+            libreoffice-kde5 | libreoffice-kde,
+            print-manager,
+            qbittorrent | transmission-qt | ktorrent,
+            skanlite,
+            thunderbird,
+            variety,
+            wine | wine-development | wine-staging-compat
+Suggests: bluedevil | blueman | blueberry,
+          webcamoid | kamoso | cheese | guvcview
+Architecture: all
+Description: Utopia Desktop Collection - KDE Plasma 5 (standard)
+ This meta-package installs a complete KDE Plasma desktop with programs for
+ multimedia, productivity, networking, etc.
 
 Package: utopia-desktop-lxqt
 Depends: lxqt-admin,
@@ -385,11 +367,34 @@ Recommends: atril | evince | pdf-viewer,
             xfce4-taskmanager,
             xfce4-timer-plugin,
             xfce4-weather-plugin
-Suggests: utopia-xfce-defaults, xfce4-goodies
+Suggests: utopia-xfce-defaults
 Architecture: all
-Description: Utopia Desktop Collection - Xfce (meta-package)
+Description: Utopia Desktop Collection - Xfce (minimal)
  This meta-package installs a minimal Xfce desktop with a hand-picked set of
  programs.
+
+Package: utopia-desktop-xfce-full
+Depends: cups,
+         utopia-accessories-gtk,
+         utopia-desktop-xfce,
+         utopia-office,
+         ${misc:Depends}
+Recommends: deluge | transmission-gtk,
+            libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
+            remmina | vinagre,
+            simple-scan,
+            system-config-printer,
+            thunderbird,
+            variety,
+            wine | wine-development | wine-staging-compat
+Suggests: blueman | blueberry | gnome-bluetooth,
+          network-manager-openconnect-gnome | connman | wicd,
+          network-manager-openvpn-gnome | connman | wicd,
+          cheese | guvcview | webcamoid | kamoso
+Architecture: all
+Description: Utopia Desktop Collection - Xfce (standard)
+ This meta-package installs a complete desktop with a Xfce desktop
+ environment and programs for multimedia, productivity, networking, etc.
 
 Package: utopia-devel
 Depends: build-essential,
@@ -522,7 +527,6 @@ Recommends: audacity,
             ffmpeg (>= 7:3.0~),
             gimp | krita,
             jpegoptim,
-            kazam,
             obs-studio,
             optipng | pngcrush,
             spek,
@@ -540,38 +544,6 @@ Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  This meta-package pulls in some programs (players, editors, etc.) for working
  with media files.
-
-Package: utopia-network-gtk
-Depends: ${misc:Depends}
-Recommends: deluge | transmission-gtk,
-            hexchat,
-            network-manager-gnome | wicd,
-            network-manager-openconnect-gnome,
-            network-manager-openvpn-gnome,
-            remmina | vinagre,
-            wireshark-gtk | wireshark
-Suggests: uget
-Architecture: all
-Description: Utopia Network Collection - GNOME/GTK+ (meta-package)
- This meta-package pulls in some networking programs targeting a GNOME/GTK+
- based desktop.
-
-Package: utopia-network-qt
-Depends: ${misc:Depends}
-Recommends: konversation,
-            krdc,
-            network-manager-openconnect,
-            network-manager-openvpn,
-            qbittorrent | transmission-qt | ktorrent,
-            wireshark-qt | wireshark
-Suggests: kget
-Architecture: all
-Breaks: utopia-network-kde (<< 2017.06.19~)
-Replaces: utopia-network-kde (<< 2017.06.19~)
-Provides: utopia-network-kde
-Description: Utopia Network Collection - Qt (meta-package)
- This meta-package pulls in some networking programs targeting a Qt-based
- desktop.
 
 Package: utopia-office
 Depends: libreoffice-calc (>= 5.1~),
