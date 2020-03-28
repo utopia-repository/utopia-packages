@@ -556,52 +556,22 @@ Recommends: apt-rdepends,
             mtr-tiny | mtr,
             nmap,
             pandoc,
-            ruby,
-            ruby-dev,
             subversion,
             tcpdump,
-            tig,
-            virt-what
 Suggests: chrony | ntp,
+          clang,
           glade,
+          help2man,
           jpegoptim,
           optipng | pngcrush,
-          qtchooser
-          scons
+          qtchooser,
+          scons,
+          shellcheck,
+          valgrind,
           xca
 Architecture: all
 Description: Utopia Development Collection (meta-package)
  This meta-package installs libraries and tools for a development environment.
-
-Package: utopia-devel-extras
-Depends: git-svn,
-         libwww-perl,
-         subversion,
-         utopia-devel,
-         ${misc:Depends}
-Recommends: bison,
-            clang,
-            doxygen,
-            flex,
-            help2man,
-            hexedit,
-            libtool,
-            lua-socket (>= 3.0~rc1~),
-            lua5.3 | lua,
-            mercurial,
-            nodejs (>= 4),
-            shellcheck,
-            valgrind,
-            yasm
-Suggests: adb,
-          brz | bzr,
-          fastboot,
-          git-remote-bzr,
-          utopia-devel-packaging
-Architecture: all
-Description: Utopia Development Collection - extra tools (meta-package)
- This meta-package installs extra libraries and utilities for a development
- environment.
 
 Package: utopia-devel-packaging
 Depends: cowbuilder | sbuild | pbuilder,
