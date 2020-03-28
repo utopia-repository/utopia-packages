@@ -142,62 +142,6 @@ Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
 
-Package: utopia-desktop-budgie
-Depends: budgie-desktop,
-         budgie-indicator-applet,
-         evince | atril | pdf-viewer,
-         shotwell | eog | eom,
-         tilix | gnome-terminal | x-terminal-emulator,
-         utopia-desktop-common,
-         ${misc:Depends}
-Recommends: dconf-editor | dconf-tools,
-            gedit,
-            gnome-keyring,
-            gnome-screenshot,
-            gnome-sushi,
-            gnome-system-monitor,
-            nautilus-emblems,
-            nautilus-extension-fma,
-            utopia-accessories-gtk,
-            utopia-themes
-Suggests: nautilus-admin, nautilus-share, nautilus-wipe, plank
-Architecture: all
-Description: Utopia Desktop Collection - Budgie Desktop (meta-package)
- This meta-package installs Budgie Desktop with a hand-picked set of
- programs.
-
-Package: utopia-desktop-cinnamon
-Depends: cinnamon (>= 3),
-         cinnamon-control-center (>= 3),
-         cinnamon-screensaver (>= 3),
-         cinnamon-session (>= 3),
-         cinnamon-settings-daemon (>= 3),
-         evince | atril | pdf-viewer,
-         gnome-terminal | mate-terminal | x-terminal-emulator,
-         muffin (>= 3),
-         nemo (>= 3),
-         shotwell | eog | eom,
-         utopia-desktop-common,
-         ${misc:Depends}
-Recommends: cinnamon-l10n | cinnamon-translations,
-            dconf-editor | dconf-tools,
-            gedit | pluma,
-            gnome-keyring,
-            gnome-screenshot,
-            gnome-system-monitor | mate-system-monitor,
-            nemo-audio-tab,
-            nemo-emblems (>= 2.6),
-            nemo-fileroller (>= 2.6),
-            qt5ct,
-            utopia-accessories-gtk,
-            utopia-cinnamon-defaults,
-            utopia-themes
-Suggests: nemo-media-columns, nemo-share
-Architecture: all
-Description: Utopia Desktop Collection - Cinnamon (meta-package)
- This meta-package installs a minimal Cinnamon desktop environment with Utopia
- Desktop tweaks.
-
 Package: utopia-desktop-common
 Depends: desktop-base,
          lightdm | x-display-manager,
@@ -313,46 +257,6 @@ Description: Utopia Desktop Collection - full Qt-based desktop (meta-package)
  This meta-package installs a complete desktop with a Qt-based desktop
  environment and programs for multimedia, productivity, networking, etc.
 
-Package: utopia-desktop-gnome
-Depends: evince | pdf-viewer,
-         file-roller,
-         fonts-cantarell,
-         gdm3 | lightdm | x-display-manager,
-         gnome-control-center,
-         gnome-keyring,
-         gnome-screenshot,
-         gnome-session,
-         gnome-settings-daemon,
-         gnome-shell,
-         gnome-shell-extension-top-icons-plus,
-         gnome-shell-extensions,
-         gnome-terminal | mate-terminal | x-terminal-emulator,
-         gnome-themes-standard,
-         gnome-tweak-tool,
-         shotwell | eog,
-         utopia-desktop-common,
-         ${misc:Depends}
-Recommends: alacarte,
-            chrome-gnome-shell,
-            dconf-editor | dconf-tools,
-            gedit,
-            gnome-shell-extension-taskbar,
-            gnome-sushi,
-            gnome-system-monitor,
-            nautilus-emblems,
-            nautilus-extension-fma,
-            utopia-accessories-gtk,
-            utopia-themes
-Suggests: gnome-bluetooth,
-          goobox | sound-juicer,
-          nautilus-admin,
-          nautilus-share,
-          nautilus-wipe
-Architecture: all
-Description: Utopia Desktop Collection - GNOME (meta-package)
- This meta-package installs a GNOME 3 desktop with a hand-picked set of
- programs.
-
 Package: utopia-desktop-kde
 Depends: ark,
          dolphin,
@@ -393,34 +297,6 @@ Architecture: all
 Description: Utopia Desktop Collection - KDE Plasma 5 (meta-package)
  This meta-package installs a minimal KDE Plasma desktop with a hand-picked set
  of programs.
-
-Package: utopia-desktop-lxde
-Depends: gpicview,
-         lxappearance,
-         lxappearance-obconf,
-         lxde-core,
-         lxinput,
-         lxpolkit,
-         lxsession,
-         lxterminal,
-         obconf,
-         utopia-desktop-common,
-         ${misc:Depends}
-Recommends: evince | atril | pdf-viewer,
-            file-roller | xarchiver | engrampa,
-            libfm-tools,
-            lxrandr,
-            lxtask,
-            mousepad | leafpad,
-            mugshot,
-            utopia-accessories-gtk,
-            volumeicon-alsa,
-            xfce4-notifyd | lxqt-notificationd,
-            xfce4-screenshooter
-Architecture: all
-Description: Utopia Desktop Collection - LXDE (meta-package)
- This meta-package installs a minimal LXDE desktop with a hand-picked set of
- programs.
 
 Package: utopia-desktop-lxqt
 Depends: lxqt-admin,
