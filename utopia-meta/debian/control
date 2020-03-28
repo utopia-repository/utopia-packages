@@ -10,33 +10,21 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: ${misc:Depends}
-Recommends: hardinfo | lshw-gtk | sysinfo,
+Recommends: firefox | firefox-esr | chromium | qupzilla | midori,
+            hardinfo | lshw-gtk | sysinfo,
             keepassxc | keepassx (>= 2.0~),
             qalculate-gtk | qalculate,
             scrot,
             utopia-network-webbrowser,
             vlc
-Suggests: bleachbit, florence | caribou, psensor, unetbootin | tuxboot, variety
+Suggests: bleachbit,
+          florence | caribou,
+          thunderbird,
+          unetbootin | tuxboot,
+          variety
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful accessories for daily use and
- administrative tasks.
-
-Package: utopia-accessories-extras
-Depends: utopia-accessories, ${misc:Depends}
-Recommends: cifs-utils,
-            default-jre,
-            samba,
-            smbclient,
-            virtualbox (>= 5.0~),
-            webcamoid | cheese | kamoso | kamerka | guvcview,
-            wine | wine-development | wine-staging-compat
-Suggests: dosbox,
-          exe-thumbnailer | kio-extras,
-          fileinsight
-Architecture: all
-Description: Utopia Accessories Collection - Extra accessories (meta-package)
- This meta-package pulls in some extra accessories for daily use and
  administrative tasks.
 
 Package: utopia-accessories-gtk
@@ -228,8 +216,7 @@ Recommends: libreoffice-gtk3 (>= 5.2~) | libreoffice-gtk2 | libreoffice-gtk,
             utopia-network-gtk,
             wine
 Suggests: blueman | blueberry | gnome-bluetooth,
-          brasero | xfburn,
-          utopia-accessories-extras
+          brasero | xfburn
 Architecture: all
 Description: Utopia Desktop Collection - full GTK+-based desktop (meta-package)
  This meta-package installs a complete desktop with a GTK+-based desktop
@@ -249,8 +236,7 @@ Recommends: libreoffice-kde5 | libreoffice-kde,
             utopia-network-qt,
             wine
 Suggests: blueman | blueberry | bluemoon | bluedevil,
-          k3b,
-          utopia-accessories-extras
+          k3b
 Provides: utopia-desktop-full
 Architecture: all
 Description: Utopia Desktop Collection - full Qt-based desktop (meta-package)
@@ -555,26 +541,8 @@ Description: Utopia Multimedia Collection (meta-package)
  This meta-package pulls in some programs (players, editors, etc.) for working
  with media files.
 
-Package: utopia-network
-Depends: utopia-network-webbrowser, ${misc:Depends}
-Recommends: mtr, thunderbird
-# Requires python2
-Suggests: zenmap | gnome-nettool
-Architecture: all
-Description: Utopia Network Collection (meta-package)
- This meta-package pulls in various GUI programs related to networking.
-
-Package: utopia-network-webbrowser
-Depends: chromium | chromium-browser | firefox | firefox-esr | google-chrome-stable | google-chrome | falkon | qupzilla | midori | netsurf-gtk | gnome-www-browser,
-         ${misc:Depends}
-Recommends: chromium | chromium-browser, firefox | firefox-esr
-Architecture: all
-Description: Utopia Network Collection - Web browsers (meta-package)
- This meta-package installs two standard web browsers (Chromium, Firefox),
- falling back to others if they are not available.
-
 Package: utopia-network-gtk
-Depends: utopia-network, ${misc:Depends}
+Depends: ${misc:Depends}
 Recommends: deluge | transmission-gtk,
             hexchat,
             network-manager-gnome | wicd,
@@ -589,7 +557,7 @@ Description: Utopia Network Collection - GNOME/GTK+ (meta-package)
  based desktop.
 
 Package: utopia-network-qt
-Depends: utopia-network, ${misc:Depends}
+Depends: ${misc:Depends}
 Recommends: konversation,
             krdc,
             network-manager-openconnect,
