@@ -5,6 +5,7 @@ utopia-meta (2020.03.27) UNRELEASED; urgency=medium
       - Add S: clang, help2man, shellcheck, valgrind
       - Remove R: ruby, ruby-dev, tig, virt-what
     - Drop unused desktop meta-packages: budgie, cinnamon, gnome, lxde
+    - desktop-mate: add menulibre alternative; remove R: mate-menu
   * -intl-zh: remove obsolete D: task-chinese-s
   * Demote scons, zenmap to suggests (remaining Python 2 dependencies)
   * utopia-devel: move ntp to Suggests & add chrony as alternative
