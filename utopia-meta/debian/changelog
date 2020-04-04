@@ -1,4 +1,4 @@
-utopia-meta (2020.04.03) UNRELEASED; urgency=medium
+utopia-meta (2020.04.03) unstable; urgency=medium
 
   * New year spring cleaning:
   * Drop unused desktop meta-packages: budgie, cinnamon, gnome, lxde
@@ -26,7 +26,7 @@ utopia-meta (2020.04.03) UNRELEASED; urgency=medium
     delta)
   * utopia-multimedia: remove R: kazam (dead upstream)
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 16 Nov 2019 22:11:46 -0800
+ -- James Lu <james@overdrivenetworks.com>  Fri, 03 Apr 2020 22:05:29 -0700
 
 utopia-meta (2019.11.16) unstable; urgency=medium
 
