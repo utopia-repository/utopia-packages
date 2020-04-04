@@ -17,6 +17,9 @@ utopia-meta (2020.04.03) UNRELEASED; urgency=medium
       - Add R: hexchat
       - Add S: variety, virt-manager | virtualbox, wireshark
   * desktop-mate: add menulibre alternative; remove R: mate-menu
+  * desktop-lxqt:
+      - Add D: ark | engrampa so they're preferred over xarchiver
+      - Add nm-tray alternative to cmst | network-manager-gnome etc.
   * Remove remaining references to Debian task-* packages (reduce Ubuntu
     delta)
   * utopia-multimedia: remove R: kazam (dead upstream)

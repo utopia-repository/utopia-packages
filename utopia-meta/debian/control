@@ -267,14 +267,14 @@ Description: Utopia Desktop Collection - KDE Plasma 5 (standard)
  multimedia, productivity, networking, etc.
 
 Package: utopia-desktop-lxqt
-Depends: lxqt-admin,
+Depends: ark | engrampa,
+         lxqt-admin,
          lxqt-core (>= 29~),
          qterminal | x-terminal-emulator,
          utopia-desktop-lxqt-xfwm4 | utopia-desktop-lxqt-kwin | utopia-desktop-lxqt-openbox,
          ${misc:Depends}
-Recommends: ark,
-            breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
-            cmst | network-manager-gnome | plasma-nm | wicd,
+Recommends: breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
+            cmst | nm-tray | network-manager-gnome | plasma-nm | wicd,
             lxqt-openssh-askpass,
             qpdfview | okular | evince | pdf-viewer,
             qterminal,
