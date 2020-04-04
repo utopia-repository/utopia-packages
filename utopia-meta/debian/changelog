@@ -1,26 +1,25 @@
-utopia-meta (2020.03.27) UNRELEASED; urgency=medium
+utopia-meta (2020.04.03) UNRELEASED; urgency=medium
 
   * New year spring cleaning:
-    - Fold utopia-devel-extras into utopia-devel:
-      - Add S: clang, help2man, shellcheck, valgrind
-      - Remove R: ruby, ruby-dev, tig, virt-what
-    - Drop unused desktop meta-packages: budgie, cinnamon, gnome, lxde
-    - desktop-mate: add menulibre alternative; remove R: mate-menu
-    - Drop utopia-accessories-extras
-    - Fold utopia-network, utopia-network-webbrowser into utopia-accessories
-    - Move utopia-desktop-full -> utopia-desktop-xfce-full,
-           utopia-desktop-full-qt -> utopia-desktop-kde-full
-    - Fold utopia-network-gtk, utopia-network-qt into new desktop-*-full
-      packages
-    - utopia-accessories: add R: hexchat, S: variety, virt-manager | virtualbox,
-      wireshark
-    - various: replace task-print-* packages with cups
-    - Fold utopia-intl into utopia-intl-zh
-  * -intl-zh: remove obsolete D: task-chinese-s
-  * Demote scons, zenmap to suggests (remaining Python 2 dependencies)
-  * utopia-devel: move ntp to Suggests & add chrony as alternative
-  * utopia-devel: remove D: ntpdate as that has been deprecated
-  * utopia-multimedia: remove R: kazam
+  * Drop unused desktop meta-packages: budgie, cinnamon, gnome, lxde
+  * Move utopia-desktop-full -> utopia-desktop-xfce-full,
+         utopia-desktop-full-qt -> utopia-desktop-kde-full
+  * Removed the following meta-packages:
+      - utopia-network, utopia-network-webbrowser, utopia-accessories-extras
+        (merged into utopia-accessories)
+      - utopia-devel-extras (merged into utopia-devel)
+      - utopia-network-gtk, utopia-network-qt (merged into -desktop-*-full)
+      - utopia-intl (merged into utopia-intl-zh)
+  * utopia-devel:
+      - Add S: clang, help2man, shellcheck, valgrind, chrony | ntp
+      - Remove R: ruby, ruby-dev, tig, virt-what, D: ntpdate
+  * utopia-accessories:
+      - Add R: hexchat
+      - Add S: variety, virt-manager | virtualbox, wireshark
+  * desktop-mate: add menulibre alternative; remove R: mate-menu
+  * Remove remaining references to Debian task-* packages (reduce Ubuntu
+    delta)
+  * utopia-multimedia: remove R: kazam (dead upstream)
 
  -- James Lu <james@overdrivenetworks.com>  Sat, 16 Nov 2019 22:11:46 -0800
 
