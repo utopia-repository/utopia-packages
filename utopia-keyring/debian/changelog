@@ -1,3 +1,9 @@
+utopia-keyring (2020.07.30) UNRELEASED; urgency=medium
+
+  * Bump to debhelper 12 and Standards-Version 4.5.0
+
+ -- James Lu <james@overdrivenetworks.com>  Wed, 29 Jul 2020 23:51:03 -0700
+
 utopia-keyring (2019.06.17~) UNRELEASED; urgency=medium
 
   * Simplify install process, using ASCII-armored files in
