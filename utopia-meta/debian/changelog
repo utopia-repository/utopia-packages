@@ -2,6 +2,8 @@ utopia-meta (2020.07.30) UNRELEASED; urgency=medium
 
   * Move apt-listbugs from baseutils to desktop-common
     - apt-listbugs interacts rather poorly with automation tools like ansible
+  * Cleanup/refresh iptables template
+    - Fix port range for UDP traceroute
 
  -- James Lu <james@overdrivenetworks.com>  Wed, 29 Jul 2020 23:48:27 -0700
 
