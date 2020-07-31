@@ -1,11 +1,11 @@
-utopia-keyring (2020.07.31) UNRELEASED; urgency=medium
+utopia-keyring (2020.07.31) unstable; urgency=medium
 
   * Bump to debhelper 12 and Standards-Version 4.5.0
   * Move signing key from /etc/apt/trusted.gpg.d to /usr/share/keyrings
     This will require using "deb [signed-by=...]" entries in sources.list
     to explicitly verify the repo against the installed key
 
- -- James Lu <james@overdrivenetworks.com>  Wed, 29 Jul 2020 23:51:03 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 30 Jul 2020 21:48:17 -0700
 
 utopia-keyring (2019.06.17~) UNRELEASED; urgency=medium
 
