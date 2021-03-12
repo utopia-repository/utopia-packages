@@ -1,3 +1,11 @@
+utopia-defaults (2021.03.11~) UNRELEASED; urgency=medium
+
+  * xfce-defaults:
+    - Update default panel launchers to xfce4-* names
+    - Depend on xfce >= 4.16
+
+ -- James Lu <james@overdrivenetworks.com>  Thu, 11 Mar 2021 21:55:42 -0800
+
 utopia-defaults (2019.06.20) unstable; urgency=medium
 
   * xfce-defaults:

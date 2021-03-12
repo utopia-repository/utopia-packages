@@ -43,23 +43,23 @@
     <property name="plugin-16" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="exo-terminal-emulator.desktop"/>
+        <value type="string" value="xfce4-terminal-emulator.desktop"/>
       </property>
     </property>
     <property name="plugin-8" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="exo-file-manager.desktop"/>
+        <value type="string" value="xfce4-file-manager.desktop"/>
       </property>
     </property>
     <property name="plugin-9" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="exo-mail-reader.desktop"/>
+        <value type="string" value="xfce4-mail-reader.desktop"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="datetime"/>
     <property name="plugin-2" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="exo-web-browser.desktop"/>
+        <value type="string" value="xfce4-web-browser.desktop"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="launcher">
