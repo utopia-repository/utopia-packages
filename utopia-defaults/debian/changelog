@@ -8,7 +8,9 @@ utopia-defaults (2021.03.11~) UNRELEASED; urgency=medium
     them in a long time
   * Merge utopia-apt-config into this source package. Remaining changes:
     - Rename utopia-pins.pref to 50utopia-pins.pref to follow standard naming
-
+  * Merge utopia-polkit into this source package. Remaining changes:
+    - Drop apt-related rules
+    - Sync package long description with what's actually in the file
 
  -- James Lu <james@overdrivenetworks.com>  Thu, 11 Mar 2021 21:55:42 -0800
 

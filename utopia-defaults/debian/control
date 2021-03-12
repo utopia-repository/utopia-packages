@@ -13,8 +13,8 @@ Architecture: all
 Depends: ${misc:Depends}
 Recommends: utopia-keyring
 Description: custom APT configuration for the Utopia Repository
- This package contains custom APT configuration that I prefer to use on my machines.
- Specifically, it adds the following:
+ This package contains custom APT configuration that I prefer to use on my
+ machines. Specifically, it adds the following:
  .
  * Pinning rules in /etc/apt/preferences.d:
    - Allow automatic updates from experimental
@@ -43,6 +43,25 @@ Description: Utopia Desktop Defaults (common settings)
   - Fontconfig rendering defaults
   - Default GTK+ 3 font
   - Defaults for LightDM and LightDM GTK+ Greeter
+
+Package: utopia-polkit
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: policykit-1
+Description: PolicyKit settings to run desktop actions without a password
+ This package installs default PolicyKit privileges allowing administrators
+ (those in "adm" or "sudo" group) to run various actions without being prompted
+ for a password:
+ .
+  - Mounting drives via udisks
+  - Setting CPU frequency and system clock through various desktop environments
+  - Modifying NetworkManager connections
+  - Modifying printer settings
+  - Managing virtual machines via libvirt
+ .
+ This package is inspired by the Ubuntu defaults package
+ policykit-desktop-privileges, and works similarly by shipping a
+ pklocalauthority(8) file.
 
 Package: utopia-xfce-defaults
 Architecture: all
