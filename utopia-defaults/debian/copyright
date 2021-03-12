@@ -1,9 +1,9 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: utopia-mate-defaults
-Source: https://github.com/GLolol/utopia-packages
+Upstream-Name: utopia-defaults
+Source: https://github.com/utopia-repository/utopia-packages
 
 Files: *
-Copyright: 2014 James Lu <glolol@overdrive.pw>
+Copyright: 2014-2021 James Lu <james@overdrivenetworks.com>
 License: GPL-3.0+
 
 License: GPL-3.0+
