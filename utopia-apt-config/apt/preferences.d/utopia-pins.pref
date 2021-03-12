@@ -7,7 +7,7 @@ Package: *
 Pin: release a=unstable-debug, o=Debian
 Pin-Priority: 450
 
-# Allow automatic upgrades from experimental
+# Allow automatic upgrades from experimental and experimental-debug
 Package: *
 Pin: release a=experimental, o=Debian
 Pin-Priority: 101
@@ -16,14 +16,8 @@ Package: *
 Pin: release a=experimental-debug, o=Debian
 Pin-Priority: 101
 
-# Prefer Utopia Repository forks
+# Prefer Utopia Repository nightlies over other distributions
 Package: *
-Pin: origin packages.overdrivenetworks.com
-Pin: release c=forks
-Pin-Priority: 600
-
-# Prefer nightlies over testing/unstable
-Package: *
-Pin: origin packages.overdrivenetworks.com
-Pin: release n=sid-nightlies
+Pin: origin *.utopia-repository.org
+Pin: release n=*-nightlies
 Pin-Priority: 600
