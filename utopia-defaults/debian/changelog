@@ -2,7 +2,7 @@ utopia-defaults (2021.03.11~) UNRELEASED; urgency=medium
 
   * xfce-defaults:
     - Update default panel launchers to xfce4-* names
-    - Depend on xfce >= 4.16
+    - Depend on xfce4-settings >= 4.16
   * Disable MATE, GNOME apps, and Cinnamon default packages - I haven't used
     them in a long time
 
