@@ -32,6 +32,7 @@ Architecture: all
 Depends: fonts-noto-hinted,
          gsettings-desktop-schemas,
          libgtk-3-common,
+         numlockx,
          ${misc:Depends}
 Recommends: fontconfig
 Enhances: lightdm, lightdm-gtk-greeter

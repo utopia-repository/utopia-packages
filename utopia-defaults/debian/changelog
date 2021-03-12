@@ -11,6 +11,9 @@ utopia-defaults (2021.03.11~) UNRELEASED; urgency=medium
   * Merge utopia-polkit into this source package. Remaining changes:
     - Drop apt-related rules
     - Sync package long description with what's actually in the file
+  * desktop-defaults:
+    - Enable Num Lock on startup in LightDM
+    - Add Depends: numlockx
 
  -- James Lu <james@overdrivenetworks.com>  Thu, 11 Mar 2021 21:55:42 -0800
 
