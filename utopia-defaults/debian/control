@@ -8,23 +8,23 @@ Homepage: https://github.com/utopia-repository/utopia-packages
 Vcs-Git: https://github.com/utopia-repository/utopia-packages
 Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
-Package: utopia-cinnamon-defaults
-Architecture: all
-Depends: fonts-noto-hinted,
-         cinnamon-common (>= 2.6~),
-         cinnamon-desktop-data (>= 2.6.4),
-         cinnamon-settings-daemon (>= 2.6),
-         muffin-common (>= 2.6~),
-         utopia-themes (>= 2019.04.11~),
-         ${misc:Depends}
-Recommends: libpam-systemd,
-            utopia-desktop-cinnamon,
-            utopia-desktop-defaults (= ${source:Version}),
-            utopia-gnomeapps-defaults (= ${source:Version})
-Breaks: utopia-cinnamon-tweaks (<< 2017.04.16~)
-Replaces: utopia-cinnamon-tweaks (<< 2017.04.16~)
-Description: Utopia Desktop Defaults (Cinnamon Desktop)
- This package contains customized defaults for the Cinnamon Desktop.
+# Package: utopia-cinnamon-defaults
+# Architecture: all
+# Depends: fonts-noto-hinted,
+#          cinnamon-common (>= 2.6~),
+#          cinnamon-desktop-data (>= 2.6.4),
+#          cinnamon-settings-daemon (>= 2.6),
+#          muffin-common (>= 2.6~),
+#          utopia-themes (>= 2019.04.11~),
+#          ${misc:Depends}
+# Recommends: libpam-systemd,
+#             utopia-desktop-cinnamon,
+#             utopia-desktop-defaults (= ${source:Version}),
+#             utopia-gnomeapps-defaults (= ${source:Version})
+# Breaks: utopia-cinnamon-tweaks (<< 2017.04.16~)
+# Replaces: utopia-cinnamon-tweaks (<< 2017.04.16~)
+# Description: Utopia Desktop Defaults (Cinnamon Desktop)
+#  This package contains customized defaults for the Cinnamon Desktop.
 
 Package: utopia-desktop-defaults
 Architecture: all
@@ -43,29 +43,29 @@ Description: Utopia Desktop Defaults (common settings)
   - Default GTK+ 3 font
   - Defaults for LightDM and LightDM GTK+ Greeter
 
-Package: utopia-gnomeapps-defaults
-Architecture: all
-Depends: gsettings-desktop-schemas,
-         ${misc:Depends}
-Recommends: gnome-terminal, utopia-desktop-defaults (= ${source:Version})
-Description: Utopia Desktop Defaults (GNOME apps)
- This package contains customized defaults for GNOME applications.
-
-Package: utopia-mate-defaults
-Architecture: all
-Depends: caja-common (>= 1.8~),
-         fonts-noto-hinted,
-         marco-common (>= 1.8~),
-         mate-desktop-common (>= 1.8~),
-         mate-menu,
-         mate-panel (>= 1.8~),
-         mate-settings-daemon (>= 1.8~),
-         mate-terminal-common (>= 1.8~),
-         utopia-themes (>= 2019.04.11~),
-         ${misc:Depends}
-Recommends: utopia-desktop-defaults (= ${source:Version}), utopia-desktop-mate
-Description: Utopia Desktop Defaults (MATE Desktop)
- This package contains customized defaults for the MATE Desktop.
+# Package: utopia-gnomeapps-defaults
+# Architecture: all
+# Depends: gsettings-desktop-schemas,
+#          ${misc:Depends}
+# Recommends: gnome-terminal, utopia-desktop-defaults (= ${source:Version})
+# Description: Utopia Desktop Defaults (GNOME apps)
+#  This package contains customized defaults for GNOME applications.
+#
+# Package: utopia-mate-defaults
+# Architecture: all
+# Depends: caja-common (>= 1.8~),
+#          fonts-noto-hinted,
+#          marco-common (>= 1.8~),
+#          mate-desktop-common (>= 1.8~),
+#          mate-menu,
+#          mate-panel (>= 1.8~),
+#          mate-settings-daemon (>= 1.8~),
+#          mate-terminal-common (>= 1.8~),
+#          utopia-themes (>= 2019.04.11~),
+#          ${misc:Depends}
+# Recommends: utopia-desktop-defaults (= ${source:Version}), utopia-desktop-mate
+# Description: Utopia Desktop Defaults (MATE Desktop)
+#  This package contains customized defaults for the MATE Desktop.
 
 Package: utopia-xfce-defaults
 Architecture: all
