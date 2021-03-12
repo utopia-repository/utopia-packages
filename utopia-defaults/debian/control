@@ -8,23 +8,24 @@ Homepage: https://github.com/utopia-repository/utopia-packages
 Vcs-Git: https://github.com/utopia-repository/utopia-packages
 Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
-# Package: utopia-cinnamon-defaults
-# Architecture: all
-# Depends: fonts-noto-hinted,
-#          cinnamon-common (>= 2.6~),
-#          cinnamon-desktop-data (>= 2.6.4),
-#          cinnamon-settings-daemon (>= 2.6),
-#          muffin-common (>= 2.6~),
-#          utopia-themes (>= 2019.04.11~),
-#          ${misc:Depends}
-# Recommends: libpam-systemd,
-#             utopia-desktop-cinnamon,
-#             utopia-desktop-defaults (= ${source:Version}),
-#             utopia-gnomeapps-defaults (= ${source:Version})
-# Breaks: utopia-cinnamon-tweaks (<< 2017.04.16~)
-# Replaces: utopia-cinnamon-tweaks (<< 2017.04.16~)
-# Description: Utopia Desktop Defaults (Cinnamon Desktop)
-#  This package contains customized defaults for the Cinnamon Desktop.
+Package: utopia-apt-config
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: utopia-keyring
+Description: custom APT configuration for the Utopia Repository
+ This package contains custom APT configuration that I prefer to use on my machines.
+ Specifically, it adds the following:
+ .
+ * Pinning rules in /etc/apt/preferences.d:
+   - Allow automatic updates from experimental
+   - Prefer binaries from testing over unstable
+   - Prefer Utopia Repository nightlies over testing and unstable packages
+ .
+ * A rule in /etc/apt/apt.conf.d to always enable installing recommended
+   packages.
+ .
+ Note: because this package installs configuration files, removing its settings
+ requires using 'apt-get purge' instead of 'remove'.
 
 Package: utopia-desktop-defaults
 Architecture: all
@@ -43,36 +44,12 @@ Description: Utopia Desktop Defaults (common settings)
   - Default GTK+ 3 font
   - Defaults for LightDM and LightDM GTK+ Greeter
 
-# Package: utopia-gnomeapps-defaults
-# Architecture: all
-# Depends: gsettings-desktop-schemas,
-#          ${misc:Depends}
-# Recommends: gnome-terminal, utopia-desktop-defaults (= ${source:Version})
-# Description: Utopia Desktop Defaults (GNOME apps)
-#  This package contains customized defaults for GNOME applications.
-#
-# Package: utopia-mate-defaults
-# Architecture: all
-# Depends: caja-common (>= 1.8~),
-#          fonts-noto-hinted,
-#          marco-common (>= 1.8~),
-#          mate-desktop-common (>= 1.8~),
-#          mate-menu,
-#          mate-panel (>= 1.8~),
-#          mate-settings-daemon (>= 1.8~),
-#          mate-terminal-common (>= 1.8~),
-#          utopia-themes (>= 2019.04.11~),
-#          ${misc:Depends}
-# Recommends: utopia-desktop-defaults (= ${source:Version}), utopia-desktop-mate
-# Description: Utopia Desktop Defaults (MATE Desktop)
-#  This package contains customized defaults for the MATE Desktop.
-
 Package: utopia-xfce-defaults
 Architecture: all
 Depends: xfce4-datetime-plugin,
          xfce4-pulseaudio-plugin,
          xfce4-sensors-plugin,
-         xfce4-settings (>= 4.16~)
+         xfce4-settings (>= 4.16~),
          xfce4-whiskermenu-plugin,
          utopia-desktop-defaults (= ${source:Version}),
          utopia-themes (>= 2019.04.11~),
