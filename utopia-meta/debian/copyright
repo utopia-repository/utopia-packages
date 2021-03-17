@@ -3,7 +3,7 @@ Upstream-Name: utopia-meta
 Source: https://github.com/utopia-repository/utopia-packages
 
 Files: *
-Copyright: 2014-2019 James Lu <james@overdrivenetworks.com>
+Copyright: 2014-2021 James Lu <james@overdrivenetworks.com>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

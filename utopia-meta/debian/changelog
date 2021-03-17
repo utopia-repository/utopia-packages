@@ -1,3 +1,12 @@
+utopia-meta (2021.03.16) unstable; urgency=medium
+
+  * baseutils: add R: convmv, debsums, dnsutils, mtr-tiny | mtr
+  * Move git-buildpackage from devel to devel-packaging
+  * accessories: drop R: hexchat
+  * desktop-kde: remove R: obsolete user-manager
+
+ -- James Lu <james@overdrivenetworks.com>  Tue, 16 Mar 2021 18:55:02 -0700
+
 utopia-meta (2020.07.31) unstable; urgency=medium
 
   * Move apt-listbugs from baseutils to desktop-common
