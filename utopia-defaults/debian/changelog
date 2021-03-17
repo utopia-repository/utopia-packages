@@ -1,10 +1,10 @@
-utopia-defaults (2021.03.11~) UNRELEASED; urgency=medium
+utopia-defaults (2021.03.16) unstable; urgency=medium
 
   * xfce-defaults: port to Xfce 4.16
     - Update default panel launchers from exo-*.desktop to xfce4-*.desktop
     - Depend on xfce4-settings >= 4.16
     - xfconf: set xsettings/Gtk/DialogsUseHeader to false
-  * Disable MATE, GNOME apps, and Cinnamon default packages - I haven't used
+  * Remove MATE, GNOME apps, and Cinnamon default packages - I haven't used
     them in a long time
   * Merge utopia-apt-config into this source package. Remaining changes:
     - Rename utopia-pins.pref to 50utopia-pins.pref to follow standard naming
@@ -15,7 +15,7 @@ utopia-defaults (2021.03.11~) UNRELEASED; urgency=medium
     - Enable Num Lock on startup in LightDM
     - Add Depends: numlockx
 
- -- James Lu <james@overdrivenetworks.com>  Thu, 11 Mar 2021 21:55:42 -0800
+ -- James Lu <james@overdrivenetworks.com>  Tue, 16 Mar 2021 18:50:09 -0700
 
 utopia-defaults (2019.06.20) unstable; urgency=medium
 
