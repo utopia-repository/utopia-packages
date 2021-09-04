@@ -1,3 +1,9 @@
+utopia-meta (2021.09.02) UNRELEASED; urgency=medium
+
+  * Remove obsolete utopia-firewall-base
+
+ -- James Lu <james@overdrivenetworks.com>  Thu, 02 Sep 2021 21:25:09 -0700
+
 utopia-meta (2021.03.16) unstable; urgency=medium
 
   * baseutils: add R: convmv, debsums, dnsutils, mtr-tiny | mtr

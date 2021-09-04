@@ -1,1 +1,0 @@
-To use this setup, copy the contents to this folder to somewhere like /etc/iptables and set the "apply" script to run as root on startup (e.g. via cron @reboot).
