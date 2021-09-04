@@ -1,6 +1,7 @@
 utopia-meta (2021.09.02) UNRELEASED; urgency=medium
 
   * Remove obsolete utopia-firewall-base
+  * -desktop-common: add R: earlyoom
 
  -- James Lu <james@overdrivenetworks.com>  Thu, 02 Sep 2021 21:25:09 -0700
 
