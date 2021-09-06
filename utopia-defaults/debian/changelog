@@ -1,3 +1,9 @@
+utopia-defaults (2021.09.05) unstable; urgency=medium
+
+  * -polkit: Replace references to 'adm' group with 'staff'
+
+ -- James Lu <james@overdrivenetworks.com>  Sun, 05 Sep 2021 21:59:41 -0700
+
 utopia-defaults (2021.03.16) unstable; urgency=medium
 
   * xfce-defaults: port to Xfce 4.16
