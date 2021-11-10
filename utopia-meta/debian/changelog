@@ -1,3 +1,14 @@
+utopia-meta (2021.11.09~) UNRELEASED; urgency=medium
+
+  * desktop-xfce: Move engrampa | ark | file-roller | xarchiver to depends
+    to ensure that only one archiver gets installed by default
+    (as thunar-archive-plugin has R: xarchiver first)
+  * desktop-xfce: add R: utopia-xfce-defaults, xfce4-terminal
+    Ensure that xfce4-terminal is pulled in as the default terminal emulator
+    instead of xterm
+
+ -- James Lu <james@overdrivenetworks.com>  Tue, 09 Nov 2021 23:50:56 -0800
+
 utopia-meta (2021.09.05) unstable; urgency=low
 
   * Remove obsolete utopia-firewall-base

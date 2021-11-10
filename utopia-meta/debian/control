@@ -278,7 +278,7 @@ Depends: ark | engrampa,
 Recommends: breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
             cmst | nm-tray | network-manager-gnome | plasma-nm | wicd,
             lxqt-openssh-askpass,
-            qpdfview | okular | evince | pdf-viewer,
+            qpdfview | okular | atril | pdf-viewer,
             qterminal,
             screengrab,
             utopia-accessories-qt
@@ -341,7 +341,8 @@ Description: Utopia Desktop Collection - MATE (meta-package)
  Desktop tweaks.
 
 Package: utopia-desktop-xfce
-Depends: policykit-1-gnome,
+Depends: engrampa | ark | file-roller | xarchiver,
+         policykit-1-gnome,
          thunar-archive-plugin,
          utopia-desktop-common,
          xfce4 (>= 4.12),
@@ -355,7 +356,6 @@ Depends: policykit-1-gnome,
          ${misc:Depends}
 Recommends: atril | evince | pdf-viewer,
             catfish,
-            engrampa | ark | file-roller | xarchiver,
             menulibre,
             mousepad,
             mugshot,
@@ -364,13 +364,14 @@ Recommends: atril | evince | pdf-viewer,
             thunar-media-tags-plugin,
             tumbler,
             utopia-accessories-gtk,
+            utopia-xfce-defaults,
             xfce4-netload-plugin,
             xfce4-sensors-plugin,
             xfce4-systemload-plugin,
             xfce4-taskmanager,
+            xfce4-terminal,
             xfce4-timer-plugin,
             xfce4-weather-plugin
-Suggests: utopia-xfce-defaults
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (minimal)
  This meta-package installs a minimal Xfce desktop with a hand-picked set of
