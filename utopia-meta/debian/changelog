@@ -6,6 +6,13 @@ utopia-meta (2021.11.09~) UNRELEASED; urgency=medium
   * desktop-xfce: add R: utopia-xfce-defaults, xfce4-terminal
     Ensure that xfce4-terminal is pulled in as the default terminal emulator
     instead of xterm
+  * accessories:
+    - Split qalculate into gtk and qt variants, adding galculator
+      and kcalc as alternatives
+    - Drop R: keepassx alternative and obsolete utopia-network-webbrowser
+    - Move R: hardinfo | lshw-gtk to accessories-gtk (kinfocenter covers
+      similar ground)
+    - Move synaptic to accessories-gtk/Suggests
 
  -- James Lu <james@overdrivenetworks.com>  Tue, 09 Nov 2021 23:50:56 -0800
 

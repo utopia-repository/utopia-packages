@@ -11,11 +11,8 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 Package: utopia-accessories
 Depends: ${misc:Depends}
 Recommends: firefox | firefox-esr | chromium | qupzilla | midori,
-            hardinfo | lshw-gtk | sysinfo,
-            keepassxc | keepassx (>= 2.0~),
-            qalculate-gtk | qalculate,
+            keepassxc,
             scrot,
-            utopia-network-webbrowser,
             vlc
 Suggests: bleachbit,
           florence | caribou,
@@ -37,17 +34,19 @@ Recommends: font-manager | gnome-font-viewer,
             gdmap,
             geany,
             gparted,
+            hardinfo | lshw-gtk,
             gvfs-backends,
             gvfs-bin,
             gvfs-fuse,
             pinentry-gnome3 | pinentry-gtk2,
-            synaptic
+            qalculate-gtk | galculator
 Suggests: lightdm-gtk-greeter-settings,
           menulibre | mozo,
           pavucontrol,
           qt5-gtk2-platformtheme | qt5-style-plugins (<< 5.0.0+git23.g335dbec-3~),
           qt5ct,
           simple-scan,
+          synaptic,
           xfburn | brasero,
           xzoom
 Architecture: all
@@ -61,6 +60,7 @@ Recommends: kate | juffed,
             kmag,
             partitionmanager | gparted,
             pinentry-qt,
+            qalculate-qt | kcalc,
             qapt-utils | gdebi-kde,
             qdirstat
 Suggests: k3b, muon, skanlite
