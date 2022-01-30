@@ -1,4 +1,3 @@
-# We only want sources, not binaries and build artifacts! ;)
 *.deb
 *.tar.*
 *.changes
@@ -7,9 +6,10 @@
 *.substvars
 *.build*
 **/debian/*/
-**/files
+**/debian/files
 *~
 !**/debian/source/
 *.build*
 utopia-keyring/*.gpg
 **/debhelper-build-stamp
+/Packages*
