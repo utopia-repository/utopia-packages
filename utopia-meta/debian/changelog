@@ -1,5 +1,6 @@
 utopia-meta (2021.11.09~) UNRELEASED; urgency=medium
 
+  * desktop-mate: Move mate-media to R:; fix installability on testing
   * desktop-xfce: Move engrampa | ark | file-roller | xarchiver to depends
     to ensure that only one archiver gets installed by default
     (as thunar-archive-plugin has R: xarchiver first)
