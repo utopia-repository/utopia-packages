@@ -2,6 +2,7 @@ utopia-meta (2022.03.21) UNRELEASED; urgency=medium
 
   * accessories-qt: revert qalculate-qt to qalculate-gtk as the former is not
     packaged yet
+  * baseutils: prefer tmux over screen
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 03 Jun 2022 01:38:43 -0700
 
