@@ -60,7 +60,7 @@ Recommends: kate | juffed,
             kmag,
             partitionmanager | gparted,
             pinentry-qt,
-            qalculate-qt | kcalc,
+            qalculate-gtk | kcalc,
             qapt-utils | gdebi-kde,
             qdirstat
 Suggests: k3b, muon, skanlite
