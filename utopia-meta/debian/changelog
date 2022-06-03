@@ -1,8 +1,10 @@
-utopia-meta (2022.03.21) UNRELEASED; urgency=medium
+utopia-meta (2022.06.03~) UNRELEASED; urgency=medium
 
   * accessories-qt: revert qalculate-qt to qalculate-gtk as the former is not
     packaged yet
   * baseutils: prefer tmux over screen
+  * baseutils: ensure rsyslog | system-log-daemon is installed - this appears
+    to be missing from LXC's unofficial Debian images
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 03 Jun 2022 01:38:43 -0700
 
