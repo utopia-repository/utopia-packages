@@ -263,7 +263,7 @@ Recommends: krdc,
             thunderbird,
             variety,
             wine | wine-development | wine-staging-compat
-Suggests: bluedevil | blueman | blueberry,
+Suggests: bluedevil | blueman,
           webcamoid | kamoso | cheese | guvcview
 Architecture: all
 Description: Utopia Desktop Collection - KDE Plasma 5 (standard)
@@ -285,7 +285,6 @@ Recommends: breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
             screengrab,
             utopia-accessories-qt
 Suggests: sddm | lightdm,
-          sddm-theme-maui | sddm-theme-debian-maui | lightdm,
           utopia-themes
 Architecture: all
 Description: Utopia Desktop Collection - LXQt (meta-package)
@@ -393,9 +392,7 @@ Recommends: deluge | transmission-gtk,
             thunderbird,
             variety,
             wine | wine-development | wine-staging-compat
-Suggests: blueman | blueberry | gnome-bluetooth,
-          network-manager-openconnect-gnome | connman | wicd,
-          network-manager-openvpn-gnome | connman | wicd,
+Suggests: blueman | gnome-bluetooth,
           cheese | guvcview | webcamoid | kamoso
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (standard)
@@ -430,11 +427,7 @@ Recommends: apt-rdepends,
             tcpdump,
 Suggests: chrony | ntp,
           clang,
-          glade,
           help2man,
-          jpegoptim,
-          optipng | pngcrush,
-          qtchooser,
           scons,
           shellcheck,
           valgrind,
@@ -507,7 +500,6 @@ Recommends: fcitx-table-wubi,
 Suggests: firefox-esr-l10n-zh-cn | firefox-l10n-zh-cn,
           fonts-wqy-microhei,
           fonts-wqy-zenhei,
-          goldendict,
           libreoffice-l10n-zh-cn
 Architecture: all
 Description: Utopia I18n - Chinese language support (meta-package)
@@ -523,16 +515,11 @@ Recommends: audacity,
             obs-studio,
             optipng | pngcrush,
             spek,
-            vlc,
-            you-get,
-            youtube-dl
 Suggests: easytag | puddletag,
-          inkscape,
           isomaster,
           kdenlive,
-          mumble,
-          pinta | kolourpaint,
-          vlc-plugin-fluidsynth
+          yt-dlp,
+          you-get
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
  This meta-package pulls in some programs (players, editors, etc.) for working
@@ -591,7 +578,6 @@ Description: Utopia Desktop Themes Collection (meta-package)
 Package: utopia-web-server
 Depends: nginx-full | nginx, php-fpm, ${misc:Depends}
 Recommends: apache2-utils, certbot (>= 0.23.0-1~)
-Suggests: default-mysql-server | postgresql
 Architecture: all
 Description: Utopia Server Collection - Web Server (meta-package)
  This meta-package installs a basic web server with nginx and PHP.

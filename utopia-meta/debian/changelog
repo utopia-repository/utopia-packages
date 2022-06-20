@@ -5,6 +5,8 @@ utopia-meta (2022.06.03~) UNRELEASED; urgency=medium
   * baseutils: prefer tmux over screen
   * baseutils: ensure rsyslog | system-log-daemon is installed - this appears
     to be missing from LXC's unofficial Debian images
+  * Clean up Suggests on most packages
+  * multimedia: remove R: vlc; move you-get / youtube-dl to suggests
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 03 Jun 2022 01:38:43 -0700
 
