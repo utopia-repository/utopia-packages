@@ -1,5 +1,9 @@
-utopia-meta (2022.06.03~) UNRELEASED; urgency=medium
+utopia-meta (2022.07.13~) UNRELEASED; urgency=medium
 
+  * accessories: update web browser recommends: add epiphany-browser | falkon,
+    remove qupzilla | midori
+  * accessories-gtk: remove R: lshw-gtk
+  * accessories-qt: remove obsolete references to utopia-accessories-kde
   * accessories-qt: revert qalculate-qt to qalculate-gtk as the former is not
     packaged yet
   * baseutils: prefer tmux over screen

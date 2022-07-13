@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: ${misc:Depends}
-Recommends: firefox | firefox-esr | chromium | qupzilla | midori,
+Recommends: firefox | firefox-esr | chromium | epiphany-browser | falkon,
             keepassxc,
             scrot,
             vlc
@@ -34,7 +34,7 @@ Recommends: font-manager | gnome-font-viewer,
             gdmap,
             geany,
             gparted,
-            hardinfo | lshw-gtk,
+            hardinfo,
             gvfs-backends,
             gvfs-bin,
             gvfs-fuse,
@@ -65,9 +65,6 @@ Recommends: kate | juffed,
             qdirstat
 Suggests: k3b, muon, skanlite
 Architecture: all
-Breaks: utopia-accessories-kde (<< 2017.06.19~)
-Replaces: utopia-accessories-kde (<< 2017.06.19~)
-Provides: utopia-accessories-kde
 Description: Utopia Accessories Collection - Qt (meta-package)
  This meta-package pulls in some accessories targeting a Qt-based
  desktop.
