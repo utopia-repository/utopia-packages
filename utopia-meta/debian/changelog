@@ -1,4 +1,4 @@
-utopia-meta (2022.07.13~) UNRELEASED; urgency=medium
+utopia-meta (2022.07.13) unstable; urgency=medium
 
   * accessories: update web browser recommends: add epiphany-browser | falkon,
     remove qupzilla | midori
@@ -15,7 +15,7 @@ utopia-meta (2022.07.13~) UNRELEASED; urgency=medium
   * Clean up Suggests on most packages
   * multimedia: remove R: vlc; move you-get / youtube-dl to suggests
 
- -- James Lu <james@overdrivenetworks.com>  Fri, 03 Jun 2022 01:38:43 -0700
+ -- James Lu <james@overdrivenetworks.com>  Wed, 13 Jul 2022 16:24:52 -0700
 
 utopia-meta (2022.03.20) unstable; urgency=medium
 
