@@ -9,6 +9,9 @@ utopia-meta (2022.07.13~) UNRELEASED; urgency=medium
   * baseutils: prefer tmux over screen
   * baseutils: ensure rsyslog | system-log-daemon is installed - this appears
     to be missing from LXC's unofficial Debian images
+  * hardware-support: pull in more network & sound firmware packages
+    - Add R: firmware-brcm80211, firmware-intel-sound, firmware-libertas,
+      firmware-ti-connectivity
   * Clean up Suggests on most packages
   * multimedia: remove R: vlc; move you-get / youtube-dl to suggests
 
