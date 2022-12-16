@@ -10,7 +10,8 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: ${misc:Depends}
-Recommends: firefox | firefox-esr | chromium | epiphany-browser | falkon,
+Recommends: convmv,
+            firefox | firefox-esr | chromium | epiphany-browser | falkon,
             keepassxc,
             scrot,
             vlc
@@ -102,7 +103,6 @@ Recommends: apt-utils,
             aptitude,
             arch-test,
             bzip2,
-            convmv,
             debian-goodies,
             debsums,
             dnsutils,
