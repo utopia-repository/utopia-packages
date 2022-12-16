@@ -574,10 +574,10 @@ Description: Utopia Desktop Themes Collection (meta-package)
  This meta-package installs various themes for the Linux desktop.
 
 Package: utopia-web-server
-Depends: nginx-full | nginx, php-fpm, ${misc:Depends}
+Depends: nginx-full | nginx, ${misc:Depends}
 Recommends: apache2-utils, certbot (>= 0.23.0-1~)
 Architecture: all
 Description: Utopia Server Collection - Web Server (meta-package)
- This meta-package installs a basic web server with nginx and PHP.
+ This meta-package installs a basic web server.
  .
  It also provides a certbot renewal script for nginx.
