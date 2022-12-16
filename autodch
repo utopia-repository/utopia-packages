@@ -1,0 +1,35 @@
+#!/bin/bash
+# Automatically write changelog entries from Git commits
+# Inspired by "gbp dch" but with more straightforward support for monorepos (packages as subdirectories)
+
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
+
+package="$1"
+release="${2:-UNRELEASED}"
+
+if [[ -z "$package" ]]; then
+    echo "Usage: $0 <package> [release]"
+    exit 1
+fi
+
+# https://git-scm.com/docs/pretty-formats#Documentation/pretty-formats.txt-emHem
+GIT_TO_CHANGELOG_FORMAT='[%h] %aN: %s'
+PKG_VERSION="$(date +%Y.%m.%d)"
+
+changelog_fname="$package/debian/changelog"
+last_changelog_commit="$(git log --pretty=format:%H -n 1 -- "$changelog_fname")"
+if [[ -z "$last_changelog_commit" ]]; then
+    echo "ERR: last commit not found for $changelog_fname"
+    exit 1
+elif ! git diff --exit-code "$changelog_fname"; then
+    echo "ERR: $changelog_fname has unstaged changes"
+    exit 1
+fi
+
+set -e
+pushd "$package"
+dch -v "$PKG_VERSION" -m "" -D "$release" # create an empty changelog entry
+while read -r line; do
+    echo "$line"
+    dch -a "$line"
+done < <( git log --pretty=format:"$GIT_TO_CHANGELOG_FORMAT" "${last_changelog_commit}"...HEAD "." )
