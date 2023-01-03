@@ -325,16 +325,14 @@ Recommends: caja-open-terminal,
             dconf-editor | dconf-tools,
             mate-media,
             mozo | menulibre,
-            utopia-accessories-gtk,
-            utopia-mate-defaults
+            utopia-accessories-gtk
 Suggests: mate-desktop-environment-extras,
           mate-sensors-applet,
           mate-tweak,
           utopia-themes
 Architecture: all
 Description: Utopia Desktop Collection - MATE (meta-package)
- This meta-package installs a minimal MATE Desktop Environment with Utopia
- Desktop tweaks.
+ This meta-package installs a minimal MATE Desktop Environment.
 
 Package: utopia-desktop-sound-pipewire
 Depends: pipewire (>= 0.3.61~),
