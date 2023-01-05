@@ -11,8 +11,16 @@ fi
 
 eval "$(dpkg-architecture -s)"  # source Debian build args
 
+set -x
+
 echo "Fetching Debian packages list..."
 wget "https://deb.debian.org/debian/dists/${DIST}/main/binary-${DEB_HOST_ARCH}/Packages.xz" -O- | unxz -c > Packages-Debian-main
 
 apt-ftparchive packages . > Packages
-dose-debcheck --fg Packages -e -f --summary --bg Packages-Debian-main
+
+if [[ "$DIST" != "testing" && "$DIST" != "unstable" ]]; then
+    wget "https://deb.debian.org/debian/dists/${DIST}-backports/main/binary-${DEB_HOST_ARCH}/Packages.xz" -O- | unxz -c > Packages-Debian-backports-main
+    dose-debcheck --fg Packages -e -f --summary --bg Packages-Debian-main --bg Packages-Debian-backports-main
+else
+    dose-debcheck --fg Packages -e -f --summary --bg Packages-Debian-main
+fi
