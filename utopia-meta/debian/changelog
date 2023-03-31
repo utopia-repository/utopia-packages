@@ -1,3 +1,17 @@
+utopia-meta (2023.03.30) unstable; urgency=medium
+
+  * [92676ac] James Lu: hardware-support: replace individual firmware
+    packages with live-task-non-free-firmware-pc
+  * [7263a04] James Lu: desktop-common: add R: pipewire-audio
+  * [34ff944] James Lu: Remove references to utopia-mate-defaults
+  * [6afe502] James Lu: utopia-devel: remove unused tools
+  * [ab9a5fb] James Lu: -web-server: stop installing PHP by default
+  * [05a5ad2] James Lu: -baseutils: remove infrequently used utils
+    (ioping, netselect-apt, rssh)
+  * [63f7246] James Lu: Set elinks as default CLI browser
+
+ -- James Lu <james@overdrivenetworks.com>  Thu, 30 Mar 2023 21:55:40 -0700
+
 utopia-meta (2022.07.13) unstable; urgency=medium
 
   * accessories: update web browser recommends: add epiphany-browser | falkon,
