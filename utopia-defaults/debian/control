@@ -2,8 +2,8 @@ Source: utopia-defaults
 Section: x11
 Priority: optional
 Maintainer: James Lu <james@overdrivenetworks.com>
-Build-Depends: debhelper (>= 10)
-Standards-Version: 4.2.0
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
 Homepage: https://github.com/utopia-repository/utopia-packages
 Vcs-Git: https://github.com/utopia-repository/utopia-packages
 Vcs-Browser: https://github.com/utopia-repository/utopia-packages
@@ -50,7 +50,8 @@ Depends: ${misc:Depends}
 Recommends: policykit-1
 Description: PolicyKit settings to run desktop actions without a password
  This package installs default PolicyKit privileges allowing administrators
- (those in "adm" or "sudo" group) to run various actions without being prompted
+ (those in "staff" or "sudo" group) to run various actions without being
+ prompted
  for a password:
  .
   - Mounting drives via udisks

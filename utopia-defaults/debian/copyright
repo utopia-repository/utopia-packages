@@ -3,7 +3,7 @@ Upstream-Name: utopia-defaults
 Source: https://github.com/utopia-repository/utopia-packages
 
 Files: *
-Copyright: 2014-2021 James Lu <james@overdrivenetworks.com>
+Copyright: 2014-2023 James Lu <james@overdrivenetworks.com>
 License: GPL-3.0+
 
 Files: polkit/*
