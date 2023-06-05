@@ -19,7 +19,6 @@ Description: custom APT configuration for the Utopia Repository
  * Pinning rules in /etc/apt/preferences.d:
    - Allow automatic updates from experimental
    - Prefer binaries from testing over unstable
-   - Prefer Utopia Repository nightlies over testing and unstable packages
  .
  * A rule in /etc/apt/apt.conf.d to always enable installing recommended
    packages.
