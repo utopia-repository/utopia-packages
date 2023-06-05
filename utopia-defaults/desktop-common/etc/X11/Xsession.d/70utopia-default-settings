@@ -8,3 +8,7 @@ else
 fi
 
 export XDG_CONFIG_DIRS
+if [ -n "$DBUS_SESSION_BUS_ADDRESS" ] && \
+        command -v dbus-update-activation-environment >/dev/null; then
+    dbus-update-activation-environment --verbose --systemd XDG_CONFIG_DIRS
+fi
