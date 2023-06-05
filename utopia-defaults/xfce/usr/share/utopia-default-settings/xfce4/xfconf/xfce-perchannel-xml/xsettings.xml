@@ -16,4 +16,7 @@
     <property name="FontName" type="string" value="Noto Sans 11"/>
     <property name="DialogsUseHeader" type="bool" value="false"/>
   </property>
+  <property name="Xfce" type="empty">
+    <property name="SyncThemes" type="bool" value="true"/>
+  </property>
 </channel>
