@@ -13,7 +13,7 @@ if [[ -z "$package" ]]; then
 fi
 
 # https://git-scm.com/docs/pretty-formats#Documentation/pretty-formats.txt-emHem
-GIT_TO_CHANGELOG_FORMAT='[%h] %aN: %s'
+GIT_TO_CHANGELOG_FORMAT='%aN|[%h] %s'
 PKG_VERSION="$(date +%Y.%m.%d)"
 
 changelog_fname="$package/debian/changelog"
@@ -31,5 +31,7 @@ pushd "$package"
 dch -v "$PKG_VERSION" -m "" -D "$release" # create an empty changelog entry
 while read -r line; do
     echo "$line"
-    dch -a "$line"
+    name="$(cut -d '|' -f 1 <<< "$line")"
+    commit_title="$(cut -d '|' -f 2- <<< "$line")"
+    DEBFULLNAME="$name" dch -a "$commit_title"
 done < <( git log --pretty=format:"$GIT_TO_CHANGELOG_FORMAT" "${last_changelog_commit}"...HEAD "." )
