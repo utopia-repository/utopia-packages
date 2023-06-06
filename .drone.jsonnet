@@ -2,15 +2,23 @@
 local test_with(release, use_network=false) = {
     kind: "pipeline",
     type: "docker",
-    name: "build-check-installability-" + release,
+    name: "build-check-" + release,
     steps: [
         {
-            name: "build-check-installability",
+            name: "build",
             image: "debian:" + release,
             commands: [
                 "apt-get update",
-                "apt-get -yy install dpkg-dev apt-utils debhelper gpg dose-distcheck wget",
+                "apt-get -yy install dpkg-dev debhelper gpg",
                 "./build",
+            ]
+        },
+        {
+            name: "check-installability",
+            image: "debian:" + release,
+            commands: [
+                "apt-get update",
+                "apt-get -yy install dose-distcheck wget apt-utils dpkg-dev",
                 "./check-installability " + release
             ]
         }
