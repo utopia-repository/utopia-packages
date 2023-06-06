@@ -154,7 +154,6 @@ Suggests: cifs-utils,
           smbclient,
           utopia-accessories-gtk | utopia-accessories-qt,
           utopia-multimedia,
-          utopia-network,
           utopia-office
 Architecture: all
 Breaks: utopia-desktop (<< 2017.06.19~)
