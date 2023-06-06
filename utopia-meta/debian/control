@@ -472,7 +472,7 @@ Description: Dependency package - marks the machine as a headless server
 
 Package: utopia-intl-zh
 Depends: fcitx,
-         fcitx-sunpinyin | fcitx-googlepinyin | fctix-libpinyin | fcitx-pinyin,
+         fcitx-sunpinyin | fcitx-googlepinyin | fcitx-libpinyin | fcitx-pinyin,
          im-config,
          ${misc:Depends}
 Recommends: fcitx-table-wubi,
