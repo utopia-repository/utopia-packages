@@ -69,7 +69,7 @@ Architecture: all
 Depends: xfce4-datetime-plugin,
          xfce4-pulseaudio-plugin,
          xfce4-sensors-plugin,
-         xfce4-settings (>= 4.16~),
+         xfce4-settings (>= 4.18~),
          xfce4-whiskermenu-plugin,
          utopia-desktop-defaults (= ${source:Version}),
          utopia-themes (>= 2019.04.11~),
