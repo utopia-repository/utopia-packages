@@ -1,3 +1,19 @@
+utopia-defaults (2023.06.09) unstable; urgency=medium
+
+  * Preparations for the Bookworm release!
+  * [3515bfd] Bump xfce4-settings dependency to >= 4.18~
+  * [7850bda] Bump to Standards-Version 4.6.2 and dh 13
+  * [d7f7fdf] Remove obsolete .install files
+  * [ab4982b] apt: remove nightlies config, as that no longer exists
+  * [608328b] xfce: enable SyncThemes option
+  * [ccbb84a] xfce: enable font hinting by default
+  * [b4f78ed] {xfwm4,xsettings}.xml: remove settings lines that are same
+    as default
+  * [34f3c34] Xsession: update XDG_CONFIG_DIRS with dbus-update-
+    activation-environment
+
+ -- James Lu <jlu@debian.org>  Fri, 09 Jun 2023 21:01:16 -0700
+
 utopia-defaults (2021.09.05) unstable; urgency=medium
 
   * -polkit: Replace references to 'adm' group with 'staff'
