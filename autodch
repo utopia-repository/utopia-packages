@@ -33,5 +33,6 @@ while read -r line; do
     echo "$line"
     name="$(cut -d '|' -f 1 <<< "$line")"
     commit_title="$(cut -d '|' -f 2- <<< "$line")"
+    echo "$commit_title"
     DEBFULLNAME="$name" dch -a "$commit_title"
-done < <( git log --pretty=format:"$GIT_TO_CHANGELOG_FORMAT" "${last_changelog_commit}"...HEAD "." )
+done < <( git log --pretty=format:"$GIT_TO_CHANGELOG_FORMAT" "${last_changelog_commit}~1"...HEAD "." )
