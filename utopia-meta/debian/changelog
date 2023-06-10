@@ -1,3 +1,23 @@
+utopia-meta (2023.06.09) unstable; urgency=medium
+
+  * Preparations for the Bookworm release!
+  * [0a76f6f] desktop: add R: avahi-utils, cifs-utils
+  * [50e3b3f] Remove reference to obsolete utopia-network
+  * [5f44313] accessories-gtk: remove R: hardinfo
+  * [fc027f5] Fix typo fctix-libpinyin -> fcitx-libpinyin
+  * [b728c91] Remove references to obsolete packages
+    - gdebi-kde
+    - gvfs-bin
+    - ksnapshot
+    - ksysguard
+    - lightdm-kde-greeter
+    - libreoffice-gtk2 / libreoffice-gtk
+    - libreoffice-kde5 / libreoffice-kde
+    - libreoffice-ogltrans
+    - muon
+
+ -- James Lu <james@overdrivenetworks.com>  Fri, 09 Jun 2023 21:01:43 -0700
+
 utopia-meta (2023.03.30) unstable; urgency=medium
 
   * [92676ac] James Lu: hardware-support: replace individual firmware
