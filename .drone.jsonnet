@@ -26,7 +26,7 @@ local test_with(release, use_network=false) = {
 };
 
 [
-    test_with("bullseye"),
+    test_with("bookworm"),
     test_with("testing"),
     test_with("unstable"),
 ]
