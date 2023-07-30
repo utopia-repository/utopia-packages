@@ -209,7 +209,7 @@ Depends: ark,
          konsole,
          kwin-x11 | kwin,
          okular | pdf-viewer,
-         plasma-desktop (>= 4:5),
+         plasma-desktop,
          plasma-pa | kmix,
          plasma-widgets-addons,
          systemsettings,
@@ -267,7 +267,7 @@ Description: Utopia Desktop Collection - KDE Plasma 5 (standard)
 Package: utopia-desktop-lxqt
 Depends: ark | engrampa,
          lxqt-admin,
-         lxqt-core (>= 29~),
+         lxqt-core,
          qterminal | x-terminal-emulator,
          utopia-desktop-lxqt-xfwm4 | utopia-desktop-lxqt-kwin | utopia-desktop-lxqt-openbox,
          ${misc:Depends}
@@ -338,7 +338,7 @@ Depends: engrampa | ark | file-roller | xarchiver,
          policykit-1-gnome,
          thunar-archive-plugin,
          utopia-desktop-common,
-         xfce4 (>= 4.12),
+         xfce4,
          xfce4-datetime-plugin,
          xfce4-notifyd,
          xfce4-power-manager,
@@ -491,7 +491,7 @@ Description: Utopia I18n - Chinese language support (meta-package)
 Package: utopia-multimedia
 Depends: ${misc:Depends}
 Recommends: audacity,
-            ffmpeg (>= 7:3.0~),
+            ffmpeg,
             gimp | krita,
             jpegoptim,
             obs-studio,
@@ -508,9 +508,9 @@ Description: Utopia Multimedia Collection (meta-package)
  with media files.
 
 Package: utopia-office
-Depends: libreoffice-calc (>= 5.1~),
-         libreoffice-impress (>= 5.1~),
-         libreoffice-writer (>= 5.1~),
+Depends: libreoffice-calc,
+         libreoffice-impress,
+         libreoffice-writer,
          ${misc:Depends}
 Recommends: fonts-linuxlibertine,
             fonts-sil-gentium-basic,
@@ -558,7 +558,7 @@ Description: Utopia Desktop Themes Collection (meta-package)
 
 Package: utopia-web-server
 Depends: nginx-full | nginx, ${misc:Depends}
-Recommends: apache2-utils, certbot (>= 0.23.0-1~)
+Recommends: apache2-utils, certbot
 Architecture: all
 Description: Utopia Server Collection - Web Server (meta-package)
  This meta-package installs a basic web server.
