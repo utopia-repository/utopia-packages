@@ -431,6 +431,8 @@ Package: utopia-hardware-support
 Depends: acpi-support,
          cpufrequtils,
          lm-sensors,
+         nvme-cli,
+         smartmontools,
          pciutils,
          usbutils,
          ${misc:Depends}
@@ -438,9 +440,8 @@ Recommends: alsa-utils,
             eject,
             inxi,
             live-task-non-free-firmware-pc,
-            mesa-utils,
-            scalpel | foremost,
-            testdisk
+            mesa-utils
+Suggests: ddrescue
 Architecture: all
 Description: Utopia Desktop Collection - hardware utilities (meta-package)
  This meta-package installs utilities to list and manage hardware, as well as
