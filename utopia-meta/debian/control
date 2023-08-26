@@ -10,9 +10,12 @@ Vcs-Browser: https://github.com/utopia-repository/utopia-packages
 
 Package: utopia-accessories
 Depends: ${misc:Depends}
-Recommends: convmv,
+Recommends: audacious,
+            convmv,
             firefox | firefox-esr | chromium | epiphany-browser | falkon,
+            imagemagick,
             keepassxc,
+            pandoc,
             scrot,
             vlc
 Suggests: bleachbit,
@@ -24,7 +27,7 @@ Suggests: bleachbit,
           unetbootin | tuxboot
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
- This meta-package pulls in some useful accessories for daily use and
+ This meta-package pulls in some useful programs for desktop use and
  administrative tasks.
 
 Package: utopia-accessories-gtk
@@ -144,7 +147,6 @@ Recommends: apt-listbugs,
             cifs-utils,
             dosfstools,
             earlyoom,
-            gddrescue,
             iw,
             libnss-mdns,
             pipewire-audio,
