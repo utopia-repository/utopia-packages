@@ -101,30 +101,32 @@ Depends: apt-listchanges,
          ${misc:Depends}
 Recommends: apt-utils,
             aptitude,
+            arch-install-scripts,
             arch-test,
             bzip2,
-            debian-goodies,
             debsums,
             dnsutils,
             extundelete,
+            gdb,
             gnupg,
-            gnupg (<< 2.1~) | dirmngr,
-            gnupg-agent,
             iftop,
             iotop,
             iptables,
-            mtr-tiny | mtr,
             mutt,
+            openssl,
+            python3-pip,
             reptyr,
             rsync,
-            screenfetch,
+            screenfetch | neofetch,
+            tcpdump,
+            tmux,
             tree,
             uptimed,
             utopia-keyring,
             vnstat,
             whiptail | dialog,
             whois
-Suggests: command-not-found, davfs2, p7zip-rar, sshfs, utopia-devel
+Suggests: command-not-found, p7zip-rar, sshfs
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
