@@ -417,7 +417,7 @@ Depends: build-essential,
          quilt,
          ${misc:Depends}
 Recommends: cmake,
-debian-archive-keyring,
+            debian-archive-keyring,
             debootstrap,
             help2man,
             pkgconf,
