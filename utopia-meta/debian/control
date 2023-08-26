@@ -398,38 +398,16 @@ Description: Utopia Desktop Collection - Xfce (standard)
  environment and programs for multimedia, productivity, networking, etc.
 
 Package: utopia-devel
-Depends: build-essential,
-         cmake,
-         dirmngr | gnupg (<< 2.1~),
-         gdb,
-         gnupg,
-         openssl,
-         pkg-config,
-         python3-pip,
-         utopia-baseutils,
+Depends: utopia-baseutils,
          ${misc:Depends}
-Recommends: apt-rdepends,
-            arch-install-scripts,
-            gnutls-bin,
-            golang,
-            graphviz,
-            imagemagick,
-            lsb-release,
-            nmap,
-            pandoc,
-            subversion,
-            tcpdump,
-Suggests: clang,
-          help2man,
-          shellcheck,
-          valgrind,
-          xca
 Architecture: all
-Description: Utopia Development Collection (meta-package)
+Section: oldlibs
+Description: Utopia Development Collection (deprecated)
  This meta-package installs libraries and tools for a development environment.
 
 Package: utopia-devel-packaging
-Depends: cowbuilder | sbuild | pbuilder,
+Depends: build-essential,
+         cowbuilder | sbuild | pbuilder,
          debhelper,
          devscripts,
          dh-make,
@@ -438,10 +416,13 @@ Depends: cowbuilder | sbuild | pbuilder,
          lintian,
          quilt,
          ${misc:Depends}
-Recommends: debian-archive-keyring,
+Recommends: cmake,
+debian-archive-keyring,
             debootstrap,
+            help2man,
+            pkgconf,
             ubuntu-keyring | ubuntu-archive-keyring
-Suggests: diffoscope, dose-distcheck, packaging-dev
+Suggests: diffoscope-minimal, dose-distcheck, packaging-dev
 Architecture: all
 Description: Utopia Development Collection - packaging tools (meta-package)
  This meta-package installs programs specific to a Debian packaging environment.
