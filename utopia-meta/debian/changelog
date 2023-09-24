@@ -1,3 +1,18 @@
+utopia-meta (2023.09.23) unstable; urgency=medium
+
+  * [1e6dfcf] Fix spacing issue
+  * [18c995b] hardware-support: add D: nvme-cli, smartmontools, S:
+    ddrescue; remove scalpel, foremost, testdisk
+  * [ebf5d95] Remove (empty out) utopia-devel
+  * [d5d6b33] accessories: add R: audacious, imagemagick, pandoc; remove
+    gddrescue
+  * [f0e43fd] baseutils: add R: arch-install-scripts, gdb, openssl,
+    python3-pip, tcpdump, tmux; remove debian-goodies, davfs2
+  * [1388464] baseutils: add D: mtr-tiny | mtr, zstd
+  * [0e3d606] Remove obsolete version constraints
+
+ -- James Lu <jlu@debian.org>  Sat, 23 Sep 2023 23:53:52 -0700
+
 utopia-meta (2023.06.09) unstable; urgency=medium
 
   * Preparations for the Bookworm release!
