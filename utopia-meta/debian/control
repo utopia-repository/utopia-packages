@@ -430,6 +430,7 @@ Depends: acpi-support,
          ${misc:Depends}
 Recommends: alsa-utils,
             eject,
+            fwupd,
             inxi,
             live-task-non-free-firmware-pc,
             mesa-utils
