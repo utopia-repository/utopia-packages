@@ -47,7 +47,7 @@ Description: Utopia Desktop Defaults (common settings)
 Package: utopia-polkit
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: policykit-1
+Recommends: polkitd-pkla
 Description: PolicyKit settings to run desktop actions without a password
  This package installs default PolicyKit privileges allowing administrators
  (those in "staff" or "sudo" group) to run various actions without being
