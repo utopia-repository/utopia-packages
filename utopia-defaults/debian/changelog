@@ -1,3 +1,9 @@
+utopia-defaults (2024.01.03) UNRELEASED; urgency=medium
+
+  * xfce: replace xfconf panel overrides with an xfce4-panel-profiles layout
+
+ -- James Lu <jlu@debian.org>  Wed, 03 Jan 2024 19:04:26 -0800
+
 utopia-defaults (2023.06.09) unstable; urgency=medium
 
   * Preparations for the Bookworm release!

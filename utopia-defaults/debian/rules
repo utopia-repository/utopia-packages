@@ -1,3 +1,10 @@
 #!/usr/bin/make -f
 %:
 	dh $@
+
+execute_after_dh_auto_clean:
+	rm -f xfce-panel-profiles/*.tar.bz2
+
+execute_after_dh_auto_build:
+	tar cvfj xfce-panel-profiles/Utopia-XFCE.tar.bz2 -C xfce-panel-profiles/Utopia-XFCE \
+		--xform 's:^\./::' --owner=0 --group=0 .

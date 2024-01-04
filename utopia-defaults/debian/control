@@ -77,7 +77,8 @@ Depends: xfce4-datetime-plugin,
 Recommends: catfish,
             gdmap | baobab,
             htop,
-            utopia-desktop-xfce
+            utopia-desktop-xfce,
+            xfce4-panel-profiles (>= 1.0.14~)
 Suggests: fileinsight
 Description: Utopia Desktop Defaults (Xfce Desktop)
  This package contains customized defaults for the Xfce Desktop.

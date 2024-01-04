@@ -1,0 +1,38 @@
+/configver 2
+/panels [<1>]
+/panels/panel-1/disable-struts false
+/panels/panel-1/length uint32 100
+/panels/panel-1/mode uint32 0
+/panels/panel-1/nrows uint32 1
+/panels/panel-1/plugin-ids [<16>, <2>, <8>, <1>, <9>, <4>, <3>, <10>, <6>, <11>, <5>, <7>]
+/panels/panel-1/position 'p=12;x=247;y=545'
+/panels/panel-1/position-locked true
+/panels/panel-1/size uint32 32
+/plugins/plugin-1 'launcher'
+/plugins/plugin-1/items [<'xfce4-terminal-emulator.desktop'>]
+/plugins/plugin-10 'separator'
+/plugins/plugin-10/expand true
+/plugins/plugin-10/style uint32 1
+/plugins/plugin-11 'pulseaudio'
+/plugins/plugin-11/enable-keyboard-shortcuts true
+/plugins/plugin-16 'whiskermenu'
+/plugins/plugin-2 'launcher'
+/plugins/plugin-2/items [<'xfce4-web-browser.desktop'>]
+/plugins/plugin-3 'tasklist'
+/plugins/plugin-3/flat-buttons false
+/plugins/plugin-3/grouping uint32 0
+/plugins/plugin-3/middle-click uint32 1
+/plugins/plugin-3/show-handle true
+/plugins/plugin-3/show-labels true
+/plugins/plugin-3/sort-order uint32 4
+/plugins/plugin-3/window-scrolling true
+/plugins/plugin-4 'launcher'
+/plugins/plugin-4/items [<'htop.desktop'>]
+/plugins/plugin-5 'datetime'
+/plugins/plugin-6 'systray'
+/plugins/plugin-6/known-legacy-items [<'networkmanager applet'>]
+/plugins/plugin-7 'showdesktop'
+/plugins/plugin-8 'launcher'
+/plugins/plugin-8/items [<'xfce4-file-manager.desktop'>]
+/plugins/plugin-9 'launcher'
+/plugins/plugin-9/items [<'xfce4-mail-reader.desktop'>]
