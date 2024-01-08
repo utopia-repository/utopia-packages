@@ -445,7 +445,7 @@ utopia-meta (2017.12.19) unstable; urgency=medium
   * Bump S-V to 4.1.2.
   * -desktop-common: add R: utopia-desktop-defaults
 
- -- James Lu <bitflip3@gmail.com>  Tue, 19 Dec 2017 14:42:46 -0800
+ -- James Lu <james@overdrivenetworks.com>  Tue, 19 Dec 2017 14:42:46 -0800
 
 utopia-meta (2017.11.11) unstable; urgency=medium
 
@@ -485,7 +485,7 @@ utopia-meta (2017.11.11) unstable; urgency=medium
     "GTK+-based" instead of "KDE/Qt" and "GNOME/GTK+".
   * -office: recommend fonts-open-sans, libreoffice-draw
 
- -- James Lu <bitflip3@gmail.com>  Sat, 11 Nov 2017 17:22:06 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sat, 11 Nov 2017 17:22:06 -0800
 
 utopia-meta (2017.08.27) unstable; urgency=medium
 
@@ -501,7 +501,7 @@ utopia-meta (2017.08.27) unstable; urgency=medium
   * Re-run wrap-and-sort.
   * Move Depends in utopia-accessories-* to Recommends.
 
- -- James Lu <bitflip3@gmail.com>  Sun, 27 Aug 2017 17:50:44 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 27 Aug 2017 17:50:44 -0700
 
 utopia-meta (2017.07.21) unstable; urgency=medium
 
@@ -536,7 +536,7 @@ utopia-meta (2017.07.21) unstable; urgency=medium
   * -devel: recommend hexedit
   * Removed utopia-games* packages, they are fairly unmaintained
 
- -- James Lu <bitflip3@gmail.com>  Fri, 21 Jul 2017 19:48:03 +0800
+ -- James Lu <james@overdrivenetworks.com>  Fri, 21 Jul 2017 19:48:03 +0800
 
 utopia-meta (2017.06.25) experimental; urgency=medium
 
@@ -558,7 +558,7 @@ utopia-meta (2017.06.25) experimental; urgency=medium
   * Move iotop from utopia-devel to utopia-baseutils
   * Run wrap-and-sort -b
 
- -- James Lu <bitflip3@gmail.com>  Sun, 25 Jun 2017 14:12:27 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 25 Jun 2017 14:12:27 -0700
 
 utopia-meta (2017.06.17) unstable; urgency=medium
 
@@ -566,7 +566,7 @@ utopia-meta (2017.06.17) unstable; urgency=medium
     pulled in: use gnome-www-browser (and some hand-picked packages) instead
     of www-browser.
 
- -- James Lu <bitflip3@gmail.com>  Sat, 17 Jun 2017 00:00:34 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 17 Jun 2017 00:00:34 -0700
 
 utopia-meta (2017.06.16) unstable; urgency=medium
 
@@ -603,7 +603,7 @@ utopia-meta (2017.06.16) unstable; urgency=medium
   * -accessories-gtk: add variety to recommends.
   * Re-run wrap-and-sort.
 
- -- James Lu <bitflip3@gmail.com>  Fri, 16 Jun 2017 22:11:37 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 16 Jun 2017 22:11:37 -0700
 
 utopia-meta (2017.05.26) unstable; urgency=medium
 
@@ -621,7 +621,7 @@ utopia-meta (2017.05.26) unstable; urgency=medium
   * utopia-desktop-gnome fixes: rm non-existent nautilus-open-terminal,
     fix seahorse-nautilus name
 
- -- James Lu <bitflip3@gmail.com>  Fri, 26 May 2017 21:47:02 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 26 May 2017 21:47:02 -0700
 
 utopia-meta (2017.04.30) unstable; urgency=low
 
@@ -640,7 +640,7 @@ utopia-meta (2017.04.30) unstable; urgency=low
   * -office: Decrease libreoffice version requirement to 5.1, so that it
     installs on stock Ubuntu Xenial as well.
 
- -- James Lu <bitflip3@gmail.com>  Sun, 30 Apr 2017 18:08:51 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 30 Apr 2017 18:08:51 -0700
 
 utopia-meta (2017.04.22) unstable; urgency=low
 
@@ -664,7 +664,7 @@ utopia-meta (2017.04.22) unstable; urgency=low
   * -accessories-gtk: adjust preferred qt5-style-plugins version to what's
     actually in Debian
 
- -- James Lu <bitflip3@gmail.com>  Sat, 22 Apr 2017 22:28:25 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 22 Apr 2017 22:28:25 -0700
 
 utopia-meta (2017.04.13) unstable; urgency=medium
 
@@ -687,7 +687,7 @@ utopia-meta (2017.04.13) unstable; urgency=medium
   * various: replace eog with shotwell as preferred choice
   * Re-run wrap and sort
 
- -- James Lu <bitflip3@gmail.com>  Thu, 13 Apr 2017 17:17:25 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 13 Apr 2017 17:17:25 -0700
 
 utopia-meta (2017.02.09) unstable; urgency=medium
 
@@ -700,7 +700,7 @@ utopia-meta (2017.02.09) unstable; urgency=medium
   * -baseutils: depend on alternative: openssh-client | ssh-client
   * -desktop-cinnamon: recommend utopia-cinnamon-tweaks
 
- -- James Lu <bitflip3@gmail.com>  Thu, 09 Feb 2017 17:30:27 -0800
+ -- James Lu <james@overdrivenetworks.com>  Thu, 09 Feb 2017 17:30:27 -0800
 
 utopia-meta (2016.12.07) unstable; urgency=medium
 
@@ -727,7 +727,7 @@ utopia-meta (2016.12.07) unstable; urgency=medium
   * -themes: remove recommends on Linux Mint themes; they aren't yet
     compatible with new GTK+ and thus aren't shipped anymore
 
- -- James Lu <bitflip3@gmail.com>  Wed, 07 Dec 2016 20:05:43 -0800
+ -- James Lu <james@overdrivenetworks.com>  Wed, 07 Dec 2016 20:05:43 -0800
 
 utopia-meta (2016.10.01) unstable; urgency=medium
 
@@ -744,7 +744,7 @@ utopia-meta (2016.10.01) unstable; urgency=medium
     - Recommend libreoffice-ogltrans for OpenGL support in Libreoffice Impress
     - Drop browser-plugin-libreoffice; it is no longer available
 
- -- James Lu <bitflip3@gmail.com>  Sat, 01 Oct 2016 13:25:11 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 01 Oct 2016 13:25:11 -0700
 
 utopia-meta (2016.08.21) unstable; urgency=medium
 
@@ -752,7 +752,7 @@ utopia-meta (2016.08.21) unstable; urgency=medium
   * utopia-desktop-kde: switch gnome-breeze to gtk3-engines-breeze
   * utopia-vnc-desktop: reworded description
 
- -- James Lu <bitflip3@gmail.com>  Sun, 21 Aug 2016 19:44:30 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 21 Aug 2016 19:44:30 -0700
 
 utopia-meta (2016.07.10) unstable; urgency=medium
 
@@ -775,7 +775,7 @@ utopia-meta (2016.07.10) unstable; urgency=medium
   * -vnc-desktop: replace fonts-droid with fonts-noto.
   * -vnc-desktop: prefer tigervnc-standalone-server over tightvncserver.
 
- -- James Lu <bitflip3@gmail.com>  Sun, 10 Jul 2016 16:40:14 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 10 Jul 2016 16:40:14 -0700
 
 utopia-meta (2016.05.21) unstable; urgency=low
 
@@ -783,7 +783,7 @@ utopia-meta (2016.05.21) unstable; urgency=low
     prefer new versions of firefox available in Debian.
   * -multimedia: recommend ffmpeg 3+
 
- -- James Lu <bitflip3@gmail.com>  Sat, 21 May 2016 11:27:05 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 21 May 2016 11:27:05 -0700
 
 utopia-meta (2016.04.03) unstable; urgency=low
 
@@ -794,7 +794,7 @@ utopia-meta (2016.04.03) unstable; urgency=low
   * -devel-extras: recommend lua5.3 | lua, lua-socket
   * Run wrap-and-sort to prettify the dependencies list.
 
- -- James Lu <bitflip3@gmail.com>  Sun, 03 Apr 2016 09:16:28 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 03 Apr 2016 09:16:28 -0700
 
 utopia-meta (2016.03.09) unstable; urgency=medium
 
@@ -829,7 +829,7 @@ utopia-meta (2016.03.09) unstable; urgency=medium
   * -office: Recommend libreoffice-gtk | libreoffice-kde, libreoffice-math
   * Bump standards version to 3.9.7.
 
- -- James Lu <bitflip3@gmail.com>  Wed, 09 Mar 2016 18:15:02 -0800
+ -- James Lu <james@overdrivenetworks.com>  Wed, 09 Mar 2016 18:15:02 -0800
 
 utopia-meta (2016.01.10) unstable; urgency=medium
 
@@ -855,7 +855,7 @@ utopia-meta (2016.01.10) unstable; urgency=medium
   * -desktop-kde: add k3b to recommmends
   * -desktop-openbox: add obsession
 
- -- James Lu <glolol1@hotmail.com>  Thu, 27 Aug 2015 09:49:56 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 27 Aug 2015 09:49:56 -0700
 
 utopia-meta (2015.08.13~exp1) experimental; urgency=medium
 
@@ -865,7 +865,7 @@ utopia-meta (2015.08.13~exp1) experimental; urgency=medium
   * -devel: recommend apt-listchanges and apt-listbugs.
   * -baseutils: recommend gdebi-core.
 
- -- James Lu <glolol1@hotmail.com>  Thu, 27 Aug 2015 09:49:49 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 27 Aug 2015 09:49:49 -0700
 
 utopia-meta (2015.06.30) unstable; urgency=medium
 
@@ -877,7 +877,7 @@ utopia-meta (2015.06.30) unstable; urgency=medium
      - recommend lynx
      - suggest utopia-games
 
- -- James Lu <glolol1@hotmail.com>  Tue, 30 Jun 2015 20:21:51 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 30 Jun 2015 20:21:51 -0700
 
 utopia-meta (2015.06.18) unstable; urgency=medium
 
@@ -895,7 +895,7 @@ utopia-meta (2015.06.18) unstable; urgency=medium
   * utopia-themes: move numix themes to depends and ubuntu font/mint-x-icons
     to recommends.
 
- -- James Lu <glolol1@hotmail.com>  Thu, 18 Jun 2015 20:43:35 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 18 Jun 2015 20:43:35 -0700
 
 utopia-meta (2015.05.23) unstable; urgency=medium
 
@@ -909,7 +909,7 @@ utopia-meta (2015.05.23) unstable; urgency=medium
   * -desktop: drop upower
   * -multimedia: move ffmpeg to suggests
 
- -- James Lu <glolol1@hotmail.com>  Sat, 23 May 2015 16:36:10 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 23 May 2015 16:36:10 -0700
 
 utopia-meta (2015.04.26) unstable; urgency=medium
 
@@ -919,7 +919,7 @@ utopia-meta (2015.04.26) unstable; urgency=medium
   * Move gucharmap, menulibre, and mugshot/usermode to -acceessories-gtk.
   * Add some lintian overrides.
 
- -- James Lu <glolol1@hotmail.com>  Sun, 26 Apr 2015 21:57:45 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 26 Apr 2015 21:57:45 -0700
 
 utopia-meta (2015.04.14) unstable; urgency=medium
 
@@ -932,13 +932,13 @@ utopia-meta (2015.04.14) unstable; urgency=medium
   * -cinnamon: recommend gucharmap, simple-scan; drop gnome-nettool,
      gnome-disk-utility
 
- -- James Lu <glolol@overdrive.pw>  Tue, 14 Apr 2015 21:42:23 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 14 Apr 2015 21:42:23 -0700
 
 utopia-meta (2015.04.10) unstable; urgency=medium
 
   * -xfce: bump xfce4-datetime-plugin to recommends
 
- -- James Lu <glolol@overdrive.pw>  Fri, 10 Apr 2015 17:49:17 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 10 Apr 2015 17:49:17 -0700
 
 utopia-meta (2015.04.09) unstable; urgency=medium
 
@@ -946,7 +946,7 @@ utopia-meta (2015.04.09) unstable; urgency=medium
   * Re-add utopia-desktop-xfce, for Xfce 4.12.
   * Tweak utopia-accessories.
 
- -- James Lu <glolol@overdrive.pw>  Thu, 09 Apr 2015 20:12:48 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 09 Apr 2015 20:12:48 -0700
 
 utopia-meta (2015.03.23) unstable; urgency=medium
 
@@ -955,7 +955,7 @@ utopia-meta (2015.03.23) unstable; urgency=medium
   * -mate: change mintmenu dependency to mate-menu
   * -games-gui: add knights, move dependencies down to recommendations
 
- -- James Lu <glolol@overdrive.pw>  Mon, 23 Mar 2015 19:54:28 -0700
+ -- James Lu <james@overdrivenetworks.com>  Mon, 23 Mar 2015 19:54:28 -0700
 
 utopia-meta (2015.03.21) unstable; urgency=low
 
@@ -967,13 +967,13 @@ utopia-meta (2015.03.21) unstable; urgency=low
   * -themes: install fonts-noto, numix themes
   * -mate: recommend network-manager-gnome
 
- -- James Lu <glolol@overdrive.pw>  Wed, 21 Mar 2015 18:45:35 -0700
+ -- James Lu <james@overdrivenetworks.com>  Wed, 21 Mar 2015 18:45:35 -0700
 
 utopia-meta (2015.02.28) unstable; urgency=low
 
   * Recommend tig in utopia-devel instead of utopia-devel-gui.
 
- -- James Lu <glolol@overdrive.pw>  Sat, 28 Feb 2015 20:35:15 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sat, 28 Feb 2015 20:35:15 -0800
 
 utopia-meta (2015.02.21) unstable; urgency=low
 
@@ -981,7 +981,7 @@ utopia-meta (2015.02.21) unstable; urgency=low
   * utopia-themes: add gnome-themes-standard
   * Clean up utopia-games and utopia-themes.
 
- -- James Lu <glolol@overdrive.pw>  Sat, 21 Feb 2015 18:25:48 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sat, 21 Feb 2015 18:25:48 -0800
 
 utopia-meta (2015.01.24) unstable; urgency=low
 
@@ -997,27 +997,27 @@ utopia-meta (2015.01.24) unstable; urgency=low
   * utopia-baseutils: depend on wget and curl
   * utopia-devel-gui: suggest meld, a graphical diff viewer
 
- -- James Lu <glolol@overdrive.pw>  Sat, 24 Jan 2015 22:30:17 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sat, 24 Jan 2015 22:30:17 -0800
 
 utopia-meta (2015.01.17+1) unstable; urgency=medium
 
   * utopia-desktop-cinnamon: add gnome-system-log, not gnome-system-tools
 
- -- James Lu <glolol@overdrive.pw>  Sat, 17 Jan 2015 17:19:44 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sat, 17 Jan 2015 17:19:44 -0800
 
 utopia-meta (2015.01.17) unstable; urgency=low
 
   * Updates to utopia-desktop-{lxde|cinnamon}.
   * Remove unused entries in utopia-themes.
 
- -- James Lu <glolol@overdrive.pw>  Sat, 17 Jan 2015 16:59:02 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sat, 17 Jan 2015 16:59:02 -0800
 
 utopia-meta (2015.01.13) unstable; urgency=low
 
   * Update utopia-desktop-lxde.
   * utopia-baseutils: recommend utopia-keyring
 
- -- James Lu <glolol@overdrive.pw>  Tue, 13 Jan 2015 21:08:54 -0800
+ -- James Lu <james@overdrivenetworks.com>  Tue, 13 Jan 2015 21:08:54 -0800
 
 utopia-meta (2014.12.28) unstable; urgency=low
 
@@ -1026,7 +1026,7 @@ utopia-meta (2014.12.28) unstable; urgency=low
   * utopia-themes: stop recommending wallpaper packages, recommend numix*
   * utopia-desktop-lxde: demote xfburn to suggests
 
- -- James Lu <glolol@overdrive.pw>  Sun, 28 Dec 2014 18:15:09 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sun, 28 Dec 2014 18:15:09 -0800
 
 utopia-meta (2014.12.14) unstable; urgency=low
 
@@ -1034,7 +1034,7 @@ utopia-meta (2014.12.14) unstable; urgency=low
   * utopia-devel: promote debhelper, automake to depends
   * utopia-baseutils: add iftop, traceroute, depend on bind9-host | host
 
- -- James Lu <glolol@overdrive.pw>  Sun, 14 Dec 2014 11:14:37 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sun, 14 Dec 2014 11:14:37 -0800
 
 utopia-meta (2014.12.09) unstable; urgency=low
 
@@ -1045,7 +1045,7 @@ utopia-meta (2014.12.09) unstable; urgency=low
     download)
   * utopia-multimedia: remove acetoneiso, recommend jpegoptim
 
- -- James Lu <glolol@overdrive.pw>  Tue, 09 Dec 2014 17:11:27 -0800
+ -- James Lu <james@overdrivenetworks.com>  Tue, 09 Dec 2014 17:11:27 -0800
 
 utopia-meta (2014.11.29) unstable; urgency=medium
 
@@ -1061,7 +1061,7 @@ utopia-meta (2014.11.29) unstable; urgency=medium
     (media players, web browsers, etc) since this should be used as
     a common package
 
- -- James Lu <glolol@overdrive.pw>  Sat, 29 Nov 2014 21:39:05 -0800
+ -- James Lu <james@overdrivenetworks.com>  Sat, 29 Nov 2014 21:39:05 -0800
 
 utopia-meta (2014.11.18) unstable; urgency=medium
 
@@ -1071,7 +1071,7 @@ utopia-meta (2014.11.18) unstable; urgency=medium
     mate-netspeed, caja-share
   * utopia-desktop-mate: Suggest mate-desktop-environment-extras
 
- -- James Lu <glolol@overdrive.pw>  Tue, 18 Nov 2014 18:32:01 -0800
+ -- James Lu <james@overdrivenetworks.com>  Tue, 18 Nov 2014 18:32:01 -0800
 
 utopia-meta (2014.11.11) unstable; urgency=medium
 
@@ -1079,7 +1079,7 @@ utopia-meta (2014.11.11) unstable; urgency=medium
   * Add utopia-devel-gui
   * Refresh utopia-desktop-lxde
 
- -- James Lu <GLolol@overdrive.pw>  Tue, 11 Nov 2014 11:35:20 -0800
+ -- James Lu <james@overdrivenetworks.com>  Tue, 11 Nov 2014 11:35:20 -0800
 
 utopia-meta (2014.11.05) unstable; urgency=low
 
@@ -1089,33 +1089,33 @@ utopia-meta (2014.11.05) unstable; urgency=low
   * clean up utopia-themes, recommend faba-colors, faba-mono-icons
   * Update Standards-Version to 3.9.6.
 
- -- James Lu <GLolol@overdrive.pw>  Wed, 05 Nov 2014 18:44:31 -0800
+ -- James Lu <james@overdrivenetworks.com>  Wed, 05 Nov 2014 18:44:31 -0800
 
 utopia-meta (2014.10.26) unstable; urgency=low
 
   * Minor tweaks to utopia-games-gui
 
- -- James Lu <glolol@overdrive.pw>  Sun, 26 Oct 2014 11:42:02 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 26 Oct 2014 11:42:02 -0700
 
 utopia-meta (2014.10.24) unstable; urgency=low
 
   * Split utopia-games-gui into utopia-games-gui and utopia-games-extras
   * Minor changes to other meta-packages
 
- -- James Lu <GLolol@overdrive.pw>  Fri, 24 Oct 2014 20:07:23 -0700
+ -- James Lu <james@overdrivenetworks.com>  Fri, 24 Oct 2014 20:07:23 -0700
 
 utopia-meta (2014.10.21) unstable; urgency=low
 
   * Add utopia-games and utopia-games-gui
 
- -- James Lu <GLolol@overdrive.pw>  Tue, 21 Oct 2014 18:37:22 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 21 Oct 2014 18:37:22 -0700
 
 utopia-meta (2014.10.18) unstable; urgency=low
 
   * utopia-devel: add jpegoptim and optipng to recommends
   * remove utopia-nonfree
 
- -- James Lu <glolol@overdrive.pw>  Sat, 18 Oct 2014 11:58:24 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 18 Oct 2014 11:58:24 -0700
 
 utopia-meta (2014.09.30) unstable; urgency=low
 
@@ -1124,7 +1124,7 @@ utopia-meta (2014.09.30) unstable; urgency=low
   * revert 'Add dependency packages thunderbird-icedove-compat and
     firefox-iceweasel-compat'
 
- -- James Lu <glolol@overdrive.pw>  Tue, 30 Sep 2014 18:32:04 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 30 Sep 2014 18:32:04 -0700
 
 utopia-meta (2014.09.27) unstable; urgency=medium
 
@@ -1133,7 +1133,7 @@ utopia-meta (2014.09.27) unstable; urgency=medium
   * Add dependency packages thunderbird-icedove-compat and
     firefox-iceweasel-compat
 
- -- James Lu <glolol@overdrive.pw>  Sat, 27 Sep 2014 14:58:58 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 27 Sep 2014 14:58:58 -0700
 
 utopia-meta (2014.09.18) unstable; urgency=medium
 
@@ -1143,7 +1143,7 @@ utopia-meta (2014.09.18) unstable; urgency=medium
   * utopia-desktop: add breaks for xul-ext-ubufox, ubufox
   * rename source package to utopia-meta
 
- -- James Lu <glolol@overdrive.pw>  Thu, 18 Sep 2014 16:23:09 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 18 Sep 2014 16:23:09 -0700
 
 utopia-desktop (2014.09.11) unstable; urgency=medium
 
@@ -1156,13 +1156,13 @@ utopia-desktop (2014.09.11) unstable; urgency=medium
   * utopia-themes: s/mint-wallpapers-qiana/mint-backgrounds-qiana/
   * Be more verbose in changelog
 
- -- James Lu <glolol@overdrive.pw>  Thu, 11 Sep 2014 21:10:53 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 11 Sep 2014 21:10:53 -0700
 
 utopia-desktop (2014.09.04) unstable; urgency=medium
 
   * utopia-office: add pdf-viewer to suggests instead of recommends
 
- -- James Lu <glolol@overdrive.pw>  Thu, 04 Sep 2014 15:53:02 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 04 Sep 2014 15:53:02 -0700
 
 utopia-desktop (2014.09.01) unstable; urgency=medium
 
@@ -1170,7 +1170,7 @@ utopia-desktop (2014.09.01) unstable; urgency=medium
     utopia-network, utopia-office
   * Remove utopia-task-ibus
 
- -- James Lu <glolol@overdrive.pw>  Mon, 01 Sep 2014 17:55:32 -0700
+ -- James Lu <james@overdrivenetworks.com>  Mon, 01 Sep 2014 17:55:32 -0700
 
 utopia-desktop (2014.08.27) unstable; urgency=medium
 
@@ -1178,26 +1178,26 @@ utopia-desktop (2014.08.27) unstable; urgency=medium
   * Bump debian/compat to 9
   * Add dconf-editor
 
- -- James Lu <glolol@overdrive.pw>  Wed, 27 Aug 2014 18:41:39 -0700
+ -- James Lu <james@overdrivenetworks.com>  Wed, 27 Aug 2014 18:41:39 -0700
 
 utopia-desktop (2014.08.24+1) unstable; urgency=medium
 
   * Update utopia-desktop, utopia-desktop-kde, utopia-themes
 
- -- James Lu <glolol@overdrive.pw>  Sat, 23 Aug 2014 20:59:09 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 23 Aug 2014 20:59:09 -0700
 
 utopia-desktop (2014.08.24) unstable; urgency=low
 
   * Update utopia-desktop, utopia-desktop-kde
 
- -- James Lu <glolol@overdrive.pw>  Sat, 23 Aug 2014 19:44:56 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 23 Aug 2014 19:44:56 -0700
 
 utopia-desktop (2014.08.19) unstable; urgency=low
 
   * Update browser extensions
   * Update utopia-devel
 
- -- James Lu <glolol@overdrive.pw>  Tue, 19 Aug 2014 18:53:37 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 19 Aug 2014 18:53:37 -0700
 
 utopia-desktop (2014.08.18) unstable; urgency=low
 
@@ -1208,45 +1208,45 @@ utopia-desktop (2014.08.18) unstable; urgency=low
   [ utopia-nonfree ]
   * Add utopia-nonfree
 
- -- James Lu <glolol@overdrive.pw>  Sun, 17 Aug 2014 20:05:36 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 17 Aug 2014 20:05:36 -0700
 
 utopia-desktop (2014.08.14) unstable; urgency=low
 
   * New version scheme.
 
- -- James Lu <glolol@overdrive.pw>  Thu, 14 Aug 2014 14:20:35 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 14 Aug 2014 14:20:35 -0700
 
 utopia-desktop (0.3.1) unstable; urgency=medium
 
   * Add packages for MATE, Xfce, and themes
 
- -- James Lu <glolol@overdrive.pw>  Tue, 12 Aug 2014 22:08:02 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 12 Aug 2014 22:08:02 -0700
 
 utopia-desktop (0.3.0+1) unstable; urgency=low
 
   * Fixes for utopia-task-ibus
   * Add preferred version for ffmpeg
 
- -- James Lu <glolol@overdrive.pw>  Tue, 12 Aug 2014 12:17:43 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 12 Aug 2014 12:17:43 -0700
 
 utopia-desktop (0.3.0) unstable; urgency=low
 
   * Fix? some lintian errors
   * Update standards version to 3.9.4
 
- -- James Lu <glolol@overdrive.pw>  Tue, 12 Aug 2014 11:49:11 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 12 Aug 2014 11:49:11 -0700
 
 utopia-desktop (0.2.1+2) unstable; urgency=low
 
   * Merge everything into one source package
 
- -- James Lu <glolol@overdrive.pw>  Tue, 12 Aug 2014 11:36:18 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 12 Aug 2014 11:36:18 -0700
 
 utopia-desktop (0.2.1+1) unstable; urgency=low
 
   * Fixes for desktop environments
 
- -- James Lu <glolol@overdrive.pw>  Tue, 05 Aug 2014 11:46:08 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 05 Aug 2014 11:46:08 -0700
 
 utopia-desktop (0.2.1) unstable; urgency=low
 
@@ -1254,7 +1254,7 @@ utopia-desktop (0.2.1) unstable; urgency=low
   * Move mail-reader to recommends
   * Add desktop environments in Suggests:
 
- -- James Lu <glolol@overdrive.pw>  Tue, 05 Aug 2014 11:26:56 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 05 Aug 2014 11:26:56 -0700
 
 utopia-desktop (0.2.0) utopia; urgency=low
 
@@ -1262,7 +1262,7 @@ utopia-desktop (0.2.0) utopia; urgency=low
   * Add inkscape
   * Clean up suggests section
 
- -- James Lu <glolol@overdrive.pw>  Thu, 31 Jul 2014 16:31:03 -0700
+ -- James Lu <james@overdrivenetworks.com>  Thu, 31 Jul 2014 16:31:03 -0700
 
 utopia-desktop (0.1.1) utopia; urgency=low
 
@@ -1270,10 +1270,10 @@ utopia-desktop (0.1.1) utopia; urgency=low
     dependency, which pulls in an entire gnome desktop!)
   * Add font packages and shuffle some other things
 
- -- James Lu <glolol@overdrive.pw>  Sat, 19 Jul 2014 17:34:00 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 19 Jul 2014 17:34:00 -0700
 
 utopia-desktop (0.1) utopia; urgency=low
 
   * Initial Release.
 
- -- James Lu <glolol@overdrive.pw>  Sat, 19 Jul 2014 16:50:00 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 19 Jul 2014 16:50:00 -0700

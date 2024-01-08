@@ -39,19 +39,19 @@ utopia-keyring (2017.03.20+1) unstable; urgency=critical
   * Add a simple test case using 'gpg --list-packets' to make sure the output
     key data is valid.
 
- -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 19:40:11 -0700
+ -- James Lu <james@overdrivenetworks.com>  Mon, 20 Mar 2017 19:40:11 -0700
 
 utopia-keyring (2017.03.20) unstable; urgency=high
 
   * Bugfix: re-add keyid 4A8C96B8EEBB01E6 from last upload.
 
- -- James Lu <bitflip3@gmail.com>  Mon, 20 Mar 2017 19:12:40 -0700
+ -- James Lu <james@overdrivenetworks.com>  Mon, 20 Mar 2017 19:12:40 -0700
 
 utopia-keyring (2017.03.19) unstable; urgency=medium
 
   * Refresh subkeys.
 
- -- James Lu <bitflip3@gmail.com>  Sun, 19 Mar 2017 17:11:34 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sun, 19 Mar 2017 17:11:34 -0700
 
 utopia-keyring (2017.03.14) unstable; urgency=medium
 
@@ -60,7 +60,7 @@ utopia-keyring (2017.03.14) unstable; urgency=medium
     sid-nightlies repository.
   * Refresh my main key with updated UIDs.
 
- -- James Lu <bitflip3@gmail.com>  Tue, 14 Mar 2017 12:40:34 -0700
+ -- James Lu <james@overdrivenetworks.com>  Tue, 14 Mar 2017 12:40:34 -0700
 
 utopia-keyring (2017.03.08) unstable; urgency=medium
 
@@ -69,10 +69,10 @@ utopia-keyring (2017.03.08) unstable; urgency=medium
   * Bump standards version to 3.9.8 - no changes needed.
   * Copyright file updates.
 
- -- James Lu <bitflip3@gmail.com>  Wed, 08 Mar 2017 19:15:34 -0800
+ -- James Lu <james@overdrivenetworks.com>  Wed, 08 Mar 2017 19:15:34 -0800
 
 utopia-keyring (2015.01.13) unstable; urgency=medium
 
   * Initial release.
 
- -- James Lu <glolol@overdrive.pw>  Tue, 13 Jan 2015 20:19:43 -0800
+ -- James Lu <james@overdrivenetworks.com>  Tue, 13 Jan 2015 20:19:43 -0800
