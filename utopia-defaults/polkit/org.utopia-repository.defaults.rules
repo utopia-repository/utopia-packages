@@ -17,7 +17,7 @@ polkit.addRule(function(action, subject) {
 polkit.addRule(function(action, subject) {
     if ((action.id == "org.gnome.cpufreqselector" ||
          action.id == "org.mate.cpufreqselector") &&
-        (subject.isInGroup("staffin") ||
+        (subject.isInGroup("staff") ||
          subject.isInGroup("sudo")))
     {
         if (subject.active && subject.local) {
