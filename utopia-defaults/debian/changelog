@@ -1,6 +1,7 @@
 utopia-defaults (2024.01.03) UNRELEASED; urgency=medium
 
   * xfce: replace xfconf panel overrides with an xfce4-panel-profiles layout
+  * polkit: migrate to JS based rules (via polkit_pkla2rule.py)
 
  -- James Lu <jlu@debian.org>  Wed, 03 Jan 2024 19:04:26 -0800
 

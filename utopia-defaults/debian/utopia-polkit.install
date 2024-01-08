@@ -1,1 +1,1 @@
-polkit/*.pkla var/lib/polkit-1/localauthority/10-vendor.d/
+polkit/*.rules usr/share/polkit-1/rules.d/
