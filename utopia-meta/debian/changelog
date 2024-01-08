@@ -1,3 +1,11 @@
+utopia-meta (2024.01.07) unstable; urgency=medium
+
+  * [52e842e] hardware-support: add R: fwupd
+  * [099287f] xfce: prune panel plugins and admin utilities
+  * [a00048d] hardware-support: remove D: cpufrequtils (deprecated)
+
+ -- James Lu <jlu@debian.org>  Sun, 07 Jan 2024 17:16:45 -0800
+
 utopia-meta (2023.09.23) unstable; urgency=medium
 
   * [1e6dfcf] Fix spacing issue
