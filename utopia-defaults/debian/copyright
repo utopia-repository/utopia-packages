@@ -6,11 +6,6 @@ Files: *
 Copyright: 2014-2023 James Lu <james@overdrivenetworks.com>
 License: GPL-3.0+
 
-Files: polkit/*
-Copyright: 2010-2012 Canonical Ltd.
-           2016-2021 James Lu <james@overdrivenetworks.com>
-License: GPL-3.0+
-
 License: GPL-3.0+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
