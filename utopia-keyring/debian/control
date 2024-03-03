@@ -2,7 +2,7 @@ Source: utopia-keyring
 Section: misc
 Priority: optional
 Maintainer: James Lu <james@overdrivenetworks.com>
-Build-Depends: debhelper-compat (= 12)
+Build-Depends: debhelper-compat (= 12), gpg
 Standards-Version: 4.5.0
 Homepage: https://github.com/utopia-repository/utopia-packages
 

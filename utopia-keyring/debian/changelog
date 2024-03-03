@@ -3,6 +3,7 @@ utopia-keyring (2024.03.03) unstable; urgency=medium
   * Switch to new repository signing key:
     8AAA71DAE3BD50D5539A0100200A481378601485
     Utopia Repository Signing Key <admin@utopia-repository.org>
+  * Add Build-Depends: gpg
 
  -- James Lu <jlu@debian.org>  Sun, 03 Mar 2024 11:38:49 -0800
 
