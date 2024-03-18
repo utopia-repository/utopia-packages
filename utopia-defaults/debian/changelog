@@ -1,9 +1,10 @@
-utopia-defaults (2024.01.03) UNRELEASED; urgency=medium
+utopia-defaults (2024.03.17) unstable; urgency=medium
 
   * xfce: replace xfconf panel overrides with an xfce4-panel-profiles layout
   * polkit: remove, no longer needed
+  * Remove obsolete utopia-gnomeapps-defaults.install
 
- -- James Lu <jlu@debian.org>  Wed, 03 Jan 2024 19:04:26 -0800
+ -- James Lu <jlu@debian.org>  Sun, 17 Mar 2024 19:13:11 -0700
 
 utopia-defaults (2023.06.09) unstable; urgency=medium
 
