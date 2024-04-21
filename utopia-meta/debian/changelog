@@ -1,3 +1,11 @@
+utopia-meta (2024.04.20) unstable; urgency=medium
+
+  * [b6e397a] baseutils: remove D: deborphan (removed from unstable)
+  * [5036d7c] baseutils: add R: needrestart
+  * [988e5a3] Remove qt5-gtk2-platformtheme, no longer needed
+
+ -- James Lu <jlu@debian.org>  Sat, 20 Apr 2024 23:28:46 -0700
+
 utopia-meta (2024.01.07) unstable; urgency=medium
 
   * [52e842e] hardware-support: add R: fwupd
