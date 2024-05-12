@@ -86,7 +86,6 @@ Depends: apt-listchanges,
          mutt | mail-reader,
          nano,
          openssh-client | ssh-client,
-         p7zip-full,
          pinentry-curses | pinentry-tty | pinentry,
          psmisc,
          python3,
@@ -100,7 +99,8 @@ Depends: apt-listchanges,
          xz-utils,
          zstd,
          ${misc:Depends}
-Recommends: apt-utils,
+Recommends: 7zip | p7zip-full,
+            apt-utils,
             aptitude,
             arch-install-scripts,
             arch-test,
@@ -128,7 +128,7 @@ Recommends: apt-utils,
             vnstat,
             whiptail | dialog,
             whois
-Suggests: command-not-found, p7zip-rar, sshfs
+Suggests: command-not-found, sshfs
 Architecture: all
 Description: Utopia Base Utilities Collection (meta-package)
  This meta-package installs various useful command-line utilities.
