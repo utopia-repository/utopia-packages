@@ -14,7 +14,7 @@ Recommends: audacious,
             convmv,
             firefox | firefox-esr | chromium | epiphany-browser | falkon,
             imagemagick,
-            keepassxc,
+            keepassxc-full | keepassxc,
             pandoc,
             scrot,
             vlc
