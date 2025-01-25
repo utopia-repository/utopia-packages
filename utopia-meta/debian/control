@@ -512,19 +512,8 @@ Recommends: arc-theme,
             greybird-gtk-theme,
             mate-themes,
             moka-icon-theme,
-            numix-gtk-theme,
             numix-icon-theme-square,
-            papirus-icon-theme,
-            vertex-theme | vertex-gtk-theme,
-            zuki-themes
-Suggests: adapta-gtk-theme,
-          adapta-kde,
-          faenza-icon-theme | mate-icon-theme-faenza,
-          gnome-themes-standard,
-          materia-kde,
-          paper-icon-theme,
-          qt5-style-kvantum,
-          qt5-style-kvantum-themes
+            papirus-icon-theme
 Architecture: all
 Description: Utopia Desktop Themes Collection (meta-package)
  This meta-package installs various themes for the Linux desktop.
