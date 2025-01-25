@@ -340,7 +340,6 @@ Description: Utopia Desktop Collection - MATE (meta-package)
 
 Package: utopia-desktop-xfce
 Depends: engrampa | ark | file-roller | xarchiver,
-         policykit-1-gnome,
          utopia-desktop-common,
          xfce4,
          xfce4-datetime-plugin,
