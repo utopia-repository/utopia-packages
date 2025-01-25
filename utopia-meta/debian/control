@@ -471,20 +471,15 @@ Package: utopia-multimedia
 Depends: ${misc:Depends}
 Recommends: audacity,
             ffmpeg,
-            gimp | krita,
-            jpegoptim,
+            gimp,
             obs-studio,
-            optipng | pngcrush,
             spek,
-Suggests: easytag | puddletag,
-          isomaster,
-          kdenlive,
-          yt-dlp,
-          you-get
+Suggests: kdenlive,
+          picard,
+          yt-dlp
 Architecture: all
 Description: Utopia Multimedia Collection (meta-package)
- This meta-package pulls in some programs (players, editors, etc.) for working
- with media files.
+ This meta-package install various graphics and media related programs.
 
 Package: utopia-office
 Depends: libreoffice-calc,
