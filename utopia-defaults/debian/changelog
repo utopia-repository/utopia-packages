@@ -1,3 +1,10 @@
+utopia-defaults (2025.01.24) unstable; urgency=medium
+
+  * [7b6ce5d] defaults: bump utopia-themes dep version
+  * [b82321f] Change default GTK theme from Materia-Dark to Orchis-Dark
+
+ -- James Lu <jlu@debian.org>  Fri, 24 Jan 2025 19:11:08 -0800
+
 utopia-defaults (2024.03.17) unstable; urgency=medium
 
   * xfce: replace xfconf panel overrides with an xfce4-panel-profiles layout
