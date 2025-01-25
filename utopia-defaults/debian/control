@@ -52,7 +52,7 @@ Depends: xfce4-datetime-plugin,
          xfce4-settings (>= 4.18~),
          xfce4-whiskermenu-plugin,
          utopia-desktop-defaults (= ${source:Version}),
-         utopia-themes (>= 2019.04.11~),
+         utopia-themes (>= 2025.01.24~),
          ${misc:Depends}
 Recommends: catfish,
             gdmap | baobab,
