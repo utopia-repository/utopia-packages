@@ -504,7 +504,7 @@ Description: Utopia Office Collection (meta-package)
 
 Package: utopia-themes
 Depends: fonts-noto-core,
-         materia-gtk-theme,
+         orchis-gtk-theme,
          numix-icon-theme-circle,
          ${misc:Depends}
 Recommends: arc-theme,
