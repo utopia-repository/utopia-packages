@@ -1,3 +1,16 @@
+utopia-meta (2025.01.24) unstable; urgency=medium
+
+  * [181bf91] Remove outdated packages: utopia-desktop-lxqt, utopia-
+    desktop-mate, utopia-intl-zh
+  * [c8fad91] utopia-themes: remove unmaintained themes
+  * [0fa123b] utopia-themes: replace Materia theme with Orchis
+  * [a4e700f] various: Replace libreoffice-kf5 -> libreoffice-kf6
+  * [69aea0c] desktop-xfce: remove obsolete policykit-1-gnome
+  * [1e8ffb9] Cleanup utopia-multimedia
+  * [983bc0f] baseutils: replace p7zip with 7zip
+
+ -- James Lu <jlu@debian.org>  Fri, 24 Jan 2025 19:10:36 -0800
+
 utopia-meta (2024.04.20) unstable; urgency=medium
 
   * [b6e397a] baseutils: remove D: deborphan (removed from unstable)
