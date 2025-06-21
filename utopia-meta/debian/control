@@ -166,23 +166,7 @@ Replaces: utopia-desktop (<< 2017.06.19~)
 Provides: utopia-desktop
 Description: Utopia Desktop Collection - common programs (meta-package)
  This meta-package fetches some common, desktop-independent dependencies (fonts,
- utilities, etc.).
-
-Package: utopia-desktop-common-light
-Depends: utopia-baseutils, ${misc:Depends}
-Recommends: desktop-base,
-            utopia-desktop-defaults,
-            xdg-utils,
-            xorg
-Suggests: utopia-accessories,
-          utopia-desktop-fonts,
-          utopia-hardware-support,
-          x2goserver | tigervnc-standalone-server | vnc-server
-Architecture: all
-Provides: utopia-desktop-common
-Description: Utopia Desktop Collection - light version (meta-package)
- This meta-package installs a lighter version of utopia-desktop-common,
- intended for e.g. remote desktop setups on headless machines.
+ utilities, etc.)
 
 Package: utopia-desktop-fonts
 Depends: fonts-dejavu,
@@ -315,14 +299,6 @@ Architecture: all
 Description: Utopia Desktop Collection - Xfce (standard)
  This meta-package installs a complete desktop with a Xfce desktop
  environment and programs for multimedia, productivity, networking, etc.
-
-Package: utopia-devel
-Depends: utopia-baseutils,
-         ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Description: Utopia Development Collection (deprecated)
- This meta-package installs libraries and tools for a development environment.
 
 Package: utopia-devel-packaging
 Depends: build-essential,
