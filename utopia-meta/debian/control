@@ -93,7 +93,7 @@ Depends: apt-listchanges,
          rsyslog | system-log-daemon,
          sudo,
          telnet,
-         tmux | screen,
+         tmux,
          traceroute,
          wget,
          xz-utils,
@@ -119,7 +119,7 @@ Recommends: 7zip | p7zip-full,
             python3-pip,
             reptyr,
             rsync,
-            screenfetch | neofetch,
+            screenfetch,
             tcpdump,
             tmux,
             tree,
@@ -161,9 +161,6 @@ Suggests: lxpolkit | polkit-1-auth-agent,
           utopia-multimedia,
           utopia-office
 Architecture: all
-Breaks: utopia-desktop (<< 2017.06.19~)
-Replaces: utopia-desktop (<< 2017.06.19~)
-Provides: utopia-desktop
 Description: Utopia Desktop Collection - common programs (meta-package)
  This meta-package fetches some common, desktop-independent dependencies (fonts,
  utilities, etc.)
@@ -203,7 +200,7 @@ Depends: ark,
          systemsettings,
          utopia-desktop-common,
          ${misc:Depends}
-Recommends: breeze-gtk-theme | gtk3-engines-breeze (<< 5.10.5-1~),
+Recommends: breeze-gtk-theme,
             kde-config-gtk-style,
             kdf,
             kdialog,
@@ -243,7 +240,7 @@ Recommends: krdc,
             skanlite,
             thunderbird,
             variety,
-            wine | wine-development | wine-staging-compat
+            wine | wine-staging-compat
 Suggests: bluedevil | blueman,
           webcamoid | kamoso | cheese | guvcview
 Architecture: all
@@ -287,13 +284,13 @@ Depends: cups,
          ${misc:Depends}
 Recommends: deluge | transmission-gtk,
             libreoffice-gtk3,
-            remmina | vinagre,
+            remmina,
             simple-scan,
             system-config-printer,
             thunderbird,
             variety,
-            wine | wine-development | wine-staging-compat
-Suggests: blueman | gnome-bluetooth,
+            wine | wine-staging-compat
+Suggests: blueman,
           cheese | guvcview | webcamoid | kamoso
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (standard)
