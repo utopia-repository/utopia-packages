@@ -2,8 +2,8 @@ Source: utopia-meta
 Section: misc
 Priority: optional
 Homepage: https://github.com/utopia-repository/utopia-packages
-Build-Depends: debhelper-compat (= 12)
-Standards-Version: 4.4.0
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.2
 Maintainer: James Lu <james@overdrivenetworks.com>
 Vcs-Git: https://github.com/utopia-repository/utopia-packages
 Vcs-Browser: https://github.com/utopia-repository/utopia-packages
@@ -51,8 +51,8 @@ Suggests: lightdm-gtk-greeter-settings,
           xfburn | brasero,
           xzoom
 Architecture: all
-Description: Utopia Accessories Collection - GNOME/GTK+ (meta-package)
- This meta-package pulls in some accessories targeting a GNOME/GTK+ based
+Description: Utopia Accessories Collection - GTK+ (meta-package)
+ This meta-package pulls in some accessories targeting a GTK+ based
  desktop.
 
 Package: utopia-accessories-qt
@@ -243,7 +243,7 @@ Suggests: kate,
           libreoffice-plasma,
           print-manager
 Architecture: all
-Description: Utopia Desktop Collection - KDE Plasma 5 (minimal)
+Description: Utopia Desktop Collection - KDE Plasma (minimal)
  This meta-package installs a minimal KDE Plasma desktop with a hand-picked set
  of programs.
 
@@ -265,7 +265,7 @@ Recommends: krdc,
 Suggests: bluedevil | blueman,
           webcamoid | kamoso | cheese | guvcview
 Architecture: all
-Description: Utopia Desktop Collection - KDE Plasma 5 (standard)
+Description: Utopia Desktop Collection - KDE Plasma (standard)
  This meta-package installs a complete KDE Plasma desktop with programs for
  multimedia, productivity, networking, etc.
 
