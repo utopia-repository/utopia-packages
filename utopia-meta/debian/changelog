@@ -1,3 +1,16 @@
+utopia-meta (2025.08.02) unstable; urgency=medium
+
+  * [b9f7c65] Remove obsolete & unused alternatives
+  * [a8a93aa] Reapply "accessories: replace keepassxc with keepassxc-
+    full | keepassxc"
+  * [06c6900] accessories-qt: add R: qalculate-qt
+  * [c4d903a] Remove obsolete utopia-desktop-common-light, utopia-devel
+  * [3fd618c] -desktop-kde: switch to Wayland by default
+  * [e427dda] Update descriptions; bump Standards-Version to 4.7.2 and
+    dh to 13
+
+ -- James Lu <jlu@debian.org>  Sat, 02 Aug 2025 17:56:28 -0700
+
 utopia-meta (2025.01.24) unstable; urgency=medium
 
   * [181bf91] Remove outdated packages: utopia-desktop-lxqt, utopia-
