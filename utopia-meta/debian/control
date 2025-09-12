@@ -21,10 +21,8 @@ Recommends: audacious,
 Suggests: bleachbit,
           florence | caribou,
           thunderbird,
-          variety,
           virt-manager | virtualbox,
-          wireshark,
-          unetbootin | tuxboot
+          wireshark
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful programs for desktop use and
@@ -241,7 +239,6 @@ Recommends: krdc,
             qbittorrent | transmission-qt | ktorrent,
             skanlite,
             thunderbird,
-            variety,
             wine | wine-staging-compat
 Suggests: bluedevil | blueman,
           webcamoid | kamoso | cheese | guvcview
@@ -290,7 +287,6 @@ Recommends: deluge | transmission-gtk,
             simple-scan,
             system-config-printer,
             thunderbird,
-            variety,
             wine | wine-staging-compat
 Suggests: blueman,
           cheese | guvcview | webcamoid | kamoso
