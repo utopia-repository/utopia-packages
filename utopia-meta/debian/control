@@ -28,7 +28,9 @@ Package: utopia-accessories-extras
 Depends: ${misc:Depends},
          cups,
          utopia-accessories
-Recommends: thunderbird,
+Recommends: android-file-transfer,
+            nextcloud-desktop,
+            thunderbird,
             virt-manager,
             wine | wine-staging-compat,
             wireshark
