@@ -61,7 +61,7 @@ Recommends: kate | juffed,
             kmag,
             partitionmanager | gparted,
             pinentry-qt,
-            qalculate-qt | qalculate-gtk | kcalc,
+            qalculate-qt | qalculate-gtk,
             qapt-utils,
             qdirstat
 Suggests: k3b, skanlite
