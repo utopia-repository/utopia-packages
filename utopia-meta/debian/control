@@ -18,14 +18,22 @@ Recommends: audacious,
             pandoc,
             scrot,
             vlc
-Suggests: bleachbit,
-          florence | caribou,
-          thunderbird,
-          virt-manager | virtualbox,
-          wireshark
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
  This meta-package pulls in some useful programs for desktop use and
+ administrative tasks.
+
+Package: utopia-accessories-extras
+Depends: ${misc:Depends},
+         cups,
+         utopia-accessories
+Recommends: thunderbird,
+            virt-manager,
+            wine | wine-staging-compat,
+            wireshark
+Architecture: all
+Description: Utopia Accessories Collection - extras (meta-package)
+ This meta-package pulls in some additional programs for desktop use and
  administrative tasks.
 
 Package: utopia-accessories-gtk
@@ -218,8 +226,6 @@ Suggests: kate,
           kdegraphics,
           kdenetwork-filesharing,
           kdeutils,
-          libreoffice-kf6,
-          libreoffice-plasma,
           print-manager
 Architecture: all
 Description: Utopia Desktop Collection - KDE Plasma (minimal)
@@ -228,6 +234,7 @@ Description: Utopia Desktop Collection - KDE Plasma (minimal)
 
 Package: utopia-desktop-kde-full
 Depends: cups,
+         utopia-accessories-extras,
          utopia-accessories-qt,
          utopia-desktop-kde,
          utopia-office,
@@ -238,10 +245,7 @@ Recommends: krdc,
             print-manager,
             qbittorrent | transmission-qt | ktorrent,
             skanlite,
-            thunderbird,
-            wine | wine-staging-compat
-Suggests: bluedevil | blueman,
-          webcamoid | kamoso | cheese | guvcview
+            webcamoid | kamoso | cheese | guvcview
 Architecture: all
 Description: Utopia Desktop Collection - KDE Plasma (standard)
  This meta-package installs a complete KDE Plasma desktop with programs for
@@ -276,20 +280,18 @@ Description: Utopia Desktop Collection - Xfce (minimal)
  programs.
 
 Package: utopia-desktop-xfce-full
-Depends: cups,
+Depends: utopia-accessories-extras,
          utopia-accessories-gtk,
          utopia-desktop-xfce,
          utopia-office,
          ${misc:Depends}
 Recommends: deluge | transmission-gtk,
+            guvcview | cheese | webcamoid | kamoso,
             libreoffice-gtk3,
             remmina,
             simple-scan,
-            system-config-printer,
-            thunderbird,
-            wine | wine-staging-compat
-Suggests: blueman,
-          cheese | guvcview | webcamoid | kamoso
+            system-config-printer
+Suggests: blueman
 Architecture: all
 Description: Utopia Desktop Collection - Xfce (standard)
  This meta-package installs a complete desktop with a Xfce desktop
