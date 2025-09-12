@@ -13,6 +13,7 @@ Depends: ${misc:Depends}
 Recommends: audacious,
             convmv,
             firefox | firefox-esr | chromium | epiphany-browser | falkon,
+            flatpak,
             imagemagick,
             keepassxc-full | keepassxc,
             pandoc,
