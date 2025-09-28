@@ -83,6 +83,7 @@ Package: utopia-baseutils
 Depends: apt-listchanges,
          aria2,
          bind9-host | host,
+         cron | cron-daemon,
          curl,
          dos2unix,
          elinks | lynx | w3m | www-browser,
