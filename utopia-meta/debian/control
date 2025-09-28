@@ -17,7 +17,6 @@ Recommends: audacious,
             imagemagick (>= 8:7~),
             keepassxc-full | keepassxc,
             pandoc,
-            scrot,
             vlc
 Architecture: all
 Description: Utopia Accessories Collection (meta-package)
@@ -57,8 +56,7 @@ Suggests: lightdm-gtk-greeter-settings,
           qt5ct,
           simple-scan,
           synaptic,
-          xfburn | brasero,
-          xzoom
+          xfburn | brasero
 Architecture: all
 Description: Utopia Accessories Collection - GTK+ (meta-package)
  This meta-package pulls in some accessories targeting a GTK+ based
@@ -150,7 +148,6 @@ Depends: desktop-base,
          utopia-baseutils,
          ${misc:Depends}
 Recommends: apt-listbugs,
-            anacron,
             avahi-daemon,
             avahi-utils,
             cifs-utils,
@@ -159,7 +156,6 @@ Recommends: apt-listbugs,
             iw,
             libnss-mdns,
             pipewire-audio,
-            ntfs-3g,
             utopia-accessories,
             utopia-desktop-defaults,
             utopia-desktop-fonts,
@@ -323,8 +319,7 @@ Description: Utopia Development Collection - packaging tools (meta-package)
  This meta-package installs programs specific to a Debian packaging environment.
 
 Package: utopia-hardware-support
-Depends: acpi-support,
-         lm-sensors,
+Depends: lm-sensors,
          nvme-cli,
          smartmontools,
          pciutils,
