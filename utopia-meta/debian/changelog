@@ -1,3 +1,21 @@
+utopia-meta (2025.10.13) unstable; urgency=medium
+
+  * [47fd6e3] Remove scrot, xzoom, anacron, ntfs-3g, acpi-support
+  * [605de54] acccessories: pin imagemagick version
+  * [0a1160c] baseutils: add D: cron | cron-daemon
+  * [9024d54] baseutils: remove redundant R: tmux
+  * [63db3e0] accessories-extras: add R: android-file-transfer,
+    nextcloud-desktop
+  * [a6e1714] accessories: add R: flatpak
+  * [84e33d5] Split common parts in kde-full and xfce-full into
+    accessories-extras
+  * [d4aeaec] accessories,desktop-*-full: remove variety
+  * [bb1a428] baseutils: add R: qalc
+  * [b075dee] accessories-kde: remove kcalc alternative to qalculate
+  * [bff37e2] baseutils: add R: ncdu
+
+ -- James Lu <jlu@debian.org>  Mon, 13 Oct 2025 13:22:07 -0700
+
 utopia-meta (2025.08.02) unstable; urgency=medium
 
   * [b9f7c65] Remove obsolete & unused alternatives
