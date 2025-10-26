@@ -330,7 +330,8 @@ Recommends: alsa-utils,
             fwupd,
             inxi,
             live-task-non-free-firmware-pc,
-            mesa-utils
+            mesa-utils,
+            nvtop
 Suggests: ddrescue
 Architecture: all
 Description: Utopia Desktop Collection - hardware utilities (meta-package)
