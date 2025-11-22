@@ -298,7 +298,6 @@ Description: Utopia Desktop Collection - Xfce (standard)
 
 Package: utopia-devel-packaging
 Depends: build-essential,
-         cowbuilder | sbuild | pbuilder,
          debhelper,
          devscripts,
          dh-make,
@@ -306,6 +305,7 @@ Depends: build-essential,
          git-buildpackage,
          lintian,
          quilt,
+         sbuild | cowbuilder,
          ${misc:Depends}
 Recommends: cmake,
             debian-archive-keyring,
