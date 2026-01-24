@@ -1,0 +1,22 @@
+steps:
+  - commands:
+      - apt-get update
+      - apt-get -yy install dpkg-dev debhelper gpg
+      - ./build
+    image: debian:${DEBIAN_VERSION}
+    name: build
+
+  - commands:
+      - apt-get update
+      - apt-get -yy install dose-distcheck wget apt-utils dpkg-dev
+      - ./check-installability ${DEBIAN_VERSION}
+    image: debian:${DEBIAN_VERSION}
+    name: check-installability
+
+matrix:
+  DEBIAN_VERSION:
+    - stable
+    - unstable
+
+when:
+  event: [tag, push, pull_request]
