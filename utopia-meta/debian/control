@@ -208,6 +208,7 @@ Depends: ark,
          utopia-desktop-common,
          ${misc:Depends}
 Recommends: breeze-gtk-theme,
+            kde-config-flatpak,
             kde-config-gtk-style,
             kdf,
             kdialog,
@@ -219,7 +220,8 @@ Recommends: breeze-gtk-theme,
             sddm,
             udisks2,
             upower,
-            utopia-accessories-qt
+            utopia-accessories-qt,
+            waypipe
 Suggests: kate,
           kdeadmin,
           kdegraphics,
