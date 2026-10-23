@@ -1,7 +1,7 @@
 #!/bin/bash
 
 KEYS=(
-    # Utopia Repository Signing Key <admin@utopia-repository.org>
+    # deb.jlu5.com Repo Signing Key <debadmin@jlu5.com>
     8AAA71DAE3BD50D5539A0100200A481378601485
 )
 
